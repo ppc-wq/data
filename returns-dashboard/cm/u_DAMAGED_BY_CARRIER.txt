@@ -1,2 +1,4 @@
 0	Product isn’t damaged, but has been used. Box damaged.
 1	Damaged|Yes|Box damaged and internal is damaged
+2	I bought it used, and it came with earwax which was gross lol. So I repurchased brand new ones instead.
+3	Package damaged

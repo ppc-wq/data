@@ -581,3 +581,474 @@
 580	Defective|No left channel
 581	Sound cuts in and out
 582	the volume up and down control doesn't work
+583	No
+584	Too big
+585	Bad sound quality
+586	No sound
+587	They don’t work in both ears only in side works on each
+588	It doesn’t work
+589	The volume is very low and cannot be adjusted to louder setting.
+590	The sound is tinny and irritating
+591	Too large
+592	not enough bass response
+593	no
+594	ITEMS DID NOT WORK
+595	No work
+596	The ear cones are too small and don't cover and ear and are thus very uncomfortable
+597	It doesn't work when connected to the Mac.
+598	volume control not working
+599	Volume control doesn't work
+600	Doesn’t work with phone.
+601	These ear-buds have excessive crackling and interference, not present in other ear-buds I tried connected to same sound system.
+602	It sound for little times
+603	Only one headset side works
+604	Muffled sound only.
+605	Did not work when plugged in.
+606	left channal cuts in and out and is scatchy
+607	When i used a iphone lightning adapter the volume doesn’t actually lower and is super loud
+608	Sound only comes out of one headphone.
+609	Couldn’t hear anything
+610	The product wasn't what I expected. Needed blue tooth.
+611	is not compatible with my laptop
+612	Baby does not like it.
+613	The 3.5mm jack was not recognized by my computer or my iPhone with a lightening adapter
+614	Stopped working after a week. No audio.
+615	It doesn’t work with my device
+616	Buttons don't work with USB-C adapter
+617	The connection does not fit my phone
+618	Too big for ears
+619	The headphones are not working- possibly damaged in shipping.  The box it came in was pretty beat up
+620	Only one ear working.
+621	No sound transfering to one side
+622	Problem adjusting volume level
+623	Too small
+624	Items does not work with android phone or tablet.
+625	My child used it for a few days then stopped working
+626	Sound breaks up when usin.other apps a.d ear buds do not big enough to stay put in ear canal and as.noise canceling it really do.not cance noise
+627	Volume control
+628	It won’t work with my C type audio outlet on my phone.
+629	does not work well with phones thanks
+630	The speakers sound chopped a lot of static
+631	The up and down volume buttons do not work. Unhappy!
+632	Will not attach to my phone, incorrect adapter
+633	Sound comes in and out. Not reliable
+634	Inaccurate website description
+635	Bad connection
+636	When arrived, Box had already been open and product is poor quality.
+637	Defective|Microphone not sensitive enough
+638	Can't hear anything
+639	Starts cutting out all the time
+640	Worst sound quality ever
+641	Item doesn’t fit my tablet.
+642	I just tried it and it moves extremely slow.
+643	The earplugs don't stay in my ear. I tried 3 different sizes of ear plug and they don't work.
+644	It is not very loud and the volume doesn't increase
+645	These are not good at all. Awful sound
+646	one ear silent - the one with the microphone
+647	No sound. Just crackle
+648	This product will not stay in my ears
+649	Sound is distorted in Teams meetings and others cannot hear me well.
+650	Can’t get Bluetooth to connect
+651	The volume is not adequate
+652	Not Compatible
+653	Can’t Connect to my fone
+654	Static heard via the headphones, poor quality.
+655	The headphones produced muffled sound
+656	Doesn’t work with her iPhone 17.
+657	Sound quality all crackly
+658	They don’t dampen sound and fit Improper
+659	sound is extremely poor quality, doesn't fit ear correctly
+660	Not noise cancelling
+661	Doesn’t fit the device it’s needed for
+662	The sound is very terrible
+663	Aux cord was bent
+664	this product is worse than amazon basics but almost 3 times the price.
+665	Music goes in and out depending if I move.
+666	The headphone broke after the first time used in the airplane
+667	Hi there, these headphones do not fit my head at all. The ear pieces sit at the top of my ears. I will be looking into buying a different set of headphones.
+668	Very staticy
+669	USED!!!!!!  I ordered replacement for the used product I received. Yet, I received another USED pair of airtubes. This is absolutely unacceptable!!!!!!!!!!!
+670	one of the earbuds isn't outputting equal volume.
+671	Sound not good
+672	The sound quality on phone was poor
+673	Item was opened and used which is unsanitary as it goes in your ear
+674	I used the earbuds for one day and the left one stopped working. I tried a couple different devices and the same results happened.
+675	Very little noise cancelling
+676	Won’t play music
+677	Not loud enough
+678	The recessed part of the ear cover, does not cover the entire ear.  Not comfortable to wear.
+679	Tried head set with computer and would not work
+680	Right ear fuzzy
+681	doesn't work
+682	The initial part of each word during a podcast are cut. The quality of the sound is not as good as expected.
+683	Didn’t work with iPhone
+684	The ear is crackley
+685	Volume button not working and wants to refund for different product
+686	Headphones don’t work with my computer.
+687	Adapter does not fit phone.
+688	Too big on my daughter
+689	The volume control buttons do not work.  Can't adjust the sound volume.
+690	Buzzing sound during first use
+691	Lots of static noise
+692	Did not like the sound
+693	It is not working correctly
+694	Microphone is failing and not working sometimes
+695	The volume is very low and noise cancellation was faulty
+696	When I plugged it into my phone it wouldn't connect and no sound came out of the headphones.
+697	Will not work with my iPhone.  Have trouble shooted settings, etc
+698	No sound when I plug in
+699	The earbuds are not noise cancelling, and one of the earbuds crackles when listening to music.
+700	Bought the wrong plugin
+701	dont work
+702	Item doesn’t connect and no sound comes out
+703	Tried to use on a plane and the connection wouldn’t work.
+704	Sound only comes out of 1 ear
+705	Not compatible with computer audio
+706	did not fit
+707	It did not council it out any background noise it just made it louder, and everyone could hear everything in my background
+708	Doesn't have a built-in microphone
+709	Will not stay in my ears
+710	Static in earbuds
+711	Microphone choppy
+712	The left wire is broken.
+713	Volum is not working
+714	We used these for only an hour and they don't work anymore
+715	Doesn't play or light up after plugging in.
+716	It did not fit in my wife’s ears. The earbuds would fall out
+717	Don’t like the fit on my ears
+718	Microphone does not work
+719	Microphone on headphones does not work, people could not hear me.
+720	No good
+721	Cuts out
+722	Sound breaks up as if there is a los connection
+723	One side of headphone don’t work, no sound.
+724	Does not hold in ear at all and is way too heavy to stay put
+725	does not secure to phone correctly
+726	It won't connect to my phone
+727	I can’t get them to work on my phone or my kindle
+728	The y were not noise cancelling and they kept falling out of my ears
+729	This iPhone earphone is not compatible with my iPhone- the usb port is wrong size for these
+730	The headphone pick up all background noise
+731	The speaker isn’t working properly making weird sounds. The volume button isn’t working anymore as well
+732	Sound is muffled. There is a cracking sound when listening.
+733	The microphone is not noise cancelling
+734	it started glitching very soon and it's not working anymore!
+735	Speaker doesn't work
+736	one speaker goes in and out
+737	Took them on an airplane could not get them to work with airplane tv or with phone
+738	Tried this about three times but quality is so bad!
+739	Was used but volume did not work
+740	Does not plug in with sound, doesn’t work
+741	One of the air buds does not work, appears to be a kink in the tube
+742	When I plugged the jack into the port of 2 devices, the sound did not produce. We tried a second set of headphones purchased from you as well, and they worked. This set does not work.
+743	Product did not work as per my requirements for the job
+744	Mic did not operate when plugged into desktop computer
+745	The music is not coming out right of the left earbud. Sometimes it works but the sound is off and sometimes it just doesn’t work.
+746	The item doesn't work very well has low volume 1 side other side too load not working good
+747	IT HAS A VERY LONG DELAY IN SOUND AND HAS STATIC, ALSO IS TO SMALL FOR MY HEAD
+748	Hurts ears to use.
+749	Flimsy and didn’t last
+750	Doesn't fit.
+751	Does not connect fully to audio and activates Siri at random.
+752	did not cancel out loud noise while on a tems meeting
+753	I can’t hear as well with these.
+754	Gives me a headache
+755	Sound flickers when used at school , not fit for purpose
+756	Daughter tried them out and they dont have a good sound quality.
+757	It kept pausing and playing my Spotify without me touching it.
+758	does not fit in the ear properly
+759	Volume was stuck on high and couldn’t adjust
+760	Head phones were static
+761	Sound quality is not very good
+762	Package not working
+763	These are NOT noise cancelling at all as described on your site.
+764	If you hold it by the sides, they just fold up, it’s like the hinges that allow it to fold up are not tight enough for them to hold their shape. Also they don’t fit well.
+765	Must hold down volume button to hear clearly.
+766	air tube kinked and volume buttons not working
+767	Wont stay connected to tablet.
+768	Not a good fit
+769	I wanted one with a microphone
+770	When I tried to use the headphone one ear didn’t work
+771	When plugged worked and stopped  working
+772	Sound is inconsistent from Left to Right
+773	Plug does not work with my laptop
+774	Cannot install different size ear inserts.
+775	doesn't work at all
+776	The controls don't work for phone calls
+777	Too big for my 1st grader
+778	One ear piece doesn’t produce sound
+779	The audio connection flickers and crackles
+780	too big
+781	The headphones don't work, sound still comes from the device and not the headphones when the item is connected. No sounds comes to the headphones at all.
+782	it sounds very low
+783	Does not fit my ears
+784	we could hear static
+785	it was the only choice I could pick from the drop-down menu. I just don’t like the sound of them. They’re really muddy. Not enough Christmas clarity or separation of the EQ.
+786	The volume control doesn’t adjust the sound from minimum to maximum. It’s already set to approximately maximum volume. It can only be made louder.
+787	Inconvenience with wire
+788	Won’t stay in the ear
+789	Product stopped working. These earbuds are terrible.  Bought  same pair months ago and they quit as well….
+790	Sound cuts in and out.
+791	Microphone not working
+792	The right side of the headphones doesn’t work
+793	B
+794	Sound does not come out of one side and volume up button doesn't work.
+795	The right earbud doesn't work at all
+796	The left side earbud will not produce any sound. No troubleshooting advice has fixed the issue.
+797	I need a usb cord
+798	sound only coming out of one ear on first use
+799	These didn’t stay in my ears.
+800	The headphones sound like a wire is pinched and doesnt come through clearly at all. Sounds muffled or like it’s underwater
+801	Doesn’t fit as expected
+802	One of the headphones is stop working
+803	Size issues
+804	Too tight
+805	Product was incompatable with my computer
+806	After trying out for 15 minutes, Item was too tight for my head. It hurt.
+807	The headphones work partway. On one video I could hear the background music but not the speaker -- unless I held the middle button on the cord down.
+808	Volume control doesn't work.
+809	Couldn’t hear out of them
+810	Doesn’t work with my ears
+811	The product already stopped working after a week!
+812	Headphones do not work.
+813	No sound when connected to computer
+814	Sound quality is horrible
+815	Not the quality I was hoping for.
+816	These appear to be of much worse quality and performance than the reviews indicated them to be.  Worse than the several sets I bought from Amazon several years ago.
+817	Lots of noise interrupting the sound. Cannot hear clearly.
+818	only plays through one ear
+819	On my second use of these earbuds, part of the left earbud came off.
+820	Headphones didn’t work
+821	The headphones didn’t work
+822	not as described
+823	It does not have a mic and I needed for teleconference for work. People could not hear me with my headset so I wanted a headset with a mic and the description said it had a mic but it does not.
+824	Would not connect properly and pair with phone and adaptor.
+825	mic doesn't work & headphones aren't recognized by zoom
+826	The sound goes out on both sides, randomly. These earphones never last more than 3 months. I will keep returning.
+827	one side of the headset is not working
+828	Doesn’t work very well with the plug; think there is a break in the cord somewhere.
+829	When singing on app ,the mic was very noise .
+830	Does not fit
+831	They are not noise cancelling.
+832	I purchased a used item.  This clearly was not checked when returned before reselling.   The right ear does not work,  there is no sound.  Sound only comes from left side.
+833	Do not work. Can’t hear sound
+834	These will not stay in my ears, I tried the different attachments but none worked well.  They all slip out too easily.
+835	The control buttons on the code NOT HOLD THE SELECTED VOLUME.  SWITCH DOESN'T WORK !  Very disappointed.
+836	One side seems very low volume
+837	Instant crackling whenever sound is played
+838	The sound in these headphones is incredible! The problem is the chords are so heavy that they fall out of of my ears. I try to wrap them over my ear, but they are too stiff and do not stay tucked.
+839	Speaker sounds distorted.
+840	Doesn’t  connect
+841	The microphone cuts out and I’m not heard clearly when using these
+842	The product controls do not work.  Item is not as identified as it is not quality driven.
+843	Sometime no sound at all
+844	USB-C. Won’t work on airplane.
+845	No sound came through
+846	Product seems to turn off by itself.  Needed for an upcoming International trip and the noise cancellation does not meet my needs.
+847	having continuous microphone and audio issues.
+848	Sound
+849	No se escucha correctamente
+850	There was a kink in the audio tubing when I removed it from its box.
+851	The volume does not work properly
+852	The microphone does not work
+853	does not work, no volume at all
+854	Ear buds do not stay in ear. Tried all sent
+855	Microphone doesn't work.
+856	Lightning cable. Needed usb-c
+857	Ear cover pieces for different sizing does not fit on ear piece.
+858	Item doesn’t work
+859	Didn’t work with my device
+860	The stem on the cord is bent.
+861	doesnt work
+862	Mic doesn't work
+863	I cannot figure out how to replace the earbuds for the correct fit and there are NO instructions or video to assist. Such a bummer!
+864	The volume control does not work.
+865	description said has mic. mic does not work
+866	The volume goes either full on or mute.  There is nothing in between.  Full blast is way to loud and mute is way to soft.
+867	headphones don't work with my IPOD
+868	The sound was super quiet unless I held down one of the buttons.  I tried adjusting the volume with the + and - buttons but that didn't do anything.
+869	When used with my iPhone, these ear buds work for a minute then emit a high-pitched screech. A different set of ear buds works fine with this phone, so it is this product.
+870	Does not fit well
+871	Microphone nor volume control are working
+872	w wont fit
+873	Earphones fall out of ears
+874	Cut out on sound
+875	Microphone is very unusable
+876	Left ear doesn’t work.
+877	Left ear bud will not work
+878	Product not compatible with my system
+879	When plugged into my phone my music doesn’t come through the headphones
+880	Battery was missing and mouse does not work
+881	Doesn't fit well
+882	One of the earbuds does not work
+883	Right side has no sound. Chord crimped.
+884	Item doesn’t work properly
+885	Not compatible with my iPhone.
+886	Clear ear covers don't fit
+887	Microphone is producing constant static
+888	while I’m talking getting echo, I can’t speak with headphones something wrong in the headphone
+889	The earplugs keep popping out of ears
+890	Not compatible with my keyboard
+891	Sound is only coming from one ear
+892	The sound was static
+893	To small
+894	mic is not good, audio is too low
+895	One side of the earbuds does not work.  It is defective.
+896	The right here bud has a defective and slipping plastic support tube.
+897	Hardly any sound comes out
+898	one side no sound
+899	Did not work with my Iphone
+900	No left channel. Short in line at point of volume control.
+901	Weird
+902	Not happy with the product
+903	The Volume does not go low enough, so even on the lowest setting it’s loud!
+904	Does not work with my iPhone.
+905	The microphone id Not Function with my Desktop computer.
+906	Not compatible with my phone
+907	d
+908	Ear doesn’t work
+909	Its making weird sounds!! Like not noise, its making really some sounds
+910	Cannot hear any sound when plugged in
+911	Does not work for my iphonev
+912	The sound quality is unacceptable.  The sound is tinny and lacks any base. unacceptable.
+913	Not compatable with my iphone.
+914	Tested and underwhelming
+915	Issues with sound
+916	the wiring is messed up
+917	does not work with phone
+918	The earbud sizes available aren’t small enough for me
+919	No funciona bien volumen no sube
+920	Tried to use it, no sound through one ear.
+921	O
+922	Product has connectivity issues with my iPhone
+923	Dos not fit well
+924	I have to hold down the play button for it to function properly
+925	Product does not work with Iphone
+926	These headphones had awesome sound, but today they just quit working. We read the directions to make sure that we hadn’t missed something, even tried them in another phone, nothing. Bummer
+927	does not connect
+928	Ear buds don’t fit in ear
+929	Won’t connect to my phone
+930	They don't work
+931	Wiring frayed
+932	No audio when plugged in
+933	doesn't fit head- too big
+934	Does not stay in my ears
+935	Too small over ears
+936	The earbuds work fine if I am listening to music on my phone; however, they cause a static noise when I am speaking with people over the phone.  And they can hear it on their end.  It's annoying.
+937	One ear separated from headband piece after first wear, dangling by a single electric cord.
+938	Sometimes it makes a static sound
+939	plug in does not work
+940	Not proper connection for my phone
+941	It’s way too loud even with the lowest volume setting.
+942	The product does not work
+943	Product doesn't work well...bad sound
+944	The microphone does not work on my iPhone 16. It works fine on an apple wired earbud.
+945	Doesn’t cancel noise well
+946	Crackling sound in left ear
+947	Only works for music and not for calls
+948	keep loosing volume
+949	Sound quality is terrible and they are not noise cancelling
+950	Middle button does not pause, start, skip, or restart audio.
+951	Ear piece is too small.  Package looks brand new.
+952	uncomfortable.  quality not what I expected.
+953	does not work, have to have volume completely up in order to even hear something soft
+954	Have to hold the 'pause' button to get any sound.
+955	Makes strange buzzing sounds when I use with my phone. My other headphones don't have this problem.
+956	they aren’t clear, they are muffled and sound terrible . very disappointing disappointing. they were useless.
+957	Does not fit ear well.
+958	Sound not as expected
+959	Too small for daughter’s head (assuming other one was too small for younger brother’s head)
+960	Static noise during calls
+961	I was purchasing these for noise cancelling while in the office.  They didn’t work as I had expected them too.
+962	The headphones simply do not produce sound when used.
+963	Cannot hear anything,
+964	keep on falling
+965	These earphones suck   Do not try to sell to the secondary market again
+966	Didn't work as expected.
+967	The headphones randomly stop playing for no reason.
+968	Sound quality is not on par with cost
+969	Its
+970	One side of headset does not work
+971	These are defective. The sound cuts in and out whenever the cable is moved. We tried them with multiple devices and the issue was the same.
+972	Sounds horrible. Super quiet. Can hardly hear audio. Tried once. Returning now
+973	Wrong connecter
+974	Noise cancellation works no better than regular earbuds
+975	The sound is too much too low. Even keeping it a safe level. It's too low to hear anything clearly.
+976	Defective volume switch. Poor sound quality
+977	didn’t have great sound
+978	Won’t stay in ear
+979	Need Bluetooth
+980	Too big for my child.
+981	Does not work with iphone 16
+982	When connected to iPhone, the music stops and volume changes up and down by itself, and voice control comes on by itself and stops the music
+983	We can’t hear the music
+984	One ear bud crackles.  Item was not new, cord was not factory packaged with typical fastner. Cord was wound in a circle and placed in packaging
+985	The volume buttons do not work
+986	Wrong input for my computer
+987	too red
+988	Ugly
+989	The minimum volume is too loud to listen to and will damage hearing.
+990	Too small ear piece
+991	the volume control does not work.
+992	One side of the headphones never had sound. The side where the cord is has sound. The opposite side does not.
+993	This won't work for what I need
+994	The speaker does not charge.
+995	Product not compatible with my device.
+996	Did not cancel noise
+997	Item arrived with only one ear bud working. No longer want item.
+998	Not as expected
+999	The sound is not good or loud enough for me to hear it well.
+1000	The volume so low… can’t hear anything
+1001	The ear buds are too big for my ears.   Even the smallest size is too big.  Also the wire to plug in is too big to fit into my iPhone.  I would like a refund.
+1002	Ear bud work for a minute or two and then stop and make a high pitched noise.
+1003	Bad plug cuts in and out bad connection
+1004	The sound is not coming out in one ear piece.
+1005	I hear my own echo when on the phone
+1006	Sound was only in one ear
+1007	Headphones keep falling out.
+1008	Bought with the wrong plug in part
+1009	Speakers sound busted/blown
+1010	These are not the head phones i ordered please refund
+1011	Can't hear due to the static which cant be fixed. Also can't use the controls to ajust volume.  RETURNING for REFUND
+1012	not fit on my son head too big
+1013	The other one I bought caller can not hear me
+1014	caller can not hear me
+1015	Too big for ears - they are too tight and uncomfortable
+1016	Only one side has sound going through it. Absolutely no sound coming out the other  side.
+1017	The earphones do not work.
+1018	My dad says people hear static
+1019	Product not performing well with Macbook.
+1020	when i chose the color it switched the end i needed
+1021	Sound only comes through one ear.
+1022	Plug does not fit my phone
+1023	No bass
+1024	Not noise canceling
+1025	These do not fit comfortably. The buds hurt my ears
+1026	Inconsistent sound.
+1027	There is a clicking noise in the receiving caller’s end.  We tried several different phones but sound continually there.
+1028	Plugged it into my phone but some phone calls you couldn't hear and some you could. I tried another headset to make sure it wasn't the phone and found that it was the headset
+1029	The Bluetooth device would not pair with any of our devices.
+1030	Usb c connection is not connecting
+1031	Sound will not come out
+1032	poor quality
+1033	The sound quality is very poor with clicking and sounds of interference.
+1034	Static feedback
+1035	Right ear bud has no sound
+1036	Sound doesn’t come through headphones
+1037	Sound only on one side
+1038	Product doesn’t work with me phone
+1039	Did not appear to work, no sound
+1040	Microphone shuts down every few seconds.
+1041	The microphone on this device does not work consistently.
+1042	Microphone intermitt ently shuts down
+1043	poor quality sound or defective
+1044	The left earbud is much quieter than the right.
+1045	Sound quality not good
+1046	Does not wok
+1047	faulty!
+1048	Not supported by my iPhone
+1049	Looking for wireless and bt
+1050	sound quality terrible, and not volume reducing as advertised
+1051	My toddler is not comfortable wearing it.
+1052	Sometimes the sound doesn’t play through the earbuds.  I tried 7 times; 4 times it did but 3 times the sound came from the speaker not the earbuds
+1053	N/A

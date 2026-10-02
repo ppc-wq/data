@@ -534,3 +534,22 @@
 533	Not Compatible|Too big on head.
 534	Not Compatible|didn't fit the phone
 535	Not Compatible|does not fit phone
+536	Not Compatible|System|Did not work on devices I wanted it to work on not compatible
+537	Not Compatible|Not compatible with my phone.
+538	Not Compatible|I thought they had a mic
+539	Not Compatible|No port in the new iPad
+540	Not Compatible|Wrong size
+541	Not Compatible|The cord wasn’t adaptable with my phone
+542	Not Compatible|Cannot use with ipad
+543	Not Compatible|La entrada|Nada mas
+544	Not Compatible|Didn’t realize they would work with iPhones
+545	Not Compatible|I had searched for piano headphones and these came up in my search. They are not the correct connection for plugging in.
+546	Not Compatible|This hurts my ears
+547	Not Compatible|Phone has usbc
+548	Not Compatible|cable not compatible
+549	Not Compatible|Not for iPhone 17|Don’t fit my usb port
+550	Not Compatible|Did not pay attention that it was a 3.5mm jack
+551	Not Compatible|Too large for my head
+552	Not Compatible|I wanted to use them on my macbook air but the microphone portion did not work with zoom and Epic video calls.
+553	Not Compatible|Device|Aux|I didn't know how to answer
+554	No le queda a los niños

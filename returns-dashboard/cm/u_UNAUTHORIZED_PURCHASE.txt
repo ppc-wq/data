@@ -18,3 +18,31 @@
 17	Item hurt my ears. Quality was not up to standard as description.
 18	Ordering Issue|Accidental purchase|No
 19	The wired didn’t fix my phone
+20	Tried to cancel order- said it was processing but still sent
+21	Didn't approve purchase
+22	Not approved
+23	too big
+24	Didn’t approve
+25	Don’t approve
+26	I bought it for my dad to use with his phone and it's not compatible
+27	Package opened but product not used. Plan to use them on a trip I ended up not taking
+28	Sent a 2nd one did not want, please refund.
+29	The color was supposed to be burgundy; it's pink.
+30	Not what was expected
+31	Not liked
+32	Opened but not used
+33	not appropriate for small kids
+34	Package unopened
+35	It’s too big for kid
+36	Cf
+37	Pedí uno y me llegaron 2
+38	I ordered on and 2 came
+39	Long and uncomfortable nozzles, high noise when the wires are touched.
+40	none
+41	To small
+42	No longer needed
+43	Found better headphones
+44	I did not approve this order. It was canceled.
+45	Child wouldnt keep them on
+46	No
+47	Gift not wanted

@@ -1,2 +1,13 @@
 0	it doesn't work
 1	Delivery Issue|Item is missing parts|Buds
+2	Broken and can’t be fixed
+3	Missing cards
+4	Some letter tiles not printed properly and a couple not included, also missing letters. Can't play the game.
+5	There were no ear tips included.
+6	Cord near the plug broken - have to hold it in a certain position for it to work
+7	The headphones don’t work. I’ve tried all of the troubleshooting. Would like to exchange them.
+8	Does not work
+9	I don’t like it
+10	unable to insert different size ear pieces.
+11	Do not work
+12	Left ear shorts intermittently.

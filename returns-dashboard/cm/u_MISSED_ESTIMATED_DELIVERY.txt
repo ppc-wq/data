@@ -59,3 +59,73 @@
 58	Delivery Issue|Item was late|Not here for Christmas
 59	needed it sooner for a trip
 60	Too
+61	Arrived too late
+62	Na
+63	Arrived late
+64	late
+65	too late
+66	Not opened
+67	ggg
+68	No longer needed, too big
+69	Arrive too late
+70	ordered for event . arrivved too late
+71	Delivered 6 days after promised date
+72	Deliver on time
+73	Ordered for a trip but I had to leave earlier than expected
+74	Item was supposed to arrive Wednesday, did not arrive until Thursday, and I was already gone
+75	Don’t want it
+76	not wanted
+77	It arrived late. Headphones don't sound as good as description
+78	Delivered after our trip and no longer need
+79	No issues
+80	Arrived too late to use
+81	They didn’t arrive before school started
+82	Teacher changed date needed did not arrive in time
+83	Says delivery attempted but no delivery ever attempted and never been deliver
+84	Needed it sooner
+85	Purchase in error
+86	This just arrived later than what I needed for the person I was going to give it to.
+87	needed for school arrived super late
+88	Usb
+89	arrived later than stated, tried to cancel
+90	Didn’t arrive before trip
+91	No
+92	Didn't arrive in time
+93	I called Prime Customer Service and asked if this order was going to reach me in time and they advise me. No it would not so I ordered another product to replace it and now I need to return this one.
+94	Do not need
+95	arrived after I had left
+96	Item was canceled
+97	Package was late so I had to find something elsewhere
+98	Not opens
+99	Nothing wrong. It got here late and I got something similar in store
+100	The headphones arrived after the date we needed them
+101	NA
+102	I needed these for a trip nd shipping was delayed
+103	X
+104	Had the wrong charging port
+105	Packages need to be on time
+106	Delivered too late for use.
+107	Don't need
+108	Took too long
+109	Took too long to arrive
+110	Product was delayed and arrived later than expected. Sat out in very cold temperatures.
+111	Item arrived after my trip
+112	I bought ordered a different headset
+113	I received the identical item just a few days earlier.
+114	Didn't use it
+115	Sound not what advertized
+116	Someone else gave this gift before I could
+117	Was supposed to get it same day and got here few days later
+118	arrived too late
+119	Arrived a day late!
+120	Arrived after we left for our trip
+121	Received after we were having the christmas we were going too.
+122	Found another pair
+123	A
+124	It arrived too late
+125	didn’t arrive in time
+126	Got something else
+127	Arrived to late
+128	Arrived way later than had said and missed Christmas
+129	I already purchased  ear  buds
+130	Needed for Christmas gift. Arrived too late.

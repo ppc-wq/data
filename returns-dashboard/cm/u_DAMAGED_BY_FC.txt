@@ -9,3 +9,8 @@
 8	Damaged|No|Used. Ear wax and hair on the product
 9	Damaged|No|Plug bent
 10	Damaged|No|The plug is broken off
+11	The item is smashed in the corner because it was shipped in a bag instead of a box. Normally this would be fineas you can still play the game if its box is damaged but this is for a gift and I don't want to give a damaged present.
+12	Cord damaged
+13	Sound keeps cutting out, not consistent
+14	Black marking at top.  Cable is damaged.
+15	Headphones were packed in a way that pinched one of the clear tubes. It left a kink that will likely be a future failure point.

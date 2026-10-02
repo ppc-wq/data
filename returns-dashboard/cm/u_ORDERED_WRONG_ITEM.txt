@@ -445,3 +445,865 @@
 444	I thought this was a headset for phones
 445	Needed USB capability
 446	Changed my mind
+447	Don’t need
+448	Na
+449	bought too many
+450	Ordering Issue|Ordered too many|Ordered to many
+451	Not opened
+452	Kids already had
+453	na
+454	Wrong item
+455	wrong item
+456	Using earbuds
+457	Not wireless
+458	Supposed to be air tube
+459	The soundproofing is not as good as expected. It’s not very effective.
+460	Changed mind
+461	I only needed one game
+462	Thought they were wireless.  They are not.
+463	No longer needed.
+464	Ordered two on accident
+465	Need a USB-C
+466	Bought the wrong item
+467	We need headphones with a different connection type
+468	wrong connector for iphone
+469	Can’t use with our phines
+470	No longer need
+471	Not compatible with my phone
+472	Needed wireless
+473	Neither product was opened and is all in original packaging
+474	Needed Bluetooth headphones
+475	Ordered wrong connector.
+476	Doesn’t fit connection
+477	Didn’t fit on my iPhone 17
+478	Bought by mistake.
+479	H
+480	It doesn’t fit the equipment intended for
+481	Ordered three by accident
+482	Nothing has been opened except the Amazon shipping box.
+483	dont need
+484	Meant to buy 2, but boughtv4. Returning 2.
+485	Not comfortable
+486	Wrong plug
+487	I bought the one with the wrong jack
+488	new
+489	Can’t use these with our iPads because they aren’t wireless. Package not opened.
+490	Didn't need
+491	Bought more than needed
+492	They were small
+493	Bought mistake
+494	These are Extra, bought them and didn’t need them.
+495	Not what I needed
+496	Lightening need usc
+497	Just made a mistake placing this order
+498	Just realized these were not the airtube headphones I was viewing.
+499	Wrong product
+500	Keeping one pair returning the extra two pairs
+501	They don't fit in the designated space.
+502	i found my old pair and did not open the packaging.
+503	Accidentally ordered too many
+504	Don't want c connection.
+505	I need a microphone that is in front of the mouth.  this is the wrong item.  I will re-order
+506	Needed USB-C not Lightening and realized it after ordering
+507	Not comfortable to wear, my girls said they just fall out of their ears
+508	Didn’t need
+509	Doesn’t fit my phone
+510	ordered wrong connection
+511	"On-Ear" design is uncomfortable.
+512	Just dont need them. Brand new, never opened.
+513	Sorry.
+514	Don’t like
+515	iPad does not have headphone jack
+516	I thought the headphones would have a sharper sound quality.
+517	my daughter said most people wear earbuds.
+518	I don’t know how two of the items were ordered but just need one.
+519	I didn’t realize that my iPhone didn’t have a port for these headphones.
+520	this is listed to work for 1 year olds but my 2 year old is too young for it
+521	mother changed her mind
+522	Found out that the item wasn't needed
+523	Needed a headphone with a mic
+524	This was bought by mistake.
+525	cord not long enough
+526	I didn’t realize it had 35 cable connection which I can’t use.
+527	Didn’t realize not usb c connector
+528	Not what I thought it was
+529	Needed a c port
+530	i ordered the wrong adapter for the headphones
+531	Ordered wrong type
+532	Bought this by mistake and I do not need it
+533	What’s supposed to be used for an iPhone in the attachments are not used for the iPhone
+534	Not bought by mistake, at a point after purchase I realized I didn't need
+535	item is unopened, don't need it
+536	Item too big for kid
+537	Buyer bought wrong item
+538	No issue - didn’t realize I bought two
+539	It came too long to arrive.
+540	I bought this by mistake assuming it had EMF protection.
+541	Purchased this, along with a different set of headphones, and decided to keep the other set and return these.  The other set is more comfortable.
+542	I only needed one.
+543	I thought it was wireless.
+544	I thought it was wireless not what I wanted
+545	item is fine. Just bought it by mistake
+546	Ear pieces don't fit and don't adjust.
+547	Incorrect tip for phone
+548	I purchased the wrong type of earbuds. Not compatible with what we need.
+549	it doesn't work for Iphone.
+550	I ordered wrong item didn’t work with my iPhone
+551	Want the pink color
+552	No blutooth
+553	I thought they were airtube, but they are wired.
+554	Doesn't fit port on phone
+555	Not right for my phone
+556	The sound is terrible, I can't hear anything because the voice coming through is not suitable. No volume controls.
+557	Meant to buy wireless
+558	The new phone do not have wire connection jack. Need a blue tooth headset instead. Never open never use.
+559	Ordered the wrong headphones. Needed airbuds.
+560	Duplicate was ordered as a Christmas gift from another family member.
+561	Did not fit and will not work for me
+562	Ordering Issue|Ordered wrong item|Order wrong connection to ipad
+563	Not the headphones I thought they were
+564	wrong usb connector
+565	Caused pain to my left ear, too tight
+566	Not opened. No longer needed
+567	Only need 1, not 2
+568	Need bigger headphones
+569	Got a set as a gift, but hadn’t know that at the time of purchase.
+570	Purchased one already
+571	I didn’t realize that it’s not wireless. It is not compatible with my phone.
+572	It’s not wireless and I need wireless headphones.
+573	Not compatible with the phone I have
+574	Wrong Christmas gift.
+575	By mistake, I purchased earphones with a lighting cord when I needed ones with a USB-C connection.
+576	Doesn't have an input compatible with my phone
+577	Nothing wrong.  Just meant to buy Beatz.
+578	Wrong model
+579	Doesn’t work with the device
+580	Doesn’t fit the device
+581	I bought the black and my son wanted the teal.  I ordered the teal to replace.
+582	Not need
+583	accidentally bought 1 extra
+584	Multiples were bought
+585	Ok
+586	Bought an extra
+587	I wanted wireless
+588	Needed wireless headset
+589	I needed earbuds. These are too large.
+590	I needed usb-c headphones. Somehow this came up in my search.
+591	The ear covers are too small.
+592	Didnt arrive in time
+593	Incorrect port
+594	purchased by mistake
+595	my wife already bought this item on amazon prime
+596	When I saw phone jack I stopped opening it
+597	Only ordered one and I got charged and sent two . Just need one set .
+598	The wire is outdated as we can’t use it on a phone or tablet
+599	I need a wireless one
+600	Person these were bought for already purchased a set of headphones so I don't need these.
+601	I don't need this item
+602	Bought the wrong model. Model was supposed to be for iPhone 14.
+603	cord too short
+604	need c cord plug bought replacement
+605	I thought I purchased wireless
+606	Needed Solo 4 for iPhone
+607	Doesn’t Bluetooth to my phone
+608	Wrong Jack - won't work with my iphone.
+609	wanted Active noise cancelling ear buds, here are not Active
+610	Need blue tooth
+611	Not compatible with iPhone
+612	Thought they were noise cancelling
+613	I bought the wrong one. I needed to select the one with the newer connector in the drop down menu
+614	Drop out of ear from weight of wood
+615	N/A - new, unopened & in original packaging
+616	I bought this for a portable TV that I bought from Amazon, but that TV is being returned because it has an inaccurate website description,  so, I no longer need this specialized item.
+617	Wanted iPhone end
+618	don't need the one with the iphone plug
+619	changed mind
+620	it’s not the correct plug i needed a usbc type
+621	Duplicate order
+622	J
+623	Accidentally bought by mistake
+624	does not fit my phone
+625	Not compatible with my iPhone 17 cell phone. I will buy one that is compatible.
+626	I was gifted headphones same day as order
+627	I thought they covered the ear completely
+628	The cord is not long enough to use for my purpose.
+629	Bought wrong thing.
+630	Clicked 2 when ordering by mistake
+631	Original packaging is intact. I put the tips on the earbuds but didn't use use it.
+632	I thought this item was cancelled but it was delivered.  This is a duplicate item.
+633	I an not able to use an apple connector. I need a USB-C connecter.
+634	I need different cord
+635	No issues. Just larger carrying case than anticipated and it will not fit my needs. Thank you.
+636	Bought for the wrong iPhone
+637	Bought the wrong type of headset
+638	i just do not need headphones
+639	need it to fit 3mm jack, not usb port
+640	The plug-in is the wrong one for me so I have to return this
+641	Tried on headphone but does not like the fit and quality of noise cancellation.
+642	Wrong connection piece
+643	Does not work with my phone
+644	Even with adapter I got feedback
+645	Ordered two by mistake
+646	Ksns
+647	Bought by mistake.  Ended up as duplicate purchase
+648	Not active noise cancelling like I thought
+649	Opened it but saw it’s not going to fit my phone. Never used
+650	I thought this had a USB c port it does not
+651	no problem with the product - just got the wrong one
+652	The item was bought by mistake.
+653	I ordered two and only needed qty 1.
+654	N/a
+655	Product not used. Bought in error. Corded and I need wireless.
+656	I don't have the correct port to use this product
+657	I thought it had a sub-c connector
+658	Needed Bluetooth headphones.
+659	does not fit
+660	Mistakenly thought it could be wireless.
+661	Not good
+662	My other head phone started working
+663	The ear hole is too small and my ear doesn't fit inside muff to create noise canceling.
+664	Does not fit my android
+665	I accidentally ordered two sets
+666	Was looking for noise canceling headphones
+667	It has the wrong type of connection
+668	No just opened to see the cord doesn't fit my phone.
+669	I didn't notice that it was a Lightning connector. I need a USB-C one.
+670	The volume control did not work with RCA adapter.
+671	I need a Usb C plug  not Aux plug
+672	Does not work for iPhone 17
+673	I have An iPhone 14 and didn’t see this is only for 15 and up
+674	did not fit my toddlers head
+675	Bought the wrong item these are wired and I ment to buy wireless
+676	I thought these were wireless headphones, but they are not and they are not and they are not Bluetooth headphones
+677	I need the USB-C PORT
+678	We found a better product.
+679	Never opened. Bought for my daughter but apparently it was the wrong one. My apologies.
+680	I needed just one  Sorry
+681	Didn’t fit
+682	Wrong item ordered
+683	I thought it was bluetooth
+684	We thought they were Bluetooth and Wired. They’re not
+685	Need Airtube headphones.
+686	Thought item was usb c; but it is not
+687	I bought two sets of headphones by mistake and am returning one of them.
+688	Baby had his own when he came for a visit
+689	I mean I wanted it but can’t use it on my phone because it has different usb
+690	plug does not work for iphone 16e
+691	Mistate
+692	Wife doesn't like the way they sit on ears
+693	I located my other ear phones.
+694	Already have them
+695	Does not fit my phone
+696	It is not what I need . I need a different type of head set
+697	Device to connect to did not have headphone jack, needed bluetooth for connection
+698	Not the ones my daughter wanted
+699	Didn’t have the right connector
+700	Not usb c
+701	Ordered the wrong item...I need headphone with the USC C adaptor.
+702	Not compatible with my device.
+703	too quiet for airplane
+704	It doesn’t work with my IPhone.
+705	Didn’t have usb c
+706	No the product has not been nor removed from the original packaging.
+707	I have an iPhone 16 and these don’t fit my phone
+708	Order the wrong size
+709	I selected the wrong connection.  I'm purchasing the aux
+710	no longer needed
+711	I don't want wood earbuds
+712	I bought the wrong port for the old iPhone.
+713	It was the wrong product as I cannot use for my current iphone.  I opened package but never used.
+714	I thought wire comes off
+715	Gift came with head phones-no longer needed.
+716	Not sure how I ordered
+717	Buy by mistake
+718	Not compatible with my Dad's elder computer.
+719	Only needed one pair
+720	bought item by mistake.  returning it.
+721	I needed one with USB plug in. Didn’t notice when ordering that this didn’t have that feature. I didn’t notice it until opened. I never used the product.
+722	Wrong plug tip
+723	Wrong plug in for phone
+724	Is not Bluetooth
+725	Need c port
+726	Only needed 1
+727	the input didn't fit
+728	Dont like it
+729	Product not used - accidently purchased I do not have an apple computer or phone - headphones incompatible.
+730	I no longer need headphones in this style.
+731	Accidentally ordered two of these headphones—I only need one.
+732	I need a USBC cable not a old school Iphone connection
+733	Package opened. Realized it was not what I intended to purchase.
+734	Hurts my ears
+735	I can't use the product with the cord= it doesn't fit my phone
+736	wrong head set
+737	this is not compatible with my network
+738	bought by mistake the product box is not open
+739	I mistakenly bought the wrong product for my type iPhone. I have an iPhone 16, this does not fit the phone. I bb would like to exchange it if you have the same product for an iPhone model 16
+740	I bought a wrong one. Never used.
+741	ME & MY HUSBAND BOUGHT ONE WITHOUT REALIZING. HE DOESN'T NEED 2. UNOPENED.
+742	Thought they were wireless
+743	These were purchased for school but we bought the wrong type.
+744	I booby mistake, the package has not been opened. It is completely sealed.
+745	Accidentally bought 2 of these
+746	Mistakenly bought the wrong type of headset needed.
+747	Wrong plug in configuration
+748	I brought for wong item.
+749	not compatible with the phone I use. Item was never used.
+750	Wrong style earbuds
+751	did not want lightning
+752	cloud not use
+753	I clicked on the wrong item
+754	Not opened or used, was looking to buy a different headphone connection
+755	The item is not compatible with my needs
+756	wont plug into my iphone.
+757	I bought the wrong kind
+758	I needed the headphone for an iPhone and I accidentally bought the ones with the aux attachment. I opened the box but didn’t use the product.
+759	I intended to order the headphones with EMF USB C instead of one with EMF 3.5 Jack
+760	I didn’t realize they were for phones lol
+761	No tiene la calidad que busco
+762	It’s not what I was expecting
+763	Bought 2nd one because of delivery date concerns. Also needed a wireless, but didn't realize it until other headset arrived & tablet has no port for wire connection.
+764	Bought the wrong thing
+765	I didn’t realize it had an aux cord which isn’t compatible with my phone.
+766	I accidentally bought two AND THEN DIDNT realize that they had an aux cord which is not compatible with my phone.
+767	My grandson already has them
+768	I actually just do not like the headphones
+769	Too large for my kid
+770	My daughter did not like - box never opened - please credit my account
+771	Daughter changed her mind
+772	I ordered the wrong model.
+773	I didn’t realize this was USB C CONNECT. I needed the the connect for iPhone 14.
+774	Husband already bought one
+775	Didn't open it..
+776	Hi. I bought this by accident thinking the end would fit into my iPhone
+777	Box opened and realized ordered wrong thing
+778	I bought the wrong cord
+779	Wrong connection for iPhone
+780	Purchased two in error.
+781	Found a better version
+782	I thought there were wireless earphones and they’re not
+783	Purchased 2 items
+784	purchased 2 by error only need 1
+785	i misunderstand description of the product
+786	Ordered and extra pair by mistake
+787	Just didn't realize it was purchased.
+788	Did not  need product
+789	Ordered extra by mistake
+790	I wanted to version with the headphone cord
+791	Thought I was buying the reduced EMF headset from same vendor
+792	I meant to buy a Bose set of wired ear pods.
+793	No longer want.
+794	I mistakenly purchased two of these at the same time and only need one
+795	bought one extra by mistake
+796	Doesn’t fit laptop
+797	I accidently bought two instead of one.
+798	I bought the wrong headphones- need speaker
+799	The product is NOT compatible with my iphone 14.
+800	Wrong cable for my phone
+801	Buying wireless earbuds instead of these.
+802	BOUGHT BY MISTAKE THOUGHT THEY WERE BLUETOOTH
+803	I only needed one and ordered two.
+804	I accidentally bought this when I had bought another pair previously and had forgot
+805	I cannot keep these, and I thought I would have a long term job to afford this item.
+806	Cable is incompatible
+807	Wife didn't like the style
+808	I thought I was adding to cart but it was bought, then I order the one on the cart so received 2 of the same.
+809	BOUGHT BY MISTAKE
+810	Product looks cool, unfortunately not needed anymore.
+811	Order by mistake wanted to c
+812	I thought it had a microphone because that is what I searched for.  Wish the Amazon search only brought up only what I was searching for.
+813	Package not opened.
+814	bought two by mistake and cord isnt the cord i needed
+815	bought two by mistake. I needed a different style cord
+816	Needed headphones with USBC. Ordered headphones with USBC.
+817	New. Never opened.
+818	Bought by mistake. Wrong connector type (not USB C)
+819	Bought 2 times
+820	Doesn’t like cats
+821	My wife and I had a miscommunication about what supplies were needed for back to school shopping for our daughter. We have plenty of headphones!
+822	Not the one
+823	dont need it anymore
+824	I accidentally bought two of the same product. Has not been opened
+825	These are on ear and I need over ear headphones.
+826	not right conector piece. no packing but unsued
+827	I didn’t notice this wasn’t USB connector
+828	Kids can use wireless for school
+829	Wrong fitiing
+830	Had to reorder the wrong connection. I meant to get the C type plug.
+831	Not compatible with usb c
+832	We bought 2
+833	Found old ones
+834	I didn't buy the C cable version
+835	Wrong connection point
+836	I bought the wrong kind of headphones
+837	Meant to order black, but accidentally ordered Burgundy.
+838	G
+839	Thought these were Bluetooth.
+840	Need usb-c bought apple attachment. Just ordered wrong one. Want to order the usb c product sane headphones
+841	Nothing wrong with the product
+842	Product package Received in good condition, has tamper seals in place & have not been removed. Package is sealed never opened.  I thought I ordered Red wired headphones.
+843	Accidentally ordered two. Returning one unopened
+844	It doesn’t have the correct code to hook to my IPad even though description states it would work
+845	S
+846	The adapter does not fit my I-phone connector
+847	I thought I was ordering earbuds for an IPhone, but these are not compatible.
+848	not opened and not used
+849	D
+850	I bought one too many.
+851	Needed one with mic
+852	No microphone
+853	Needed to but product with USB-C connector not RJ-45.
+854	Mistakes
+855	Bought wrong brand in error
+856	Picked wrong brand in error
+857	Didn't realize I ordered 2.
+858	I accidentally ordered 2.
+859	got wrong ones
+860	accidentally ordered 2
+861	Fully packed not open package
+862	Package not open and fully packed
+863	Accidentally ordered 2! Didn’t mean to.
+864	My daughter didn’t like the color I chose.
+865	I have the item but not the box that came with it. Too small for my ears.
+866	Not what we wanted
+867	Color equivocado
+868	I bought an apple headset when I have Android.
+869	wrong product purchased, do not need this item.
+870	The head phone doesn’t have microphones.
+871	I thought these were EMF Protective earphones. Looking further into the description that’s not the case.
+872	First time purchasing headphones, need for iPhone & need wireless
+873	I need a USC charger this year for school
+874	Meant to get the emf ones
+875	Thought they were the EMF blocking earphones but they are not.
+876	Accidentally ordered two
+877	I realized after ordering that I needed a different model which I then ordered.
+878	Color is not the same as the picture
+879	Don't have iphone
+880	Found the old ones!
+881	It need
+882	Wrong charging port
+883	Wrong connection-can’t use usb-c
+884	Return
+885	Not used
+886	I've tried all o the earbuds and the right ear ones do not fit. It continues to fall out of my ear.
+887	I thought the product was wireless but it's a plug in.. I cant use it.
+888	I ordered extra one by mistake. Still brand new in package sealed
+889	Headphones were too big for school
+890	No other details
+891	Went a different route
+892	Does not have a microphone!  very pretty headset------ thank you
+893	does not have a microphone!  very pretty headset--- thanks
+894	Not compatible with USB C.
+895	Change my mind ..
+896	I didn’t realize that it had to have a cord to it. It’s hard to do that with the gym.
+897	Bought two on accident
+898	Doesn’t fit in usb port
+899	No issue
+900	Thought it was airtube
+901	Need a different connector
+902	This product claimed to be compatible with iPhone, but actually comes with a standard headphone jack.  Adapter required.
+903	Need different connection
+904	Not opened. Bought by accident.
+905	Do not need
+906	Wrong plug ordered wanted USB-C but order lighting instead
+907	Non longer need
+908	will not work with my iphone
+909	I bought the wrong adapter type … does not fit my phone
+910	I wanted a different type of microphone
+911	wrong connection for iphone
+912	This one had a connector for an iPhone, i needed one for my computer and this one didn’t work
+913	The product
+914	Nothing is wrong
+915	Ordered 2
+916	Ordered wrong one
+917	They don't expand enough, too tight of a fit on my head.
+918	I got the wrong headphones. Needed ones for USB.
+919	Bought 2 by mistake.  Only need one
+920	No es compatible con la tablet de mi hija, nunca se uso necesito uno inalámbrico
+921	Not the right size
+922	I thought it was just ordering the cord that connected to my phone to my earphones that I had. I did not want the earphones in this package.
+923	Thought the headphones had a microphone but they don't.
+924	Does not work with my IPhone
+925	Doesn’t work with my phone. Need to replace for usb-c
+926	Did not likeit
+927	I  accidentally ordered 2. I just need one.
+928	Cord does not work my Samsung S23.
+929	donot need item
+930	It’s not what I thought or expected. It does not have the EMF protection I was purchasing it for.
+931	I purchased two of the same item by accident. Returning one completely unopened.
+932	Needed Bluetooth not wired
+933	Thought I was ordering blue tooth enabled headphones
+934	These do not fit my iPhone 13 Pro Max
+935	The current earbuds are fixed
+936	Not what I was expecting
+937	duplicate order
+938	Wrong connection purchased
+939	I thought I was buying the air tube headphones. Bought these by mistake.
+940	Didn’t realized they were not wireless
+941	Ordered wrong cord end style.
+942	Nada
+943	I bought wrong pair for my iphone
+944	Ordered the wrong headphone jack.
+945	These headphones are not compatible with my laptop. I bought the lightning connector model instead of the 3.5mm auxiliary jack model.  I had to order another headphone set.
+946	The headphones were too small.
+947	Ordered the wrong product
+948	Two of these were ordered within my household unexpectedly
+949	No look yo Quiero no Punto Esta Cosa I receive para porque on my phone, but I couldn’t you know still Necesito SCK Elena Cito Mi Rapido porque de Mark in La Plata Mandela Rapido Rapido porque the comp
+950	Bought lighting jack instead of CPort
+951	Didn’t realize that I had an extra set of headphones at the house
+952	Need a headset with a handsfree microphone
+953	No bass
+954	I need the USBC adapter for the headphones
+955	I accidentally ordered wrong headset. Need wireless.
+956	Not easy to use
+957	I received a similar item (also from Amazon) from friend the day before this one was received.  Do not need 2.
+958	I intended to purchase the headphone model for the iPhone, instead this is for android.
+959	I didn’t realize that it had to plug in to my phone but connection wouldn’t work anyway.
+960	I thought these were tube earbuds
+961	It is not Bluetooth.
+962	Have other ones
+963	bought black and white same style
+964	I do not have the correct dongle for my iPad and it does not have a headphone jack. Buying bluetooth
+965	Package still is sealed and in original packaging
+966	I ordered the wrong ones I need the other pair you sell  The connection is wrong for my treadmill
+967	The connection port does not fit my computer
+968	As gift, they preferred the over ear headphones.
+969	I purchased without realizing that it was the wrong connector until I opened the box. It was not used.
+970	could not hook to my computer
+971	didn't mean to buy 2
+972	I found my other ones
+973	Don't want.
+974	Wrong terminal
+975	I wanted emf headphones and these didn’t have it. Box was opened but nothing else
+976	Oops
+977	I was under the assumption the microphone would be located on the earpiece.
+978	The earbuds did not fit properly, even using all the different earbud covers
+979	Not what he wanted
+980	Not compatible with my toddlers iPad
+981	NA, ordered by a cident
+982	Found ones I already had
+983	My headband already had some and I didn't know
+984	Item doesn’t fit iPhone 15
+985	Ordered the wrong kind on connection port
+986	Was looking for tube headphones
+987	They hurt my ears!
+988	I inadvertently bought an earphone set with the wrong connector for my device.
+989	I meant to order a different one that we had ordered in the past
+990	Cccccc
+991	Was for iphone and I have already ordered the replacement
+992	These headphone’s connection is the wrong one for my new phone. This is the lightning connector and I need the USB-C connector.
+993	Decided i didn’t need
+994	Bought by .mistake
+995	I didn’t see that it wasn't wireless.
+996	Accidently bought 2 of them!
+997	Not what needed
+998	Bought wrong kind
+999	Thought it had a mic
+1000	I ordered product with the wrong audio jack ( lighting instead of 3.5mm )
+1001	Didn't need found mine
+1002	Phone I have has an connection smaller than the plug on ear buds
+1003	N/A
+1004	Wrong connector.
+1005	wrong jack for my phone
+1006	I need the connector for an Android
+1007	did not realize this device was for Apple phones.
+1008	Needed a speaker
+1009	I thought these were wireless.
+1010	Did not use it. The sound is too loud on the lowest setting
+1011	Yes
+1012	wrong connection. Needed USB-C, ordered lightning cable
+1013	Not the right cord
+1014	Jack size different that what I need.
+1015	I bought these for my grand niece thinking she would love them and her mother does not want her to have them. Bummer.
+1016	Did not realize it had a jack not a usb c
+1017	I accidentally ordered too many
+1018	The plug in is not compatible with my Samsung A35 phone.  I am just returning item so I can get the correct one.
+1019	Ordered headphones but needed mic also
+1020	I got the wrong adapter
+1021	wrong connector. need c
+1022	Mistakenly ordered this item.  Opened to inspect.  Not used.
+1023	Ear buds are not compatible with my Android phone and there's no adapter.
+1024	Bought it with the wrong type of connector for my imac
+1025	I thought it was a different brand.
+1026	want headphones that don't need an adaptor
+1027	Needed ear phones bought by mistake
+1028	did not fit in ear comfortably - keep falling out even with putting smaller tips
+1029	Do not need wired
+1030	Accidentally purchased 2. Returning one.
+1031	I thought they were wireless like I typed in the search.
+1032	Incomparable to my iPhone. Please refund my purchase l. Thank You
+1033	I need to exchange this for the USB-C version. I did not use the product as it would not plug into my phone.
+1034	Bought the wrong end
+1035	Need usb c
+1036	The headphones have a type c connector, and my iPad has only a 3.5 mm jack port. I tried adding a bridge connector using a female c on one end and a 3.5mm jack on the other, but that doesn’t work.
+1037	I thought there was a mic attached
+1038	Wrong type for my phone
+1039	Not for android
+1040	The item comes with a apple lighting jack, not the standard 3.5mm jack. It is not useable by me.  Package opened but product not used.
+1041	Did not mean to order
+1042	I got a wrong color
+1043	Wrong adapter ordered
+1044	unopened
+1045	Sorry, I thought this item was Bluetooth
+1046	The headphones didn’t have a strong enough bass sound.  Also did not fit my ears well.
+1047	I did not realize they were wired headphones. I needed wireless.
+1048	Need to buy different one
+1049	I thought it was Bluetooth
+1050	Thought I ordered USB-C for iPhone 15.i need to return I have ordered the correct one now.
+1051	This set had the wrong connection for my friends phone
+1052	The colors of the product did not match the description in the website.
+1053	I ordered the lightning connector when I really needed the EMF USB-C for my iPhone 16. Already placed order for the correct product and need to return the lightning connector version. Product was not used, but product was opened. Thx
+1054	Not adaptable to my phone
+1055	Headphones too small for my head
+1056	Need to buy with the usb c connector
+1057	Wrong size jack
+1058	I bought the wrong headphones. These did not fit my phone. Reorder the correct ones.
+1059	No longer need I found an app on my phone that works better than what these headphones would have done for me
+1060	Bought assuming it was Bluetooth.  Sorry but thanks
+1061	I meant to purchase only 1, not two.
+1062	Purchased for someone who had purchased another set already.  Packaging is intact.  Never opened.
+1063	Just not want I wanted.
+1064	My baby is too young to utilize us item, and she was unsure on how to use it
+1065	did not like
+1066	I ended up not needing it.
+1067	I discovered i don't have a port for this item
+1068	Similar to another brand visually and added wrong item to cart.
+1069	I thought I was ordering headphones for an iPhone 16, but these are for an iPhone 14.
+1070	M
+1071	Item not needed
+1072	I bought the wrong ones.
+1073	Does not have patent volum control
+1074	I intended to purchase a USB headset. I didn't realize this wasn't USB until after I opened it.
+1075	Accidentally bought iPhone not android capability
+1076	I changed my mind and will use a simple one I have a t home..
+1077	wrong connector type
+1078	Thought I was buying airtubes
+1079	Plastic wrapping was taken off
+1080	I ordered for husband but he wants wireless headphones. Not opened.
+1081	Was confused on two pack discount.
+1082	not right color
+1083	For wrong iPhone
+1084	I searched "Airtube" earbuds to protect against radiation. I ordered 2 pair. One is an Airtube, while this order is not Airtube and does not protect against radiation. I love the wood and the design.
+1085	headphones are too big for my head. i only opened one box the other box is not opened.
+1086	I purchased the wrong game. I opened the Amazon package but the game is still wrapped up!
+1087	I accidently bought 2.
+1088	I couldn’t find an accurate reason under “reason for return.”  I didn’t  realize that the headphone input on my keyboard has been damaged and the seal had fallen into my keyboard- no longer needed
+1089	Bought another one
+1090	Wrong cable
+1091	Ordered wrong one, needed audio jack not lightning cable
+1092	Thought it was wireless
+1093	Ordered wrong product
+1094	Looked used when I got it. Gets super hot in certain situations and buds constantly fall out of ears
+1095	Still new, not opened, did not mean to order it
+1096	My computer doesn’t accommodate a usb c.
+1097	For some reason I assumed the connection was 3.5 mm, but it is an Apple connection.
+1098	I thought I was purchasing airtubes. These are regular wired.
+1099	I bought the wrong item. I need a wireless headset
+1100	Just dont like
+1101	I meant to buy the ones that are iPhone compatible
+1102	Doesn’t have the correct usb charger for my laptop
+1103	My mom is blind and described the headphones she wanted but i misunderstood when she said over the ear- i ordered the correct ones
+1104	I have an iPhone 14. I should have read the instructions better.
+1105	i wish the product can make more colors with charge C
+1106	I thought it had a USB-C connection, but it doesn't, so I can't use it.
+1107	Need the headphone jack
+1108	Not the quality i'm looking for
+1109	I ordered for the wrong type of cell phone.
+1110	USB-C connection vs 3.5mm aux.
+1111	Chose to finally switch to a Wireless Earbud instead
+1112	Purchased wrong headphones
+1113	The plug-in end of the earphones is a USB type plug. I need something different for an old Apple Nano device.
+1114	bought by mistake package and opened
+1115	I need a different adapter for my phone and I need a microphone.
+1116	Someone already bought this game.
+1117	Didn't fit
+1118	Wrong application
+1119	I sent to the wrong location
+1120	I didn’t see that these headphones did not have a regular headphone jack.
+1121	Didn’t realize this has lightning cable rather than USB C connector
+1122	Bought another set instead
+1123	Doesn't  work with needed computer at work.
+1124	Bought too many by accident
+1125	I found that I already had a USB C headphone.
+1126	I need a pin connection.
+1127	I needed the lightning plug, I switched the color and it also switched to a usb c
+1128	I didn’t need it
+1129	Bought this already
+1130	Nor for Android
+1131	ordered gave wrong payment info, tried to cancel ., ordered and received same product,do not want cancelled product,
+1132	I didn’t like the sound quality
+1133	I purchased the wrong type of headphones for my needs.
+1134	I thought it had a microphone component
+1135	Needed wireless not wired
+1136	Does not have USB plug.
+1137	We needed Bluetooth and these ae not Bluetooth.
+1138	I have an iPhone 12 Pro
+1139	Not the right connection
+1140	Purchased for wrong iPhone port
+1141	3.5 jack too big for phone.
+1142	Didn’t realize they were in my cart
+1143	Too big for my head
+1144	I thought it was wireless
+1145	I'm going to order a better quality set of headphones
+1146	New
+1147	I needed over ear and these don't fit that category.
+1148	Wrong connection for phone
+1149	Esta equivocado
+1150	I thought it had a microphone for speaking and it does not.
+1151	I bought the black one and accidentally purchased this as well.
+1152	Duplicate birthday gift
+1153	ordered 3  by error  --- only needed one unit
+1154	I wanted wireless headphones.
+1155	The reason im returning this item is because it's not loud enough in my opinion and I accidentally got the wrong product as well.
+1156	Wrong connection for my phone. Purchased my mistake. Repurchased correct item with correct connector.
+1157	She wanted different headphones
+1158	doesnt feel comfortable.
+1159	Duplicate order.  (I don’t need 2.)
+1160	Don’t nees
+1161	I needed the headset to connect to a office at home job but got a job at an office and they are providing a pair of headset.
+1162	Purchased by mistake, did not want the wooden look.
+1163	I need a USB end and not the one that came with it
+1164	Don’t need anymorw
+1165	The headphones are too small
+1166	The sound quality was not what I need for work. I only “tried” them once.
+1167	Bought for wrong phone by mistake
+1168	no es lo que esperaba
+1169	Needed with microphone
+1170	will replace with Bluetooth earbuds
+1171	Do not have microphone component
+1172	Needed lightning and got 3.5 accidentally
+1173	Accidentally bought wired headphones. Needed wireless. Oops
+1174	The last set we purchased was not functioning and my daughter didn't tell me so we are looking for a different product now due to how quickly the others didn't function and how u comfortable they were
+1175	Item was bought by mistake, no longer needed.
+1176	It does not fit my phone
+1177	The reason im returning this item eventhough I liked Symphonized Headphones and like the look of this product is because accidently got the wrong type of headphones I wanted the Orginal earbuds instead of 90% noise cancelation.
+1178	Bought wireless
+1179	Didn’t use it
+1180	I bought the wrong ones, these are for Samsung I think and I need lightning adapter for iphone.  I have not used them.
+1181	Wrong port, needed lightning
+1182	Wrong hook up for phone. He wanted a plug in for mp3.
+1183	I accidentally bought the wrong headphones
+1184	I thought it was wireless/Bluetooth, but it isn't.
+1185	Jack doesn’t fit my iPhone 15
+1186	I thought it was for Samsung phone and it is not - Apple only. I do not need it.
+1187	Thought it was over ear.
+1188	I didn’t realize they were wired
+1189	Weird unopened
+1190	not allowed at correctional facility
+1191	Wanted bluetooth
+1192	ordered wrong item
+1193	Volume too low
+1194	Not comfortable to use for a long time!
+1195	Still in Amazon bag not opened
+1196	Doesn’t fit my iPhone
+1197	I wanted bluetooth headphones and these are wired headphones. I have reordered the bluetooth version
+1198	daughter won't keep them on
+1199	Order 2 by accident. Only need 1
+1200	Purchased by mistake
+1201	Couldn’t connect well to my adapter
+1202	The charging case does not fit
+1203	package is unopened an plastic cover still intact
+1204	Didn't realize it was for iphone when I bought it.
+1205	Not compatible
+1206	Thought it was wireless.
+1207	Doesn’t have a microphone.
+1208	The wrong model. Did not open the box
+1209	NEED A NEW ONE FOR ANOTHER PHONE
+1210	I need wireless
+1211	Wrong output. Need C type.
+1212	i have a new iphone, i forgot to order the c connection.
+1213	Not compatible with my phone.
+1214	This item does not connect to our devices
+1215	This product is not compatible with my iPhone X
+1216	I didn’t realize I ordered 2
+1217	Kid wanted wireless headphones. This one turned out to be not the one the kid one.
+1218	Does not plug into my iphone 15pro.  I may have ordered incorrectly.
+1219	that headphone doesn't suit my using.
+1220	Wrong connector to my phone
+1221	I was looking for wireless
+1222	Wanted a different USB for Iphone 13, cannot be used, bought by mistake..
+1223	I bought headphones that turned out to be  incompatible with my IPhone 15.  Needed a USB-c cable for the headphones.
+1224	It's for adults and bought by mistake for kid
+1225	Wrong size for my iPhone 11.
+1226	Should have purchased Bluetooth not wired head phones.
+1227	Bought wrong mistake
+1228	Didn't realize it wasn't bluetooth
+1229	Malo
+1230	there was an issue when ordering headphones...my Amazon was stating that product was 'sold out' so I ordered a different pair, 4 different brands said they were 'sold out'.  I found one that did not say sold out and I bought that one, then this morning I had 5 different pairs of headphones show up at my front door so I must return 4 of them.  This is one Im returning
+1231	unfortunately these don't meet my needs, so I had to purchase a wireless pair THE PLASTIC. WRAPPER WAS OPENED, BUT THE PRODUCT WAS NOT USED
+1232	unfortunately they won't meet my needs, so I had to purchase a different type (wireless)
+1233	accidentally ordered 2 of these. Keeping 1. Returning the other unopened.
+1234	Headphones do not work with my phone
+1235	ordered two by mistake
+1236	This was a duplicate order by mistake.
+1237	Not the correct ones
+1238	orderd by mistake
+1239	Feels bulky
+1240	I needed the version which fits an iPhone 16. I ordered the wrong version.
+1241	Didn't realize they werent bluetooth
+1242	Purchased incorrect color
+1243	Error
+1244	I need the 3.5mm jack but bought the lightning adaptor plug version by mistake. I will be ordering the correct one.
+1245	Does not fit my iphone
+1246	Not opened, accidentally bought two
+1247	Package bought by mistake
+1248	Didn’t realize no Bluetooth
+1249	Game was more R-rated adult than I expected from description.  Not appropriate gift for 18 yr old nephew.
+1250	Jgc
+1251	Wrong type of connection
+1252	I wanted wireless headphones, didn't realize these weren't
+1253	Bought wrong item.
+1254	I thought it was in phone compatible. It is not I am sorry I must
+1255	It’s not wireless. The color that I clicked on wasn’t wireless and I didn’t realize.
+1256	Not the correct product I was looking for.
+1257	I thought I was buying a replacement set of the ones I've had - ones with the 3.5mm jack. Instead, I got the ones with the type C, which doesn't fit my computer or my phone.
+1258	Need a USB-C connection to the phone, not the current pin type
+1259	too short
+1260	Accidentally added this to my order, did not want to order it. unopened in original packaging
+1261	Duplicate item
+1262	WRONG PIN for MY iPHONE
+1263	Doesn’t work with iPhone 15
+1264	Did not realize item is 90% noise canceling, and need 100% noise canceling.
+1265	bought it in duplicate by mistake
+1266	Not a good fit
+1267	Looked too small
+1268	accidentally ordered two of the same thing
+1269	Bought 2 need 1
+1270	Accidently had 2 in the cart, needed 1
+1271	Needed Bluetooth and earbuds not earphones
+1272	Doesn’t work with phone
+1273	didnt realize they have a wire/arent wireless
+1274	Wasn’t wireless
+1275	Child refuse to use and bad quality
+1276	Misread the connection
+1277	does not fit my iphone 12
+1278	Was bought as a gift, they wanted a different one
+1279	Purchased two by mistake.
+1280	wrong for device intended
+1281	They wanted toddler over the ears headphones. These don’t cover the ears, so less noise protection
+1282	Bought the wrong connection cord
+1283	i ordered 2 by mistake
+1284	My Wife Does Not Like Them
+1285	it is to be used with an iPhone. I don't have an iPhone.
+1286	I need the "C" connector and not the "Lightning" so I will be replacing with the correct item
+1287	Didn't order the Bluetooth version.
+1288	Game is not appropriate for person I intended it for
+1289	It has wrong port.
+1290	Isn’t adaptable for blue tooth.
+1291	I bought this to use with a television, but the jack is not compatible so the sound cannot be adjusted through the headphones.
+1292	It is not compatible with my iPhone 16
+1293	Unused. Opened the box to realize it doesn’t connect to iPhone. Perfect condition.
+1294	I thought it was wireless but it’s wired
+1295	sound quality is too "high" and almost tinny sounding. I hear no bass whatsoever.
+1296	Accidentally bought an extra pair of earphones did not want these ones
+1297	Didn’t clear cart
+1298	Item does NOT work with iphone 14.
+1299	Ordered wrong style of headphones.
+1300	bought 2 by mistake
+1301	Wrong type cord, won’t plug into computer
+1302	Wrong connector ordered.  Needed for a Samsung Note phone.
+1303	Extra
+1304	ordered 2 by mistake
+1305	Already have it
+1306	Not comfortable to wear and sound quality is not as expected.
+1307	didnt want this brand
+1308	Purchased wrong color
