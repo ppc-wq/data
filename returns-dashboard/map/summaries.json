@@ -1,0 +1,729 @@
+{
+ "NOT_AS_DESCRIBED": {
+  "summary": "Almost all of these returns are wired headphones and earbuds. The biggest complaint is fit and comfort: they are too small or too big (especially for children), hurt the ears, or fall out. Next come sound that is tinny or has weak bass, the 'midnight blue' color arriving purple, connectors that don't match the buyer's phone or device, and 'noise cancelling' claims the product doesn't live up to. Only about 3-4% of comments are empty filler like 'Not as Expected' or 'No'.",
+  "themes": [
+   {
+    "theme": "Uncomfortable or poor fit",
+    "detail": "Ear cups too small or too large (often for kids or toddlers), headbands too tight, ears that hurt, and earbuds that won't stay in.",
+    "share": "~35%",
+    "quotes": [
+     "Not as Expected|Hurt when you wear them and too big for kids|No",
+     "They’re supposed to be for kids. Unless the kid is an Ogar they’re too big.",
+     "Ear pieces feel like they are sized for children not adults.  Too small for my ears."
+    ]
+   },
+   {
+    "theme": "Poor sound quality",
+    "detail": "Sound is described as tinny, muffled or thin with no bass. Buyers say it doesn't match the 'high-quality sound / deep bass' claims, and some mention static or volume that won't go low enough.",
+    "share": "~20%",
+    "quotes": [
+     "The sound is tinny and there is almost zero bass.",
+     "Bought 5 pieces. Opened one box and it sounds terrible and the remaining 4 are still in box unopened.",
+     "In no way can these be described as having \"High Audio Quality\""
+    ]
+   },
+   {
+    "theme": "Midnight blue looks purple",
+    "detail": "The listed 'midnight blue/navy' color arrives looking purple. There are a few other color complaints too (pink instead of red or black, silver accents on 'black').",
+    "share": "~9%",
+    "quotes": [
+     "Not as Expected|They are purple not blue",
+     "Not as Expected|These are purple, not midnight blue as described.",
+     "Not as Expected|Purple girl color - not good for my son|Thought would be more blue"
+    ]
+   },
+   {
+    "theme": "Wrong connector or incompatible",
+    "detail": "The plug doesn't fit the buyer's device (iPhone 16/17, USB-C vs 3.5mm vs Lightning, iPad, laptop, piano), or the cord is too short or too long.",
+    "share": "~9%",
+    "quotes": [
+     "these will not work with an iPhone 17. I went back and ordered the correct ones today.",
+     "Was expecting USB-C connector. Sent apple lightning connector",
+     "Not as Expected|I wanted a corded option that plugs into a USC. These are an Aux."
+    ]
+   },
+   {
+    "theme": "Not actually noise cancelling",
+    "detail": "The listing says 'noise cancelling', but these are passive headphones that block little or no background noise.",
+    "share": "~7%",
+    "quotes": [
+     "Description indicates these are noise cancelling but they are not",
+     "The description says it's noise canceling yet is unpowered and has no noise cancellation.",
+     "Not as Expected|Did not cancel plane noise|Described as noise csncelling"
+    ]
+   },
+   {
+    "theme": "Build quality / used items",
+    "detail": "Products feel cheap or flimsy, cords break or are noisy against clothing, and some units arrive opened, used or with ear wax.",
+    "share": "~6%",
+    "quotes": [
+     "Not as Expected|They were used sold as new|Ear wax on the earbuds",
+     "These wired earbuds are shoddy and cheaply made. I would not even want to put these in my ears.",
+     "Not as Expected|The cord is way too flimsy and loose. Poor quality|Yes, the images do not convey how fragile the cord is"
+    ]
+   },
+   {
+    "theme": "Microphone missing or weak",
+    "detail": "Buyers expected a mic or boom mic and there isn't one, or the inline mic is muffled or echoes on calls.",
+    "share": "~5%",
+    "quotes": [
+     "They don’t have a microphone so I can’t use them to take calls.",
+     "Not as Expected|Microphone is bad for calls|Yeah, microphone is muffled for calls",
+     "This product does not match the product  description.  It does NOT have a mic like it states."
+    ]
+   },
+   {
+    "theme": "Expected wireless/Bluetooth",
+    "detail": "Customers thought they were buying wireless or Bluetooth headphones, often admitting they misread the listing.",
+    "share": "~4%",
+    "quotes": [
+     "Not as Expected|Thought they were wireless|No I misread",
+     "Changed Mind|Not as Expected|It is only hardwire and not bluetooth",
+     "I didn’t realize that you had to order another part to charge the headphones and they weren’t wireless."
+    ]
+   }
+  ]
+ },
+ "DEFECTIVE": {
+  "summary": "Defective returns are dominated by wired earphones/headphones that produce no sound at all, play in only one ear, or sound distorted, staticky or muffled, often right out of the box or after a few days to weeks of use. Broken in-line volume/play controls and non-working microphones (callers can't hear the customer) are the other big functional complaints, with smaller groups citing intermittent connections, poor fit/comfort, or compatibility problems mislabeled as defects. Around 4-5% of comments are empty or generic (e.g. just \"Defective\", \"Not working\", \"Na\").",
+  "themes": [
+   {
+    "theme": "No sound / dead on arrival",
+    "detail": "Earphones produce no audio at all when plugged in, often across multiple devices, or stop working entirely after hours to a few weeks.",
+    "share": "~20%",
+    "quotes": [
+     "Connecting to computer, no sound, doesn’t work.",
+     "No sound after plugging into several devices.",
+     "Worked for like a day then just stopped"
+    ]
+   },
+   {
+    "theme": "Sound in one ear only",
+    "detail": "One earpiece (left or right) is silent, weak, or cuts in and out while the other side works.",
+    "share": "~17%",
+    "quotes": [
+     "The sound is only coming out of one side.  It is defective.",
+     "right side doesn't work only gets sound on left side. Tested it with multiple devices.",
+     "Worked fine for a week and then started only working in the left ear, sound comes and goes."
+    ]
+   },
+   {
+    "theme": "Distorted or poor sound",
+    "detail": "Audio is distorted, staticky, crackling, muffled, tinny or lacks bass, sometimes with constant hiss or white noise.",
+    "share": "~17%",
+    "quotes": [
+     "Sound is distorted",
+     "Constant loud white noise when plugged in regardless of if playing or not.",
+     "The sounds quality is really bad, sounds like a tin can"
+    ]
+   },
+   {
+    "theme": "Volume/inline controls broken",
+    "detail": "In-line volume, play/pause or mute buttons don't respond, jump between max and mute, change volume on their own, or sound only works while a button is held.",
+    "share": "~14%",
+    "quotes": [
+     "Volume buttons do not work",
+     "If you push the up button once, it goes to maximum volume.  If you push the down button, it jumps to very low.",
+     "Sound only came through when holding volume button"
+    ]
+   },
+   {
+    "theme": "Intermittent connection / loose plug",
+    "detail": "Sound cuts in and out or the device keeps disconnecting due to a loose plug, short in the cord or flaky connector.",
+    "share": "~10%",
+    "quotes": [
+     "I have to jiggle the plug or unplug and replug to get it to work.",
+     "The lightening connector is to loose and doesn’t make a good connection.",
+     "Sound cuts in and out"
+    ]
+   },
+   {
+    "theme": "Microphone not working",
+    "detail": "The mic doesn't pick up voice or sounds garbled/distant, so callers can't hear the customer on phone or Zoom calls.",
+    "share": "~7%",
+    "quotes": [
+     "Defective|Microphone not working",
+     "Everyone I called said it sounded like I was in a tunnel",
+     "When I answer phone calls, nobody can hear me."
+    ]
+   },
+   {
+    "theme": "Fit and comfort issues",
+    "detail": "Earbuds fall out, are too small or too big, or are uncomfortable or painful to wear even with alternate tips.",
+    "share": "~8%",
+    "quotes": [
+     "they keep falling out of my ears tried every one",
+     "too small for ears",
+     "I tried all three earbud sizes and all three of them did not fit my ears."
+    ]
+   },
+   {
+    "theme": "Compatibility, noise and used items",
+    "detail": "Smaller groups report wrong connector or device incompatibility, lack of noise cancelling, volume too loud even at minimum, or items that arrived used, opened or damaged.",
+    "share": "~12%",
+    "quotes": [
+     "Does not work on my iphone|Plug in",
+     "this were supossed to be noise canceling.  we could here everything.",
+     "Package looked like it had been opened/returned already."
+    ]
+   }
+  ]
+ },
+ "NOT_COMPATIBLE": {
+  "summary": "Most compatibility returns come down to the wrong plug: customers needed USB-C or Lightning (especially for newer iPhones and iPads) or a different jack size, and the wired product did not fit their port. Others report the headphones not working with specific devices (laptops, Chromebooks, school computers, pianos, game consoles), expected Bluetooth/wireless, or use the code for physical fit, missing or non-working mic, volume control and sound quality issues. Roughly 10% of comments are empty or one-word (e.g. \"Not Compatible\", \"Yes\", \"Phone\", \"Port\").",
+  "themes": [
+   {
+    "theme": "Wrong plug or connector",
+    "detail": "The connector (3.5mm vs USB-C vs Lightning, jack size) didn't match the customer's port, often admitted as ordering the wrong version.",
+    "share": "~30%",
+    "quotes": [
+     "Wrong plug",
+     "did not fit our Samsung 24 devices.  It was not a USB-C connector.",
+     "Has 3.5mm jack, need usb-c"
+    ]
+   },
+   {
+    "theme": "Doesn't work with iPhone/iPad",
+    "detail": "Customers say the product doesn't fit or isn't supported on their iPhone or iPad, sometimes despite the listing claiming compatibility.",
+    "share": "~15%",
+    "quotes": [
+     "It says it was compatible with iphone....but it is not.",
+     "ipad 10gen isn’t connecting but will connect to iphone",
+     "Works for 30 seconds and then says it is not supported"
+    ]
+   },
+   {
+    "theme": "Other device incompatibility",
+    "detail": "Headphones don't work properly with laptops, Chromebooks, school or work computers, pianos, game consoles, TVs or other equipment.",
+    "share": "~18%",
+    "quotes": [
+     "Not compatible with laptop",
+     "The headphones do not work with the computers at my daughter’s school.",
+     "Input did not work with digital piano"
+    ]
+   },
+   {
+    "theme": "Physical fit / size",
+    "detail": "Headphones or earbuds are too big, too small, uncomfortable or won't stay in the ears, often for children.",
+    "share": "~10%",
+    "quotes": [
+     "Too small",
+     "Too large do not fit",
+     "Did not fit my son’s head. Too big."
+    ]
+   },
+   {
+    "theme": "Expected wireless/Bluetooth",
+    "detail": "Buyers wanted Bluetooth or wireless headphones and didn't realize the item is wired.",
+    "share": "~6%",
+    "quotes": [
+     "Needed wireless",
+     "I thought they were Bluetooth and my sons device the headphone won’t work in",
+     "Phone doesn’t have a place to plug them in. Thought they were wireless."
+    ]
+   },
+   {
+    "theme": "Volume control not working",
+    "detail": "In-line volume control doesn't work with the customer's system or device, a recurring note from multi-user setups.",
+    "share": "~3%",
+    "quotes": [
+     "the volume control doesn't work in conjunction with the system that I am using them on.",
+     "Volume does not work with our ASUS laptop"
+    ]
+   },
+   {
+    "theme": "Microphone or call issues",
+    "detail": "No microphone, mic doesn't work with the device, or people can't hear the customer on calls.",
+    "share": "~5%",
+    "quotes": [
+     "No microphone",
+     "Na|People can not hear us",
+     "Phone calls do not work - only music"
+    ]
+   },
+   {
+    "theme": "Poor sound quality",
+    "detail": "Sound quality is described as terrible, screeching or unclear.",
+    "share": "~3%",
+    "quotes": [
+     "Uselessly terrible sound quality",
+     "Screeches when put on. Sound quality off",
+     "VERY POOR sound quality"
+    ]
+   }
+  ]
+ },
+ "UNWANTED_ITEM": {
+  "summary": "Most of these returns are simple changes of mind. Nearly half use only the stock 'My needs changed' option or say 'no longer needed', and about one in six found or kept another product. The free-text comments that do explain more mention unwanted gifts, wanting wireless/Bluetooth or a different plug or feature, fit and comfort, accidental duplicate orders and late delivery. Roughly 4% are placeholder text such as 'Na', 'N' or 'J'.",
+  "themes": [
+   {
+    "theme": "Needs changed / not needed",
+    "detail": "Customers chose the stock 'My needs changed' option or wrote some form of 'no longer needed', often adding that the item is unopened or fine.",
+    "share": "~48%",
+    "quotes": [
+     "Changed Mind|My needs changed",
+     "No longer needed",
+     "Product is fine just don’t need them anymore"
+    ]
+   },
+   {
+    "theme": "Found or kept another item",
+    "detail": "Customers found another product, ordered several to compare, bought elsewhere or found their old pair.",
+    "share": "~17%",
+    "quotes": [
+     "Changed Mind|Found other item",
+     "I kept another one I ordered after looking at all of them",
+     "Son found his old pair"
+    ]
+   },
+   {
+    "theme": "Unwanted or duplicate gift",
+    "detail": "The item was bought as a gift, and the recipient didn't want it, already had one or wanted something different.",
+    "share": "~7%",
+    "quotes": [
+     "Changed Mind|This is a gift",
+     "Bought for my granddaughter's birthday, but they already had them.",
+     "Received a duplicate gift."
+    ]
+   },
+   {
+    "theme": "Wrong type: wireless, plug or feature",
+    "detail": "Customers realized they needed Bluetooth/wireless, a different connector (USB-C, Lightning) or a feature like a mic or noise cancelling.",
+    "share": "~6%",
+    "quotes": [
+     "We thought these were blue tooth compatible. No longer needed now.",
+     "Need USB c not headphones jack.",
+     "Bought by mistake. Needed something without microphone."
+    ]
+   },
+   {
+    "theme": "Fit, comfort or sound dislike",
+    "detail": "Some customers said the headphones were uncomfortable, didn't fit, fell out or sounded worse than they hoped.",
+    "share": "~4%",
+    "quotes": [
+     "Hurts my ears",
+     "Earbuds kept falling out when using.",
+     "I just don't like the sound quality not that much bass"
+    ]
+   },
+   {
+    "theme": "Accidental duplicate order",
+    "detail": "Customers ordered two by mistake and are returning the extra.",
+    "share": "~2%",
+    "quotes": [
+     "Accidentally bought 2",
+     "Changed Mind|My needs changed|Added two in cart by mistake"
+    ]
+   },
+   {
+    "theme": "Arrived too late / color",
+    "detail": "A small group returned because the item arrived after a trip or event, or the color wasn't what they wanted (often more purple than blue).",
+    "share": "~2%",
+    "quotes": [
+     "Arrived too late",
+     "Didn’t arrive in time for trip",
+     "Color was more purple than blue"
+    ]
+   }
+  ]
+ },
+ "ORDERED_WRONG_ITEM": {
+  "summary": "Customers mostly admit to ordering mistakes, chiefly ordering too many or duplicates, or a generic 'bought by mistake'. The most common specific mistake is the wrong connector for their phone or tablet (USB-C vs 3.5mm vs Lightning, iPhone model compatibility), followed by buyers who wanted wireless/Bluetooth or a feature these wired headphones lack (microphone, true noise cancelling, air-tube/EMF). About 5% are placeholders like 'NA'.",
+  "themes": [
+   {
+    "theme": "Ordered too many / duplicate",
+    "detail": "The largest group accidentally ordered two or more units, or ordered twice.",
+    "share": "~25%",
+    "quotes": [
+     "Ordering Issue|Ordered too many",
+     "Accidentally ordered 2. I only need 1.",
+     "Double ordered by mistake"
+    ]
+   },
+   {
+    "theme": "Wrong connector or device fit",
+    "detail": "The plug didn't match the customer's device: they needed USB-C or Lightning, or the item didn't fit their iPhone/Android/iPad.",
+    "share": "~15%",
+    "quotes": [
+     "Wrong connector",
+     "Bought the one with th lightning plug. I need the USB c",
+     "I have an iPhone 15 and this device only works up to a 14."
+    ]
+   },
+   {
+    "theme": "Generic bought by mistake",
+    "detail": "Customers wrote 'bought by mistake' or chose the 'Ordered wrong item' option without saying more.",
+    "share": "~14%",
+    "quotes": [
+     "Bought by mistake",
+     "Ordering Issue|Ordered wrong item",
+     "Picked incorrect item. Isn’t opened"
+    ]
+   },
+   {
+    "theme": "Wanted wireless / Bluetooth",
+    "detail": "Customers didn't realize the headphones are wired and needed Bluetooth.",
+    "share": "~8%",
+    "quotes": [
+     "Meant to purchase Bluetooth, these have the cord to plug in.",
+     "I didn’t realize they were wired headphones I needed wireless"
+    ]
+   },
+   {
+    "theme": "Missing mic, ANC or air-tube",
+    "detail": "Customers expected a microphone, true noise cancelling or the air-tube/EMF model, which this item doesn't have.",
+    "share": "~7%",
+    "quotes": [
+     "Needed true noise cancelling headphones phones, misleading noise cancelling description",
+     "Need one with a mic",
+     "I thought they were air tube they are not"
+    ]
+   },
+   {
+    "theme": "No longer needed / already owned",
+    "detail": "Customers no longer needed the item or already had a pair.",
+    "share": "~5%",
+    "quotes": [
+     "No longer needed",
+     "I have one already"
+    ]
+   },
+   {
+    "theme": "Fit, comfort, sound or color",
+    "detail": "A few cite discomfort, size, sound quality or the wrong color (blue that looks purple).",
+    "share": "~5%",
+    "quotes": [
+     "Thought the color was blue. It is more of a purple",
+     "the ear pieces hurt my ear, don't fit correctly",
+     "Not a very clear sounding headphone. Muffled and distorted sound."
+    ]
+   }
+  ]
+ },
+ "FOUND_BETTER_PRICE": {
+  "summary": "Most of these returns use only the stock 'Found a better price' option. Where a source is named, it is usually Amazon itself (a different product or a Prime Day/Black Friday deal), with Temu, TikTok Shop, Best Buy and Five Below also mentioned. A few customers also say the quality was low.",
+  "themes": [
+   {
+    "theme": "Stock better-price reason",
+    "detail": "These comments contain only the stock option text, or a short 'better price' note.",
+    "share": "~70%",
+    "quotes": [
+     "Changed Mind|Found a better price",
+     "Better price available"
+    ]
+   },
+   {
+    "theme": "Named cheaper source",
+    "detail": "Customers named where they found it cheaper: Amazon (another brand or a sale) or other retailers.",
+    "share": "~15%",
+    "quotes": [
+     "Amazon has lower price for Prime Day",
+     "Better price available on tiktok shop",
+     "Found Samsung headphones for cheaper"
+    ]
+   },
+   {
+    "theme": "Better quality for the money",
+    "detail": "Some say the product felt cheap or low quality next to the alternative.",
+    "share": "~8%",
+    "quotes": [
+     "These are cheaply made, found a better pair for the same price",
+     "Very low quality."
+    ]
+   }
+  ]
+ },
+ "QUALITY_UNACCEPTABLE": {
+  "summary": "Complaints are mostly about sound: poor, muffled, flat or too quiet audio. Next come comfort and fit problems such as pain, earbuds not staying in and loose headbands. A smaller group says the microphone or noise cancelling performs poorly or the build feels cheap.",
+  "themes": [
+   {
+    "theme": "Poor sound quality",
+    "detail": "Audio is described as bad, muffled, flat, too quiet or carrying cable noise.",
+    "share": "~45%",
+    "quotes": [
+     "Bad sound quality",
+     "too muffled",
+     "Sound transferred along wire, didnt' meet expectations"
+    ]
+   },
+   {
+    "theme": "Discomfort and poor fit",
+    "detail": "The headphones hurt the ears or head, earbuds don't stay in, or the headband slides off.",
+    "share": "~25%",
+    "quotes": [
+     "Causes head pain and headache",
+     "Don’t stay in my ears",
+     "Uncomfortable on ears and sound quality is poor"
+    ]
+   },
+   {
+    "theme": "Weak mic / noise cancelling",
+    "detail": "Customers say the microphone is muffled or noisy and noise cancelling doesn't work.",
+    "share": "~12%",
+    "quotes": [
+     "The microphone is extremely muffled unless it is held up by my mouth",
+     "Noise canceling doesn't work well"
+    ]
+   },
+   {
+    "theme": "Feels cheap / general dislike",
+    "detail": "Some give only a vague dislike or say the build feels cheap.",
+    "share": "~12%",
+    "quotes": [
+     "Feels cheap",
+     "These are very cheaply made."
+    ]
+   }
+  ]
+ },
+ "MISSED_ESTIMATED_DELIVERY": {
+  "summary": "Customers say the item arrived after they needed it, usually for a trip, flight, vacation, the start of school, an online test or Christmas. Many bought a replacement elsewhere in the meantime. A few mention lost or rerouted packages and orders they couldn't cancel.",
+  "themes": [
+   {
+    "theme": "Arrived too late to use",
+    "detail": "These are plain 'late' or 'too late' comments, often a day past the promised date.",
+    "share": "~50%",
+    "quotes": [
+     "Delivery Issue|Item was late|Late",
+     "delivery was suppose to be 2/15 and It arrive late on 2/16"
+    ]
+   },
+   {
+    "theme": "Missed trip or event",
+    "detail": "The item was needed for travel, school, a test or a holiday and arrived after it.",
+    "share": "~30%",
+    "quotes": [
+     "Didn’t arrive in time for trip",
+     "I expected this item before I left for vacation it showed up after I left.",
+     "Delivery Issue|Item was late|Not here for Christmas"
+    ]
+   },
+   {
+    "theme": "Bought replacement elsewhere",
+    "detail": "Customers reordered or bought another pair in a store after the delay.",
+    "share": "~15%",
+    "quotes": [
+     "Far too late - needed sooner and had to buy elsewhere.",
+     "Reordered due to original order getting lost in transit"
+    ]
+   },
+   {
+    "theme": "Cancel or lost-order confusion",
+    "detail": "Some report cancelled orders that still arrived, or lost or misrouted packages.",
+    "share": "~6%",
+    "quotes": [
+     "Cancelled order but still received",
+     "Delivery was shipped to incorrect facility and took longer than promised"
+    ]
+   }
+  ]
+ },
+ "APPAREL_TOO_SMALL": {
+  "summary": "Customers say the headphones are too small or tight: ear cups don't cover the ears, and the headband pinches and hurts after a while. Some say earbuds fall out, and a couple say the cord is too short.",
+  "themes": [
+   {
+    "theme": "Too small / doesn't fit",
+    "detail": "The headphones are too small for the head or ears, and the ear cups don't fit over the ears.",
+    "share": "~50%",
+    "quotes": [
+     "too small",
+     "Doesn’t fit over ears",
+     "Too small for over ear. No other issue."
+    ]
+   },
+   {
+    "theme": "Tight and painful",
+    "detail": "Customers say the headphones are tight and hurt the ears or head with longer wear.",
+    "share": "~25%",
+    "quotes": [
+     "The head set is too small and smashes ears",
+     "the ear pads hurt my ears if used for long periods on conf calls"
+    ]
+   },
+   {
+    "theme": "Earbuds fall out",
+    "detail": "Some say the earbuds don't stay in the ear canal.",
+    "share": "~8%",
+    "quotes": [
+     "The ear buds do not stay in my ears at all when I move around"
+    ]
+   },
+   {
+    "theme": "Cord too short / other",
+    "detail": "A few mention a short cord, wanting wireless or not needing the item.",
+    "share": "~8%",
+    "quotes": [
+     "Cord was too short",
+     "Found a wireless headphone model"
+    ]
+   }
+  ]
+ },
+ "SWITCHEROO": {
+  "summary": "Many of these 'received wrong item' comments are about color, especially headphones ordered as blue or navy that arrived purple. Others describe a connector or model mismatch (USB-C vs Lightning, iPhone 14 vs 17) or expected wireless or a mic. A few report duplicate boxes or a used, different product in the box.",
+  "themes": [
+   {
+    "theme": "Wrong color (blue vs purple)",
+    "detail": "Customers ordered blue, navy or another color and received purple or a different color.",
+    "share": "~38%",
+    "quotes": [
+     "Received Wrong Item|Ordered midnight blue and received purple instead",
+     "Received Wrong Item|Wrong color"
+    ]
+   },
+   {
+    "theme": "Wrong connector or model",
+    "detail": "The plug or phone version didn't match what the customer thought they ordered.",
+    "share": "~28%",
+    "quotes": [
+     "iPhone 14 not iPhone 17",
+     "Need USB C Was certain that’s what I ordered.",
+     "Item is iPhone lightning and not 3.5mm jack as listed."
+    ]
+   },
+   {
+    "theme": "Expected wireless / mic / features",
+    "detail": "Customers expected wireless, a microphone or in-line controls.",
+    "share": "~15%",
+    "quotes": [
+     "ARTIX CL750 Wired Headphones. I ordered wireless.",
+     "Thought this had a microphone"
+    ]
+   },
+   {
+    "theme": "Duplicate or wrong product sent",
+    "detail": "Customers received duplicate boxes or an entirely different, used product.",
+    "share": "~8%",
+    "quotes": [
+     "you sent duplicate boxes",
+     "The box contained pink generic USED headphones."
+    ]
+   }
+  ]
+ },
+ "UNAUTHORIZED_PURCHASE": {
+  "summary": "Most of these returns use the stock 'Accidental purchase' or 'Unauthorized purchase' option, and a few customers say they didn't order or approve the item. The rest describe ordinary product complaints such as fit, size or no noise cancelling.",
+  "themes": [
+   {
+    "theme": "Accidental purchase",
+    "detail": "These use the stock accidental-purchase text, sometimes naming the variant they meant to buy.",
+    "share": "~50%",
+    "quotes": [
+     "Ordering Issue|Accidental purchase",
+     "Ordering Issue|Accidental purchase|I meant to order the airtube version"
+    ]
+   },
+   {
+    "theme": "Unauthorized / not approved",
+    "detail": "These use the stock unauthorized option or say the customer didn't order or approve the item.",
+    "share": "~25%",
+    "quotes": [
+     "Ordering Issue|Unauthorized purchase",
+     "Didnt approve",
+     "I didn't order this product."
+    ]
+   },
+   {
+    "theme": "Product complaints",
+    "detail": "Some comments are really fit or performance complaints.",
+    "share": "~15%",
+    "quotes": [
+     "Too big",
+     "Very uncomfortable because they pop out of your ears every 2 minutes."
+    ]
+   }
+  ]
+ },
+ "APPAREL_TOO_LARGE": {
+  "summary": "Most comments say the headphones are too big for a child's or toddler's head and slip or fall off. Adults also mention bulky or overly wide headbands and limited adjustment.",
+  "themes": [
+   {
+    "theme": "Too big for kids",
+    "detail": "Parents say the headphones are too large for a child or toddler and fall off.",
+    "share": "~40%",
+    "quotes": [
+     "Too big for my child’s head.",
+     "Too big for toddler",
+     "Headphones look small for kids but they are large."
+    ]
+   },
+   {
+    "theme": "Too big / loose in general",
+    "detail": "The headphones are too big, loose or wide and slip off.",
+    "share": "~40%",
+    "quotes": [
+     "Too big",
+     "Too wide when placed on head and falls off when looking down",
+     "Not adjustable and too large"
+    ]
+   },
+   {
+    "theme": "Other mismatches",
+    "detail": "A few mention a cord that's too long, the mic placement or connector.",
+    "share": "~10%",
+    "quotes": [
+     "The cord is too long for my daughter"
+    ]
+   }
+  ]
+ },
+ "DAMAGED_BY_FC": {
+  "summary": "Customers received items that arrived damaged or appeared used. The most common problems are a bent or broken plug, an opened package or visible wear, and earpieces with no sound.",
+  "themes": [
+   {
+    "theme": "Bent or broken plug",
+    "detail": "The 3.5mm plug was bent, chipped or broken off.",
+    "share": "~35%",
+    "quotes": [
+     "Damaged|No|Plug bent",
+     "Damaged|No|The plug is broken off"
+    ]
+   },
+   {
+    "theme": "Used or opened item",
+    "detail": "The package was already open or the item showed signs of use.",
+    "share": "~40%",
+    "quotes": [
+     "one package was already open with some slight scraps on headphone.",
+     "Damaged|No|Used. Ear wax and hair on the product"
+    ]
+   },
+   {
+    "theme": "No sound",
+    "detail": "One or both earpieces produced no sound.",
+    "share": "~15%",
+    "quotes": [
+     "Damaged|No|Doesn't play out of left ear phone"
+    ]
+   }
+  ]
+ },
+ "MISSING_PARTS": {
+  "summary": "There are only two comments. One says the earbuds were missing and the other says the item doesn't work.",
+  "themes": [
+   {
+    "theme": "Missing buds / not working",
+    "detail": "The two comments report missing buds and a non-working unit.",
+    "share": "~100%",
+    "quotes": [
+     "Delivery Issue|Item is missing parts|Buds",
+     "it doesn't work"
+    ]
+   }
+  ]
+ },
+ "DAMAGED_BY_CARRIER": {
+  "summary": "There are only two comments. Both report a damaged box, and one also says the product inside was damaged or had been used.",
+  "themes": [
+   {
+    "theme": "Damaged box / used item",
+    "detail": "The box arrived damaged, with the product used or also damaged.",
+    "share": "~100%",
+    "quotes": [
+     "Product isn’t damaged, but has been used. Box damaged.",
+     "Damaged|Yes|Box damaged and internal is damaged"
+    ]
+   }
+  ]
+ }
+}

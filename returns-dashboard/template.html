@@ -1,4 +1,4 @@
-<title>Возвраты Amazon 2026</title>
+<title>Amazon Returns 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -156,384 +156,552 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
+<style>
+/* v2 additions */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+.tabs a{font:500 14px/1 var(--sans);color:var(--ink-2);text-decoration:none;padding:10px 14px;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs a[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs a .cnt{font:11px var(--mono);color:var(--ink-3);margin-left:6px}
+.banner{border:1px solid color-mix(in srgb,var(--warn) 45%,var(--line));background:var(--warn-soft);border-radius:8px;padding:10px 14px;font-size:13px}
+.seg.small button{padding:5px 9px;font-size:12.5px}
+.rgroup{display:flex;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding-block:4px}
+.rgroup:last-child{border-bottom:0}
+.rsub{padding-left:14px}
+.rsub .rrow{padding-block:3px;font-size:13px}
+.rsub .rbar{height:3px}
+.rsub .rbar i{background:color-mix(in srgb,var(--accent) 55%,var(--surface))}
+.cat{display:inline-block;font-size:12px;padding:1px 7px;border-radius:4px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.summaries{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.scard{border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;background:var(--surface)}
+.scard h3{font-size:16px}
+.scard .sum{color:var(--ink-2);font-size:13.5px}
+.theme{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding-top:8px;border-top:1px solid var(--line)}
+.theme b{font-weight:600;font-size:13.5px}
+.theme .sh{font:500 12px var(--mono);color:var(--accent-ink);text-align:right}
+.theme p{grid-column:1/-1;margin:0;font-size:13px;color:var(--ink-2)}
+.theme q{grid-column:1/-1;font-size:12.5px;color:var(--ink);font-style:italic;quotes:"\201C" "\201D"}
+.phrases{display:flex;flex-wrap:wrap;gap:6px}
+.phrase{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 10px;font-size:12.5px;cursor:pointer;color:var(--ink)}
+.phrase span{font:11px var(--mono);color:var(--ink-3);margin-left:6px}
+.phrase:hover{border-color:var(--accent)}
+.clist td{white-space:normal;vertical-align:top}
+.clist td.txt{text-align:left;min-width:280px;max-width:640px;line-height:1.45}
+.clist td.txt mark{background:var(--accent-soft);color:inherit;border-radius:2px}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between}
+.pager{display:flex;gap:10px;align-items:center;justify-content:center;padding-top:6px}
+</style>
 <div class="wrap">
   <header>
     <div class="meta">
       <span class="eyebrow">Amazon Seller Central · FBA returns · US</span>
-      <h1>Возвраты Amazon 2026</h1>
+      <h1>Amazon Returns 2026</h1>
       <span class="muted small" id="period"></span>
     </div>
     <div class="coverage" id="coverage"></div>
   </header>
 
-  <div class="filters" role="region" aria-label="Фильтры">
-    <div class="field"><label for="f-acct">Аккаунт</label><select id="f-acct"></select></div>
+  <div class="banner" id="map-banner" hidden></div>
+
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <a href="#overview" id="t-overview" role="tab" aria-selected="true">Overview</a>
+    <a href="#comments" id="t-comments" role="tab" aria-selected="false">Customer comments<span class="cnt" id="t-ccount"></span></a>
+  </nav>
+
+  <div class="filters" role="region" aria-label="Filters">
+    <div class="field"><label for="f-acct">Account</label><select id="f-acct"></select></div>
+    <div class="field"><label for="f-cat">Category</label><select id="f-cat"></select></div>
     <div class="field"><label for="f-asin">ASIN</label><select id="f-asin"></select></div>
-    <div class="field"><label for="f-reason">Причина</label><select id="f-reason"></select></div>
-    <div class="field"><label for="f-disp">Состояние товара</label><select id="f-disp"></select></div>
-    <div class="field"><label>База для %</label>
-      <div class="seg" role="group" aria-label="База для процента возвратов">
-        <button type="button" id="b-same" aria-pressed="true" title="Возвраты месяца / продажи того же месяца">Тот же месяц</button>
-        <button type="button" id="b-prev" aria-pressed="false" title="Возвраты месяца / продажи предыдущего месяца">Прошлый месяц</button>
+    <div class="field"><label for="f-group">Reason group</label><select id="f-group"></select></div>
+    <div class="field"><label for="f-disp">Item condition</label><select id="f-disp"></select></div>
+    <div class="field"><label>Return rate base</label>
+      <div class="seg" role="group" aria-label="Return rate base">
+        <button type="button" id="b-same" aria-pressed="true" title="Returns in a month ÷ units sold in the same month">Same month</button>
+        <button type="button" id="b-prev" aria-pressed="false" title="Returns in a month ÷ units sold in the previous month">Previous month</button>
       </div>
     </div>
-    <button type="button" class="btn" id="reset">Сбросить</button>
+    <button type="button" class="btn" id="reset">Reset</button>
     <div class="active-filters" id="active"></div>
   </div>
 
-  <section class="kpis" id="kpis" aria-label="Итоги"></section>
+  <div id="v-overview" role="tabpanel" aria-labelledby="t-overview" style="display:flex;flex-direction:column;gap:20px">
+    <section class="kpis" id="kpis" aria-label="Totals"></section>
 
-  <div class="grid2">
+    <div class="grid2">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Return rate by month</h2>
+          <div class="legend"><span><i style="background:var(--accent)"></i>return rate</span><span><i style="background:var(--sold)"></i>units sold</span></div>
+        </div>
+        <div class="chart" id="rate-chart"></div>
+        <div class="chart" id="sold-chart"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Return reasons</h2>
+          <span class="muted small" id="reason-sub"></span>
+        </div>
+        <div class="reasons" id="reasons"></div>
+        <button type="button" class="more" id="more-reasons" hidden></button>
+      </section>
+    </div>
+
     <section class="panel">
       <div class="panel-head">
-        <h2>Процент возвратов по месяцам</h2>
-        <div class="legend"><span><i style="background:var(--accent)"></i>% возвратов</span><span><i style="background:var(--sold)"></i>продано, шт.</span></div>
+        <h2>Reasons by month, units</h2>
+        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <div class="seg small" role="group" aria-label="Heatmap rows">
+            <button type="button" id="h-group" aria-pressed="true">Reason groups</button>
+            <button type="button" id="h-reason" aria-pressed="false">Detailed reasons</button>
+          </div>
+          <div class="scale" id="heat-scale"></div>
+        </div>
       </div>
-      <div class="chart" id="rate-chart"></div>
-      <div class="chart" id="sold-chart"></div>
+      <div class="tscroll"><table class="heat" id="heat"></table></div>
     </section>
+
     <section class="panel">
-      <div class="panel-head">
-        <h2>Причины возвратов</h2>
-        <span class="muted small" id="reason-sub"></span>
-      </div>
-      <div class="reasons" id="reasons"></div>
-      <button type="button" class="more" id="more-reasons" hidden></button>
+      <div class="panel-head"><h2>By month</h2><span class="muted small">Follows the filters above</span></div>
+      <div class="tscroll"><table id="months"></table></div>
     </section>
+
+    <section class="panel">
+      <div class="search-row">
+        <h2 id="prod-title">By category</h2>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <div class="seg small" role="group" aria-label="Group table by">
+            <button type="button" id="g-cat" aria-pressed="true">Category</button>
+            <button type="button" id="g-asin" aria-pressed="false">ASIN</button>
+          </div>
+          <input type="search" id="q" placeholder="Search category, ASIN or title" aria-label="Search category, ASIN or title">
+        </div>
+      </div>
+      <div class="tscroll" style="max-height:620px;overflow-y:auto"><table id="asins"></table></div>
+      <span class="muted small">Click a row to filter by it. The trend line shows the monthly return rate.</span>
+    </section>
+
+    <details class="method">
+      <summary>How the numbers are calculated</summary>
+      <ul id="method"></ul>
+    </details>
   </div>
 
-  <section class="panel">
-    <div class="panel-head">
-      <h2>Причины по месяцам, шт.</h2>
-      <div class="scale" id="heat-scale"></div>
-    </div>
-    <div class="tscroll"><table class="heat" id="heat"></table></div>
-  </section>
-
-  <section class="panel">
-    <div class="panel-head"><h2>Помесячно</h2><span class="muted small">Учитывает фильтры сверху</span></div>
-    <div class="tscroll"><table id="months"></table></div>
-  </section>
-
-  <section class="panel">
-    <div class="search-row">
-      <h2>ASIN</h2>
-      <input type="search" id="q" placeholder="Поиск по ASIN или названию" aria-label="Поиск по ASIN или названию">
-    </div>
-    <div class="tscroll" style="max-height:620px;overflow-y:auto"><table id="asins"></table></div>
-    <span class="muted small">Клик по строке выбирает ASIN в фильтре. Тренд показывает % возвратов по месяцам.</span>
-  </section>
-
-  <details class="method">
-    <summary>Как считаются цифры</summary>
-    <ul id="method"></ul>
-  </details>
+  <div id="v-comments" role="tabpanel" aria-labelledby="t-comments" hidden style="flex-direction:column;gap:20px">
+    <section class="panel">
+      <div class="panel-head"><h2>What customers say</h2><span class="muted small" id="sum-sub"></span></div>
+      <div class="summaries" id="summaries"></div>
+      <button type="button" class="more" id="sum-more" hidden></button>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><h2>Most frequent comments</h2><span class="muted small">Exact repeats, after trimming case and punctuation. Click to search.</span></div>
+      <div class="phrases" id="phrases"></div>
+    </section>
+    <section class="panel">
+      <div class="toolbar">
+        <h2 id="clist-title">Comments</h2>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">
+          <div class="field"><label for="c-reason">Detailed reason</label><select id="c-reason"></select></div>
+          <div class="field"><label for="c-q">Search</label><input type="search" id="c-q" placeholder="Word or phrase" aria-label="Search comments"></div>
+        </div>
+      </div>
+      <div class="tscroll"><table class="clist" id="clist"></table></div>
+      <div class="pager"><button type="button" class="btn" id="c-more" hidden>Show more</button><span class="muted small" id="c-shown"></span></div>
+    </section>
+  </div>
 </div>
 
 <script>
 const D = /*DATA*/null;
-const REASON_RU = {
-  UNWANTED_ITEM:'Больше не нужен', NOT_AS_DESCRIBED:'Не соответствует описанию', DEFECTIVE:'Брак, не работает',
-  NOT_COMPATIBLE:'Несовместим', ORDERED_WRONG_ITEM:'Заказан не тот товар', MISORDERED:'Ошибка при заказе',
-  UNDELIVERABLE_UNKNOWN:'Не доставлен', QUALITY_UNACCEPTABLE:'Низкое качество', FOUND_BETTER_PRICE:'Нашёл дешевле',
-  MISSED_ESTIMATED_DELIVERY:'Опоздала доставка', MISSING_PARTS:'Не хватает деталей', DAMAGED_BY_CARRIER:'Повреждён перевозчиком',
-  DAMAGED_BY_FC:'Повреждён на складе Amazon', NEVER_ARRIVED:'Не пришёл', SWITCHEROO:'Вернули другой товар',
-  UNAUTHORIZED_PURCHASE:'Покупка без согласия', NO_REASON_GIVEN:'Причина не указана', APPAREL_TOO_LARGE:'Велик по размеру',
-  APPAREL_TOO_SMALL:'Мал по размеру', EXTRA_ITEM:'Лишний товар', UNDELIVERABLE_REFUSED:'Отказ от получения',
-  UNDELIVERABLE_INSUFFICIENT_ADDRESS:'Неполный адрес', UNDELIVERABLE_FAILED_DELIVERY_ATTEMPTS:'Не удалось доставить', UNKNOWN:'Не указана'
+const REASON_EN = {
+  UNWANTED_ITEM:'No longer needed', NOT_AS_DESCRIBED:'Not as described', DEFECTIVE:'Defective / does not work',
+  NOT_COMPATIBLE:'Not compatible', ORDERED_WRONG_ITEM:'Ordered wrong item', MISORDERED:'Misordered',
+  UNDELIVERABLE_UNKNOWN:'Undeliverable', QUALITY_UNACCEPTABLE:'Quality unacceptable', FOUND_BETTER_PRICE:'Found better price',
+  MISSED_ESTIMATED_DELIVERY:'Missed delivery estimate', MISSING_PARTS:'Missing parts', DAMAGED_BY_CARRIER:'Damaged by carrier',
+  DAMAGED_BY_FC:'Damaged at Amazon FC', NEVER_ARRIVED:'Never arrived', SWITCHEROO:'Different item returned',
+  UNAUTHORIZED_PURCHASE:'Unauthorized purchase', NO_REASON_GIVEN:'No reason given', APPAREL_TOO_LARGE:'Too large',
+  APPAREL_TOO_SMALL:'Too small', EXTRA_ITEM:'Extra item', UNKNOWN:'Not specified'
 };
-const DISP_RU = {SELLABLE:'Годен к продаже', CUSTOMER_DAMAGED:'Повреждён покупателем', DEFECTIVE:'Брак', CARRIER_DAMAGED:'Повреждён перевозчиком', DAMAGED:'Повреждён', UNKNOWN:'Не указано'};
-const MON_RU = ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'];
-const MON_FULL = ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
-const rn = c => REASON_RU[c] || c.replace(/_/g,' ').toLowerCase();
-const dn = c => DISP_RU[c] || c;
-const mLabel = i => MON_RU[+D.months[i].slice(5)-1];
-const fmt = n => n.toLocaleString('ru-RU');
+const DISP_EN = {SELLABLE:'Sellable', CUSTOMER_DAMAGED:'Customer damaged', DEFECTIVE:'Defective', CARRIER_DAMAGED:'Carrier damaged', DAMAGED:'Damaged', UNKNOWN:'Not specified'};
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MON_FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const rn = c => REASON_EN[c] || c.replace(/_/g,' ').toLowerCase().replace(/^./,x=>x.toUpperCase());
+const gn = g => D.grouped ? D.groups[g] : rn(D.groups[g]);
+const dn = c => DISP_EN[c] || c;
+const cn = i => D.categories[i];
+const mi = i => +D.months[i].slice(5)-1;
+const mLabel = i => MON[mi(i)];
+const fmt = n => n.toLocaleString('en-US');
 const pct = (a,b) => b>0 ? a/b : null;
-const fp = (v,d=1) => v==null ? '—' : (v*100).toLocaleString('ru-RU',{minimumFractionDigits:d,maximumFractionDigits:d})+'%';
+const fp = (v,d=1) => v==null ? '—' : (v*100).toFixed(d)+'%';
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fday = d => `${MON[+d.slice(5,7)-1]} ${+d.slice(8,10)}`;
 const NM = D.months.length;
+const asinLabel = s => `${cn(D.asinCat[s])} · ${D.asins[s]}`;
 
-const st = {showAllReasons:false, acct:-1, asin:-1, reason:-1, disp:-1, base:'same', sort:{key:'ret',dir:-1}, q:''};
-try{ const s=JSON.parse(localStorage.getItem('returns-dash')||'{}'); if(s.base) st.base=s.base; }catch(e){}
-function save(){ try{ localStorage.setItem('returns-dash', JSON.stringify({base:st.base})); }catch(e){} }
-
-// sales coverage: last covered day per account & month -> "partial" flags
+const st = {acct:-1, cat:-1, asin:-1, group:-1, reason:-1, disp:-1, base:'same', heatRows:'group', tableBy:'cat',
+  sort:{key:'ret',dir:-1}, q:'', cq:'', allSummaries:false, cLimit:100, showAllReasons:false, tab:'overview'};
+try{ const s=JSON.parse(localStorage.getItem('returns-dash-v2')||'{}'); if(s.base) st.base=s.base; }catch(e){}
+function save(){ try{ localStorage.setItem('returns-dash-v2', JSON.stringify({base:st.base})); }catch(e){} }
 const salesCov = D.salesCoverage || {};
+const accountsIn = a => a<0 ? D.accounts.map((_,i)=>i) : [a];
+const hasSales = (a,m) => accountsIn(a).every(x => (salesCov[D.accounts[x]]||{})[D.months[m]]);
+const partialNote = (a,m) => { const p = accountsIn(a).map(x=>(salesCov[D.accounts[x]]||{})[D.months[m]]).find(n=>n&&n.partial); return p ? fday(p.through) : null; };
 
-function hasSales(acctIdx, m){
-  const accts = acctIdx<0 ? D.accounts.map((_,i)=>i) : [acctIdx];
-  return accts.every(a => (salesCov[D.accounts[a]]||{})[D.months[m]]);
-}
-function partialNote(acctIdx, m){
-  const accts = acctIdx<0 ? D.accounts.map((_,i)=>i) : [acctIdx];
-  const notes = accts.map(a => (salesCov[D.accounts[a]]||{})[D.months[m]]).filter(Boolean);
-  const partial = notes.find(n => n.partial);
-  return partial ? partial.through : null;
+// row-level filter shared by returns, sales and comments
+function keep(a,s,r,d, opts={}){
+  if (st.acct>=0 && a!==st.acct) return false;
+  if (st.cat>=0 && D.asinCat[s]!==st.cat) return false;
+  if (st.asin>=0 && s!==st.asin) return false;
+  if (r!=null){
+    if (st.disp>=0 && d!==st.disp) return false;
+    if (!opts.ignoreReason){
+      if (st.group>=0 && D.reasonGroup[r]!==st.group) return false;
+      if (st.reason>=0 && r!==st.reason) return false;
+    }
+  }
+  return true;
 }
 
 function compute(){
-  const f = st;
   const retM = new Array(NM).fill(0), soldM = new Array(NM).fill(0);
-  const byReason = {}, byDisp = {}, heat = {}, byAsin = {};
-  const reasonAll = {}; // ignoring reason filter, for the reasons panel share
+  const reasonAll = {}, byDisp = {}, heatG = {}, heatR = {}, byAsin = {};
   for (const [a,m,s,r,d,u] of D.returns){
-    if (f.acct>=0 && a!==f.acct) continue;
-    if (f.asin>=0 && s!==f.asin) continue;
-    if (f.disp>=0 && d!==f.disp) continue;
+    if (!keep(a,s,r,d,{ignoreReason:true})) continue;
     reasonAll[r] = (reasonAll[r]||0)+u;
-    (heat[r] ||= new Array(NM).fill(0))[m] += u;
-    if (f.reason>=0 && r!==f.reason) continue;
-    retM[m]+=u;
-    byDisp[d]=(byDisp[d]||0)+u;
+    if (st.group>=0 && D.reasonGroup[r]!==st.group) continue;
+    (heatR[r] ||= new Array(NM).fill(0))[m] += u;
+    (heatG[D.reasonGroup[r]] ||= new Array(NM).fill(0))[m] += u;
+    if (st.reason>=0 && r!==st.reason) continue;
+    retM[m]+=u; byDisp[d]=(byDisp[d]||0)+u;
     const A = byAsin[s] ||= {ret:new Array(NM).fill(0), sold:new Array(NM).fill(0), reasons:{}};
     A.ret[m]+=u; A.reasons[r]=(A.reasons[r]||0)+u;
   }
   for (const [a,m,s,u] of D.sales){
-    if (f.acct>=0 && a!==f.acct) continue;
-    if (f.asin>=0 && s!==f.asin) continue;
+    if (!keep(a,s,null,null)) continue;
     soldM[m]+=u;
     const A = byAsin[s] ||= {ret:new Array(NM).fill(0), sold:new Array(NM).fill(0), reasons:{}};
     A.sold[m]+=u;
   }
-  return {retM, soldM, reasonAll, byDisp, heat, byAsin};
+  return {retM, soldM, reasonAll, byDisp, heatG, heatR, byAsin};
 }
-// denominator for month m under the chosen base
-function denom(soldArr, m){
-  if (st.base==='prev') return m>0 && hasSales(st.acct,m-1) ? soldArr[m-1] : null;
-  return hasSales(st.acct,m) ? soldArr[m] : null;
+function denom(sold, m){
+  if (st.base==='prev') return m>0 && hasSales(st.acct,m-1) ? sold[m-1] : null;
+  return hasSales(st.acct,m) ? sold[m] : null;
 }
-function rateArr(ret, sold){ return ret.map((r,m)=>{ const d=denom(sold,m); return d ? r/d : null; }); }
-function totals(ret, sold){
-  let r=0,s=0;
-  for (let m=0;m<NM;m++){ const d=denom(sold,m); if(d){ r+=ret[m]; s+=d; } }
-  return {r,s,rate:pct(r,s)};
-}
+const rateArr = (ret,sold) => ret.map((r,m)=>{ const d=denom(sold,m); return d ? r/d : null; });
+function totals(ret, sold){ let r=0,s=0; for (let m=0;m<NM;m++){ const d=denom(sold,m); if(d){ r+=ret[m]; s+=d; } } return {r,s,rate:pct(r,s)}; }
 
 /* ---------- controls ---------- */
 const $ = id => document.getElementById(id);
-function opts(sel, items, allLabel){
-  sel.innerHTML = `<option value="-1">${allLabel}</option>` + items.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join('');
+function opts(sel, items, allLabel){ sel.innerHTML = `<option value="-1">${allLabel}</option>` + items.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join(''); }
+const retBy = idx => { const o={}; for (const r of D.returns) o[r[idx]]=(o[r[idx]]||0)+r[5]; return o; };
+function fillAsinOptions(){
+  const ra = retBy(2);
+  const list = D.asins.map((_,i)=>i).filter(i=>st.cat<0 || D.asinCat[i]===st.cat)
+    .sort((a,b)=> cn(D.asinCat[a]).localeCompare(cn(D.asinCat[b])) || (ra[b]||0)-(ra[a]||0));
+  opts($('f-asin'), list.map(i=>[i, asinLabel(i)]), st.cat>=0 ? 'All ASINs in category' : 'All ASINs');
+}
+function fillReasonDetail(){
+  const rr = retBy(3);
+  const list = D.reasons.map((_,i)=>i).filter(i=>st.group<0 || D.reasonGroup[i]===st.group).sort((a,b)=>(rr[b]||0)-(rr[a]||0));
+  opts($('c-reason'), list.map(i=>[i, rn(D.reasons[i])]), 'All reasons in scope');
 }
 function initControls(){
-  opts($('f-acct'), D.accounts.map((a,i)=>[i,a]), 'Все аккаунты');
-  const retByAsin = {};
-  for (const r of D.returns) retByAsin[r[2]]=(retByAsin[r[2]]||0)+r[5];
-  const order = D.asins.map((_,i)=>i).sort((a,b)=>(retByAsin[b]||0)-(retByAsin[a]||0));
-  opts($('f-asin'), order.map(i=>[i, `${D.asins[i]} · ${(D.names[i]||'').slice(0,48)}`]), 'Все ASIN');
-  const retByReason = {};
-  for (const r of D.returns) retByReason[r[3]]=(retByReason[r[3]]||0)+r[5];
-  opts($('f-reason'), D.reasons.map((c,i)=>[i,c]).sort((a,b)=>(retByReason[b[0]]||0)-(retByReason[a[0]]||0)).map(([i,c])=>[i, rn(c)]), 'Все причины');
-  opts($('f-disp'), D.dispositions.map((c,i)=>[i, dn(c)]), 'Любое');
-  for (const [id,key] of [['f-acct','acct'],['f-asin','asin'],['f-reason','reason'],['f-disp','disp']])
-    $(id).addEventListener('change', e=>{ st[key]=+e.target.value; render(); });
+  opts($('f-acct'), D.accounts.map((a,i)=>[i,a]), 'All accounts');
+  opts($('f-cat'), D.categories.map((c,i)=>[i,c]), 'All categories');
+  const rg = {}; D.returns.forEach(r=>{ const g=D.reasonGroup[r[3]]; rg[g]=(rg[g]||0)+r[5]; });
+  opts($('f-group'), D.groups.map((g,i)=>[i, gn(i)]).sort((a,b)=>(rg[b[0]]||0)-(rg[a[0]]||0)), 'All reason groups');
+  opts($('f-disp'), D.dispositions.map((c,i)=>[i, dn(c)]), 'Any');
+  fillAsinOptions(); fillReasonDetail();
+  $('f-acct').onchange = e=>{ st.acct=+e.target.value; render(); };
+  $('f-cat').onchange = e=>{ st.cat=+e.target.value; if (st.asin>=0 && D.asinCat[st.asin]!==st.cat) st.asin=-1; fillAsinOptions(); render(); };
+  $('f-asin').onchange = e=>{ st.asin=+e.target.value; render(); };
+  $('f-group').onchange = e=>{ st.group=+e.target.value; if (st.reason>=0 && D.reasonGroup[st.reason]!==st.group) st.reason=-1; fillReasonDetail(); render(); };
+  $('f-disp').onchange = e=>{ st.disp=+e.target.value; render(); };
+  $('c-reason').onchange = e=>{ st.reason=+e.target.value; render(); };
   $('b-same').onclick=()=>{st.base='same';save();render();};
   $('b-prev').onclick=()=>{st.base='prev';save();render();};
-  $('reset').onclick=()=>{Object.assign(st,{acct:-1,asin:-1,reason:-1,disp:-1,q:''}); $('q').value=''; render();};
-  $('q').addEventListener('input', e=>{ st.q=e.target.value.trim().toLowerCase(); renderAsins(compute()); });
+  $('h-group').onclick=()=>{st.heatRows='group';render();};
+  $('h-reason').onclick=()=>{st.heatRows='reason';render();};
+  $('g-cat').onclick=()=>{st.tableBy='cat';st.sort={key:'ret',dir:-1};render();};
+  $('g-asin').onclick=()=>{st.tableBy='asin';st.sort={key:'ret',dir:-1};render();};
+  $('reset').onclick=()=>{ Object.assign(st,{acct:-1,cat:-1,asin:-1,group:-1,reason:-1,disp:-1,q:'',cq:'',cLimit:100}); $('q').value=''; $('c-q').value=''; fillAsinOptions(); fillReasonDetail(); render(); };
+  $('q').oninput = e=>{ st.q=e.target.value.trim().toLowerCase(); renderTable(compute()); };
+  $('c-q').oninput = e=>{ st.cq=e.target.value.trim(); st.cLimit=100; renderComments(); };
+  $('c-more').onclick = ()=>{ st.cLimit+=200; renderComments(); };
+  window.addEventListener('hashchange', applyHash);
+}
+function applyHash(){
+  st.tab = location.hash==='#comments' ? 'comments' : 'overview';
+  $('t-overview').setAttribute('aria-selected', st.tab==='overview'); $('t-comments').setAttribute('aria-selected', st.tab==='comments');
+  $('v-overview').hidden = st.tab!=='overview'; $('v-comments').hidden = st.tab!=='comments';
+  $('v-comments').style.display = st.tab==='comments' ? 'flex' : 'none';
+  $('v-overview').style.display = st.tab==='overview' ? 'flex' : 'none';
+  render();
 }
 function syncControls(){
-  $('f-acct').value=st.acct; $('f-asin').value=st.asin; $('f-reason').value=st.reason; $('f-disp').value=st.disp;
-  $('b-same').setAttribute('aria-pressed', st.base==='same'); $('b-prev').setAttribute('aria-pressed', st.base==='prev');
+  $('f-acct').value=st.acct; $('f-cat').value=st.cat; $('f-asin').value=st.asin; $('f-group').value=st.group; $('f-disp').value=st.disp; $('c-reason').value=st.reason;
+  [['b-same',st.base==='same'],['b-prev',st.base==='prev'],['h-group',st.heatRows==='group'],['h-reason',st.heatRows==='reason'],['g-cat',st.tableBy==='cat'],['g-asin',st.tableBy==='asin']]
+    .forEach(([id,v])=>$(id).setAttribute('aria-pressed', v));
   const tags=[];
   if(st.acct>=0) tags.push(['acct', D.accounts[st.acct]]);
-  if(st.asin>=0) tags.push(['asin', D.asins[st.asin]+' · '+(D.names[st.asin]||'').slice(0,40)]);
+  if(st.cat>=0) tags.push(['cat', cn(st.cat)]);
+  if(st.asin>=0) tags.push(['asin', asinLabel(st.asin)]);
+  if(st.group>=0) tags.push(['group', gn(st.group)]);
   if(st.reason>=0) tags.push(['reason', rn(D.reasons[st.reason])]);
   if(st.disp>=0) tags.push(['disp', dn(D.dispositions[st.disp])]);
-  $('active').innerHTML = tags.map(([k,l])=>`<span class="tag">${esc(l)}<button type="button" data-k="${k}" aria-label="Убрать фильтр">×</button></span>`).join('');
-  $('active').querySelectorAll('button').forEach(b=>b.onclick=()=>{st[b.dataset.k]=-1;render();});
+  $('active').innerHTML = tags.map(([k,l])=>`<span class="tag">${esc(l)}<button type="button" data-k="${k}" aria-label="Remove filter">×</button></span>`).join('');
+  $('active').querySelectorAll('button').forEach(b=>b.onclick=()=>{ st[b.dataset.k]=-1; if(b.dataset.k==='cat') fillAsinOptions(); if(b.dataset.k==='group') fillReasonDetail(); render(); });
 }
 
 /* ---------- header ---------- */
 function renderHeader(){
   const last = D.months[NM-1];
-  $('period').textContent = `Январь – ${MON_FULL[+last.slice(5)-1]} ${last.slice(0,4)} · данные по ${D.asOf}`;
-  const chips = [];
-  D.accounts.forEach((a,i)=>{
-    const cov = salesCov[a]||{};
-    const missing = D.months.filter(m=>!cov[m]);
-    const partial = D.months.filter(m=>cov[m] && cov[m].partial);
-    let txt, warn=false;
-    if (missing.length){ warn=true; txt = `${a}: нет продаж за ${missing.map(m=>MON_RU[+m.slice(5)-1]).join(', ')}`; }
-    else if (partial.length){ txt = `${a}: продажи по ${partial.map(m=>cov[m].through).join(', ')}`; }
-    else txt = `${a}: данные полные`;
-    chips.push(`<span class="chip${warn?' warn':''}"><span class="dot"></span>${esc(txt)}</span>`);
-  });
-  $('coverage').innerHTML = chips.join('');
+  $('period').textContent = `January – ${MON_FULL[+last.slice(5)-1]} ${last.slice(0,4)} · data through ${D.asOf}`;
+  $('coverage').innerHTML = D.accounts.map(a=>{
+    const cov = salesCov[a]||{}, missing = D.months.filter(m=>!cov[m]);
+    const warn = missing.length>0;
+    const txt = warn ? `${a}: no sales for ${missing.map(m=>MON[+m.slice(5)-1]).join(', ')}` : `${a}: complete`;
+    return `<span class="chip${warn?' warn':''}"><span class="dot"></span>${esc(txt)}</span>`;
+  }).join('');
+  const notes=[];
+  if (!D.mapped) notes.push('Product categories are not loaded yet, so every ASIN shows as “Uncategorized”.');
+  if (!D.grouped) notes.push('Reason groups are not loaded yet, so each Amazon reason is its own group.');
+  $('map-banner').hidden = !notes.length; $('map-banner').textContent = notes.join(' ');
+  $('t-ccount').textContent = fmt(D.comments.length);
 }
 
 /* ---------- KPIs ---------- */
 function renderKpis(c){
   const t = totals(c.retM, c.soldM);
-  const allRet = c.retM.reduce((a,b)=>a+b,0);
-  const allSold = c.soldM.reduce((a,b)=>a+b,0);
-  const reasonEntries = Object.entries(c.reasonAll).sort((a,b)=>b[1]-a[1]);
-  const sumReason = reasonEntries.reduce((a,[,v])=>a+v,0);
-  const top = st.reason>=0 ? [String(st.reason), c.reasonAll[st.reason]||0] : reasonEntries[0];
+  const allRet = c.retM.reduce((a,b)=>a+b,0), allSold = c.soldM.reduce((a,b)=>a+b,0);
+  const gTot = {}; for (const [r,v] of Object.entries(c.reasonAll)){ const g=D.reasonGroup[r]; gTot[g]=(gTot[g]||0)+v; }
+  const sumAll = Object.values(gTot).reduce((a,b)=>a+b,0);
+  const topG = st.group>=0 ? [st.group, gTot[st.group]||0] : Object.entries(gTot).sort((a,b)=>b[1]-a[1])[0];
   const sellable = c.byDisp[D.dispositions.indexOf('SELLABLE')]||0;
-  const baseTxt = st.base==='prev' ? 'к продажам прошлого месяца' : 'к продажам того же месяца';
+  const baseTxt = st.base==='prev' ? "of the previous month's sales" : "of the same month's sales";
   $('kpis').innerHTML = `
-    <div class="kpi"><span class="eyebrow">Возвращено</span><span class="v num">${fmt(allRet)} шт.</span><span class="s">${allRet? fp(sellable/allRet,0)+' вернулись годными к продаже':'&nbsp;'}</span></div>
-    <div class="kpi"><span class="eyebrow">Продано</span><span class="v num">${fmt(allSold)} шт.</span><span class="s">Amazon.com, без отменённых заказов</span></div>
-    <div class="kpi"><span class="eyebrow">% возвратов</span><span class="v num accent">${fp(t.rate)}</span><span class="s">${st.reason>=0?'по выбранной причине, ':''}${baseTxt}</span></div>
-    <div class="kpi"><span class="eyebrow">${st.reason>=0?'Доля причины':'Главная причина'}</span><span class="v" style="font-size:19px;line-height:1.25">${top? esc(rn(D.reasons[+top[0]])) : '—'}</span><span class="s">${top? fmt(top[1])+' шт. · '+fp(pct(top[1],sumReason),0)+' всех возвратов':''}</span></div>`;
+    <div class="kpi"><span class="eyebrow">Units returned</span><span class="v num">${fmt(allRet)}</span><span class="s">${allRet? fp(sellable/allRet,0)+' came back sellable':'&nbsp;'}</span></div>
+    <div class="kpi"><span class="eyebrow">Units sold</span><span class="v num">${fmt(allSold)}</span><span class="s">Amazon.com, cancelled orders excluded</span></div>
+    <div class="kpi"><span class="eyebrow">Return rate</span><span class="v num accent">${fp(t.rate)}</span><span class="s">${(st.group>=0||st.reason>=0)?'selected reasons only, ':''}${baseTxt}</span></div>
+    <div class="kpi"><span class="eyebrow">${st.group>=0?'Group share':'Top reason group'}</span><span class="v" style="font-size:19px;line-height:1.25">${topG? esc(gn(+topG[0])) : '—'}</span><span class="s">${topG? fmt(topG[1])+' units · '+fp(pct(topG[1],sumAll),0)+' of all returns':''}</span></div>`;
 }
 
 /* ---------- charts ---------- */
 const tip = document.createElement('div'); tip.className='tip'; tip.setAttribute('role','status');
-function showTip(host, x, y, html){ if(tip.parentNode!==host) host.appendChild(tip); tip.innerHTML=html; tip.style.left=x+'px'; tip.style.top=y+'px'; tip.classList.add('on'); }
-function hideTip(){ tip.classList.remove('on'); }
-
-function niceMax(v){ if(v<=0) return 1; const p=Math.pow(10,Math.floor(Math.log10(v))); const n=v/p; return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*p; }
+function showTip(host,x,y,html){ if(tip.parentNode!==host) host.appendChild(tip); tip.innerHTML=html; tip.style.left=x+'px'; tip.style.top=y+'px'; tip.classList.add('on'); }
+const hideTip = () => tip.classList.remove('on');
+function niceMax(v){ if(v<=0) return 1; const p=Math.pow(10,Math.floor(Math.log10(v))), n=v/p; return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*p; }
+const kfmt = v => v>=1000 ? (v/1000).toFixed(v>=10000?0:1).replace(/\.0$/,'')+'k' : String(v);
 
 function renderRateChart(c){
-  const host=$('rate-chart'); const W=640,H=230,L=44,R=8,T=18,B=26;
-  const rates = rateArr(c.retM, c.soldM);
-  const max = niceMax(Math.max(0.01,...rates.filter(v=>v!=null)));
-  const iw=(W-L-R)/NM, bw=Math.min(40, iw*0.56);
-  const y=v=>T+(H-T-B)*(1-v/max);
-  const ticks=[0,max/4,max/2,max*3/4,max];
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Процент возвратов по месяцам">
-    <defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--surface-2)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--line-strong)" stroke-width="2"/></pattern></defs><g class="axis">`;
-  ticks.forEach(t=>{ s+=`<line class="gridline" x1="${L}" x2="${W-R}" y1="${y(t)}" y2="${y(t)}"/><text x="${L-8}" y="${y(t)+4}" text-anchor="end">${fp(t,max<0.05?1:0)}</text>`; });
+  const host=$('rate-chart'), W=640,H=230,L=44,R=8,T=18,B=26;
+  const rates = rateArr(c.retM,c.soldM), max = niceMax(Math.max(0.01,...rates.filter(v=>v!=null)));
+  const iw=(W-L-R)/NM, bw=Math.min(40,iw*0.56), y=v=>T+(H-T-B)*(1-v/max);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Return rate by month"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--surface-2)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--line-strong)" stroke-width="2"/></pattern></defs><g class="axis">`;
+  [0,.25,.5,.75,1].map(f=>f*max).forEach(t=>{ s+=`<line class="gridline" x1="${L}" x2="${W-R}" y1="${y(t)}" y2="${y(t)}"/><text x="${L-8}" y="${y(t)+4}" text-anchor="end">${fp(t,max<0.05?1:0)}</text>`; });
   s+='</g>';
   rates.forEach((v,m)=>{
     const cx=L+iw*m+iw/2, x=cx-bw/2;
-    if (v==null){ s+=`<rect class="bar-nodata" x="${x}" y="${y(max*0.35)}" width="${bw}" height="${y(0)-y(max*0.35)}" rx="3"/><text class="lbl" x="${cx}" y="${y(max*0.35)-6}" text-anchor="middle">нет</text>`; }
-    else { const h=Math.max(1,y(0)-y(v)); s+=`<path class="bar-rate" d="M${x},${y(0)} v${-(h-4)} q0,-4 4,-4 h${bw-8} q4,0 4,4 v${h-4} z"/>`;
-      s+=`<text class="val" x="${cx}" y="${y(v)-6}" text-anchor="middle">${fp(v)}</text>`; }
-    s+=`<text class="lbl" x="${cx}" y="${H-8}" text-anchor="middle">${mLabel(m)}${partialNote(st.acct,m)?'*':''}</text>`;
-    s+=`<rect class="hit" data-m="${m}" x="${L+iw*m}" y="${T}" width="${iw}" height="${H-T-B}"/>`;
+    if (v==null){ s+=`<rect class="bar-nodata" x="${x}" y="${y(max*0.35)}" width="${bw}" height="${y(0)-y(max*0.35)}" rx="3"/><text class="lbl" x="${cx}" y="${y(max*0.35)-6}" text-anchor="middle">n/a</text>`; }
+    else { const h=Math.max(1,y(0)-y(v)), rr=Math.min(4,h); s+=`<path class="bar-rate" d="M${x},${y(0)} v${-(h-rr)} q0,${-rr} ${rr},${-rr} h${bw-2*rr} q${rr},0 ${rr},${rr} v${h-rr} z"/><text class="val" x="${cx}" y="${y(v)-6}" text-anchor="middle">${fp(v)}</text>`; }
+    s+=`<text class="lbl" x="${cx}" y="${H-8}" text-anchor="middle">${mLabel(m)}${partialNote(st.acct,m)?'*':''}</text><rect class="hit" data-m="${m}" x="${L+iw*m}" y="${T}" width="${iw}" height="${H-T-B}"/>`;
   });
-  s+='</svg>';
-  host.innerHTML=s;
+  host.innerHTML = s+'</svg>';
   host.querySelectorAll('.hit').forEach(el=>{
     el.addEventListener('mousemove',ev=>{
       const m=+el.dataset.m, d=denom(c.soldM,m), r=host.getBoundingClientRect(), pn=partialNote(st.acct,m);
-      showTip(host, ev.clientX-r.left, ev.clientY-r.top,
-        `<b>${MON_FULL[+D.months[m].slice(5)-1]}</b><br>Возвращено: ${fmt(c.retM[m])} шт.<br>${st.base==='prev'?'Продано в прошлом месяце':'Продано'}: ${d==null?'нет данных':fmt(d)+' шт.'}<br>% возвратов: <b>${fp(pct(c.retM[m],d))}</b>${pn?`<br>Продажи загружены по ${pn}`:''}`);
+      showTip(host, ev.clientX-r.left, ev.clientY-r.top, `<b>${MON_FULL[mi(m)]}</b><br>Returned: ${fmt(c.retM[m])} units<br>${st.base==='prev'?'Sold previous month':'Sold'}: ${d==null?'no data':fmt(d)+' units'}<br>Return rate: <b>${fp(pct(c.retM[m],d))}</b>${pn?`<br>Sales loaded through ${pn}`:''}`);
     });
     el.addEventListener('mouseleave',hideTip);
   });
 }
 function renderSoldChart(c){
-  const host=$('sold-chart'); const W=640,H=92,L=44,R=8,T=14,B=6;
-  const max=niceMax(Math.max(1,...c.soldM));
-  const iw=(W-L-R)/NM, bw=Math.min(40, iw*0.56);
-  const y=v=>T+(H-T-B)*(1-v/max);
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Продано штук по месяцам"><g class="axis"><line class="gridline" x1="${L}" x2="${W-R}" y1="${y(0)}" y2="${y(0)}"/><text x="${L-8}" y="${y(max)+4}" text-anchor="end">${max>=1000? (max/1000).toLocaleString('ru-RU')+'k':max}</text></g>`;
+  const host=$('sold-chart'), W=640,H=92,L=44,R=8,T=14,B=6, max=niceMax(Math.max(1,...c.soldM));
+  const iw=(W-L-R)/NM, bw=Math.min(40,iw*0.56), y=v=>T+(H-T-B)*(1-v/max);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Units sold by month"><g class="axis"><line class="gridline" x1="${L}" x2="${W-R}" y1="${y(0)}" y2="${y(0)}"/><text x="${L-8}" y="${y(max)+4}" text-anchor="end">${kfmt(max)}</text></g>`;
   c.soldM.forEach((v,m)=>{
     const cx=L+iw*m+iw/2, x=cx-bw/2, h=y(0)-y(v);
     if(!hasSales(st.acct,m)){ s+=`<text class="lbl" x="${cx}" y="${y(0)-4}" text-anchor="middle">—</text>`; return; }
-    if(h>0) s+=`<path class="bar-sold" d="M${x},${y(0)} v${-Math.max(0,h-3)} q0,-3 3,-3 h${bw-6} q3,0 3,3 v${Math.max(0,h-3)} z"/>`;
-    s+=`<text class="lbl" x="${cx}" y="${Math.min(y(v)-4, y(0)-4)}" text-anchor="middle">${v>=1000?(v/1000).toLocaleString('ru-RU',{maximumFractionDigits:1})+'k':v}</text>`;
+    if(h>0){ const rr=Math.min(3,h); s+=`<path class="bar-sold" d="M${x},${y(0)} v${-(h-rr)} q0,${-rr} ${rr},${-rr} h${bw-2*rr} q${rr},0 ${rr},${rr} v${h-rr} z"/>`; }
+    s+=`<text class="lbl" x="${cx}" y="${y(v)-4}" text-anchor="middle">${kfmt(v)}</text>`;
   });
-  host.innerHTML=s+'</svg>';
+  host.innerHTML = s+'</svg>';
 }
 
-/* ---------- reasons ---------- */
+/* ---------- reasons panel (grouped) ---------- */
 function renderReasons(c){
-  const entries = Object.entries(c.reasonAll).sort((a,b)=>b[1]-a[1]);
-  const total = entries.reduce((a,[,v])=>a+v,0);
-  $('reason-sub').textContent = `${fmt(total)} шт. · клик выбирает причину`;
-  const max = entries.length? entries[0][1] : 1;
-  const LIMIT = 9;
-  const shown = st.showAllReasons ? entries : entries.filter((e,i)=>i<LIMIT || +e[0]===st.reason);
-  const mb = $('more-reasons');
-  mb.hidden = entries.length <= LIMIT;
-  mb.textContent = st.showAllReasons ? 'Свернуть' : `Показать все причины (${entries.length})`;
-  mb.onclick = ()=>{ st.showAllReasons=!st.showAllReasons; renderReasons(c); };
-  $('reasons').innerHTML = shown.map(([r,v])=>`
-    <button type="button" class="rrow${+r===st.reason?' sel':''}" data-r="${r}" aria-pressed="${+r===st.reason}">
-      <span class="name"><span>${esc(rn(D.reasons[+r]))}</span><span class="code">${D.reasons[+r]}</span></span>
-      <span class="n">${fmt(v)}</span><span class="p">${fp(v/total,1)}</span>
-      <span class="rbar"><i style="width:${(v/max*100).toFixed(1)}%"></i></span>
-    </button>`).join('') || '<span class="muted">Нет возвратов при выбранных фильтрах</span>';
-  $('reasons').querySelectorAll('.rrow').forEach(b=>b.onclick=()=>{ st.reason = (+b.dataset.r===st.reason)?-1:+b.dataset.r; render(); });
+  const gmap = {};
+  for (const [r,v] of Object.entries(c.reasonAll)){ const g=D.reasonGroup[r]; (gmap[g] ||= {t:0, rs:[]}).t+=v; gmap[g].rs.push([+r,v]); }
+  const groups = Object.entries(gmap).sort((a,b)=>b[1].t-a[1].t);
+  const total = groups.reduce((a,[,g])=>a+g.t,0), max = groups.length? groups[0][1].t : 1;
+  $('reason-sub').textContent = `${fmt(total)} units · click to filter`;
+  const LIMIT=8, shown = st.showAllReasons ? groups : groups.filter((g,i)=>i<LIMIT || +g[0]===st.group);
+  const mb=$('more-reasons'); mb.hidden = groups.length<=LIMIT; mb.textContent = st.showAllReasons ? 'Show fewer' : `Show all groups (${groups.length})`;
+  mb.onclick=()=>{ st.showAllReasons=!st.showAllReasons; renderReasons(c); };
+  const row = (cls, attr, name, code, v, base, w) => `<button type="button" class="rrow${cls}" ${attr}>
+      <span class="name"><span>${esc(name)}</span>${code?`<span class="code">${esc(code)}</span>`:''}</span>
+      <span class="n">${fmt(v)}</span><span class="p">${fp(v/base,1)}</span><span class="rbar"><i style="width:${w}%"></i></span></button>`;
+  $('reasons').innerHTML = shown.map(([g,G])=>{
+    g=+g; const sel = g===st.group;
+    const single = G.rs.length===1 && D.groups[g]===D.reasons[G.rs[0][0]];
+    let h = `<div class="rgroup">` + row(sel&&st.reason<0?' sel':'', `data-g="${g}" aria-pressed="${sel}"`, gn(g), single? D.reasons[G.rs[0][0]] : `${G.rs.length} reason${G.rs.length>1?'s':''}`, G.t, total, (G.t/max*100).toFixed(1));
+    if (!single && (sel || G.rs.length<=3)) h += `<div class="rsub">` + G.rs.sort((a,b)=>b[1]-a[1]).map(([r,v])=>row(r===st.reason?' sel':'', `data-r="${r}"`, rn(D.reasons[r]), D.reasons[r], v, total, (v/max*100).toFixed(1))).join('') + `</div>`;
+    return h+`</div>`;
+  }).join('') || '<span class="muted">No returns for the selected filters</span>';
+  $('reasons').querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>{ const g=+b.dataset.g; st.group = g===st.group && st.reason<0 ? -1 : g; st.reason=-1; fillReasonDetail(); render(); });
+  $('reasons').querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>{ const r=+b.dataset.r; st.reason = r===st.reason ? -1 : r; render(); });
 }
 
 /* ---------- heatmap ---------- */
 function renderHeat(c){
-  const rows = Object.entries(c.heat).map(([r,a])=>[+r,a,a.reduce((x,y)=>x+y,0)]).filter(r=>r[2]>0).sort((a,b)=>b[2]-a[2]);
+  const byGroup = st.heatRows==='group', src = byGroup ? c.heatG : c.heatR;
+  const rows = Object.entries(src).map(([k,a])=>[+k,a,a.reduce((x,y)=>x+y,0)]).filter(r=>r[2]>0).sort((a,b)=>b[2]-a[2]);
   const max = Math.max(1,...rows.flatMap(r=>r[1]));
   const steps=['--heat-1','--heat-2','--heat-3','--heat-4','--heat-5','--heat-6'];
   const cls = v => v<=0 ? '--heat-0' : steps[Math.min(steps.length-1, Math.floor(Math.sqrt(v/max)*steps.length))];
-  const inkFor = k => (steps.indexOf(k)>=3) ? 'var(--bg)' : 'var(--ink)';
-  let h = `<thead><tr><th class="l"></th>${D.months.map((_,m)=>`<th>${mLabel(m)}</th>`).join('')}<th>Итого</th></tr></thead><tbody>`;
-  for (const [r,a,t] of rows){
-    h+=`<tr class="${r===st.reason?'sel':''}"><td class="rl" data-r="${r}" title="${esc(D.reasons[r])}">${esc(rn(D.reasons[r]))}</td>`;
-    a.forEach((v,m)=>{ const k=cls(v); h+=`<td class="cell" data-r="${r}" style="background:var(${k});color:${inkFor(k)}" title="${esc(rn(D.reasons[r]))} · ${MON_FULL[+D.months[m].slice(5)-1]}: ${v} шт.">${v||''}</td>`; });
-    h+=`<td class="tot">${fmt(t)}</td></tr>`;
+  const inkFor = k => steps.indexOf(k)>=3 ? 'var(--bg)' : 'var(--ink)';
+  const label = k => byGroup ? gn(k) : rn(D.reasons[k]);
+  const isSel = k => byGroup ? k===st.group : k===st.reason;
+  let h = `<thead><tr><th class="l"></th>${D.months.map((_,m)=>`<th>${mLabel(m)}</th>`).join('')}<th>Total</th></tr></thead><tbody>`;
+  for (const [k,a,t] of rows){
+    h += `<tr class="${isSel(k)?'sel':''}"><td class="rl" data-k="${k}">${esc(label(k))}</td>`;
+    a.forEach((v,m)=>{ const kk=cls(v); h+=`<td class="cell" data-k="${k}" style="background:var(${kk});color:${inkFor(kk)}" title="${esc(label(k))} · ${MON_FULL[mi(m)]}: ${v} units">${v||''}</td>`; });
+    h += `<td class="tot">${fmt(t)}</td></tr>`;
   }
-  $('heat').innerHTML = h + '</tbody>';
-  $('heat').querySelectorAll('[data-r]').forEach(el=>el.onclick=()=>{ const r=+el.dataset.r; st.reason = r===st.reason?-1:r; render(); });
+  $('heat').innerHTML = h+'</tbody>';
+  $('heat').querySelectorAll('[data-k]').forEach(el=>el.onclick=()=>{ const k=+el.dataset.k;
+    if (byGroup){ st.group = k===st.group?-1:k; st.reason=-1; fillReasonDetail(); } else { st.reason = k===st.reason?-1:k; }
+    render(); });
   $('heat-scale').innerHTML = `0 ${['--heat-0',...steps].map(k=>`<span class="sw" style="background:var(${k})"></span>`).join('')} ${fmt(max)}`;
 }
 
 /* ---------- monthly table ---------- */
 function renderMonths(c){
-  const rates = rateArr(c.retM, c.soldM);
-  let h=`<thead><tr><th class="l">Месяц</th><th>Продано, шт.</th><th>Возвращено, шт.</th><th>% возвратов</th><th>Δ к прошлому месяцу</th><th class="l">Главная причина</th></tr></thead><tbody>`;
-  const topReason = m => { let best=-1,bv=0; for(const [r,a] of Object.entries(c.heat)){ if(st.reason>=0 && +r!==st.reason) continue; if(a[m]>bv){bv=a[m];best=+r;} } return best>=0? `${esc(rn(D.reasons[best]))} <span class="muted">(${bv})</span>`:'—'; };
+  const rates = rateArr(c.retM,c.soldM);
+  const top = m => { let best=-1,bv=0; for (const [g,a] of Object.entries(c.heatG)) if(a[m]>bv){bv=a[m];best=+g;} return best>=0? `${esc(gn(best))} <span class="muted">(${bv})</span>`:'—'; };
+  let h=`<thead><tr><th class="l">Month</th><th>Units sold</th><th>Units returned</th><th>Return rate</th><th>Change vs prior month</th><th class="l">Top reason group</th></tr></thead><tbody>`;
   D.months.forEach((mm,m)=>{
-    const r=rates[m], prev=m>0?rates[m-1]:null, d=(r!=null&&prev!=null)? r-prev : null;
-    const pn=partialNote(st.acct,m);
-    h+=`<tr><td class="l">${MON_FULL[+mm.slice(5)-1]}${pn?` <span class="muted small">(продажи по ${pn})</span>`:''}</td>
-      <td>${hasSales(st.acct,m)?fmt(c.soldM[m]):'<span class="nodata">нет данных</span>'}</td>
-      <td>${fmt(c.retM[m])}</td><td><b>${fp(r)}</b></td>
-      <td class="${d==null?'':d>0?'delta-up':'delta-down'}">${d==null?'—':(d>0?'+':'')+(d*100).toLocaleString('ru-RU',{maximumFractionDigits:1})+' п.п.'}</td>
-      <td class="l">${topReason(m)}</td></tr>`;
+    const r=rates[m], p=m>0?rates[m-1]:null, d=(r!=null&&p!=null)?r-p:null, pn=partialNote(st.acct,m);
+    h+=`<tr><td class="l">${MON_FULL[mi(m)]}${pn?` <span class="muted small">(sales through ${pn})</span>`:''}</td>
+      <td>${hasSales(st.acct,m)?fmt(c.soldM[m]):'<span class="nodata">no data</span>'}</td><td>${fmt(c.retM[m])}</td><td><b>${fp(r)}</b></td>
+      <td class="${d==null?'':d>0?'delta-up':'delta-down'}">${d==null?'—':(d>0?'+':'')+(d*100).toFixed(1)+' pp'}</td><td class="l">${top(m)}</td></tr>`;
   });
   const t=totals(c.retM,c.soldM);
-  h+=`</tbody><tfoot><tr class="tfoot"><td class="l">Итого</td><td>${fmt(c.soldM.reduce((a,b)=>a+b,0))}</td><td>${fmt(c.retM.reduce((a,b)=>a+b,0))}</td><td>${fp(t.rate)}</td><td></td><td></td></tr></tfoot>`;
+  h+=`</tbody><tfoot><tr class="tfoot"><td class="l">Total</td><td>${fmt(c.soldM.reduce((a,b)=>a+b,0))}</td><td>${fmt(c.retM.reduce((a,b)=>a+b,0))}</td><td>${fp(t.rate)}</td><td></td><td></td></tr></tfoot>`;
   $('months').innerHTML=h;
 }
 
-/* ---------- ASIN table ---------- */
+/* ---------- category / ASIN table ---------- */
 function spark(rates){
-  const W=96,H=24,vals=rates.map(v=>v==null?null:v), mx=Math.max(0.0001,...vals.filter(v=>v!=null));
-  const pts=vals.map((v,i)=>v==null?null:[2+i*(W-4)/(NM-1), H-2-(H-4)*v/mx]);
+  const W=96,H=24, mx=Math.max(0.0001,...rates.filter(v=>v!=null));
+  const pts=rates.map((v,i)=>v==null?null:[2+i*(W-4)/(NM-1), H-2-(H-4)*v/mx]);
   let d='',pen=false; pts.forEach(p=>{ if(!p){pen=false;return;} d+=(pen?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1); pen=true; });
   const last=[...pts].reverse().find(Boolean);
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="${d}" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/>${last?`<circle cx="${last[0]}" cy="${last[1]}" r="2.6" fill="var(--accent)"/>`:''}</svg>`;
 }
-function renderAsins(c){
-  const rows = Object.entries(c.byAsin).map(([s,A])=>{
-    const t=totals(A.ret,A.sold); const top=Object.entries(A.reasons).sort((a,b)=>b[1]-a[1])[0];
-    return {s:+s, asin:D.asins[+s], name:D.names[+s]||'', ret:A.ret.reduce((a,b)=>a+b,0), sold:A.sold.reduce((a,b)=>a+b,0), rate:t.rate, top, rates:rateArr(A.ret,A.sold)};
-  }).filter(r=>r.ret>0||r.sold>0).filter(r=>!st.q || r.asin.toLowerCase().includes(st.q) || r.name.toLowerCase().includes(st.q));
+function renderTable(c){
+  const byCat = st.tableBy==='cat';
+  $('prod-title').textContent = byCat ? 'By category' : 'By ASIN';
+  const agg = {};
+  for (const [s,A] of Object.entries(c.byAsin)){
+    const key = byCat ? D.asinCat[+s] : +s;
+    const G = agg[key] ||= {ret:new Array(NM).fill(0), sold:new Array(NM).fill(0), reasons:{}, n:0};
+    A.ret.forEach((v,m)=>G.ret[m]+=v); A.sold.forEach((v,m)=>G.sold[m]+=v); G.n++;
+    for (const [r,v] of Object.entries(A.reasons)){ const g=D.reasonGroup[r]; G.reasons[g]=(G.reasons[g]||0)+v; }
+  }
+  let rows = Object.entries(agg).map(([k,G])=>{ k=+k; const t=totals(G.ret,G.sold);
+    return {k, label: byCat? cn(k) : cn(D.asinCat[k]), asin: byCat? '' : D.asins[k], title: byCat? `${G.n} ASIN${G.n>1?'s':''}` : (D.products[k] || D.names[k] || ''),
+      ret:G.ret.reduce((a,b)=>a+b,0), sold:G.sold.reduce((a,b)=>a+b,0), rate:t.rate, top:Object.entries(G.reasons).sort((a,b)=>b[1]-a[1])[0], rates:rateArr(G.ret,G.sold)}; })
+    .filter(r=>r.ret>0||r.sold>0)
+    .filter(r=>!st.q || r.label.toLowerCase().includes(st.q) || r.asin.toLowerCase().includes(st.q) || r.title.toLowerCase().includes(st.q));
   const {key,dir}=st.sort;
   rows.sort((a,b)=>{ const x=a[key], y=b[key]; if(x==null) return 1; if(y==null) return -1; return (typeof x==='string'? x.localeCompare(y) : x-y)*dir; });
   const allRate = totals(c.retM,c.soldM).rate;
   const th=(k,l,cl='')=>`<th class="sortable ${cl}" data-k="${k}" aria-sort="${key===k?(dir<0?'descending':'ascending'):'none'}" tabindex="0">${l}</th>`;
-  let h=`<thead><tr>${th('asin','ASIN','l')}<th class="l">Товар</th>${th('sold','Продано')}${th('ret','Возвращено')}${th('rate','% возвратов')}<th class="l">Главная причина</th><th class="l">Тренд %</th></tr></thead><tbody>`;
+  let h=`<thead><tr>${th('label','Category','l')}${byCat?'<th class="l">ASINs</th>':th('asin','ASIN','l')+'<th class="l">Product</th>'}${th('sold','Units sold')}${th('ret','Units returned')}${th('rate','Return rate')}<th class="l">Top reason group</th><th class="l">Rate trend</th></tr></thead><tbody>`;
   for (const r of rows){
     const hi = r.rate!=null && allRate!=null && r.rate>allRate*1.5 && r.ret>=10;
-    h+=`<tr class="click${r.s===st.asin?' sel':''}" data-s="${r.s}" tabindex="0">
-      <td class="l mono">${r.asin}</td><td class="l"><span class="pname" title="${esc(r.name)}">${esc(r.name)||'<span class="nodata">нет названия</span>'}</span></td>
+    const sel = byCat ? r.k===st.cat : r.k===st.asin;
+    h+=`<tr class="click${sel?' sel':''}" data-k="${r.k}" tabindex="0"><td class="l"><span class="cat">${esc(r.label)}</span></td>
+      ${byCat? `<td class="l muted">${esc(r.title)}</td>` : `<td class="l mono">${r.asin}</td><td class="l"><span class="pname" title="${esc(r.title)}">${esc(r.title)||'<span class="nodata">no title</span>'}</span></td>`}
       <td>${fmt(r.sold)}</td><td>${fmt(r.ret)}</td><td><span class="pill${hi?' hi':''}">${fp(r.rate)}</span></td>
-      <td class="l">${r.top? esc(rn(D.reasons[+r.top[0]]))+` <span class="muted">(${r.top[1]})</span>`:'—'}</td><td class="l">${spark(r.rates)}</td></tr>`;
+      <td class="l">${r.top? esc(gn(+r.top[0]))+` <span class="muted">(${r.top[1]})</span>`:'—'}</td><td class="l">${spark(r.rates)}</td></tr>`;
   }
-  if(!rows.length) h+=`<tr><td class="l muted" colspan="7">Ничего не найдено</td></tr>`;
-  $('asins').innerHTML=h+'</tbody>';
-  $('asins').querySelectorAll('th.sortable').forEach(el=>{ const go=()=>{ const k=el.dataset.k; st.sort = st.sort.key===k? {key:k,dir:-st.sort.dir} : {key:k,dir:(k==='asin'?1:-1)}; renderAsins(c); }; el.onclick=go; el.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();go();} }; });
-  $('asins').querySelectorAll('tr.click').forEach(el=>{ const go=()=>{ const s=+el.dataset.s; st.asin = s===st.asin?-1:s; render(); window.scrollTo({top:0,behavior:'smooth'}); }; el.onclick=go; el.onkeydown=e=>{ if(e.key==='Enter'){go();} }; });
+  if(!rows.length) h+=`<tr><td class="l muted" colspan="8">Nothing found</td></tr>`;
+  $('asins').innerHTML = h+'</tbody>';
+  $('asins').querySelectorAll('th.sortable').forEach(el=>{ const go=()=>{ const k=el.dataset.k; st.sort = st.sort.key===k? {key:k,dir:-st.sort.dir} : {key:k,dir:(['label','asin'].includes(k)?1:-1)}; renderTable(c); }; el.onclick=go; el.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();go();} }; });
+  $('asins').querySelectorAll('tr.click').forEach(el=>{ const go=()=>{ const k=+el.dataset.k;
+      if (byCat){ st.cat = k===st.cat?-1:k; st.asin=-1; fillAsinOptions(); } else { st.asin = k===st.asin?-1:k; }
+      render(); window.scrollTo({top:0,behavior:'smooth'}); };
+    el.onclick=go; el.onkeydown=e=>{ if(e.key==='Enter') go(); }; });
+}
+
+/* ---------- comments ---------- */
+const norm = t => t.toLowerCase().replace(/[^a-z0-9 |']+/g,' ').replace(/\s+/g,' ').trim();
+function filteredComments(){
+  const q = st.cq.toLowerCase();
+  return D.comments.filter(([a,m,s,r,d,,t])=> keep(a,s,r,d) && (!q || t.toLowerCase().includes(q)));
+}
+function renderSummaries(list){
+  const counts = {}; list.forEach(c=>counts[c[3]]=(counts[c[3]]||0)+1);
+  let codes = st.reason>=0 ? [st.reason] : Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([r])=>+r);
+  codes = codes.filter(r=>D.summaries[D.reasons[r]]);
+  const moreBtn = $('sum-more'); moreBtn.hidden = codes.length<=3 || st.reason>=0;
+  moreBtn.textContent = st.allSummaries ? 'Show fewer reasons' : `Show all ${codes.length} reasons`;
+  moreBtn.onclick = ()=>{ st.allSummaries=!st.allSummaries; renderSummaries(list); };
+  if (!st.allSummaries) codes = codes.slice(0,3);
+  $('sum-sub').textContent = `Themes from all ${fmt(D.comments.length)} comments, January–September. They do not change with the account, category or ASIN filters.`;
+  $('summaries').innerHTML = codes.map(r=>{
+    const S = D.summaries[D.reasons[r]];
+    return `<article class="scard"><div class="panel-head"><h3>${esc(rn(D.reasons[r]))}</h3><span class="muted small">${D.grouped?esc(gn(D.reasonGroup[r])):''}</span></div>
+      <p class="sum" style="margin:0">${esc(S.summary)}</p>
+      ${S.themes.slice(0,4).map(t=>`<div class="theme"><b>${esc(t.theme)}</b><span class="sh">${esc(t.share||'')}</span><p>${esc(t.detail)}</p>${(t.quotes||[]).slice(0,2).map(q=>`<q>${esc(q)}</q>`).join('')}</div>`).join('')}
+      ${S.themes.length>4?`<details><summary class="small" style="cursor:pointer;color:var(--accent-ink)">${S.themes.length-4} more theme${S.themes.length-4>1?'s':''}</summary>${S.themes.slice(4).map(t=>`<div class="theme"><b>${esc(t.theme)}</b><span class="sh">${esc(t.share||'')}</span><p>${esc(t.detail)}</p>${(t.quotes||[]).slice(0,2).map(q=>`<q>${esc(q)}</q>`).join('')}</div>`).join('')}</details>`:''}
+    </article>`;
+  }).join('') || '<span class="muted">No summary for the selected reasons.</span>';
+}
+function renderPhrases(list){
+  const c = {}; list.forEach(x=>{ const k=norm(x[6]); if(k) c[k]=(c[k]||0)+1; });
+  const top = Object.entries(c).filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]).slice(0,24);
+  $('phrases').innerHTML = top.map(([k,n])=>`<button type="button" class="phrase" data-q="${esc(k)}">${esc(k.replace(/\|/g,' · '))}<span>${n}</span></button>`).join('') || '<span class="muted">No repeated comments for these filters.</span>';
+  $('phrases').querySelectorAll('.phrase').forEach(b=>b.onclick=()=>{ $('c-q').value=b.dataset.q; st.cq=b.dataset.q; st.cLimit=100; renderComments(); });
+}
+function renderComments(){
+  const all = filteredComments(); // before text search, for summaries/phrases
+  const q = st.cq;
+  const base = q ? D.comments.filter(([a,m,s,r,d])=>keep(a,s,r,d)) : all;
+  renderSummaries(base); renderPhrases(base);
+  $('clist-title').textContent = `Comments · ${fmt(all.length)}`;
+  const shown = all.slice(0, st.cLimit);
+  const re = q ? new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig') : null;
+  const hl = t => re ? esc(t).replace(re, m=>`<mark>${m}</mark>`) : esc(t);
+  let h = `<thead><tr><th class="l">Date</th><th class="l">Category · ASIN</th><th class="l">Reason</th><th class="l">Condition</th><th class="l">Comment</th></tr></thead><tbody>`;
+  for (const [a,m,s,r,d,day,t] of shown){
+    h += `<tr><td class="l num" style="white-space:nowrap">${fday(day)}</td><td class="l"><span class="cat">${esc(cn(D.asinCat[s]))}</span><br><span class="mono muted">${D.asins[s]}</span></td>
+      <td class="l">${esc(rn(D.reasons[r]))}${D.grouped?`<br><span class="muted small">${esc(gn(D.reasonGroup[r]))}</span>`:''}</td><td class="l small">${esc(dn(D.dispositions[d]))}</td><td class="txt">${hl(t).replace(/\|/g,' · ')}</td></tr>`;
+  }
+  if (!shown.length) h += `<tr><td class="l muted" colspan="5">No comments for the selected filters</td></tr>`;
+  $('clist').innerHTML = h+'</tbody>';
+  $('c-more').hidden = all.length<=shown.length;
+  $('c-shown').textContent = all.length ? `Showing ${fmt(shown.length)} of ${fmt(all.length)}` : '';
 }
 
 function renderMethod(){
   $('method').innerHTML = [
-    `<b>Возвраты</b> взяты из отчёта FBA Customer Returns и отнесены к месяцу даты возврата на склад Amazon. Одна строка отчёта — одна возвращённая позиция.`,
-    `<b>Продажи</b> взяты из отчёта All Orders по дате заказа: только канал Amazon.com, без отменённых заказов, в штуках. Мультиканальные заказы (Non-Amazon) не учтены.`,
-    `<b>% возвратов</b> = возвращённые штуки месяца ÷ проданные штуки. Режим «Тот же месяц» делит на продажи того же месяца. Режим «Прошлый месяц» делит на продажи предыдущего месяца: покупатели обычно возвращают товар через 2–4 недели, поэтому после пиков продаж (Prime Day в июле, август) этот режим точнее.`,
-    `При выборе причины процент считается только по возвратам с этой причиной. Итоговый процент считается только по месяцам, где есть данные о продажах.`,
-    `Помесячные числа за сентябрь неполные: месяц ещё идёт. Источник — Windsor.ai, коннектор Amazon Seller Central (amazon_sp).`
+    `<b>Returns</b> come from the FBA Customer Returns report and are counted in the month the item was received back at an Amazon fulfillment center.`,
+    `<b>Sales</b> come from the All Orders report by order date: Amazon.com only, cancelled orders excluded, in units. Multi-channel (non-Amazon) orders are not counted.`,
+    `<b>Return rate</b> = units returned in a month ÷ units sold. “Same month” divides by that month's sales. “Previous month” divides by the prior month's sales. Customers usually return items 2–4 weeks after buying, so after sales peaks (Prime Day in July, August) the previous-month view is more representative.`,
+    `When a reason group or reason is selected, the rate counts only returns with that reason. Totals include only months with sales data.`,
+    `<b>Categories</b> and <b>reason groups</b> come from the team's mapping sheet (Info and Reasons tabs). Customer comments are the free-text notes buyers enter on the return request (about 60% of returns have one).`,
+    `Source: Windsor.ai, Amazon Seller Central connector (amazon_sp).`
   ].map(t=>`<li>${t}</li>`).join('');
 }
 
 function render(){
   syncControls();
+  if (st.tab==='comments'){ renderComments(); return; }
   const c = compute();
-  renderKpis(c); renderRateChart(c); renderSoldChart(c); renderReasons(c); renderHeat(c); renderMonths(c); renderAsins(c);
+  renderKpis(c); renderRateChart(c); renderSoldChart(c); renderReasons(c); renderHeat(c); renderMonths(c); renderTable(c);
 }
-initControls(); renderHeader(); renderMethod(); render();
+initControls(); renderHeader(); renderMethod(); applyHash();
 </script>
