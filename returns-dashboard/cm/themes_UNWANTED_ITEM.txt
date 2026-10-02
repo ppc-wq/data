@@ -1,0 +1,7 @@
+0	Needs changed / not needed	Customers chose the stock 'My needs changed' option or wrote some form of 'no longer needed', often adding that the item is unopened or fine.
+1	Found or kept another item	Customers found another product, ordered several to compare, bought elsewhere or found their old pair.
+2	Unwanted or duplicate gift	The item was bought as a gift, and the recipient didn't want it, already had one or wanted something different.
+3	Wrong type: wireless, plug or feature	Customers realized they needed Bluetooth/wireless, a different connector (USB-C, Lightning) or a feature like a mic or noise cancelling.
+4	Fit, comfort or sound dislike	Some customers said the headphones were uncomfortable, didn't fit, fell out or sounded worse than they hoped.
+5	Accidental duplicate order	Customers ordered two by mistake and are returning the extra.
+6	Arrived too late / color	A small group returned because the item arrived after a trip or event, or the color wasn't what they wanted (often more purple than blue).

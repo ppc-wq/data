@@ -1,0 +1,536 @@
+0	Not Compatible
+1	Not Compatible|Uselessly terrible sound quality
+2	Not Compatible|the volume control doesn't work in conjunction with the system that I am using them on. I need each individual to have volume control so I'll need a different type of headphone
+3	Not Compatible|Wrong plug
+4	Not Compatible|Yes
+5	Not Compatible|Too small
+6	Not Compatible|Wrong connector
+7	Not Compatible|Phone
+8	Not Compatible|I needed them to work with our phones and they were not a compatible connection
+9	Not Compatible|Needed wireless
+10	Not Compatible|Port
+11	Not Compatible|Need usb
+12	Not Compatible|Connection
+13	Not Compatible|Wrong connection
+14	Not Compatible|Don’t need them
+15	Not Compatible|Not working with device
+16	Not Compatible|Not supported even after support help
+17	Not Compatible|ipad|na
+18	Not Compatible|Not compatible with laptop
+19	Not Compatible|No connection
+20	Not Compatible|Not working with my computer
+21	Not Compatible|No microphone
+22	Not Compatible|Too large do not fit
+23	Not Compatible|Doesn’t fit
+24	Not Compatible|I thought they were Bluetooth and my sons device the headphone won’t work in
+25	Not Compatible|Computer
+26	Not Compatible|I need to have mic access to work with my laptop and phone
+27	Not Compatible|Not Bluetooth
+28	Not Compatible|Not compatible with iPhone
+29	Not Compatible|Wrong port
+30	Not Compatible|Ordered wrong one
+31	Not Compatible|Needed usb c
+32	Not Compatible|Delay in voice
+33	Not Compatible|ipad 10gen isn’t connecting but will connect to iphone
+34	Not Compatible|Na|People can not hear us
+35	Not Compatible|did not fit our Samsung 24 devices.  It was not a USB-C connector.
+36	Not Compatible|Doesnt fit my ears
+37	Not Compatible|Not working with laptop
+38	Not Compatible|Don’t work with iphone
+39	Not Compatible|Wire too short
+40	Not Compatible|Hurt ears
+41	Not Compatible|Computer issue
+42	Not Compatible|No Bluetooth
+43	Not Compatible|Need different port
+44	Not Compatible|I need a USB-C plug
+45	Not Compatible|the box is open and there aren't the same
+46	Not Compatible|They just didn't fit in my wife's ears.
+47	Not Compatible|Doesn’t work with my phone type
+48	Not Compatible|Headphones were not compatible for school use
+49	Not Compatible|Don’t stay in ears
+50	Not Compatible|Not compatible with ps4, audio loop created
+51	Not Compatible|Bought usb c and needed aux port
+52	Not Compatible|.|I didn't know how to answer
+53	Not Compatible|I was not able to listen to 2 sets
+54	Not Compatible|Not for ipad
+55	Not Compatible|the plug did not fit into the plug hole on my clavinova
+56	Not Compatible|Not compatible with my sons device.
+57	Not Compatible|Too big
+58	Not Compatible|too small
+59	Not Compatible|Need over ear not on ear
+60	Not Compatible|Headphones too small for my granddaughter
+61	Not Compatible|Didnt work with ipad
+62	Not Compatible|doesn't fit my ear
+63	Not Compatible|Doesn’t have the output I need
+64	Not Compatible|It needs to be wireless for School
+65	Not Compatible|Bad fit
+66	Not Compatible|Did not work with my brother’s phone. This was a gift.
+67	Not Compatible|I thought this is good for Iphone
+68	Not Compatible|Not compatible with my phone
+69	Not Compatible|Not the one I needed
+70	Not Compatible|Don’t fit over ears. Speakers are too small for adults.
+71	Not Compatible|not compatible with the device I have
+72	Not Compatible|I have a hearing impairment and cannot adjust the sound - Too Loud
+73	Not Compatible|Does not work with chrome book
+74	Not Compatible|Ordered the wrong type
+75	Not Compatible|Does work well with the ps5
+76	Not Compatible|RCA jack was thinner than that was required
+77	Not Compatible|Can’t plug into phone -ordered wrong one
+78	Not Compatible|Cords not connecting
+79	Not Compatible|Too small for head
+80	Not Compatible|For school, wrong plug in
+81	Not Compatible|didn't fit my ears right
+82	Not Compatible|wrong plug
+83	Not Compatible|Too tight , not comfortable
+84	Not Compatible|length of cord isnt long enough.
+85	Not Compatible|My tablet did not have a while to plug in
+86	Not Compatible|No fit
+87	Not Compatible|not compatable with older device
+88	Not Compatible|USBC couldn't connect
+89	Not Compatible|Head phone jack
+90	Not Compatible|Not working on airplane
+91	Not Compatible|No|One of the ears have no sound
+92	Not Compatible|Do not sit at all in my ears
+93	Not Compatible|plug will not fit computer
+94	Not Compatible|Did not fit head
+95	Not Compatible|It doesn’t connect to my iPhone
+96	Not Compatible|Wrong plug in
+97	Not Compatible|It’s not compatible to my Chromebook
+98	Not Compatible|I clicked on a link for USBC earbuds and ended up with these.
+99	Not Compatible|Not fitting
+100	Not Compatible|Ordered wrong adapter
+101	Not Compatible|doesn't plug into my phone
+102	Not Compatible|Jack|.
+103	Not Compatible|Screeches when put on. Sound quality off
+104	Not Compatible|They did not work with the unit that I needed to work with
+105	Not Compatible|My fault I thought they were Bluetooth and compatible with my phone but they aren't so I will order different ones
+106	Not Compatible|Too big for the head
+107	Not Compatible|not bluetooth
+108	Not Compatible|Wrong connection plug
+109	Not Compatible|USBc to lightning adapter not able to bring sound
+110	Not Compatible|They wouldn’t connect to my phone nor my iPad, not sure why.
+111	Not Compatible|Cannot control volume on computer with switch
+112	Not Compatible|It doesn’t work with the device
+113	Not Compatible|Not working with chrome book
+114	Not Compatible|Necesito Bluetooth|Buen delivery
+115	Not Compatible|E|Would not work with my tablet
+116	Not Compatible|didnt work with device
+117	Not Compatible|Microphone quality not compatible with my laptop
+118	Not Compatible|Connectivity
+119	Not Compatible|Were they not working with a specific device
+120	Not Compatible|Don't connect to new ipad
+121	Not Compatible|didnt like the microphone
+122	Not Compatible|The headphones do not work with the computers at my daughter’s school.
+123	Not Compatible|Needed ear buds, not headphones
+124	Not Compatible|Will not plug into iPad
+125	Not Compatible|It doesn’t work with my products
+126	Not Compatible|Didn’t work for our son.
+127	Not Compatible|Device doesn’t take headphone jack
+128	Not Compatible|I need a different kind without a microphone for work.
+129	Not Compatible|Loose fit
+130	Not Compatible|Need different type of cord
+131	Not Compatible|Need phone charger type connector
+132	Not Compatible|Wrong headphone for iPad
+133	Not Compatible|I ordered a set for the iPhone 15 and they headset I received isn't compatible.
+134	Not Compatible|No plug in laptop
+135	Not Compatible|Not USB-C compatible
+136	Not Compatible|Does not work with current phone
+137	Not Compatible|Not right for school
+138	Not Compatible|Too big for kids head
+139	Not Compatible|Was not able to connect with my daughters fire tablet - kept disconnecting when switching to her mode
+140	Not Compatible|It states that it’s compatible with IPad and it’s not
+141	Not Compatible|I needed the USBC
+142	Not Compatible|I need for iPhone 15
+143	Not Compatible|Not compatible with computer
+144	Not Compatible|i thought these were for children. They are too big and cant be adjusted down enough
+145	Not Compatible|Not compatible for my head they hurt my ears
+146	Not Compatible|Sound doesn’t work with my device
+147	Not Compatible|Didn’t fit my phone I have the 12 but didn’t realize it was a pro.
+148	Not Compatible|Didn’t fit
+149	Not Compatible|don't fit well
+150	Not Compatible|Wired
+151	Not Compatible|Not work
+152	Not Compatible|Phone doesn’t have a plug
+153	Not Compatible|USBC|I need a USBC connection.
+154	Not Compatible|I needed USB C
+155	Not Compatible|Didn't like the fit
+156	Not Compatible|Volume will not turn down
+157	Not Compatible|audio was not clear
+158	Not Compatible|not school approved
+159	Not Compatible|Yes doesn't work for my son needs
+160	Not Compatible|Did not work with my son’s gaming device
+161	Not Compatible|They don't connect to my daughter's android
+162	Not Compatible|Not compatible|Won’t work|I didn't want to respond to questions
+163	Not Compatible|Needed the usb
+164	Not Compatible|Didn’t work with my phone. I read the info wrong.
+165	Not Compatible|Did not fit my ear well
+166	Not Compatible|Not working with my device
+167	Not Compatible|Can't connect with devices
+168	Not Compatible|Need it to be compatible with iPhone 16
+169	Not Compatible|no usb connection
+170	Not Compatible|Could not connect to my phone
+171	Not Compatible|I ordered the wrong ones. These are not compatible with my phone.
+172	Not Compatible|The cords did not fit
+173	Not Compatible|Not comparable with my iPad
+174	Not Compatible|Lightning port. Not compatible
+175	Not Compatible|Na|The question wasn't relevant
+176	Not Compatible|There is no mic and does not attach to my computer
+177	Not Compatible|The headphone are not connecting properly and the sound isn't clear enough to use for work calls.
+178	Not Compatible|did not work for my needs
+179	Not Compatible|I dont have a jack on my phone to plug it into
+180	Not Compatible|The connection was not long enough to work for my desktop
+181	Not Compatible|They either aren’t compatible, which it says they should be, or they just don’t work. No music coming through ear buds
+182	Not Compatible|I need USB C CONNECTOR
+183	Not Compatible|They do not work on my laptop.
+184	Not Compatible|We made a mistake ordering wired when we wanted wireless headphones.
+185	Not Compatible|doesn't work not playing sound
+186	Not Compatible|The jack doesnt fit.
+187	Not Compatible|Too large for jud
+188	Not Compatible|Phone calls do not work - only music
+189	Not Compatible|Not for iPhone
+190	Not Compatible|Need USB c
+191	Not Compatible|keep falling out of the ear
+192	Not Compatible|The headphones don’t work with my phone. Very bad sounds.
+193	Not Compatible|The aux cord does not match the port to my phone
+194	Not Compatible|Not type C
+195	Not Compatible|Did not fit my son’s head. Too big.
+196	Not Compatible|Need headphones without microphone capabilities
+197	Not Compatible|I managed to overlook the facf that the item was designed for iPhones. I am an Android user.
+198	Not Compatible|Did not fit my c port iPhone 15 would like to exchange
+199	Not Compatible|Doesn't work with the phone
+200	Not Compatible|It only plays sound in one ear not both
+201	Not Compatible|ZOOM meetings
+202	Not Compatible|Wrong kind of plug.
+203	Not Compatible|I ordered wrong ones, need for iphone 17
+204	Not Compatible|They won't work with the radio I own.
+205	Not Compatible|there wasnt a place to put the jack into the phone
+206	Not Compatible|Connections were not correct
+207	Not Compatible|Didn’t realize my husbands phone was different and it won’t work for his. Package isn’t opened.
+208	Not Compatible|Volume does not work with our ASUS laptop
+209	Not Compatible|Not functioning with the Simply Piano app that I am using
+210	Not Compatible|Not compatible with device
+211	Not Compatible|I bought a connector from the head phones to my phone but the music will not keep playing
+212	Not Compatible|needed USB not RCA style jack
+213	Not Compatible|Not compatible with iPad
+214	Not Compatible|They were too large for my baby
+215	Not Compatible|Google Pixel 7 Pro not well suited. Package remains unopened
+216	Not Compatible|work
+217	Not Compatible|Can't use lightning port
+218	Not Compatible|Yes indeed
+219	Not Compatible|I meant to order uSB c
+220	Not Compatible|It is not compatible even though the description says it is.
+221	Not Compatible|No|The question wasn't relevant
+222	Not Compatible|Don't need the wire
+223	Not Compatible|Does not work with our computer so our daughter could communicate with her friends
+224	Not Compatible|Sound not as great
+225	Not Compatible|Works for 30 seconds and then says it is not supported
+226	Not Compatible|will not plug into my lap top
+227	Not Compatible|otehr device
+228	Not Compatible|plug is not compatible with my phone
+229	Not Compatible|Misunderstood description
+230	Not Compatible|Static microphone
+231	Not Compatible|They did not work with my amp
+232	Not Compatible|Not recognized
+233	Not Compatible|bought wrong one - need the c version for new iphone
+234	Not Compatible|DOES NOT FIT
+235	Not Compatible|I thought it was Bluetooth
+236	Not Compatible|Not working with my iPhone
+237	Not Compatible|No outlet for plugin headphone
+238	Not Compatible|Wrong type for iphone
+239	Not Compatible|doesn't fit right
+240	Not Compatible|I need WiFi enabled headphones
+241	Not Compatible|I meant a jack not usb
+242	Not Compatible|Does not connect to my laptops
+243	Not Compatible|Wrong port connection
+244	Not Compatible|Can’t hear or can’t speak in the mic mic is low
+245	Not Compatible|NOT COMPATIBLE|USB-C|Done
+246	Not Compatible|Connectors bot compatible
+247	Not Compatible|Headphone pieces were too small to fit around ears
+248	Not Compatible|Dont work
+249	Not Compatible|Doesn’t fit the iPad port
+250	Not Compatible|Work computer
+251	Not Compatible|USBC|none
+252	Not Compatible|Wrong jack
+253	Not Compatible|They are too large for my head. They don't fit.
+254	Not Compatible|Described for laptops, search for HP laptop specifically, the metal Jack is too small to be detected,
+255	Not Compatible|Don’t work with my device.
+256	Not Compatible|Phone doesn’t have a place to plug them in. Thought they were wireless.
+257	Not Compatible|Volume button does not work with my Calminity frequency player.
+258	Not Compatible|Bought wrong aux type
+259	Not Compatible|Not for iPads
+260	Not Compatible|USB didn’t fit
+261	Not Compatible|It does not fit to iPhone 17 Pro Max|Product is fine; it just doesn’t fit the phone
+262	Not Compatible|I ordered the wrong earbuds set for my son’s phone
+263	Not Compatible|My ears the fit was bad
+264	Not Compatible|wrong connection...
+265	Not Compatible|Wrong size connector
+266	Not Compatible|Connector doesn't work with iphone
+267	Not Compatible|didnt fit iphone
+268	Not Compatible|I needed wireless Bluetooth headphones.
+269	Not Compatible|Needed type c
+270	Not Compatible|Doesn't fit my tv
+271	Not Compatible|The earbuds do not fit my iphone
+272	Not Compatible|Does not fit
+273	Not Compatible|Correct
+274	Not Compatible|They don’t stay in my ears
+275	Not Compatible|Wouldn't plug in to my adapter need to buy different model
+276	Not Compatible|I selected the wrong ones.  They are not compatible with my Android phone
+277	Not Compatible|not working with laptop
+278	Not Compatible|Didn't work w/my phone.
+279	Not Compatible|Unable to change AUX cable
+280	Not Compatible|I was looking for headphones that hook up to usb c
+281	Not Compatible|Doesn’t fit I phone
+282	Not Compatible|Need 35mm jack style
+283	Not Compatible|Uncomfortable on the ears
+284	Not Compatible|does not work with my I Phone
+285	Not Compatible|Didn’t fit lighting port
+286	Not Compatible|Couldn’t hear on phone calls
+287	Not Compatible|it doesn't work for Iphone 15.
+288	Not Compatible|Won't work with my laptop. Also doesn't have a mic for speaking
+289	Not Compatible|I should have ordered earphones with a USB C cord plug.
+290	Not Compatible|Has wrong end on it for me
+291	Not Compatible|They don’t have microphone
+292	Not Compatible|Not compatible with phone
+293	Not Compatible|Could not plug the earphones into my computer and need a different plug
+294	Not Compatible|not compatible with my iphone
+295	Not Compatible|It doesnt work with my laptop, phone or ipad
+296	Not Compatible|I needed one without a mic
+297	Not Compatible|Didn’t fit in port
+298	Not Compatible|will not connect to pc
+299	Not Compatible|Does not fit my phone
+300	Not Compatible|does not work with my work from home set up
+301	Not Compatible|It’s not a C based plug
+302	Not Compatible|Don't work with my phone
+303	Not Compatible|They do not work with my phone. I thought they were Bluetooth but they are just aux cord
+304	Not Compatible|Not working
+305	Not Compatible|not compatible for my phone
+306	Not Compatible|Did not work with iosd
+307	Not Compatible|Son doesn’t like them I will get another
+308	Not Compatible|Will not work with iPhone, iPad or MAC. Basically hates Apple
+309	Not Compatible|It’s not sound prove
+310	Not Compatible|I chose the wrong connector for my computer set up
+311	Not Compatible|Needed it for iPhone
+312	Not Compatible|Not compatible with my computer
+313	Not Compatible|Does not work with a non apple phone
+314	Not Compatible|Doesn’t go with iPhone
+315	Not Compatible|does not supress the noise or work with Teams
+316	Not Compatible|They didn’t have the right adaptor for my iPad.
+317	Not Compatible|Headphones to big don’t adjust smaller
+318	Not Compatible|Do not work with Apple ipod shuffle 3rd generation
+319	Not Compatible|Can’t hear people
+320	Not Compatible|They have the old plug.
+321	Not Compatible|No noise reduction.  Didn't work properly with my device
+322	Not Compatible|Not working properly with my iphone XR (sound going off and on) and ear bud falling out.
+323	Not Compatible|Wrong adapter for use with my device
+324	Not Compatible|not working with MS Teams
+325	Not Compatible|Wrong type of cord
+326	Not Compatible|Have to hold mute for it to work
+327	Not Compatible|Doesn't fit in my phone
+328	Not Compatible|Connection and compatible
+329	Not Compatible|I have an IPhone 14 Pro and it has a different ports for corded earbuds.
+330	Not Compatible|Headphones hurt my ears, could have bigger earpads
+331	Not Compatible|I have lightning port
+332	Not Compatible|Not compatible|Not compatible with my iPhone
+333	Not Compatible|Thought it was Bluetooth
+334	Not Compatible|Says it is for iPhone 16 and it doesn’t fit
+335	Not Compatible|The description said for iPhone 11 but I never got them to work. My phone said it was not compatible.
+336	Not Compatible|With my phone
+337	Not Compatible|Needed wireless Bluetooth headphones
+338	Not Compatible|Does not fit my iPhone
+339	Not Compatible|Microphone not working
+340	Not Compatible|Connector not fitting my device
+341	Not Compatible|They wouldn’t work with my computer
+342	Not Compatible|Not work with my phone
+343	Not Compatible|I believe this said it was compatible with I 15 Apple phone, but it does not fit my iPhone 15 Apple phone
+344	Not Compatible|Doesn't work with my phone
+345	Not Compatible|Device not supported on my iPhone
+346	Not Compatible|I thought it was a c
+347	Not Compatible|Didn’t fit the port
+348	Not Compatible|Needed microphone
+349	Not Compatible|Microphone doesn’t work with iPhone and audio inconsistencies
+350	Not Compatible|Baby would not keep on head
+351	Not Compatible|Needed female port not male port
+352	Not Compatible|Laptop and wfh
+353	Not Compatible|Wrong size.
+354	Not Compatible|USB-C didn’t match my husband ancient phone
+355	Not Compatible|Not working with my computer. Wrong input.
+356	Not Compatible|With my piano
+357	Not Compatible|iPhone not compatible
+358	Not Compatible|Bad Fit
+359	Not Compatible|I wanted them for the iPad, but the plug i jack was not compatible
+360	Not Compatible|These are not for a Samsung.
+361	Not Compatible|I clicked on an item in this brand that had USB-C plug, but then changed colors, and apparently it changed to the old style jack, which none of my devices have anymore, so I have no way to use these.
+362	Not Compatible|Would not work with harmonizers,  works with other devices
+363	Not Compatible|Correct incompatible w/PC
+364	Not Compatible|Don't fit
+365	Not Compatible|I didn’t want C I wanted one for my iPhone
+366	Not Compatible|Apparently require too much power for the product. I was trying to use it with.
+367	Not Compatible|Don’t work with my device
+368	Not Compatible|Wrong cord
+369	Not Compatible|Ordered wrong pair for iphone 16
+370	Not Compatible|incompatible with speaker
+371	Not Compatible|Did not work with USB C device
+372	Not Compatible|Did not allow calls to come thru headset
+373	Not Compatible|doesn't work with my phone
+374	Not Compatible|Microphone wouldn’t work with our computer
+375	Not Compatible|needed USB hook hook up
+376	Not Compatible|Didn't fit piano
+377	Not Compatible|Didn't fit my computer
+378	Not Compatible|computer
+379	Not Compatible|Does not match my hearing ability
+380	Not Compatible|not the right one
+381	Not Compatible|size
+382	Not Compatible|Not compatible with our student who has special needs.
+383	Not Compatible|To the amp
+384	Not Compatible|Not for my computer.
+385	Not Compatible|Wire is too short
+386	Not Compatible|wrong usb import
+387	Not Compatible|Uncomfortable on tbe ear
+388	Not Compatible|I needed Bluetooth heads phone.
+389	Not Compatible|Does not work with my phone
+390	Not Compatible|Wrong connection,
+391	Not Compatible|Is not for my iPhone 17 plus
+392	Not Compatible|Need C cable
+393	Not Compatible|Item is defective and incompatible
+394	Not Compatible|The jack doesn’t fit
+395	Not Compatible|No longer needed
+396	Not Compatible|Did not attach to phone
+397	Not Compatible|Will not work on my computer or phone
+398	Not Compatible|Didn’t work with game system
+399	Not Compatible|too big for her head
+400	Not Compatible|Wring connector
+401	Not Compatible|Did not fit lightening port.
+402	Not Compatible|Ear canal size.
+403	Not Compatible|Doesn’t fit my device
+404	Not Compatible|Not for I phone
+405	Not Compatible|It is not the one I need
+406	Not Compatible|Did not work with laptop.
+407	Not Compatible|incompatible with my iphone
+408	Not Compatible|It says it was compatible with iphone....but it is not.
+409	Not Compatible|Not compatible|Doesn’t wirk|No
+410	Not Compatible|Has 3.5mm jack, need usb-c
+411	Not Compatible|My iPad does not have the cord hole
+412	Not Compatible|wont fit in phone
+413	Not Compatible|Ipad|Nine
+414	Not Compatible|Didn't work with my computer
+415	Not Compatible|I bought them for a frequency generator. But when I plugged them in the volume did not adjust.
+416	Not Compatible|Volume control would not work with my tv
+417	Not Compatible|Input did not work with digital piano
+418	Not Compatible|Not compatible at connection site
+419	Not Compatible|Wrong style for iphone
+420	Not Compatible|Does not work with my iphone
+421	Not Compatible|Need wireless headphones these are wire
+422	Not Compatible|Not apple
+423	Not Compatible|Does not work with iPhone 14
+424	Not Compatible|It’s wired
+425	Not Compatible|Wrong size sent
+426	Not Compatible|Didn’t plug into my keyboard correctly
+427	Not Compatible|These won’t work. Ordered wrong ones
+428	Not Compatible|Her iPad needs a wireless headphone
+429	Not Compatible|The volume does not go up or down
+430	Not Compatible|the prong was not compatible with my device
+431	Not Compatible|Ordered wrong item
+432	Not Compatible|uncomfortable
+433	Not Compatible|Not made for Iphone
+434	Not Compatible|Too big for ears
+435	Not Compatible|Mic
+436	Not Compatible|wont connect
+437	Not Compatible|Plug doesn’t work with phone
+438	Not Compatible|No authorized at this facility|Don’t have one at this time
+439	Not Compatible|Did not work with iPhone 17 wrong end
+440	Not Compatible|earphones are not compatibility for phone
+441	Not Compatible|wrong port
+442	Not Compatible|Bad sound quality
+443	Not Compatible|Poor sound through my PC
+444	Not Compatible|not working with phone
+445	Not Compatible|Headphone jack different
+446	Not Compatible|did not fit the port
+447	Not Compatible|Wrong plugin
+448	Not Compatible|Wrong plug. Different than shown
+449	Not Compatible|Iphone
+450	Not Compatible|wrong jack size
+451	Not Compatible|Not for iPad
+452	Not Compatible|Doesn’t with my computer properly
+453	Not Compatible|Wanted them to be Bluetooth and sync with iPhone. Not compatible with the iPhone.
+454	Not Compatible|Not working correctly with vehicle
+455	Not Compatible|Not blue tooth compatible
+456	Not Compatible|I thought it had a C connection for my iPhone
+457	Not Compatible|They don't work with my phone (wrong jack) or computer
+458	Not Compatible|They were too large for my child
+459	Not Compatible|Need usbc
+460	Not Compatible|My iPhone doesn’t accept it
+461	Not Compatible|not what i wanted
+462	Not Compatible|Too small on head
+463	Not Compatible|i thought i coule speak into it for zoom calls
+464	Not Compatible|VERY POOR sound quality
+465	Not Compatible|Not compatible with cell phone.
+466	Not Compatible|Not working with phone
+467	Not Compatible|Not compatible to my iPhone|Wrong one|I didn't want to respond to questions
+468	Not Compatible|Not fitting in port
+469	Not Compatible|They don’t work with my phone
+470	Not Compatible|Can’t use to talk on iPhone
+471	Not Compatible|Needed a different connection. Unopened.
+472	Not Compatible|Na|Not needed
+473	Not Compatible|Wanted wireless
+474	Not Compatible|Need Wireless headphones
+475	Not Compatible|Need wireless headphones
+476	Not Compatible|The headphones jack isn't compatible with any objects we have here
+477	Not Compatible|Does not plug into iPhone
+478	Not Compatible|phone
+479	Not Compatible|This was my mistake - I have and iPhone 17 - I will order this same product that is compatible. No worries.
+480	Not Compatible|Doesn’t work with iphone
+481	Not Compatible|With device
+482	Not Compatible|My daughter wanted wireless and I thought she said she didn't like wireless.
+483	Not Compatible|Won’t connect to
+484	Not Compatible|Did not fit the port
+485	Not Compatible|Did not work for calls/mic on iPhone 16
+486	Not Compatible|Doesn’t work with phone
+487	Not Compatible|Don't work with phone
+488	Not Compatible|Did not work with my son’s device
+489	Not Compatible|I ordered the wrong plug
+490	Not Compatible|Wrong plug type
+491	Not Compatible|I needed the lightening onw
+492	Not Compatible|did not fit computer
+493	Not Compatible|The way it plugs into the computer. I thought it was usb
+494	Not Compatible|It doesn’t fit my wife’s head correctly.
+495	Not Compatible|Device not compatible. We need wireless headphones.
+496	Not Compatible|It’s a plug-in. It does not work with device we have.
+497	Not Compatible|Says it works with a laptop but it does not.
+498	Not Compatible|Wrong plug for port
+499	Not Compatible|They say they are iPhone compatible and they are not
+500	Not Compatible|Does not plug into cell phone
+501	Not Compatible|It’s not compatible with my phone
+502	Not Compatible|Connection jax
+503	Not Compatible|Were not comfortable
+504	Not Compatible|With tv
+505	Not Compatible|No sound is produced with the machine i have for music
+506	Not Compatible|Not compatible with gaming console
+507	Not Compatible|Did not work with VR
+508	Not Compatible|is not bluetooth enabled
+509	Not Compatible|Not compatible with I-phone 13
+510	Not Compatible|These are earbuds for the iPhone, and I needed them for Samsung Android phone. (I've since ordered the correct ones from Amazon.)
+511	Not Compatible|Did not fit in device
+512	Not Compatible|Got a new iPhone 17 and not compatible
+513	Not Compatible|need for iphone so did not work
+514	Not Compatible|Didn’t work when I connected to computer
+515	Not Compatible|no compatible|does fit phone plug
+516	Not Compatible|My son’s computer headphone jack does not work.
+517	Not Compatible|Port was not compatible with my phone
+518	Not Compatible|Phone was lightning & not usb-c
+519	Not Compatible|Not fitting computer port
+520	Not Compatible|Port didn’t fit
+521	Not Compatible|New tablet does not have a headphone jack.
+522	Not Compatible|Our device needs a usb c
+523	Not Compatible|Doesn’t do what I thought they would
+524	Not Compatible|doesn't work on device
+525	Not Compatible|Apple phone
+526	Not Compatible|Not compatible|I bought the wrong one
+527	Not Compatible|Will not work with current iPad
+528	Not Compatible|Needed 1/4 inch auxiliary jack
+529	Not Compatible|bought wrong port type
+530	Not Compatible|It was a wired earphone I needed wireless
+531	Not Compatible|Another device
+532	Not Compatible|Item not Bluetooth
+533	Not Compatible|Too big on head.
+534	Not Compatible|didn't fit the phone
+535	Not Compatible|does not fit phone

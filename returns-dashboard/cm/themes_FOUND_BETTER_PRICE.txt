@@ -1,0 +1,3 @@
+0	Stock better-price reason	These comments contain only the stock option text, or a short 'better price' note.
+1	Named cheaper source	Customers named where they found it cheaper: Amazon (another brand or a sale) or other retailers.
+2	Better quality for the money	Some say the product felt cheap or low quality next to the alternative.

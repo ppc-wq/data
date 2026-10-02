@@ -1,0 +1,61 @@
+0	Delivery Issue|Item was late|Late
+1	Delivery Issue|Item was late|Arrived late
+2	Delivery Issue|Item was late|Delivered too late
+3	Delivery Issue|Item was late|It was supposed to be early morning
+4	Cancelled order but still received
+5	Delivery Issue|Item was late|na
+6	Delivery Issue|Item was late|We were going on a trip and the package was delayed so we had to buy this elsewhere to make sure we have it in time for our trip.
+7	Delivery Issue|Item was late|It said lost. So i ordered a new pair
+8	Delivery Issue|Item was late|arrived after the event
+9	Delivery Issue|Item was late|We started school on Monday and needed them immediately. So, we had to buy another pair when this one was delayed in shipping.
+10	Delivery Issue|Item was late|It was supposed to come the next day!! It came 2 days later.  Not okay.
+11	Delivery Issue|Item was late|Too late, I bought another one already
+12	Delivery Issue|Item was late|item late
+13	Delivery Issue|Item was late|I expected this item before I left for vacation it showed up after I left.
+14	Delivery Issue|Item was late|I needed these for vacation and they shipped late but I couldn’t cancel the order.
+15	na
+16	Delivery Issue|Item was late|Reordered due to original order getting lost in transit
+17	Delivery Issue|Item was late|It was several days late so had to reorder and this item wouldn’t cancel
+18	Delivery Issue|Item was late|Was supposed to be delivered on August 5th but came on the 6th. I had to go to Walmart and purchase everything.
+19	It arrived after our trip.
+20	Delivery Issue|Item was late|Too late to use
+21	Delivery Issue|Item was late|Came after expected delivery date. No longer need
+22	Don’t need
+23	Delivery Issue|Item was late|Had a flight
+24	Arrived after desired date bought other headphones that were better
+25	Too late
+26	Delivered too late to use
+27	Delivery Issue|Item was late|Didn’t arrive in time for trip
+28	Ptoduct arrived too late for trip
+29	Delivery Issue|Item was late|it was late.   i needed it earlier
+30	Delivery Issue|Item was late|Arrived too late
+31	Delivery was shipped to incorrect facility and took longer than promised
+32	Delivery Issue|Item was late|Already repurchased
+33	Bought one at the store
+34	Delivery Issue|Item was late|Came after we left for vacation
+35	Delivery Issue|Item was late|I needed it for my online test in the morinind, but it has benn delivered late
+36	Delivery Issue|Item was late|Don't need
+37	Delivery Issue|Item was late|no
+38	It was supposed to be delivered 5pm-10pm and it was not delivered until the next morning and we were no longer in town
+39	Needed this for airplane travel. Purchase was based on product arriving in time for these travel plans. Had to purchase another pair from Amazon. Returning these for refund. Never Opened the box.
+40	Late
+41	Delivery Issue|Item was late|Said was going to be delivered and the date changed.  It was too late for me as I left for out of town.
+42	Delivery Issue|Item was late|Ordered alternate earbuds
+43	Delivery Issue|Item was late|too late
+44	To late
+45	I received notifications that this was delayed (quite a few days). Then, I received notification that the order was cancelled.  Then I received notification that the order was on its way.
+46	Delivery Issue|Item was late|Ordered it bc it said it would be here by Monday when I needed it for Tuesday. Got it on Tuesday afternoon
+47	Delivery Issue|Item was late|Far too late - needed sooner and had to buy elsewhere.
+48	Delivery Issue|Item was late|Didn’t get in time
+49	Delivery Issue|Item was late|Reordered when lost
+50	delivery was suppose to be 2/15 and It arrive late on 2/16
+51	Item was late and i had to reorder another set.
+52	Delivery Issue|Item was late|After we left outta town
+53	Delayed and arrived too late
+54	N
+55	Delivery Issue|Item was late|Bobbin
+56	Delivery Issue|Item was late|Past christmas
+57	x
+58	Delivery Issue|Item was late|Not here for Christmas
+59	needed it sooner for a trip
+60	Too

@@ -1,0 +1,4 @@
+0	Wrong color (blue vs purple)	Customers ordered blue, navy or another color and received purple or a different color.
+1	Wrong connector or model	The plug or phone version didn't match what the customer thought they ordered.
+2	Expected wireless / mic / features	Customers expected wireless, a microphone or in-line controls.
+3	Duplicate or wrong product sent	Customers received duplicate boxes or an entirely different, used product.

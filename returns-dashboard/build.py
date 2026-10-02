@@ -6,7 +6,7 @@ Mappings (optional, from the team's Google Sheet, exported as CSV):
   map/info.csv     tab "Info"    -> ASIN -> category / product / parent-child
   map/reasons.csv  tab "Reasons" -> return reason -> classification
 """
-import calendar, collections, csv, glob, html, json, os, re
+import calendar, collections, csv, datetime, glob, html, json, os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, 'raw')
@@ -17,7 +17,7 @@ LAST_DAY = '2026-09-30'
 AS_OF = 'Sep 30, 2026'
 FP = 'fba_fulfillment_customer_returns_data__'
 OP = 'flat_file_all_orders_data_by_order_date_general__'
-UNCAT = 'Uncategorized'
+UNCAT = 'Not in Info tab'
 
 
 def month_end(m):
@@ -75,7 +75,9 @@ for path in sorted(glob.glob(os.path.join(RAW, 'fba_*.json'))):
         if key in seen:
             continue
         seen.add(key)
-        m = r[FP + 'return_date'][:7]
+        # Seller Central's return report dates returns in UTC; use the same day boundary
+        day = datetime.datetime.fromisoformat(r[FP + 'return_date']).astimezone(datetime.timezone.utc).strftime('%Y-%m-%d')
+        m = day[:7]
         if m not in MONTHS:
             continue
         asin = r[FP + 'asin']
@@ -85,7 +87,7 @@ for path in sorted(glob.glob(os.path.join(RAW, 'fba_*.json'))):
         returns[(acct, m, asin, reason, disp)] += int(r[FP + 'quantity'] or 0)
         text = html.unescape((r.get(FP + 'customer_comments') or '').strip())
         if text:
-            comments.append((acct, m, asin, reason, disp, r[FP + 'return_date'][:10], text))
+            comments.append((acct, m, asin, reason, disp, day, text))
 
 # ---- sales ---------------------------------------------------------------
 sales = collections.Counter()        # (acct, month, asin) -> units
@@ -117,6 +119,18 @@ ri = {r: i for i, r in enumerate(reasons)}
 di = {d: i for i, d in enumerate(disps)}
 comments.sort(key=lambda c: c[5], reverse=True)
 
+# comment -> theme tags (cm/u_<REASON>.txt numbers each unique text; cm/assign_<REASON>.json tags it)
+tags = {}
+for r in reasons:
+    u, a = os.path.join(HERE, 'cm', f'u_{r}.txt'), os.path.join(HERE, 'cm', f'assign_{r}.json')
+    if not (os.path.exists(u) and os.path.exists(a)):
+        continue
+    assign = json.load(open(a))
+    for line in open(u, encoding='utf-8'):
+        i, text = line.rstrip('\n').split('\t', 1)
+        tags[(r, text)] = [t for t in assign.get(i, [-1]) if t >= 0]
+untagged = sum((c[3], c[6].replace('\n', ' ').replace('\t', ' ')) not in tags for c in comments)
+
 data = {
     'months': MONTHS,
     'asOf': AS_OF,
@@ -138,8 +152,9 @@ data = {
                 for k, v in sorted(returns.items())],
     # [account, month, asin, units]
     'sales': [[accts.index(k[0]), MONTHS.index(k[1]), ai[k[2]], v] for k, v in sorted(sales.items())],
-    # [account, month, asin, reason, disposition, 'YYYY-MM-DD', text]
-    'comments': [[accts.index(c[0]), MONTHS.index(c[1]), ai[c[2]], ri[c[3]], di[c[4]], c[5], c[6]]
+    # [account, month, asin, reason, disposition, 'YYYY-MM-DD', text, [theme indices]]
+    'comments': [[accts.index(c[0]), MONTHS.index(c[1]), ai[c[2]], ri[c[3]], di[c[4]], c[5], c[6],
+                  tags.get((c[3], c[6].replace('\n', ' ').replace('\t', ' ')), [])]
                  for c in comments],
     'salesCoverage': {ACCOUNTS[a]: {m: {'through': d, 'partial': d < month_end(m)}
                                     for (aa, m), d in sorted(last_day.items()) if aa == a}
@@ -150,6 +165,7 @@ data['summaries'] = json.load(open(summ)) if os.path.exists(summ) else {}
 
 out = os.path.join(HERE, 'data.json')
 json.dump(data, open(out, 'w'), separators=(',', ':'), ensure_ascii=False)
+print('comments without theme tags:', untagged)
 print('asins', len(asins), 'mapped', sum(a in asin_info for a in asins),
       'categories', len(cats), 'reasons', len(reasons), 'groups', len(groups),
       'return rows', len(data['returns']), 'comments', len(comments), 'bytes', os.path.getsize(out))

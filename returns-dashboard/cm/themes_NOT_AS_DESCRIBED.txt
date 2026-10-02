@@ -1,0 +1,8 @@
+0	Uncomfortable or poor fit	Ear cups too small or too large (often for kids or toddlers), headbands too tight, ears that hurt, and earbuds that won't stay in.
+1	Poor sound quality	Sound is described as tinny, muffled or thin with no bass. Buyers say it doesn't match the 'high-quality sound / deep bass' claims, and some mention static or volume that won't go low enough.
+2	Midnight blue looks purple	The listed 'midnight blue/navy' color arrives looking purple. There are a few other color complaints too (pink instead of red or black, silver accents on 'black').
+3	Wrong connector or incompatible	The plug doesn't fit the buyer's device (iPhone 16/17, USB-C vs 3.5mm vs Lightning, iPad, laptop, piano), or the cord is too short or too long.
+4	Not actually noise cancelling	The listing says 'noise cancelling', but these are passive headphones that block little or no background noise.
+5	Build quality / used items	Products feel cheap or flimsy, cords break or are noisy against clothing, and some units arrive opened, used or with ear wax.
+6	Microphone missing or weak	Buyers expected a mic or boom mic and there isn't one, or the inline mic is muffled or echoes on calls.
+7	Expected wireless/Bluetooth	Customers thought they were buying wireless or Bluetooth headphones, often admitting they misread the listing.

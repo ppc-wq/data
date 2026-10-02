@@ -1,0 +1,1207 @@
+0	Not as Expected
+1	Not as Expected|Too small|No
+2	Not as Expected|Not comfortable|No
+3	Not as Expected|Uncomfortable|No
+4	Not as Expected|Too big|No
+5	Not as Expected|Poor sound quality|No
+6	Not as Expected|Sound quality poor|No
+7	not the same
+8	Not as Expected|Fit uncomfortable|No
+9	Not as Expected|poor sound quality|no
+10	Changed Mind|Not as Expected|Color
+11	Bought 5 pieces. Opened one box and it sounds terrible and the remaining 4 are still in box unopened.
+12	Not as Expected|Poor sound|No
+13	Not as Expected|Uncomfortable fit|No
+14	Changed Mind|Not as Expected|Not needed
+15	Changed Mind|Not as Expected|Not comfortable
+16	Y
+17	Not as Expected|Poor sound quality, as confirmed by others.|No
+18	Wrong
+19	Not as Expected|Hurt when you wear them and too big for kids|No
+20	Not as Expected|They are purple not blue
+21	Not as Expected|Didn’t fit right|No
+22	Changed Mind|Not as Expected|Too big
+23	Changed Mind|Not as Expected|Na
+24	Not as Expected|Wrong color|No
+25	Not as Expected|Does not fit well|No
+26	Not as Expected|hurt my ears|no
+27	Changed Mind|Not as Expected|Too small on ears
+28	Not as Expected|Too small for ears|No
+29	Not as Expected|It’s uncomfortable|Not sure
+30	Small ear covers and hard head piece
+31	Not as Expected|Not fixing property in ears|No
+32	Not as Expected|Too large for child|None
+33	Not as Expected|They they were wireless
+34	Not as Expected|Quality|No
+35	Not as Expected|Color different than expected|No
+36	Not as Expected|Did not like it|No
+37	Changed Mind|Not as Expected|Ear pieces did not fit
+38	Not as Expected|Not expected|The question wasn't relevant
+39	Not as Expected|Sound quality|No
+40	Not as Expected|Poor quality|No
+41	Not firing my device
+42	Not as Expected|I didn’t realize the microphone was built in and don’t want that style.|it said microphone included, but not built in microphone
+43	Not as Expected|poor quality sound|no
+44	No
+45	Not as Expected|Small
+46	Not comfortable
+47	Not as Expected|Cheap and uncomfortable|No
+48	Not as Expected|Didn’t like|No
+49	Not as Expected|fit uncomfortable|no
+50	Too small
+51	Not as Expected|THe fit was uncomfrotable. One box sealed. One box opened and put back in.|no. just hard to gauge online how it will fit
+52	Description indicates these are noise cancelling but they are not
+53	Cups were smaller than expected not really over ear
+54	Na
+55	Not as Expected|Definitely not the noise cancellation I expected|No noise cancellation
+56	Not as Expected|too small
+57	Item was described as being noise cancelling. They are not. Item does not fit firmly as described.
+58	Not as Expected|The microphone is not working correctly.|No not at all.
+59	Not as Expected|Color|No
+60	Hurts ears
+61	Size not fit
+62	Not working
+63	Changed Mind|Not as Expected|Cheap
+64	these will not work with an iPhone 17. I went back and ordered the correct ones today.
+65	Wrong connector for iPhone
+66	Not as Expected|did not like the color|no
+67	Not as Expected|poor quality|no
+68	Not as Expected|They are painful on my ears after a while of using them. After an hour not comfortable at all|Not that I saw no. I'm getting a pair of over ears instead
+69	Not as Expected|Horrible buzzing noise|Didnt say there would be a buzzing noise
+70	Not as Expected|Sound quality was poor|No
+71	Changed Mind|Not as Expected|the sound was not good
+72	Not as Expected|The rubber buds werent the same as in the picture, these were black instead of the clear that are shaped and feel different
+73	Not as Expected|Not needed|None
+74	Not as Expected|too small|not sure
+75	Not as Expected|The fit was uncomfortable on my toddler.|It was not exact for my kid
+76	Not as Expected|Looks used|None , but looks like the product is used
+77	Not as Expected|Thought they were wireless|No I misread
+78	Not as Expected|No I want a Bluetooth|No just is not a Bluetooth
+79	Changed Mind|Not as Expected|Color not good
+80	Not as Expected|They did not fit snuggly enough and were loose. The ear pads also felt uncomfortable|N/a
+81	Not as Expected|ok|incomodos, peque;os para una ni;a|ninguno
+82	Not as Expected|too big for kids|It says it is for kids
+83	Not as Expected|Thought they were noise canceling
+84	Not as Expected|poor noise canceling|I didn't find anything inaccurate in description
+85	Not as Expected|Sound quality poor|Na|No
+86	Not as Expected|They were too big|No
+87	Not as Expected|sound is not great|sound not as expected
+88	Changed Mind|Not as Expected|Didnt like the sound quality
+89	Not as Expected|I ordered two styles.  These are compact but a case would protect them more.|No
+90	Not as Expected|Large for my daughters ears|No
+91	Changed Mind|Not as Expected|Wasn’t adjustable to fit my head
+92	Not as Expected|sound poor, mic poor|thought they would be good, but they’re bad
+93	Not as Expected|I was looking for air tube ear phones|No - return is unopened|ok
+94	Not as Expected|didn't fit ears|shape
+95	Not as Expected|Fit uncomfortable. Too small. Didn’t go over ears|No
+96	Not as Expected|Carry old connector|Yes, didn't mention connector type
+97	Not as Expected|Did not fit well or snug over ears|No
+98	Not as Expected|Earpieces were too small|Description said they would fit adults, but they seem sized for small children
+99	Not as Expected|They’re purple!|Expected dark blue based on picture, son won’t use them
+100	Not as Expected|uncomfortable forkid|no
+101	Not as Expected|Uncomfortable to wear|N/a
+102	Not as Expected|The item was visibly used and not in new form|No
+103	Not as Expected|no longer needed|no
+104	Changed Mind|Not as Expected|Color is not blue it is purple
+105	Not as Expected|Granddaughter didn’t like them|No
+106	Not as Expected|na|I didn't know how to answer
+107	Color is more purple than midnight blue
+108	Not as Expected|Not over the ear|No
+109	Not as Expected|Ordered gray ones|They sent the wrong color
+110	Not as Expected|Too big for bookbag|No
+111	Not as Expected|These are purple, not midnight blue as described.
+112	Not as Expected|when I tried on the headphones, they were too small for me.|nothing innacurate. It is simply a fitment issue.
+113	Not as Expected|Earplugs did not fit for me|I don’t know
+114	These headphones were marketed as a premium sound and the quality is the same as my nine dollar headphones purchased from Amazon previously. I don’t think that the quality sound matches the price
+115	Not as Expected|The cushioned part of the head phones are small on the ears|no
+116	Not as Expected|Color looks purple|Color more purple than blue
+117	Not as Expected|Too large|No
+118	Not as Expected|I thought I ordered the usb c ones.|No
+119	Not as Expected|cord is too long|No but a more detailed description of how long the cord is.
+120	Not as Expected|Other|Cord|No
+121	Not as Expected|Color|Darker than expected
+122	Not as Expected|very cheap feeling|no
+123	Not as Expected|Uncomfortable on the ears|No
+124	Not as Expected|The Fit was Uncomfortable|The Volume Slider didn't work as intended on my devices
+125	Not as Expected|Too big in my daughter|No
+126	Not as Expected|Color is supposed to be midnight blue but looks purple instead.|Yes. The color was described ad midnight blue.
+127	Not as Expected|They don’t fit my child well|No
+128	Not as Expected|Sound quality want what I was expecting|No
+129	Not as Expected|FALLS OUT THE EAR|DOES NOT STAY IN THE EAR
+130	Not as Expected|Can’t play with 2|No
+131	Not as Expected|Size|Don't know|I didn't want to respond to questions
+132	Not as Expected|Cord did not match my phone|No
+133	Changed Mind|Not as Expected|I expected a different type of mic.
+134	Not as Expected|Too big for child|Thought they were for children
+135	Changed Mind|Not as Expected|Bigger than what I expected
+136	No tiene bloutho
+137	Not as Expected|My ears are too big. It was painful to wear due to ears pushing on my glass|No
+138	Not as Expected|Small|None
+139	Not as Expected|Unable to reduce volume. The lowest volume is too loud.|I thought the volume would be more adjustable
+140	Not as Expected|Looks purple not blue
+141	Not as Expected|Too big on my daughter|No
+142	Not as Expected|Loose
+143	Not as Expected|We ordered midnight blue and the color was purple
+144	Not as Expected|midnight blue is actually purple.|call this color purple
+145	Changed Mind|Not as Expected|It didn’t work in airplane
+146	Not as Expected|Did not fix my second child.|The second wireless headphone did fit my second child.  (The Midola model B-06)
+147	Not as Expected|Too big for my child’s ears|No
+148	Not as Expected|In the pictures there was a real microphone pictures, this one doesn’t have it; teacher requires microphone
+149	Not as Expected|poor quality|not as expected
+150	Not as Expected|I thought it had a microphone as well|Nooe
+151	Not as Expected|The picture shows blue, but the color is more purple
+152	Changed Mind|Not as Expected|Not as comfortable
+153	Not as Expected|No audio - for calls|Unsure|Please let me return
+154	Not as Expected|The wire housing is disintegrating.  It’s breaking apart.|No nothing inaccurate.  I just got a defective item.
+155	Not as Expected|Purple|No
+156	Changed Mind|Not as Expected|Daughter changed mind
+157	Changed Mind|Not as Expected|Not a comfortable fit for child user
+158	Not as Expected|Too small
+159	Not as Expected|But you’re coverings were smaller than I expected|Just wasn’t as comfortable around my ears as I needed it to be
+160	Not as Expected|not what I expected|The question wasn't relevant
+161	Not as Expected|Purple girl color - not good for my son|Thought would be more blue
+162	Not as Expected|wrong color|looks dark and not blue
+163	Not as Expected|Not soft enough for my autistic child|na|not soft enough|The question felt invasive
+164	Not as Expected|They aren’t wireless|No
+165	Not as Expected|The package came already opened. The plastic wrap was NOT intact. I will not accept a previously opened headphone package. NOT any previously opened package for that matter!!!|I did not attempt to use the headphones. The inner package was NOT intact.
+166	Not as Expected|Color|Return
+167	Not as Expected|Color is more purple than navy|Images show headphones as navy|None
+168	Not as Expected|These are not good headphones.|The headset is small and the sound is tingy.
+169	Not as Expected|Color is purple, not blue|Color said midnight blue
+170	Not as Expected|bass wasn't good enough|that was the biggest problem in trying to find well-balanced sound quality
+171	Not as Expected|Too big for my toddlers head|No
+172	Changed Mind|Not as Expected|Too small to completely cover ear
+173	Changed Mind|Not as Expected|Too big for my kids head
+174	Not as Expected|To wide for my child’s head|No
+175	Not as Expected|Don't fit well in ears|No
+176	Not as Expected|Thought there was a Bluetooth option
+177	Not as Expected|Volume up button is not working|No
+178	Not as Expected|Consistently turned Siri on|None
+179	Changed Mind|Not as Expected|cable too short
+180	Not as Expected|Don’t work with iPad|No
+181	Not as Expected|Hurt my ears|They look bigger in the pictures
+182	Not as Expected|Poor sound quality|It said it had good sound
+183	Not as Expected|The color seemed to be more of a dark purple|Yes, it’s called midnight blue|No other detail
+184	Not as Expected|These are not midnight blue. They look purple.
+185	Changed Mind|Not as Expected|It is more purple in color than expected.
+186	Not as Expected|Couldn’t try on|No
+187	Not as Expected|They hurt my ears|The ear cushions were not soft
+188	Not as Expected|Heavy|No
+189	Not as Expected|Midnight looks like purple
+190	Not as Expected|It didn't fit my daughter's head the way she wanted.|No
+191	Not as Expected|No microphone|No
+192	Not as Expected|Need more sound|Just not enough mid range and bass
+193	Doesn’t work
+194	Not as Expected|made the wrong order|no
+195	Not as Expected|It’s good sazie problem|No
+196	Not as Expected|I t did not fit|I do not think so
+197	Changed Mind|Not as Expected|Not Bluetooth
+198	Not as Expected|Ear piece too small|No
+199	Changed Mind|Not as Expected|It does not work with my Android phone
+200	Not as Expected|Need microphone|Na
+201	These are not kid size
+202	Not as Expected|Sound quality poor|No bass.
+203	They don’t work
+204	Not as Expected|too big|No
+205	Not as Expected|Didn’t fit
+206	Changed Mind|Not as Expected|Too large
+207	Not as Expected|I thought they were wireless|No, my mistake
+208	Not as Expected|Hard on ears|Different from pictures. Not comfortable
+209	Not as Expected|Box was delivered unsealed,  obviously opened and used. I expected a new pair.|No
+210	Not as Expected|Too big
+211	Changed Mind|Not as Expected|Extra
+212	Changed Mind|Not as Expected|Change my mind
+213	Changed Mind|Not as Expected|Change mind
+214	Not as Expected|poor sound quality. consistent screeching in ear|no
+215	Not as Expected|Kid didn’t like it|He thought it was blue
+216	Not as Expected|The size was too small and uncomfortable|No
+217	Not as Expected|Fit too large for toddler|No
+218	Not as Expected|I couldn’t adjust the volume effectively. Audio was very loud.|No
+219	Not as Expected|Purple
+220	Not as Expected|Looked purple|Yes says midnight blue and they are ourple|None
+221	Not as Expected|I thought the wires weren’t plastic, but they are.
+222	Not as Expected|I cant use  them because  they not type c input|No
+223	Not as Expected|To small|No
+224	Not as Expected|It’s purple. Not the color advertised.
+225	Not as Expected|It is too purple|Yes, the color is quite different from the picture
+226	Not as Expected|The volume control does not work|No. It says it has volume control and there is a device on the line but it does not decrease or increase volume
+227	Not as Expected|It is a little small around the ears. The square shape would be better|Yes the actual ears area is tighter
+228	Not as Expected|Very very cheap quality|Low quality
+229	Not as Expected|Look different|Looks different than picture
+230	El sonido no es bueno como dice en la pagina
+231	Not as Expected|Wrong color|Yes, color is different from the image preview
+232	Not as Expected|Thought the ear pieces would be bigger|n/a
+233	Not as Expected|Not the right size for my daughters head|No
+234	Not as Expected|The headphone was unable to control the volume.|Description needs to say “volume control may not be compatible with certain televisions.”
+235	Not as Expected|They are too small for my daughter's ears.|Not, that we could tell.  They were just uncomfortable on her ears because of the size of the ear coverings
+236	Not as Expected|I sound quality was not too good|No
+237	Not as Expected|The earbud sound output is excellent. The problem is the wire hustling against clothes is heard in the earbuds.|No
+238	The description says they are blue, but the product I received was purple.
+239	Not as Expected|Too big on ears|No
+240	Changed Mind|Not as Expected|More purple then blue
+241	Not as comfortable
+242	Not as Expected|Wanted blue, headphones are purple|The color
+243	Not as Expected|I ordered wrong one, needed with microphone|No
+244	Changed Mind|Not as Expected|Too small
+245	Not as Expected|Cheap materials and ear cups are too small.|I don’t know.
+246	Not as Expected|The color is not as I expected|No
+247	Not as Expected|na|The question wasn't relevant
+248	Not as Expected|not noise cancelling|yes
+249	Not as Expected|These are purple not midnight blue
+250	Changed Mind|Not as Expected|The part that rests against the ear was small.
+251	Not as Expected|Not USB enabled
+252	Not as Expected|there are purple, not blue!
+253	Not as Expected|Need a microphone|No my mistake
+254	Changed Mind|Not as Expected|The volume doesn’t work
+255	Not as Expected|The color is not as pictured
+256	Not as Expected|Color looks purple|Color is purple
+257	Not as Expected|These were for my child, they’re too big for her head|No
+258	Not as Expected|The cord is not compatible|No
+259	Not as Expected|Do not cancel noise|Not enough sound proof
+260	Not as Expected|mic not working|Can't recall the details of the description, but the bass was also very weak
+261	Not as Expected|The microphone quality is very low input which I need for work|No
+262	Not as Expected|Ordered for an inmate. Prison staff would not accept it.|No
+263	Not as Expected|Color is more like a purple|No, just the color
+264	Not as Expected|Wrong color from website
+265	Not as Expected|They are purple. Not blue
+266	Not as Expected|Doesn’t feet well|No
+267	Not as Expected|The headphones are way too small. My ears are hurt|They are too small
+268	Not as Expected|Ear buds are uncomfortable to wear and the bass response is almost nonexistent.|Product described as good sound quality but I found the bass response to be poor.
+269	Not as Expected|Wong color|Wrong color
+270	Not as Expected|Size too large for kids.|No.
+271	Not as Expected|They were too big and kept falling off|Just not compatible with small kids
+272	Not as Expected|not sturdy|No
+273	Not as Expected|They are too loose and do not cancel noise|Yes. The description says noise canceling and they aren’t
+274	Changed Mind|Not as Expected|Didn’t like style
+275	Not as Expected|Not compatible|No
+276	Not as Expected|Need headphone jack not usb|Description is correct
+277	Not as Expected|School not allowed|No
+278	Not as Expected|They don't cover my ear well.|no
+279	Changed Mind|Not as Expected|Did not like the style
+280	Not as Expected|Too big for a kid|No they do not fit
+281	Not as Expected|Not noise cancelling as described.
+282	Looks more like purple
+283	Not as Expected|Poor sound quality|None
+284	Not as Expected|They did not have a usb c cord|I needed a usb c corded headphone
+285	Not as Expected|not as ecpected|did not like the look|no
+286	Not as Expected|Uncomfortable fit|Description is accurate
+287	Changed Mind|Not as Expected|Don’t fit too small
+288	Not as Expected|Too small size|Small size
+289	Not as Expected|Noise canceling feature was not effective
+290	Not as Expected|my phone has no port for the cord|sad i can't use these, they're cool
+291	Not as Expected|didmd like fit|no
+292	Not as Expected|didn't like fit|no
+293	Not as Expected|Sound was not right|no
+294	Changed Mind|Not as Expected|Earbuds not comfortable
+295	Not as Expected|These wired earbuds are shoddy and cheaply made. I would not even want to put these in my ears.  Not as advertised in reality.
+296	Changed Mind|Not as Expected|Need Bluetooth and wire
+297	These are PURPLE not blue
+298	Changed Mind|Not as Expected|The sound is not great and the background noise is too much during calls.
+299	Not as Expected|They’re supposed to be for kids. Unless the kid is an Ogar they’re too big.|Yes. Said for kids. Way too big
+300	Not as Expected|Adjustment fir fig was to big.. it did not fit my head|No
+301	Not as Expected|Color different|No
+302	Not as Expected|I thought they had a microphone, they do not.|I dont know
+303	Not as Expected|We actually didn’t need it anymore|No
+304	Not as Expected|Color looked navy but is purple
+305	Not as Expected|Not good for school. Too big.|No
+306	Not as Expected|sound quality poorer than expected.|unsure|looks nice but did not have sounds quality expected.
+307	Not as Expected|Not needed|NA
+308	Not as Expected|Sound|No
+309	Not as Expected|Color was to purple|No
+310	Not as Expected|They are more purple then midnight blue
+311	Changed Mind|Not as Expected|I do not need this one for my school because the school do not permit
+312	Not as Expected|Na|The question wasn't relevant
+313	Not as Expected|too small|The ears looked bigger in the photo
+314	Not as Expected|It is too large for my head...hangs below my ears and  is uncomfortable|no
+315	Changed Mind|Not as Expected|Too wide
+316	Not as Expected|The ear pieces are really large for kids headphones.|Not necessarily
+317	Too ight and bulky
+318	Not as Expected|Not noise cancelling|No
+319	Not as Expected|I thought I was ordering the air tube ones. I somehow got on the wrong item before adding it to the cart.|no
+320	Not as Expected|Not air tubes!|Not air tubes
+321	Not as Expected|Don't like the color|No
+322	size for ear
+323	Not as Expected|Too small for my son and he’s only in fourth grade. Should have a better description as to size.|No other feedback. Just make the return
+324	Not as Expected|Sound quality more hazy than earbuds they were intended to replace|No. Just not what the type of sound I was expecting
+325	Not as Expected|Too small|Yes
+326	Super uncomfortable for an adult
+327	Not as Expected|fit uncomfortable|does not fit
+328	No era el color de la description
+329	Not as Expected|Purchased wired head phones instead of Bluetooth|No
+330	Not as Expected|too big for my son|no
+331	These are purple not blue headphones
+332	Not as Expected|bigger than expected and these have a black rim around the year instead of gold as pictured.
+333	Not as Expected|Not as expected|Not as l wanted|I didn't know how to answer
+334	Not as Expected|The head phones are great is that I need with Bluetooth|No
+335	Not as Expected|huge|no
+336	Not as Expected|Cheaply made afraid it is going to break|No
+337	Not as Expected|won't work with my iphone|no
+338	Not as Expected|Microphone didn't work|Yes, says microphone works
+339	Not as Expected|The color is not lavender|Only the color.
+340	Changed Mind|Not as Expected|Too much use of foreign language
+341	Not as Expected|They are not the quality I thought they were|no
+342	Not as Expected|Extremely low my baby can't hear anything|Yes it didn't explain how low yhe volume
+343	Not as Expected|don't fit my ear, they keep falling out|no
+344	Not as Expected|It’s purple|I thought it was blue and it’s purple
+345	Did not have the right fit.
+346	Not as Expected|Too small for my son, uncomfortable|For little kids only too small for big kids or adults
+347	Not as Expected|Too small on ears|No
+348	Not as Expected|not suitable for two y.o
+349	Inaccurate description-expected bigger pieces.
+350	Not as Expected|They were used sold as new|Ear wax on the earbuds
+351	Not as Expected|Need usb|None
+352	Changed Mind|Not as Expected|Baby didnt like it
+353	Not as Expected|Too small|Na|I didn't know how to answer
+354	Not as Expected|too big|no
+355	Not as Expected|Cord was too short|None
+356	Item is too small and uncomfortable.
+357	Not as Expected|too big for my child|yes, said it was for kids and adults
+358	Changed Mind|Not as Expected|I changed mind and decided to buy a bluetooth set.
+359	Not as Expected|Tin sounding|.
+360	Not as Expected|uncomfortable to wear|no
+361	Wrong thing
+362	Audio sounds Twangy and not clear like
+363	Not as Expected|The sound quality was good but the length of the piece that fits in the ear is not suitable for a very petite woman with very small ears. They simply don't stay in no matter how small of rubber tips I tried.|no
+364	Not as Expected|small headphones|no
+365	Not as Expected|Sound quality|Not sure
+366	Not as Expected|Fit|Non|I didn't know how to answer
+367	Not as Expected|Sound doesn’t work all the time… Have to unplug and re-plug to get them to work|Well, you shouldn’t have to unplug them in order for them to work
+368	Not as Expected|Style and fit not as expected|No
+369	Not as Expected|Needed an app to use.|NA
+370	Not as Expected|Too flimsy|No
+371	They aren’t even close to to being blue they are most definitely purple.
+372	Not as Expected|Needed Noise canceling|No
+373	It looks more purple than blue
+374	Not as Expected|The listing claims these headphones feature '100% Noise Cancelling' and 'Noise Cancellation.' However, they do not have active electronic noise cancellation. They are just basic passive headphones that muffle sound slightly, which does not block out background noise as expected
+375	Not as Expected|People still say the can’t hear me|No
+376	Not as Expected|Doesn’t fit with needed tech|Yes not accurate
+377	Not as Expected|It does not have a microphone|no. it was my mistake
+378	No external microphone
+379	Too big for a kid  This is an adult size headset  Wrong description
+380	Not as Expected|I needed a smaller size headphones for a child|No
+381	Not as Expected|Too fussy|No
+382	Not as Expected|d|The question wasn't relevant
+383	Not very comfortable
+384	Not as Expected|To big for my child|No
+385	Not as Expected|Not as Expected. Too Small. Advertisement indicated can fit up to an Adult, that’s not true
+386	These do not fit over ear - they crush the ears
+387	I thought id be able to plug into tv…wrong type of plug
+388	Not as Expected|Poor sound quality and no bass|No
+389	Not as Expected|Connection to car not working|No
+390	Not as Expected|Poor sound quality and not noise cancelling|no
+391	Not as Expected|The sound quality is poor and does not meet my expectations. I am returning the headphones because they are not what I was looking for.|none
+392	These headphones are extra large and not adjustable. They fall right off my head with the slightest movement
+393	Sound is mediocre.  I expected more for $40.
+394	Not as Expected|The color is more purple than blue|Yes the color image is navy but the headphones are more purple
+395	Not as Expected|The color was more purple than blue|the color does not appear to be midnight blue
+396	Not as Expected|Doesn’t work with iPhone or iPad|I don’t know
+397	Changed Mind|Not as Expected|Too shiny
+398	Not as Expected|Item was supposed to have the iPhone fitting / plug-in fitting. It does not.|Yes, I specified the iPhone fitting
+399	Not as Expected|Say black but they have silver all over the ear pieces
+400	Not as Expected|Sound is muffled|No just that the sound is muffled
+401	Not as Expected|No|I didn't want to respond to questions
+402	Not as Expected|Color is not accurate to description online
+403	Changed Mind|Not as Expected|The color looked different in the picture
+404	Not as Expected|Thought the headphones contained an actual radio, and we’re not simply a pair of headphones were listening when connected to other device
+405	Changed Mind|Not as Expected|The volume at the lowest level was still too loud for my ears.
+406	Changed Mind|Not as Expected|Did not work with laptop for calls
+407	Doesn’t have the rugby charging cord
+408	Too big for kids
+409	Not as Expected|Poor sound quality, static, didn't work well with my speakers on the computer and my phone.|The headphones were smaller than expected and color was more purple than blue.
+410	The description says they have noise cancellations  And I try and they have not a single bit
+411	Not as Expected|One side doesn’t work|No
+412	Not as Expected|sound quality poor, fit uncomfortable, quality not a rugged build ensures longevity|rugged build ensures longevity, cheap plastic, images not accurate
+413	Don’t for over ears
+414	Doesn't work for my computer
+415	Wrong connection end.
+416	Sound coming from high priced item was not as good as described on Web site.
+417	Not as Expected|The sound quality is poor with a lot of white noise.|Just the sound quality
+418	Not as Expected|Using it as a mic and the sound quality of the voice is not good|none
+419	Not as Expected|Fit felt uncomfortable and audio quality was not what I wanted.|No
+420	not compatible with my husband's iphone
+421	Not as Expected|I thought they were wireless|No
+422	Not as Expected|Doesn't block sound as well as expected|No
+423	Not as Expected|Microphone is bad for calls|Yeah, microphone is muffled for calls
+424	Not as Expected|wouldn't stay in ear. kept falling out...|no
+425	Too much treble and less bass.
+426	Not as Expected|Very much echo noise on a phone call I called multiple people same result|I bought these four phone calls and research them there was inaccurate reviews and description
+427	Not as Expected|Bass levels were not as expected|The description was fine.
+428	Changed Mind|Not as Expected|They hurt my ears
+429	Changed Mind|Not as Expected|Too large for my small head
+430	Not as Expected|the type c plug keeps coming loose|no
+431	Not as Expected|Flimsy and don't fit on my ears at all.|NO
+432	Not as Expected|Fit uncomfortable, ear pieces too small|Ear pieces too small
+433	It is not compatible with our devjice. Did buy 2 other kind and both compatibke. This one is not.
+434	Not as Expected|Big|Yes, not that big
+435	Could not use with my phone
+436	Doesn't work with my phone.
+437	Not as Expected|Sound quality poor. Any touch to the wires resulted in large static in the ear|No
+438	Not as Expected|Not the color my daughter was expecting|No
+439	Didn't like color
+440	Not as Expected|Not good sound|No
+441	Not as Expected|Hearing and mic echo. Does not fit well.|No.
+442	Not as Expected|not USB also not able to pick mic up well|no
+443	Not as Expected|Didn’t set on my head and ears comfortably|No
+444	Was rated for kids but earpieces were way too big for her head.
+445	It was to have a connection to fit iPhone
+446	Poor sound quality
+447	Not needed
+448	Not as Expected|Feels cheap|No
+449	Not as Expected|Poor sound quality|no
+450	Not as Expected|cheap|yes
+451	Not as Expected|Uncomfortable fit.|No.
+452	Not as Expected|poorly manufactured|no
+453	Not as Expected|no case and a litle bigger than toddler fit|all good
+454	Microphone doesn’t pick up well based on a simple test.
+455	Not as Expected|They sell the warbler da as high quality sound because of the wood.. so I bought it on that understanding.. I don’t believe that is correct.. I think the sound is terrible le
+456	Not as Expected|fit was not what i was expecting|no
+457	Not as Expected|they don't cancel much outside noise, i cannot use them|they were advertised as noise cancelling
+458	Not as Expected|They don’t sound good; not as clear as my old ones.|No
+459	Not as Expected|Fit uncomfortable|Reviews not accurate
+460	Changed Mind|Not as Expected|Earmuffs too small
+461	Not as Expected|Unstable connection|No
+462	The ear pads were small.
+463	Not as Expected|I thought the cushions would b white|They looked white in pictures
+464	Not as Expected|Color is actually purple but states it's blue
+465	Not as Expected|yes poor sound., not comfortable|no
+466	Changed Mind|Not as Expected|Quality
+467	Not as Expected|its bigger than descript|yes much bigger
+468	Not as Expected|Fit uncomfortable and not the appropriate kind for work|Comfort level
+469	Changed Mind|Not as Expected|NA
+470	Quality not great
+471	Not as Expected|too small|no
+472	It is not mentioned anywhere that the slightest movement creates a rustling sound in the ear tubes. This makes it unusable if you plan on walking or even slightly moving around.
+473	Not as Expected|The headphone made a loud static noise when lightning got loosened.|No
+474	Not as Expected|Heard from friend bad sound quality|I don’t know
+475	very uncomfortable
+476	Changed Mind|Not as Expected|Kids size i need adult
+477	Not as Expected|Not able to hear well|No
+478	Not as Expected|Kept falling out of ear and cannot talk into it to search things. Only when you’re on the phone can you do this|no
+479	This came with the Apple lightening connector no USB C
+480	Not as Expected|Uncomfortable|Not sure
+481	Not as Expected|Poor fit|No
+482	It did not  fit comfortably.
+483	Too bad sound quality for my liking
+484	Not as Expected|Looked different.|No.
+485	Not as Expected|Too tight on ears|No
+486	Not as Expected|n/a|didnt liek the fit|na|no
+487	Not as Expected|Its just wrong color description
+488	Not as Expected|Sound quality not as good as previous pair of same item.|No
+489	Not as Expected|the smaller ear bud attachments wont fit and I use the smaller ones|It showed them on the product and comes with something I couldn't get to fit
+490	The sound is louder in one earbud
+491	Not as Expected|Not what I was looking for|No
+492	Hahah
+493	Not as Expected|I wasn't expecting them to be curved. Don't love that aspect|I'm not sure it was missing
+494	Not bluetooth
+495	Changed Mind|Not as Expected|Not compatible with phone
+496	Not as Expected|Sounds isn't good|No
+497	color not as pictured
+498	Changed Mind|Not as Expected|too big
+499	Not as Expected|Fit is uncomfortable|Not that I can see
+500	These sound absolutely terrible - not at all consistent with the performance I expected based on the website description
+501	Changed Mind|Not as Expected|Dont need
+502	Not as Expected|Color off|picture color not accurate
+503	Not as Expected|Don’t work well|No
+504	Not as Expected|were not headset for my laptop|no. just did not read it correctly
+505	the sound is not working correctly
+506	Not as Expected|no adapter|no
+507	Not as Expected|fit was not comfortable tried all tips , (this my first set of earphones.|no
+508	Not as Expected|Inadequate sound quality|No
+509	Not as Expected|I don't like the fit.|No.
+510	Poorly made
+511	Not as Expected|Feels cheap and sound quality is not good.|It's not noise canceling or isolating
+512	Not as Expected|Not noise canceling|No
+513	Not as Expected|When I pause my audio and try to listen a few minutes later I have the unplug the connector and plug it back in to play.|No
+514	No. Es el q pedi
+515	Not as Expected|Bigger than I needed|No
+516	Not as Expected|Lacks bass and balance. Too much mids|Not necessarily. Just don’t like the balance
+517	Changed Mind|Not as Expected|Doesn't work with my equipment
+518	Ear pieces feel like they are sized for children not adults.  Too small for my ears.
+519	Not as Expected|Needed a microphone and doesn't have one.|No
+520	Not as Expected|Too small/shallow|N/a
+521	Changed Mind|Not as Expected|item does not fit with my ear shape, also looks like it was previously used
+522	Terrible sound. Worst headphones.
+523	Not as Expected|Core is not compatible|No
+524	Not as Expected|The worst sound quality i have ever felt with.|No
+525	Not as Expected|Didn’t fit child|No just wrong size
+526	Not as Expected|Not wireless|No
+527	Sounds horrible
+528	Not as Expected|Mic doesn’t work with my laptop|No
+529	Wont stay in ears
+530	Not as Expected|Smaller, cheap, not good sound|Don't  know
+531	Not as Expected|The headphones fit is so tight it physically hurts my head.|did not say if was small for a child.
+532	The microphone does not work for calls. The volume also does not turn down when plugged into my computer.
+533	Not as Expected|I didn’t realize they don’t work with my phone.|I guess I just didn’t realize they were incompatible.
+534	Not as Expected|Quality bad|Quality
+535	Not as Expected|Horrible quality|Yes it says noise cancelling they are not
+536	Not as Expected|sound quality is not as good as expected|not as good as expected
+537	Not as Expected|Does not fit well.|n/a
+538	Changed Mind|Not as Expected|Not kid size
+539	Not as Expected|The cord is way too flimsy and loose. Poor quality|Yes, the images do not convey how fragile the cord is
+540	Not as Expected|From reading the reviews, these were supposed to have an excellent sound.But I don't find the quality of sound any better than a ten dollar pair from the dollar store|Not that i'm aware of other than the sound quality
+541	Not as Expected|Misread details|No
+542	Not as Expected|It doesn't fit in my laptop.|no
+543	Not as Expected|Didn’t cancel out any noises|When I searched for noise cancelling headphones, these came up. they don’t cancel noise.
+544	Not as Expected|bad sound quality|fit uncomfortable
+545	Changed Mind|Not as Expected|Thought they were smaller
+546	It is bigger and heavier than I expected.
+547	Not as Expected|Child was not comfortable wearing them|No
+548	Not as Expected|Mic is of low quality|No
+549	The headphones are big and don't fit well.
+550	Not as Expected|They do not fit the head properly.|No
+551	Looks like there are no mic.
+552	Hurts to have on ears
+553	Not as Expected|Fit uncomfortable.|Ear pieces too small.
+554	Not as Expected|Terrible sound|No
+555	Not as Expected|are not compatible with my phone|not sure I was checking compatibility
+556	Not as Expected|hear feedback from tubes. You have to be still and I walk with them.|no
+557	It doesnt fit the iphone 17
+558	Not as Expected|mic on headphones not good at all|no
+559	Not as Expected|kept falling out of my ears|no
+560	Low quality
+561	Not as Expected|No way to answer or hang up phone on the wires.|It could have mentioned
+562	Not as Expected|I wanted a corded option that plugs into a USC. These are an Aux.
+563	Changed Mind|Not as Expected|Did not cancel noise
+564	Changed Mind|Not as Expected|Cheaply made
+565	Changed Mind|Not as Expected|Thought I ordered wireless
+566	Not as Expected|They are not noise cancelling|They were supposed to reduce outside noise, they do not
+567	Not as Expected|I am significantly hearing imp I need headphones Earbuds despite what artificial intelligence told me do not work|Nothing inaccurate
+568	Not as Expected|Poor sound quality|In no way can these be described as having "High Audio Quality"
+569	Not as Expected|Bad sounded|Idk|Sounds tinny
+570	Not as Expected|wrong adapter for my phone|no
+571	Not as described. No EMF protection.
+572	Not as Expected|to heavy for my mom|no
+573	Not as Expected|The sound wasn’t great|No
+574	Not as Expected|does not fit as expected|no
+575	Buds are made on angle to fit ears.  Not shown in the displays.  The angle does not fit my ears. Buds fall out.
+576	Not as Expected|Sound quality is poor|Sound quality issues
+577	Not as Expected|cheap and did not feel nice|cheap and did not feel as nice as described
+578	Not as Expected|Not comfortable and not noise canceling|Not what I expected|I want to return these
+579	Not as Expected|too small|It's not accurate to say this size goes up to 7 years old. They are too small for my 5 year old.|None
+580	No microphone
+581	Changed Mind|Not as Expected|Small
+582	There is no usb connector.
+583	Not as Expected|Microphone|No
+584	Not as Expected|They are small and don't cover as much of the ears as my child would prefer.|N/A
+585	Not as Expected|They sound tinny and muffled.|These fit too tightly on my head and ears.
+586	Not as Expected|They don’t have a microphone so I can’t use them to take calls.|Stated it was good for remote work but didn’t state it had/didn’t have a microphone.
+587	Sound quality was not as expected
+588	Very confusing to use
+589	Changed Mind|Not as Expected|Not good fit
+590	Not noise canceling like it said they were.
+591	Not as Expected|I was of the understanding it had a microphone.|No
+592	Not as Expected|bad quality|sound is awful
+593	Not as Expected|Poor sound quality.|They sound tinny and muffled.
+594	Not as Expected|Poor sound quality|Na
+595	Not as Expected|Sound is tinny with no bass|Trying to get a return label|Return label
+596	Sound quality not so good
+597	Not as Expected|Very uncomfortable setup|Na
+598	Not as Expected|Too tight for my daughters head.|N/A
+599	Not as Expected|too light|no
+600	Sound is horrible and volume adjust does not work properly
+601	Not as Expected|Sound quality of earphones.|Sounded like a previous purchase of cheaper earbuds of same technology, but 1/3 the price.
+602	Not as Expected|Doesn't fit/uncomfortable|No
+603	Changed Mind|Not as Expected|sound quality and noise cancellation not the best
+604	Not as Expected|Not as expected|The question wasn't relevant
+605	Not as Expected|Need usbc|Need usbc connector to use
+606	Not as Expected|Could not connect to work laptop|Couldn’t use them
+607	Not as Expected|Not comfy on ears|No
+608	Not as Expected|cheap!!!|no
+609	Not as Expected|sound not great|no
+610	Changed Mind|Not as Expected|the
+611	Not as Expected|Item in box was different from description
+612	Not as Expected|sound quality poor.|not as expected.
+613	loose fit on head
+614	Changed Mind|Not as Expected|My kid didn’t like it
+615	Sound quality is low
+616	Not as Expected|Doesn't do noise canceling as represented and ear cushions come off too easily.
+617	Not as Expected|sound quality not what i expected|no
+618	Need iPhone
+619	Not as Expected|sound quality unclear|sound quality during calls wasn't clear
+620	Not as Expected|Poor sound quality|Nothing inaccurate. Just sounds muffled.
+621	It was to be on the ear. It is not. It is definitely over the ear. For someone with hearing aids, this will not work.
+622	USB-c plug does not fit my iPhone 17 air.
+623	My wife thought it would provide active noise canceling, which it does not so.
+624	Sound quality very low
+625	Not as Expected|too tight on my head and the sound is muffeled|I don't think so.
+626	Did not fit correctly over ears, cheaply made
+627	Not as Expected|Not enough bass or noise cancellation|No
+628	Changed Mind|Not as Expected|It is only hardwire and not bluetooth
+629	Not as Expected|My head is too big. They squeeze it|No
+630	Weird sound
+631	Noise canceling does not work
+632	Not as Expected|Bad sound quality|N/A
+633	Doesn’t fit piano
+634	Not as Expected|Don’t sound good|No
+635	I need one with Bluetooth
+636	Does not work with my computer, no where to plug in the round cord plug
+637	Not as Expected|Will not stay in the ear|It says it fits good and stays in the ear
+638	Not as Expected|Not noise cancelling.|no
+639	Changed Mind|Not as Expected|Did not fit my babies head, too big
+640	Not as Expected|Sound quality is not very good and buds won’t stay in ears|No
+641	Not as Expected|No mic|Mic
+642	Not as Expected|cannot use with our ipad|no
+643	Not as Expected|They were too big for my son’s head.|No but they aren’t a good size for children
+644	Not as Expected|the earbud do not fit and slip out all the time|no
+645	Not as Expected|Did not cancel plane noise|Described as noise csncelling
+646	Not as Expected|Too much sound leakes out when our son l8stens to dvd|no
+647	Not as Expected|Can hear the cord noise.|M|Noise
+648	Not as Expected|They are sound canceling, but I also need to hear myself talk, which I'm not hearing myself.|No
+649	Not as Expected|The cord was too short|No, it’s probably my fault for not reading close enough
+650	Not as Expected|Didn’t notice the microphone was built in. Also just read some reviews and they don’t sound great.|N/a
+651	Changed Mind|Not as Expected|Nah
+652	Not as Expected|Chico
+653	Not as Expected|Doesn’t block sound|Not sound blocking
+654	Not as Expected|earbuds seriously hurt my ears|not really
+655	Not as Expected|Did not like
+656	Not as Expected|There was no microphone|I miss understood
+657	I NEEDED ONE WITH A VOLUME CONTROL
+658	Not as Expected|The sound was not as good as I expected.|No
+659	Not as Expected|Cheap looking|NA
+660	Not as Expected|Not tangle free
+661	Changed Mind|Not as Expected|Ordered wrong type.
+662	advertised as compatible with iphone 17 but is not
+663	Not as Expected|Box damage headset used open|No
+664	Not as Expected|Thought they had active noise canceling but they don't. Fit is also uncomfortable.|Thought I saw noise canceling in the description.
+665	Not as Expected|No microohone|None
+666	Not as Expected|I can't use dictation with my iPhone 17 Pro.|None.
+667	Not as Expected|Not noise cancelling
+668	Doesn't fit phone
+669	Not as Expected|The sound is poor quality|I thought the sound quality would be good.
+670	Not as Expected|It was too loud even at the lowest setting|No but I’m surprised anyone else could handle that volume.
+671	Sound quality is no good.
+672	The product said noise cancelling. I could not hear the DVD ONLY even with the  VOLUME TURNED UP. I could hear all the background noises just as much as the DVD. Not good for me.
+673	Not as Expected|Uncomfortable fit and they don't stay put in your ear. Therefore allowing for outside noise to disturb the audio playing.|No
+674	The ear buds are not comfortable regardless of the size of the ear tips.
+675	Changed Mind|Not as Expected|I thought they were smaller and they don't fit in my son's computer case for school.
+676	Not as Expected|Not over ear|No
+677	there is no microphone on the device you sent
+678	Not as Expected|images not clear
+679	Color is not what I wanted, it looked blue on the website, but once I received it, looks more purple
+680	Not deep bass as advertised.  Poor listening quality for the type of music I listen to.
+681	Not as Expected|Do not fit comfortably|No
+682	Not as Expected|Not loud enuf|No
+683	I needed for my phone but there is no port for these headphones
+684	Not as Expected|Poor fitting
+685	Sound quality weak, volume too low and do not stay in ear.
+686	Not as Expected|Too small, does not cover ears fully|No
+687	Not as Expected|This is the wrong item that was sent|Return item it’s wired only and not bluetooth
+688	Not as Expected|Bad sound quality|None
+689	Not as Expected|Look purple not navy|Nome
+690	The ear piece is so small ot doesn't fit an adult
+691	Not as Expected|Uncomfortable|Just uncomfortable|No
+692	Not as Expected|Not as expected|Cheaply made|Ear was too small
+693	Not as Expected|When I tried the headphones it sounds like I’m muffled when I talk.|No
+694	Not as Expected|thought for kids, was wrong|no
+695	It doesn’t have the right connection for my iPhone.
+696	Not as Expected|Fit very uncomfortable|If it stated comfortable. Yes
+697	Not as Expected|Too small|the product does not mention it's for children
+698	Changed Mind|Not as Expected|not headset
+699	Not as Expected|I tried them on and they weren’t comfortable. They hurt my ears,|No
+700	Wualitu
+701	these are not as noise canceling as I need
+702	Changed Mind|Not as Expected|earbuds fall out of my ears and the cord is very long and gets caught on things. they unfortunately won't work for my daily needs.
+703	Not as Expected|sound quality not as expected|no
+704	Not as Expected|Did not pass audio quality check for required purpose.|I don't know.
+705	I thought they were Bluetooth.
+706	Changed Mind|Not as Expected|To tight on my ears
+707	These are not noise canceling.
+708	Not as Expected|Wrong model|I have different phone type
+709	Not as Expected|wrong plug
+710	searched for headphones with mic and this headphones have no mic.
+711	Not as Expected|Was not able to hear clearly|No
+712	People complained I was muffled.
+713	Not as Expected|I thought they had speaker|Not sure, it wasn’t obvious that they’re only headphones and you can’t use them to speak
+714	Not as Expected|I do not like the sound quality and don’t fit well in my ears.|I felt the reviews were too high.
+715	Changed Mind|Not as Expected|won't fit in iphone or laptop
+716	Changed Mind|Not as Expected|These aren't air tube headphones
+717	Not as Expected|Quality|I don’t know
+718	Not as Expected|They aren't over-ear and are really small compared to other brands.|As stated above: over-ear is not accurate. It's on-ear
+719	Not as Expected|No good some quality|Sound
+720	Not as Expected|They don’t expand and therefore don’t quite reach over my ears.|No
+721	Not as Expected|My son said, they hurt his ears that the cushion part is it big enough|No, not at all. Just don’t fit my son ears.
+722	Not as Expected|i like the wireless ones my daughter has better|no
+723	These sound terrible
+724	Sounds bad
+725	Not as Expected|The sound was very clear but way too loud even at the lowest volume setting. It hurt my eardrums.|No everything was accurate
+726	Not as Expected|Didn’t fit my ear properly|No
+727	Not enough base
+728	Not as Expected|Wrong cord|None
+729	Smaller ear size
+730	Not as Expected|Thought these were cordless|No
+731	Not as Expected|I need smaller earphones for work.|No.
+732	The color is too dark
+733	Changed Mind|Not as Expected|It was for my daughter. She wanted a microphone and I did not realize that. These did not have a microphone.
+734	Not as Expected|The ears are much smaller than expected, more suited for a child.|The pictures make it seem like these are suitable for adults.
+735	Not as Expected|Did not keep out background noise. did not fit properly.|Did not keep out background noise, not well built
+736	Plug
+737	I Thought the ear prices would go over my ears but they didnt
+738	Not as Expected|Want a different style mic|No
+739	Not as Expected|Sound quality is not good|Not good
+740	The description talked about the quality of the sound. I found it to be very tinty. And thin no base at all.. It doesn't even sound good when you're talking to people on the phone.. I was excited when
+741	Very uncomfortable
+742	Searched EMF free headphones and these came up.  They are not emf free
+743	Not as Expected|All of the above|No
+744	item not USB
+745	It is not fitting the ears. Feeling pain after wearing for few minutes.
+746	Not as Expected|Very uncomfortable|No
+747	Not as Expected|The earphones are SMALL and hurt my ears|I can’t find the size of the earphones
+748	Not as Expected|Sound quality was poor. I didn’t try microphone.|Sound quality was awful. Distorted. One side barely worked.
+749	Not as Expected|Does not block sound as advertised
+750	Not as Expected|I thought it had a microphone|Not sure
+751	Not as Expected|Not what my daughter wanted|No just not what she wants
+752	Not as Expected|Wrong color|Said midnight blue but is purple I ordered 2 this is the 2nd order return|Ok
+753	Not as Expected|They don’t fit properly
+754	Not as Expected|Wrong color|Yes it said midniy blue and they are purple
+755	Not as Expected|To big for my baby's head|The size
+756	Not as Expected|Did not have a 1/4 inch adapter|Not sure
+757	Not as Expected|very uncomfortable
+758	Not as Expected|Poor sound quality and not comfortable|No
+759	Wanted noise cancelling
+760	Not as Expected|Extremely uncomfortable and too difficult to swap ear foams|No. Look great but am looking for comfortability
+761	Not as Expected|i meant to order the usb c headphone jack, and accidentally ordered the 35mm jack instead|nothing inaccurate
+762	The color did not match expectations.
+763	Not as Expected|microphone is bad|nothing really except they fail to mention mic quality when describing product
+764	Not as Expected|Design not as expected|Na|No
+765	Not as Expected|Uncomfortable|I thought they would cover the whole ear
+766	Not as Expected|just not sure if i liked them|no
+767	Changed Mind|Not as Expected|Too flimsy
+768	Not as Expected|I have really tried to get comfortable with the design but the wooden earpieces are uncomfortable and do not stay in my ears very well|Not that I can tell. I was looking forward to trying them based on the description but the description cannot describe true comfort which this product is not
+769	Not as Expected|Thought they were wireless|Not sure
+770	Not as Expected|To big and bulky|No
+771	Said flexable
+772	It is not noise canceling
+773	Not noise canceling
+774	Not as Expected|wrong color|too small
+775	Didn't say no USB
+776	Not as Expected|Not what I’m looking for|A|Not what I wanted wrong plug in for my device
+777	Not as Expected|Lower quality|No
+778	Not as Expected|No noise cancelling|Not noise cancelling
+779	Not as Expected|Fit was uncomfortable. Did not fully cover my ears.|Don’t know
+780	I ordered for my husband and they came I. Pink. Box not open and in perfect condition will need to return and reorder black ones
+781	Not as Expected|Was a single item, expected multiple.|Single item, not package.
+782	the headphones do are not of the quality promised
+783	Not able to use with my iPhone
+784	Not as Expected|Not noise cancelling|Yes, it’s advertise as noise cancelling
+785	Not as Expected|Headphones are too small|no
+786	Not as Expected|Not what I expected|For to loose|No
+787	The color isn't what I thought it would look like
+788	Changed Mind|Not as Expected|Not as i  expected
+789	It was not voice cancellation not even 90%
+790	Not as Expected|Didn't like how they folded up|No
+791	Not as Expected|I thought they had a mic boom but they only have a mic line.|No
+792	Not as Expected|It hurts the ear when wore for longer time. Too tight.|..|No color and pic is correct
+793	Not as Expected|the ear buds are huge and too big for my ears|no, but the ear buds are long and stickout from ears alot
+794	Not as Expected|Not noise canceling|Said noise canceling
+795	I didn’t realize that you had to order another part to charge the headphones and they weren’t wireless.
+796	Not as Expected|It was not an EMF blocking earphone.  It is not an Air Tube EMF blocking earphone.  It is not what I wanted to buy.
+797	Not as Expected|Poor sound quality|Yes - there's no bass, little mid-range and the highs are thin. Not as described
+798	Poor/not "noise cancelling"
+799	Not as Expected|Ear cups don’t properly fit since they’re small|No
+800	Not as Expected|Too heavy|They just won’t stay in my ears
+801	Changed Mind|Not as Expected|don't stay in ears
+802	Not as Expected|too small on the ears and no padding on top|no
+803	Not as Expected|It felt very cheap when wearing|Cheap manufacturing
+804	Changed Mind|Not as Expected|need different kind
+805	No Noise cancellation
+806	Not as Expected|sound quality is poor and look looked like used ear pieces|poor sound
+807	Not as Expected|Not USB-C compatible|Probably not
+808	Not as Expected|Customer can’t hear me|No
+809	Not as Expected|Volume doesn’t work|No
+810	Said it went over ears.  It’s extremely uncomfortable
+811	The description details these are noise canceling headphones and they are not
+812	Thought product had more control features based on description.
+813	The song is not clear.
+814	Not as Expected|Recipient didn't like them|No, the earpieces just didn't fit
+815	Not as Expected|connector does not work for my computer|connector wrong for my situation
+816	Not as Expected|The sound was too tinny compared to my current headphones|I don't remember if it actually described the sound
+817	Not loud enough
+818	Not as Expected|not as expected|unconrtable|no
+819	Not as Expected|It is uncomfortable and not what I was wanting|No I just have unusual ears
+820	Not as Expected|No|I didn't know how to answer
+821	It didn’t show what the connection was for.
+822	Didn’t fit my kids head
+823	Not as Expected|Uncomfortabe|No
+824	It wasn’t compatible to my apple phone
+825	Doesn’t fit over kids ears
+826	Not as Expected|Too loose on ears|Just too loose
+827	Not as Expected|Wrong cord for my phone|No just thought it would fit my phone
+828	Not as Expected|The ear pieces are too long|No
+829	Not as Expected|Nothing was as expect as per the features
+830	Not as Expected|Quality not as expected. Doesn’t fit comfortably on my head will not work for my upcoming flight.|I had thought it would fit over my ears. They are too small and uncomfortable
+831	Changed Mind|Not as Expected|Mic on unit doesn’t fit my setup
+832	Not as Expected|Cord too short|Not described at all
+833	Not as Expected|Not comfortable|.|No
+834	The physical description was perfect,  the sound quality, no so much. It has static coming through with the music.
+835	Not as Expected|Did not use them but didn’t like the size.|No
+836	Not as Expected|The wires are way too noisy|I think it should say the wires make noise
+837	Not as Expected|Sound quality was very poor.|No damage.
+838	It doesn't fit in ear properly.
+839	Not as Expected|No bass|Add bass|Y
+840	Ears too small
+841	Looked bigger
+842	Not as Expected|sound is too dull, not enough clarity.|no
+843	Not as Expected|doesn't have microphone arm|no
+844	Not as Expected|Hhhgg|Not worth it|No
+845	Changed Mind|Not as Expected|Thought it had bigger microphone
+846	Was under impression it had a different connection piece compatible with iPhone.
+847	Not as Expected|Poor sound quality. Not compatible with iphone controls.|Sound quality is poor
+848	Not as Expected|The shrink wrap was removed from the box and the headphones inside the zip-up pouch were a used pair of Sony ear buds instead of the Symphonized headphones that were ordered.|This appears to be a return where the last buyer swapped out their old headphones
+849	Color weird
+850	Not as Expected|Sound quality not good|No
+851	Not as Expected|Sound quality was weird|No
+852	Not as Expected|The microphone is not working as expected.|No not at all.
+853	Not as Expected|Microphone does not work|Description says it has a microphone and it doesn't
+854	Not as Expected|Didn’t fit right.|Not sure
+855	The sound quality wasn't quite as good as what the descriptions led me to believe.  Sorry.  Excellent price for what they are.
+856	Not as expected quality
+857	Not as Expected|Thought they would cancel more noise|No
+858	Not as Expected|They constantly fall out of ear and are bulky|I just said it
+859	Not as Expected|Need headphone with USB connector|Thought it had USB connections
+860	Not as Expected|They were not noise canceling or noise isolating at all|Yes, not noise canceling or isolating
+861	Changed Mind|Not as Expected|Didn’t fit right
+862	Not as Expected|too small|photo misleading
+863	Not as Expected|Poor sound quality, no low frequencies|Sound quality/frequency range not described in product description
+864	Not as Expected|They won’t stay in my ears|No
+865	Changed Mind|Not as Expected|They smushed my ears and made them sore
+866	Not as Expected|noise canceling does not work|Misleading how noise canceling works
+867	Not as Expected|Did not experience any reduction in background noise|They did not filter out any sound from the room as I expected
+868	Not as Expected|Sound to soft|Not sure
+869	They are NOT noise cancellation.
+870	Changed Mind|Not as Expected|They don't cancel any outside noise and I was hoping that they would
+871	Not as Expected|Did not fit uncomfortable|Nothing inaccurate
+872	Not as Expected|There is no bass|yes. Implied there is good tone including bass|none
+873	Not as Expected|Doesn’t stay in my ear. Tried all buds|None
+874	Not as Expected|Very small over the ears.|No
+875	Not as Expected|Heavier than expected|No
+876	It definitely doesn’t have a deep base sound
+877	Not as Expected|it claims that this earphone has noise cancelling ability, but it does not.
+878	Not as Expected|Too big for my head|Otherwise great
+879	Not as Expected|wired|wireless|Thought they were wireless
+880	Not as Expected|Ordered blue and is purple
+881	Not as Expected|not comfortable to wear|N/A
+882	Not as Expected|The microphone doesn't work on an iPhone|yes, it describes a microphone, but it doesn't work
+883	Not as Expected|I needed this for my call center|The audio going out is not good enought for what I need for my job
+884	Not as Expected|Sound quality is poor. Too much echo.|Yes it said it had great sound quality.
+885	Not as Expected|I don’t like this model|No, I didn’t open the box
+886	Not as Expected|Not a type c|Not compatible
+887	Not as Expected|The sound is tinny and there is almost zero bass. I was replacing my $15 wired apple earbuds and they are so much better.|yes, this description is not accurate- HIGH-QUALITY SOUND – Handcrafted Bubinga wood housing and 8mm dynamic drivers deliver deep bass and crisp tones, providing rich, immersive audio in these back to school headphones while remaining perfect for music lovers everywhere.
+888	Not as Expected|Low bass|Tinny sound
+889	Not as Expected|Not noise cancelling and wire is long and flimsy|Yes. It's not noise cancelling.
+890	Earbuds are too big and not the shape I want
+891	Not as Expected|Need wireless|Did that describe not cordless
+892	Not as Expected|Painful to wear|Quickly hurt my ears
+893	Not as Expected|The earbuds in the picture are straight, but are curved on actual product
+894	I thought it had a microphone attached
+895	Not as Expected|no where to charge these to use without plug in
+896	Changed Mind|Not as Expected|Mic gain poor
+897	Not as Expected|It as expected|Just bigger than I thought
+898	wrong color
+899	Not as Expected|I thought these were air tube ear buds, they are not.|not that I could find.
+900	I thought it said wireless headphones
+901	Not as Expected|Audio quality subpar|No
+902	Not as Expected|Didn’t like fit|No
+903	Not as Expected|quality poor|no
+904	Not as Expected|Not great quality|No
+905	Not as Expected|Sound quality wasn’t great and the phones didn’t sit on my ears correctly|They weren’t noise canceling
+906	Falls out of ear
+907	Not as Expected|NOT for iphone. wrong attachment piece.|yes, it says "iphone" in description
+908	This product is not noise cancelling
+909	Not as Expected|don’t like|no
+910	Not as Expected|Uncomfortable and hurt ears|Not comfortable
+911	Noise isolating is not correct.  I could still hear everything outside of the headphonee.
+912	Not as Expected|Didn’t fit child’s head too big|No
+913	Changed Mind|Not as Expected|Thought they were sound canceling
+914	Not as Expected|not compatible with my iphone|not sure
+915	Not as Expected|Duplicate gift|NA|Duplicate gift, not needed.
+916	Not as Expected|does not work with my computer|no
+917	Poor sound control
+918	The ear phones were sealed in a box but when I opened them it looked like they were previously opened.  Missing pieces.  I tried them with my laptop and they do not work well
+919	Not as Expected|Sound is low quality and clicks.|Just not worth the price.
+920	This product does not match the product  description.  It does NOT have a mic like it states.
+921	Not as Expected|did not realize they were wired|no
+922	These are huge, not able to make smaller. You would need a very VERY large head to use these even as small as they go.
+923	Changed Mind|Not as Expected|My 9 yr didn’t like the fit.  She is very particular
+924	Not as Expected|Too small for my ears, hurts me.|No
+925	Not as Expected|don't fit my ears well|no
+926	kjh
+927	Not as Expected|not as desired, no case|no case
+928	Thought they were Bluetooth compatible
+929	Not as Expected|Cracking sound|No
+930	Not as Expected|The sound was tinny and the singer sounded like he had his head in a bucket of water.|No.
+931	Not as Expected|not as good of sound as other|none
+932	Not as Expected|Not noise cancelling|None
+933	color
+934	Not as Expected|Thought it was unwired too|No
+935	Does not work
+936	N/a
+937	Item not as expected, overall body too large, sound not great and hurt ears.
+938	Not as Expected|Very poor noise cancellation|Yes.  Not as expected. And cord longer
+939	Not as Expected|The sound quality and noise cancellation is just poor I didn’t expect it to be that bad.|Yes, they supposed to have noise cancellation and good deep sound and it doesn’t have any of it.
+940	Too much background noise
+941	Not as Expected|Not wireless|I don't know
+942	Not as Expected|These had claimed to keep the sound out, and I can hear everything in the background|Yes, it had claimed that these were noise canceling, which they are not
+943	The cords tangled
+944	Not as Expected|Low|No
+945	Pressing on top of my head, painful
+946	Changed Mind|Not as Expected|Uncomfortable
+947	Not as Expected|The sound quality is not very good.|No
+948	Not as Expected|They are pink not red
+949	Not as Expected|Sound quality is horrible|Reviews said sound quality was good it is not
+950	Changed Mind|Not as Expected|did not stay in my ears
+951	Not as Expected|Not what I wanted|No
+952	They aren’t noise cancelling
+953	Noise cancelation doesn’t work
+954	Not as Expected|Earbuds are uncomfortable and fall out easily|IDK|N/A
+955	Not as Expected|tinny sound quality|no
+956	Not as Expected|This product not meeting the noise cancellation requirement as mentioned
+957	Not as Expected|Experiencing static during phone calls. The person on the other end states calls cut in an out and hearing static.|N/A
+958	Not open but really bad reviews
+959	Does not work with my iPhone
+960	Not as Expected|Cheap. Poor sound.|No
+961	It isn’t noise cancelling.
+962	Not as Expected|Won't work on computer|No
+963	Changed Mind|Not as Expected|Looks uncomfortable
+964	This product doesn't include a connection to an android phone as described. Unless your phone is over 10 yrs old.
+965	Not as Expected|Not compatible with ipad|Cannot be connected with ipad
+966	Not as Expected|NO ADJUSTMENT TO FIT HEAD, VOLUME DOESN'T WORK|DON'T FIT HEAD
+967	Not as Expected|Uncomfortable fit|Too big
+968	Not as Expected|The 1/4 inch connection is too small for the keyboard I have|Not 100%
+969	Wrong color
+970	Not as Expected|Feels cheap. Doesn’t fit head|Nole
+971	Not as Expected|not noise canceling|yes. it stated noise canceling and it wasn't
+972	Not as Expected|Not what I expected. Another model with diff fit has the same name|Not after looking again
+973	Not as Expected|Poor sound quality and did not cancel out noise as advertised
+974	Not as Expected|Not the sound quality I expected for the price. $20 Sony earbuds are better.|No
+975	Changed Mind|Not as Expected|I ordered the wrong ones
+976	Not as Expected|Didn't fit head|No
+977	Not as Expected|The sound quality was poor and the ear pieces kept falling out as I walk.|ALL-DAY COMFORT & SECURE FIT
+978	Not as Expected|I ordered 4 different sets to end up with the best set. This set did not make the cut unfortunately.|No. I just chose my preferred set.
+979	Not as Expected|Static sound|No
+980	Not as Expected|Didn’t fit in my ear right|No
+981	Not as Expected|did not work as expected|Plugged in and unable to hear music
+982	Not as Expected|Small|No
+983	El producto no especifica el tipo de cable, lo cual resultó en una incompatibilidad con mis requisitos al momento de la entrega.
+984	Not as Expected|Sound quality was not as good as expected.|No
+985	Not as Expected|terrible sound quality|yes, indicated good sound
+986	Not as Expected|Not noise canceling and picks up background noise|Noise canceling
+987	Not as Expected|Not bluetooth|Idk|No
+988	Not as Expected|To big|No
+989	Not as Expected|To big|Yes
+990	Not as Expected|the quality of the audio was not good|no
+991	This items claims to have "great bass sound."  It does not.  The right ear bud doesn't fit right.  Mostly, it doesn't sound good at all, very tinny.
+992	Not as Expected|I was not impressed with the sound quality or the comfort.|No
+993	Not as Expected|Hurt ears the two times I tried them. Sound patchy.|The comfort and weight of the set lrobably
+994	The description of the over the ear design is not same as the actual product design
+995	not noise cancelling
+996	Asked Rufus for suggestion and the item wasn’t compatible.
+997	Inaccurate
+998	Not as Expected|inaccurate website description
+999	They are not noise canceling Can hear everything around me.
+1000	Not as Expected|Too tight|No
+1001	Not as Expected|Not the right sound for me.|No
+1002	Not as Expected|Sound|Sound not great
+1003	Needed bluethoth
+1004	Changed Mind|Not as Expected|.
+1005	it's to small and doesn't cover my ears
+1006	Not as Expected|Fit was not comfortable|Don't know
+1007	Not as Expected|Sounds not great|No
+1008	Not as Expected|Not Bluetooth|No, other than they slide down so they are not stationery.
+1009	one ear doesn't function
+1010	Not as Expected|poor quality|Not that I notice
+1011	Wrong connection
+1012	Not as Expected|Not happy with sound quality|No
+1013	Not as Expected|The plug isn't compatible with my needs and it is not wireless|No instruction in the box also|No
+1014	no es lo que quería.  quería uno sin cable.
+1015	The description says it's noise canceling yet is unpowered and has no noise cancellation.  It's also bulky and has poor audio quality.
+1016	Changed Mind|Not as Expected|The headphones were larger than I expected them to be and will be in the way when I workout
+1017	Head set hurts
+1018	The jack on the unit has four terminals.  The box shows three, and it does not say anything about voice.  So why is there 4?  Also, the volume control is way up by the next.  Can not even see it to change it.
+1019	Not as Expected|Sound quality was too harsh|No
+1020	Not as Expected|The audio is bad|No
+1021	Not as Expected|Sound quality is ok and triple clicking doesn't work|Can't triple click to go back|No
+1022	Lots of issues
+1023	Thought they were wireless
+1024	The headphones appear larger in the images than they actually are
+1025	The yer parts are too small to use it for long time.
+1026	Inline volume control didn’t work
+1027	Changed Mind|Not as Expected|I can’t hear my surrounds like I want to and the sound is not as good as I had hoped
+1028	Changed Mind|Not as Expected|Decided I didn’t like the cord
+1029	Not as Expected|Fit falls out of ears no matter which one you choose. It’s to loud even at the lowest setting|Yes, when people are talking the sound is to loud even at the lowest level.  I believe because the ear part is soft and not a hard plastic they won’t stay in ears
+1030	Not as Expected|Sound quality could be bettee|Doesn’t sound clear
+1031	Not as Expected|The fit is uncomfortable|No
+1032	Not as Expected|Mic didn't connect|No
+1033	Colors doesn’t look as bright as the photo
+1034	Not as Expected|The fit was not as expected. They keep falling out.|No
+1035	Not as Expected|It's uneven sound through the ears|I don't think so it just did not sound as I expected
+1036	Not as Expected|Not sturdy|No
+1037	did not fit jack
+1038	not as expected
+1039	They don’t have deep bass. They don’t sound good and they said they have a 30 day guarantee money back refund.
+1040	Not as Expected|Didn’t use.|None
+1041	Not as Expected|Not wireless|No, I selected the wrong item
+1042	Not as Expected|Hurt my ears, too small perhaps|Maybe dimensions of the earphone would help
+1043	Not as Expected|Did not fit well|no
+1044	Not as Expected|Small|Too small for me
+1045	Not as Expected|Realized they weren’t noise canceling|I don’t think so
+1046	Not as Expected|Color|Dont know
+1047	Not as Expected|Poor sound quality, poor fit.|Earpiece is angled, looks straight in picture
+1048	Not as Expected|sound quality is poor|the reviews
+1049	No volume adjustment
+1050	Not as Expected|I thought they were all black. And they felt very uncomfortable and poor quality|Yes. They are not black. They are black and silver
+1051	Product was not as expected aesthetically.
+1052	Not as Expected|Lower overall quality than anticipated.|Just wasn't clear on the quality of product.
+1053	Not as Expected|Bad fit|Nothing else
+1054	Changed Mind|Not as Expected|I mistakenly ordered wired headphones, totally my fault.
+1055	Not as Expected|Grandson said the sound was of poor quality. He could not listen to his music with these headphones.|No
+1056	Not as Expected|Not really noise canceling
+1057	Not as Expected|Bought them for my daughter for Christmas and she can’t wear them They won’t stay in her ears.|Just don’t stay in
+1058	Not as Expected|Bad sound
+1059	Not as Expected|Too big|Yes
+1060	La parte donde se conecta el audífono es muy pequeña no es universal por lo tanto no sirve para cualquier entrada y debería estar especificado en la página
+1061	Not as Expected|Sound quality poor.|Description states booming base and the base was not good.
+1062	Not as Expected|No microphone
+1063	Not as Expected|color and appearance|none
+1064	Not as Expected|they don't block out noise very effectively for me|I expected it to do a better job of noise blocking and filtering. I still can hear background noise and it is disruptive enough for me to return these
+1065	T does not work with iPhone 16
+1066	Not as Expected|Not as expected|It doesn't sound good enough for me|It doesn't sound good|I don't want it no more|It doesn't sound good in my ears so I don't want it
+1067	Not as Expected|Didn’t like the foam pads-deformed when just putting them on, microphone sounded scratchy to person on the phone, sound quality was good|No
+1068	Changed Mind|Not as Expected|No
+1069	Not as Expected|no good|seems legit
+1070	Not as Expected|Not Bluetooth|No
+1071	Not as Expected|Not compatible|No other details
+1072	Not as Expected|I thought this headset had a mic, it does not, my fault did not look at the picture close enough
+1073	Not as Expected|Poor sound quality|The sound was not of the high quality described
+1074	Sound quality not as described. Poor.
+1075	Not as Expected|Wire very think and hard to untangle afraid it would break|No
+1076	Sound quality is terrible. Very tinny sound
+1077	Not as Expected|The fit was uncomfortable.|I don't think so
+1078	Not as Expected|Expected over ear headphones.   These are on ear.|Not sure.   But I know I searched for over ear headphones and these came up on the search.
+1079	Wired small
+1080	Cord doesn’t fit
+1081	Not as Expected|very painful on ears after even 30 mins of use|no
+1082	Too small. Come control ineffective.
+1083	Not as Expected|Ear pieces don’t cover ears|Wasn’t clear how big they were
+1084	It said it would fit our jack and it doesn’t
+1085	Not as Expected|Too Bulky|No
+1086	Not as Expected|Smaller than I thought|No
+1087	Not as Expected|Sound quality is poor and the fit is uncomfortable.|Product description was accurate.
+1088	Thought that there was a phone head set, but all I need was a jack
+1089	Not as Expected|Need wireless|Mistake wrong ordwr
+1090	Not as Expected|They are junk|They are junk and not noise canceling
+1091	Not as Expected|Cord not for iphkne|No
+1092	Not as Expected|Need with microphone|No
+1093	Not as Expected|I can hear too much going on around me.|no
+1094	Changed Mind|Not as Expected|The cord is too sensitive
+1095	Doesn’t charge/work with ports for device.
+1096	Changed Mind|Not as Expected|Item was not on Christmas list we had
+1097	Not as Expected|There is no cushion on the head piece and makes it uncomfortable|I dunno|Na
+1098	Does not have Bluetooth capability
+1099	Not as Expected|Not wireless|Non wireless
+1100	Not as Expected|Thought it was a board game|No
+1101	It doesn’t block ambient noises. Very disappointed.
+1102	Changed Mind|Not as Expected|Not loud enough
+1103	Not as Expected|Wrong cord it’s a C when I need a lightening|Yes. Wrong cable
+1104	Changed Mind|Not as Expected|Don’t like
+1105	Not as Expected|Not noise cancelling... too long making it uncomfortable|Not really noise cancelling
+1106	Not as Expected|Doesn’t fit well
+1107	Not as Expected|Fit not good|No
+1108	TOO BULKY-UNCORTABLE TO WEAR
+1109	Not as Expected|Did not like fit|No
+1110	Changed Mind|Not as Expected|Now loud enough
+1111	Not as Expected|this is purple not red and it is not an airtube headphone
+1112	Doesn’t fit my iPhone SE
+1113	No noise reduction. These ear buds are awful.
+1114	Thought your could also blue tooth
+1115	Not as Expected|Stop|The question felt invasive
+1116	I needed to replace a wonderful pair that I purchased for my last phone. My new phone requires USB-C connector. Unfortunately, the material used on the earbud itself seems much cheaper than the other pair.
+1117	Not as Expected|wasn't able to lower the volume less than my phone|no
+1118	Changed Mind|Not as Expected|Item was too late for my needs.
+1119	Was expecting USB-C connector. Sent apple lightning connector
+1120	no microphone to use for calls
+1121	Not as Expected|Don’t ended|Don’t need
+1122	Not as expected
+1123	Not as Expected|none|picked other option|I didn't know how to answer
+1124	Wasn’t happy with quality.
+1125	Not as Expected|Didn’t stay in my ear|No
+1126	Not as Expected|Uncomfortable and echoing.|I don’t think so. My team could not hear me as I talked. The microphone is too low
+1127	Too heavy, falls out of your ear
+1128	Not as Expected|They would not stay in ear with any of the provided buds|Won’t stay in ear
+1129	Not as Expected|Color ugly|No
+1130	Not as Expected|Thought they were bluetooth|No
+1131	Not as Expected|No wireless function|Not applicable
+1132	Not as Expected|Cord was waayyy shorter than expected|I thought the cord was supposed to be around 19” but it was between 3 & 4”. Who sits that close to their tv?
+1133	Not as Expected|They are not for the PC. Working|Yes no microphone
+1134	Changed Mind|Not as Expected|All
+1135	Not as Expected|Too small|Too small for my son's head
+1136	Not as Expected|Not wireless|Ggh|None wireless
+1137	Not as Expected|I thought it had the plug compatible for an I phone|I searched for ones that were compatible with I phones
+1138	Not as Expected|Fit was uncomfortable. Ear buds would not stay in ear. Tried all sizes/styles of included ear buds.|No
+1139	Changed Mind|Not as Expected|Uncomfortable fit
+1140	Not as Expected|Color was purple not blue|Yea the color was off
+1141	Not as Expected|Not working properly with my phone.|No
+1142	Not as Expected|not good quality  sound not very good|sound especially bass was good
+1143	Not as Expected|too0 big near ears not adjustable|no
+1144	Does not fit his IPad
+1145	Not as Expected|Headpiece too big for child|No
+1146	Not happy
+1147	Not as Expected|i got my daughter a pair of black ones already and i bought these because they are her favorite color but she liked the fit of the black ones better|nope
+1148	Not as Expected|Inferior tone, poort sound quality|No
+1149	Not as Expected|They were used with ear wax in them how discussing|Used item|Item has someone else
+1150	Didn’t match description
+1151	Not as Expected|Different wire connection than I thought.|Thought it could connect to iPhone
+1152	Not as Expected|X|Didn’t like them|No
+1153	Not as Expected|Sound awful, are built for a elementary and the size of a child|The delivery was fine
+1154	Doesn’t work welm
+1155	Noise cancellation not effective
+1156	item not as expected
+1157	Changed Mind|Not as Expected|Changed mind
+1158	It states that it does work as a microphone for your mobile; however, it is not compatible with all mobile phones. Depends on your phone. I didn't open the package because we were gifted an exact one too....that is how we found out.
+1159	Not as Expected|Did not have cable c plug in|No
+1160	Not as Expected|Used on airplane and needed to often rotate the insertion piece for it to be functional. Happened more than once.|Unsure
+1161	n?A
+1162	Not as Expected|Not wireless|In the picture it didn’t and the description were not clear
+1163	Color was lighter than expected
+1164	Not as Expected|It does not have a quality microphone. I could not call people with them which is a deal breaker unfortunately|It did not state no microphone
+1165	Will not work with my phone
+1166	Not as Expected|Would not stay put. Slips out of ear|No
+1167	Not as Expected|The quality of the headphones was not as good as expected.|My husband bought for a gift so I don’t know
+1168	Not great sound quality
+1169	Changed Mind|Not as Expected|Too big on ears
+1170	It’s not a Bluetooth one
+1171	Nowhere near the sound quality described.
+1172	Not as Expected|The foam ear pieces do not stay on. I find them to be a problem of always looking for them|I don’t remember
+1173	These are purple not blue. They do not have a USB connection. They are USB compatible. They do not have active noise canceling or doesn’t work..
+1174	Changed Mind|Not as Expected|No phone
+1175	Not as Expected|Turns out I need wireless. Not compatible with my phone.|No
+1176	Not as Expected|Poor sound quality|No.
+1177	Not as Expected|Don’t fit|No
+1178	different from what was described
+1179	Very flimsy
+1180	The conection it’s jack and not usb c
+1181	Not as Expected|the tubes are too stiff making it difficult to move and have them remain in my ear|i expected them to star in my ear comfortably and they do not
+1182	Not as Expected|Poor fit led to poor sound|No
+1183	They sent the wrong model.
+1184	Changed Mind|Not as Expected|Fit wasn't great.
+1185	Not as Expected|It's not wireless|Didn't know it wasn't wireless
+1186	Not as Expected|The fast forward song feature does not work|No
+1187	Changed Mind|Not as Expected|Choozse another pair
+1188	Changed Mind|Not as Expected|Wanted USB C
+1189	Not as Expected|Too big in ears|No
+1190	Not as Expected|Could not hear|No
+1191	Not as Expected|It does not work in our Apple iPhone|Yes, it did not say that it came without an attachment for the phone
+1192	Not as Expected|They do not fit in our iPhone|Not compatible to iPhone 16
+1193	Not as Expected|Not for younger kids|No
+1194	Not as Expected|Fit too tight|Should have described for children not adult heads
+1195	Not as Expected|Extremely fragile the connector fell off as soon we plugged it into the phone|No
+1196	The sound quality for these headphones is not what they say it is. Barely any bass and to much treble
+1197	Eat section doesn’t fit me tight
+1198	Not as Expected|Not working with our pc|N|It is not working with our pc|I didn't want to respond to questions
+1199	N-A
+1200	Not as Expected|Uncomfortable on ears|No
+1201	Not as Expected|microphone is not loud enough when I sing in an app|no
+1202	Changed Mind|Not as Expected|didn't fit the mp3 player
+1203	Not as Expected|Not wireless|no
+1204	Not the quality i was expecting, not good bass
+1205	These sound horrible.  Switching out ear pieces helped but the sound is still inferior to what I already have.
+1206	Not as Expected|I need to take calls and these are headphones|It generated work headphones but not what I need

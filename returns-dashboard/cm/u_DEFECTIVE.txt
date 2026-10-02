@@ -1,0 +1,583 @@
+0	Defective
+1	Defective|No sound
+2	Defective|Sound is distorted
+3	Defective|Sound distorted
+4	Although the headphones are attractive and comfortable, they do function properly. One has sound only in the right ear, the other's volume control does not work. Terribly frustrating!
+5	Volume buttons do not work
+6	Quits working and ear buds don't stay in the ear
+7	Audio is muffled.
+8	quality not as expected
+9	stopped working
+10	Defective|Sound
+11	Not working
+12	Doesn’t work
+13	Defective|Microphone not working
+14	Connecting to computer, no sound, doesn’t work.
+15	Defective|this were supossed to be noise canceling.  we could here everything. they worked but the back ground noise was very much still there
+16	too small for ears
+17	Defective|Have to press and hold mic button to activate headset
+18	Quality unsatisfactory
+19	Sound too low
+20	Defective|There is no low volume setting. The lowest setting is louder than I would listen at max volume. Tried on multiple devices and these earbuds have no low volume ability
+21	There is no volume control on the headphones.
+22	Defective|Sometimes audio comes out of the phone speakers and not the earbuds when plugged in.  I have to jiggle the plug or unplug and replug to get it to work.  I have two other sets of wired earbuds and this does not happen.
+23	Defective|No sound coming out
+24	Defective|Can’t hear anything, mic not working
+25	Defective|Difficulty to eat with. The volume is low
+26	Defective|No audio coming from headphones
+27	Defective|No sound at all
+28	Defective|Headphones are defective. When plugged into either a phone or computer, they only make loud static noise and no clear audio can be heard. Same problem on multiple devices.
+29	Defective|The effect of the headphones do not work|Both sides
+30	Defective|Cord didn’t work
+31	Defective|L side doesn’t work can’t hear anything
+32	Defective|Return please|Ear buds missing a piece|Didn’t pretty the style|Didn’t fit properly in my ear|I didn't want to respond to questions
+33	Defective|The volume control isn’t working properly when connected to the device
+34	Defective|Didn't work out of the box|All of it
+35	Defective|Terrible sound. Very tinny and unlike their other set I have.|Poor quality.
+36	Cannot hear sound on the plane
+37	Defective|Right side earphone doesn’t work
+38	Defective|There was a short in the wire somewhere no sound was coming out of the headphone
+39	Defective|The sound is terrible. There’s no bass
+40	Defective|Does not work|Both ears
+41	Defective|No sound comes out
+42	The sound is only coming out of one side.  It is defective.
+43	Defective|Does not work on my iphone|Plug in
+44	Defective|The cord had an electrical short in it.
+45	Defective|Is painful on my ears!|The part of the headphones that make contact with my ears!
+46	Defective|No the cord male connector is short and missing a piece
+47	Defective|doesnt always connect
+48	Defective|When plugged into lightning enabled iphone it says not compatible
+49	Defective|sound distorted when on the other end of a phone call
+50	Defective|Sound quality bad, can’t ise
+51	Quality
+52	Defective|The sound doesn’t work
+53	Defective|Ppl could not hear me.
+54	Defective|The sound distorted
+55	Defective|Lots of static noise.
+56	No sound come out of the headphones. Does not work
+57	Defective|Sound was distorted
+58	Defective|Sound only available in one ear.
+59	Defective|Right side not same volume as left side
+60	Defective|Sound on the left side is distorted
+61	Purchased for noise isolation and it does not work
+62	Defective|The right earphone is not working
+63	Defective|Stopped working|Broke|The earbud
+64	Defective|Don’t work|No connection
+65	Defective|Sound stopped working.
+66	Defective|Mic does not work
+67	Defective|No sound was coming out of the earphones, they worked for 2 minutes then stopped
+68	Defective|Sound really messed up
+69	Defective|not sounding right
+70	Defective|be short of parts|cover
+71	Defective|The volume control +, - and Play/Pause function didn't work.  I tried it in my phone and tablet.  Neither one responded when I tried to adjust the volume or stop the stream from playing.
+72	Defective|left side low volume
+73	Defective|The volume controls only go all the way up or all the way down and I cannot apply the rubber tips. They are too small for the earpiece.
+74	Defective|It was bought for my autistic non speaking son, he keeps removing it, when i heard the voice was not good in both ears...maybe that was irritating him. I want to return it for full refund please.
+75	Defective|The volume controls on the cord do not work well.  If you push the up button once, it goes to maximum volume.  If you push the down button, it jumps to very low.
+76	Defective|Unable to adjust volume via control buttons.
+77	Defective|Doesn’t work does not connect
+78	Defective|The sound is distorted and the stereo signal only plays in the right ear
+79	Defective|The connection isn't USB-A as needed for onneciong to my iphone.
+80	Defective|The manual volume does not work.
+81	Defective|The connector from the earbuds to my phone keeps disconnecting
+82	Can’t hear out of one ear
+83	Defective|no sound comes through when plugged into computer
+84	Defective|Scratchy sound
+85	Defective|Head plugs don’t work well. The sound isn’t great and are not compatible with my iPhone
+86	Defective|Right side does not work.
+87	Defective|Microphone not working!
+88	Defective|One ear sound coming thru; other, right ear not coming thru,
+89	Defective|Stopped working after 1 night of use|There's no sound. Not sure
+90	Defective|the right headphone was working
+91	Zero sound is being generated in both ears.
+92	Defective|There is static coming through the headphones
+93	Doesn’t work- no sound audible.
+94	Defective|Everyone I called said it sounded like I was in a tunnel
+95	Defective|Sound stopped working on one side
+96	Defective|Yea one ear didn’t work
+97	They don’t really fit to my ears.
+98	Defective|Worked for 1/2 hour and then would not connect.
+99	No funciona un lado
+100	Does not work with computers
+101	Too small. Doesn't fit
+102	Defective|Right earphone is not working.
+103	Defective|Sound is distorted,  somewhat muffled.
+104	Defective|Unable to regulate volume
+105	Defective|microphone does not work, people cant hear me
+106	Defective|Sound is distorted and volume control does not work.
+107	It did not work with my Apple IPhone. Could not be inserted into the phone.
+108	Defective|Volume didn’t turn up
+109	Defective|Ear holes small|Ear|Na
+110	Defective|Sound bad
+111	The earbuds do not fit, uncomfortable.
+112	Only one ear works.
+113	I tried to get customer support to help me turn down the volume and they basically gave up when it wasn’t working so I need to return the earphones.
+114	Defective|No sound from right earpod
+115	Defective|Left ear piece is not working correctly.
+116	One of the earpiece and controller don’t work
+117	Defective|The rubber tip will not stay connected to one of the ear buds
+118	Defective|No Sound
+119	sounds only comes through one earphone
+120	Aux jack didn't work, only one side had sound
+121	Way too loud for iPhone (even on lowest volume)
+122	Defective|Microphone very fuzzy|Nothing thank you
+123	Volume down does not work
+124	Defective|The microphone did not work
+125	The right earbud doesn't work.  Package looked like it had been opened/returned already.
+126	Need usb c port
+127	Sound doesn’t adjust
+128	Defective|Only one side working
+129	One ear stopped playing sound
+130	Defective|right side doesn't work only gets sound on left side. Tested it with multiple devices.
+131	Left ear not working
+132	Defective|The sound doesn’t play through the headphones. Tried multiple devices.
+133	Defective|Sound comes out of only one side
+134	Defective|The volume doesn't change when pushing the + or - button on the cord.
+135	sound comes through very static
+136	They are uncomfortable
+137	Sounds distorted
+138	Defective|It functioned effectively for approximately two weeks before ceasing operation. I am quite fond of it, but unfortunately, it is currently unusable.|There is no sound, so I am unsure if the issue lies with the earbud or the USB-C connection.
+139	Defective|Loose sound and make a high pitched sound
+140	Defective|Does not connect to devices consistently.
+141	Defective|Speaker making crackling sound
+142	Plugged headphones into my phone and there was no sound coming through the headphones. They either are defective or not compatible with my phone even though the listing said they were.
+143	An ear isn't working right
+144	A veces no se escucha y tengo que sacarlo y volver a conectar y se escucha un solo lado
+145	Defective|Mic not working, sound interrupting
+146	Defective|The volume control doesn't work
+147	Defective|Connection between jack and cord is defective...lots of static
+148	Defective|Only plays out of one side
+149	Defective|muffled sound
+150	Defective|One side is not working
+151	Defective|One side doesn’t work
+152	Sound quality not good enough
+153	Defective|Stopped working burned out|The cord connector
+154	right side not working, no audio
+155	Item doesn’t work with the plug in system I have
+156	Defective|Sound doesn’t sound right.
+157	The headphone’s sound goes in and out - it is not working consistently
+158	Defective|Left ear does not omit sound
+159	Defective|Static sounds when plugged in phone.
+160	Was unable to answer calls and not comfortable in ears
+161	Very uncomfortable for an adult to wear
+162	Defective|Only one earphone works
+163	Defective|Mic not working left ear
+164	doesn't fit well in my ears and doesn't work with my dongle for my phone
+165	Does not produce sound when connecting into Jack
+166	I need a strong microphone but this one didn't sound clear enough for my needs.
+167	Bad quality
+168	The microphone doesn’t work on the earphones very frustrating. When I answer phone calls, nobody can hear me.
+169	I've tried all the various sized ear plugs to help the ear buds fit & stay in my ears & none of them work. Also, I am constantly having to push them back in & half the time only the left earbud works.
+170	Doesn’t work on IPad as described
+171	Defective|The connection keeps breaking.  I tried them in multiple phones.  Not working
+172	Will only work when plug one way. Cannot flip usb connector.
+173	Tried them out and they aren’t functioning properly.
+174	Defective|cracking a popping when listening to music
+175	Defective|The right earbud will not play sound and it looks like a used pair
+176	Not consistent in connecting to phone. Also, collar around the usb-c end.
+177	Defective|Airtube detached
+178	No one can hear me and only one headphone works
+179	Constant loud white noise when plugged in regardless of if playing or not. Tested with two iPhone 13 mini’s, iPhone 7 and 10. All the same.
+180	Defective|The sound is distorted. If I hold down one of the volume buttons near the microphone without letting go the sound is normal. As soon as I let go of the button the sound is once again distorted
+181	Defective|There's no sound at all
+182	Headphones do not have option for usb, does not work with phone or tonies box
+183	The in-line volume adjustment does not work.
+184	Defective|Sound distorted.
+185	Sound stopped working in earbuds.
+186	It didn’t work with my iPhone like it said it does on the box. I got a message saying device was not supported
+187	Doesnt connect to tablet
+188	Defective|Eight earphone falls out
+189	in-line microphone is distorted and unclear
+190	Item does not produce sound
+191	Didn’t fit right in my husbands ears
+192	Defective|Low volume setting much too loud
+193	Does not play sound
+194	The headphones don’t work
+195	Defective|They periodically say they can not be used with the iphone it usually works with.
+196	Volume button doesn't work correctly
+197	Defective|They were working perfectly and d one day I plug them i to my c port on my phone and nothing.
+198	They keep falling out of my ears.
+199	Didn’t work
+200	I have an iPhone 15 and when I plug it in, I cannot hear my client
+201	Defective|They don’t work at all when plugged in
+202	doesnt work with my computer
+203	only one ear piece works
+204	I'm unable to keep them playing When used on my iPhone and placed in a case or pocket my phone pauses. I need to be able to use them hands free. I've attempted to change settings on phone
+205	they keep falling out of my ears tried every one
+206	Loose in my port
+207	Defective|Don’t work|Wire
+208	Defective|Sound distorted and they kept cutting out
+209	Defective|The sound distorted and not able to turn up/down.
+210	Defective|Connector damaged
+211	Bought this to use when speaking on telephone. This works for listening to music, but everyone I call says that I am garbled and sound is unacceptable.
+212	Not compatible with my machine
+213	Defective|Doesn’t work|Entire mouse
+214	It either doesn't work or is not compatible with the item intended for uses with.
+215	It keeps pausing my music/audiobook or disconnects itself
+216	When I place the item into my ears, heat level goes up and is uncomfortable after a few seconds. Therefore, I don’t think that these are comfortable or functional for me to use.
+217	Earphones have static
+218	Defective|Pause button not working. Only activates Siri.
+219	Defective|They don’t work|Sound
+220	Defective|volume control buttons do not work
+221	The sound does not come through very well. Sound seems to come in and out.
+222	Defective|G|The question wasn't relevant
+223	Defective|The volume is distorted
+224	The pit fell off and no sound is coming from it
+225	Defective|Left side stopped working
+226	One side doesn’t work
+227	Defective|Sound is not clear from Microsoft phone
+228	Defective|When connected sometimes doesn't work or when working will stop suddenly working
+229	Defective|I can barely hear in headphones and people can barely hear me in the other end! This is for my job so this is highly disappointing. The customers say I sound like im in a “tunnel”.
+230	Defective|Volume keeps turning down
+231	Sound not coming out
+232	Defective|not a clear sound
+233	Defective|There is an audible hissing sound and the audio fades in and out.  The ear buds were not a good fit for my ears, they popped out.
+234	Don’t work and electrical tape on broken the  plug. Never should have been shipped out like this.
+235	The headphone is really small and doesn't cover my ears.
+236	These headphones are all bass and the treble is very faint.  Not as good a headphones that I need.
+237	I have tried to use this on two fines in our household and can’t get any sound on either phone even with the volume turned up on the cord as well as the phones.
+238	No sound after plugging into several devices.
+239	One earphone does not work.  The on/off switch does not work.
+240	Defective|Can’t hear
+241	Defective|color is purple . it off|the whole thong|no
+242	Mic not working
+243	Defective|did not fit on sons head|hea dband|head band
+244	Sound stopped coming through head phones and fuzzy sound started coming through. Unplugged and tried on other phones as well and did the same thing.
+245	Defective|There is no sound. Only distortion.
+246	La Punta de auxiliar se rompió immediamente.
+247	tested the volume control buttons and they don't work at all!
+248	Not usb
+249	One side of the headphones does not work, no music is heard
+250	Defective|Only one of the heads work
+251	The mic is not loud enough
+252	Wrong one bought for my phone.
+253	Defective|Not compatible|get static with my electric piano
+254	Doesn't work
+255	Muffled sound
+256	Microphone works for about 5 minutes in a Zoom call before it cuts out and stops working. After this happened 3 times, decided just to work without it. The speaker aspect works fine.
+257	Worked fine for a week and then started only working in the left ear, sound comes and goes.
+258	Defective|Do not stay in ear|Ear phone
+259	Won’t work on my phone
+260	When I went to use the headphones there was only sound coming through on the right earphone. I attempted to troubleshoot but could not get the left earphone to work.
+261	No se escucha bien...
+262	microphone not working
+263	Defective|The pause/play feature doesn’t work and when I adjust the volume it will not go up by one click when I press the up or down button once the volume goes all the way up or all the way down.
+264	Sound doesn’t always play on both sides of headphones.
+265	Not compatible with my laptop
+266	Volume doesn’t work. Can’t change the volume.
+267	Defective|Had them a couple of weeks and stop working.|Sound
+268	Sound was terrible
+269	Not working properly
+270	The wires have a short in. them and does not working properly.
+271	Defective|Twice I heard a lot bad static or weird frequencies…,,,, I don’t want this product anymore
+272	Intermittent connection goes in and out
+273	The cable is peeling
+274	left earpiece cuts in n out
+275	Can’t hear clearly
+276	Defective|The sound is terrible.
+277	No sound when connect to device
+278	The headphones are fine, they just don't work with the input of my piano.
+279	Defective|Left side doesn’t work.
+280	Defective|Too tight|Earphones
+281	We cannot adjust the volume. No up or down
+282	Ítem defective. Volume goes up and down on its own.
+283	Left ear bud has bad/ low sound.
+284	Defective|cannot speak through the mic
+285	Bass is missing and hard to keep in ears
+286	Defective|Not working, Only static sound -
+287	Defective|Not working on my system|Yes does not work|no sound at all
+288	There was no manual.  There was no charging cord.  The volume control does NOT work at all.
+289	Na
+290	the mic is defective, very static
+291	Defective|sound distorted, cheap DAC|j
+292	Defective|distorted sound
+293	Defective|Stoped workin|All
+294	There is humming noise when I listen to someonralking
+295	Defective|Only one ear had sound
+296	The cable gives feedback when it moves in a device.
+297	defective -terrible sound - something wrong with these
+298	Cannot answer phone microphone not working
+299	Defective|Microphone did not work
+300	No funciona
+301	The connection isn’t secure enough, the plug won’t make good connection with the iPhone port causing the earphones to stop working. The connection needs to be more “beefed up”
+302	Too big for my head
+303	Audio wasn’t played through the headphones when plugged in.
+304	Uncomfortable to wear on the ears
+305	It stopped working after just a few uses.
+306	Always falls out of ears
+307	Defective|The volume was low. When I pressed and held the volume button, it got loud. But as soon as I let go of the volume button, it got softer again.
+308	Defective|No sounds from left ear
+309	Crackling soind when the wire is jostled
+310	microphone doesn't work well, when speaking to someone the sound is scratchy, tinny, muffled, far away sounding, can't use this for phone calls.
+311	One ear not coming in clear
+312	only one ear works
+313	Defective|sound distorted
+314	It didn’t fit in my ears and kept falling out.
+315	It does not hook up to my computer and I cannot hear anything.
+316	Headphones are fully charged but will not turn on.  Tried hard reset but no joy, still dead.
+317	Defective|Muffled sound
+318	Sound quality is not good
+319	Defective|Audio not good
+320	Too small for even a kid
+321	Control de volumes no trabaja
+322	It occasionally makes a crackling sound and it interferes with the audio.
+323	Defective|There was no sound on one side of the headphones
+324	Sounds like you're in a tunnel or cave. Not clear.
+325	Defective|Sound not coming through.
+326	Defective|Microphone not working correctly.
+327	One side doesn’t play sound
+328	Volume button doesn't work
+329	Defective|The sound stopped working after only 2 hours of use. It comes in and out and you can’t understand anything. I want to return them, but I lost all of the extra ear fittings. I have the box. Maybe a replacement or credit would be allowed because I feel strongly that this seems some sort of refund.
+330	Defective|not able to charge no battery
+331	Defective|There are no ear padding small enough for ear canal|Ear padding, as said above
+332	Defective|headphones don't work
+333	Defective|The volume continues to turn down when plugged into the phone.
+334	It apparently doesn't have full TRRS call/microphone functionality- which I need
+335	Defective|The right side doesn’t work
+336	Did not lie
+337	The middle button on the cord is not functional
+338	Defective|Only one side plays sound.
+339	Defective|They are loose and causing a vibration
+340	It does not work.
+341	Defective|They're uncomfortable and amplify surrounding noise, making it hard to hear what's playing in the headphones.|The ear pieces.
+342	Defective|The|One side of the headphones works and the other does not
+343	Volume doesn’t go up or down. Please Return.
+344	Volume control is not working
+345	Volume doesn’t work.
+346	Defective|the speaker doesnt work
+347	Defective|mic does not work
+348	The in-line remote does not respond, and the sound quality is very poor.
+349	Doesn’t connect to phone
+350	Static n i can't hear
+351	Buttons don’t work.
+352	worked for a few weeks and just now stopped working
+353	microphone wont work
+354	Defective|Occasionally only one ear works
+355	sound only works if you hold the button on the cord.
+356	The controls are  broken and the headphones do not work
+357	One er dot work
+358	Does not work
+359	not good sound quality
+360	Defective|SOUND IS DISTORTED AND NOT ALL THE TIME
+361	Defective|Barely hear out of them
+362	The volume control either goes full on or full off when pressed. It does not allow you to adjust the volume properly.
+363	The volume control and related functions do not work
+364	Defective|poor sound quality
+365	Defective|sound sometimes cuts out randomly
+366	The volume control and the music mut switch does not work.
+367	I wouldn’t say the item is actually defective, but I tried all three earbud sizes and all three of them did not fit my ears. They’re also very uncomfortable. I think it’s just not a fit for me.
+368	It doesnt cancel outside noise
+369	Defective|The product malfunctions makes a loud screeching terrible noise right in the middle of your music.
+370	Did not work when plugged into my device
+371	These headphones are not working properly.  I used these new headphones once and one of the ears is glitching and its making an awful grating sound in my ear and I'm not even playing anything.
+372	Don’t work
+373	Defective|Can’t take or make calls as if it doesn’t recognize they are plugged in. Works for music not for calls
+374	It doesn’t fit the jack adapter we have.
+375	No se escucha
+376	The sound quality when on a call is poor
+377	Defective|Stopped working after a week|Sound went bad
+378	The sound can come across static at times, especially voices. We're using it on an old sound system, so it's probably the age of our system rather than the headphones
+379	Could be me but I could not get it to work
+380	The volume changes to 100/% or zero when the plug and or the wire moves
+381	Defective|The auxiliary doesn't fit
+382	Defective|Plug in doesn't work
+383	Defective|The microphone doesn’t work correctly. It was almost all static.
+384	Volume control does not work
+385	Defective|Kept cutting in and out
+386	It seemed like it came used and I customer could not hear me. Too much static
+387	does not play sound when connected to phone
+388	the headphones stopped working after a day
+389	Ear speaker snapped off.
+390	Defective|No louder than computer speakers
+391	Doesn't work.
+392	Only one side of headphone works
+393	Defective|Volume does not work
+394	Defective|The wire broke within 2 days of using it
+395	The volume on the cord does not work it will not go up or down
+396	On one headphone is working
+397	Defective|Crackling sound with or without listening
+398	Defective|microphone not quality enough to handle my work zoom calls. i sound distant and not clear enough for my colleagues.
+399	the volume control doesn't work as it stated
+400	Something is defective with the plug or earphone as I can most only hear out of one side - at times both with connect but then disconnect again…
+401	Defective|Items is not new - a returned item. Microphone does not work,  nor does sound come out of headphones
+402	Cracking sound when listening
+403	Defective|The volume is either at the top or mute
+404	Defective|Sound control died not work. Keeps increasing the volume. Cannot decrease!
+405	Defective|volume conrol not working
+406	no sound
+407	Defective|The sound was not coming through at all or not on the left side. The jack would need constant readjusting to sometimes get sound but will not consistently play
+408	poor sound quality
+409	I can only hear music in one ear.
+410	Defective|The lightening connector is to loose and doesn’t make a good connection. I tried it on 3 different iPhones and it didn’t work.
+411	Does not  work
+412	Didn’t fit in my ears
+413	Defective|Only one earpiece works.
+414	Not as clear as it should be
+415	Right ear bud does not function
+416	Defective|The question felt invasive
+417	microphone is not close enough to mouth
+418	Isn’t compatible with my daughters device
+419	Audio Quality not as expected
+420	It’s made very poor and sound disappears from time to time
+421	One of the earbuds no longer plays music after only a couple weeks.
+422	The volume is very low
+423	Defective|Don’t work. No sound
+424	Stopped working after not even a month..no longevity at all
+425	Can put earpiece on
+426	Defective|Sounds doesn’t always project through
+427	Defective|Broken, wrong color|Wire
+428	Sound quality isn’t good
+429	Defective|Somehow glitched and can't turn the volume up.
+430	It does not work properly
+431	The sound is horrible, very poor quality for price paid.
+432	Defective|Earphone jack does not connect properly. Also received torn earbud tips.
+433	Very cheap product
+434	Defective|no sound
+435	Staticky from right side, use it for phone calls at work mostly
+436	Defective|one wire came out
+437	microphone doesn't work
+438	Defective|only one side plays sound and i've tried them in multiple devices
+439	The item doesn’t work as in broken it doesn’t work with my phone I can’t plug it in to use it
+440	Item defected  Worked for a week and then shut off completely and not working
+441	Defective|The headphones do not fit|They ear piece
+442	One of headphones is not working
+443	It does not work properly.
+444	Not noise cancelling and the right bud pops and is staticy.
+445	Volume control ,Dose not work > Mute - Dose Not Work.                refund
+446	Sound doesn't come out of one of the sides.
+447	Defective|Only one speaker works.
+448	These earbuds can’t talk to text. The mic only works if you’re on a phone call. I text talk more than anything else. So, these won’t work. The first paid I bought the mic didn’t even work at all.
+449	Ear phone on one side is crackling
+450	Defective|They are very loud and don’t respond to iPhone volume changes. They are super loud, very loud, off.
+451	Only the lower frequencies play through the earbuds.  The sound is always warbled and lots of vibration in the sound.  Installed a special mixer on my laptop and this only helped some.
+452	Defective|Sound not clear . Static interference
+453	Defective|sound is distorted
+454	The volume controls don’t work
+455	Defective|One side doesn't have sound
+456	Defective|One side sometimes works and sometimes doesn’t work. Also the sound is extremely low
+457	EARPIECE IS VERY UNCOMFORTABLE
+458	The volume on this item adjust on its own and there is now way for me to change the setti as on my device.  Further research found that these head phones are only compatible with mobile Iphones a MacB
+459	Has NO volume control
+460	sound cuts in and out.
+461	One side of thhe Ear phone does not Work.
+462	Defective|The microphone doesn’t work.
+463	Defective|The left earphone is crackling.
+464	Volume control did not function
+465	Doesn’t work right due to short in cord
+466	Worked for like a day then just stopped
+467	Defective|Only one side works
+468	terrible sound
+469	Item isn't compatible with current computer
+470	Defective|Doesn’t work at all
+471	Defective|I was playing for 5 min then it stoped working|Sound
+472	Changed Mind|Item is defective|Microphone doesn't work
+473	Defective|Sound distorted and audio voice switch stuck.
+474	Just stopped working
+475	Item is not noise cancelling
+476	Really nice product but unfortunately the volume down button doesn’t work for phone calls. It stays in high volume making it really uncomfortable.
+477	Defective|The left side does not have sound
+478	N
+479	I could hear more outside noise than I thought I would!- not very good
+480	I can’t hear my voice as loud when I plug it into my microphone. It’s louder when I take the headphones off
+481	they wore out on one side of the ear and then the other side physically broke
+482	Headset is comfortable but the volume buttons do not work.
+483	Defective|The Valium will not go down|I want a refund
+484	Noise reduction does not work
+485	only one earpiece works
+486	Voice does not work
+487	Not comfortable
+488	It didn't work for phone calls.
+489	Continues to cut in and out
+490	Only one speaker works
+491	Not happy with the operation and sound
+492	Sound quality terrible
+493	the sound quality is not what was described, hearing hissing and cracking, they don't fit well and the box that they were recevied in is all smashed, so it may have been damaged in shipping
+494	Defective|Distorted sound, bad connection
+495	The sounds quality is really bad, sounds like a tin can
+496	They are not noise canceling
+497	Defective|It cuts off when listening|The earbud
+498	Even on the lowest setting, the volume was extremely loud. Either poor design or faulty product.  cannot keep.
+499	it is way too small and hurt my sons ears. have to return it.
+500	Defective|The volume won’t stay on and won’t increase
+501	You can still hear piano playing when headset plugged it. Only way to not hear it is to hold button in.  If you do that you can't  play piano
+502	Headphones don’t fit my head properly so the cushions don’t cancel the outside noise
+503	The left earbud isn't working.
+504	Sound is muffled
+505	Not compatible
+506	Defective|Sound only came through when holding volume button
+507	Defective|cord not making a connection
+508	Didn't like the quality
+509	The item had been previously opened and appeared to be used.
+510	Defective|Sound goes in and out
+511	One side isn't working
+512	Volume not sufficient
+513	Defective|Volume control
+514	Changed Mind|Item is defective|Echoes
+515	Need to return
+516	No volume control on cord
+517	Defective|does not work|doesnt play any sounds
+518	Defective|One side stopped working
+519	Had static noise, volume fluctuating without adjusting the volume
+520	When I connect the headphones to my computer, the volume switch on the headphones does not change the volume either up or down.
+521	it is not comfortable comes off
+522	Canection broke
+523	Was not capable to any of our devices
+524	Not a great sound
+525	Different port
+526	Doesn't work with our phone system.
+527	The headset does not have a microphone
+528	Can't Hear
+529	no seal, they are huge and you can hear everything
+530	The connection piece is broken
+531	Really poor sound quality.
+532	Defective|Terrible quality|Sound quality
+533	Left side headphone does not work.
+534	Defective|Defective sound
+535	Volume control is malfunctioning
+536	Defective|One of the air tubes is bent.
+537	This item did not work with the boom box our daughter has. Wrong plug in.
+538	Left side has no sound.
+539	on/off and volume control does not work
+540	No sound plays out of the headphones
+541	Doesn't work with my phone
+542	Cxgb vbc
+543	These earbuds are not compatible with my ears and fall out. I tried all of the different attachments provided and none worked .
+544	these are horrible headphones and sound very bad
+545	Defective|When listening to an audiobook, the first word of a new sentence gets cut off. Only when using the headphones
+546	Defective|Volume control on headset cord does not work. It's full volume all the time.
+547	Defective|Volume control doesn't work
+548	The volume control doesn’t work
+549	The audio has a little static and intermittently cuts out for a couple seconds at a time. I've tested with other devices and it seems to exhibit the same issue.
+550	No sound plays from the earbuds when used.
+551	Bad sound
+552	USB port didn't work
+553	Not working with my tablet
+554	One side of headphones stopped producing sound after 1 week of use. No visible damage seen. Stopped working while in use.
+555	Defective|Sound doesn’t work
+556	Operates correctly, but is very uncomfortable in my ears, because of the straight design.
+557	Defective|No sound coming out of one ear
+558	not suitable
+559	Sound is fuzzy, goes in and out. Tried on different device and same issue.
+560	Plug is crooked & sound only works on one side
+561	The plug was rough and not smooth to plug into a device.
+562	Bad sound, tinny. Will not play sounding good unless a button is held down.
+563	Defective|The volume bottom isn't working
+564	the pro not fit in the laptop
+565	Sound doesn't work
+566	Defective|Sound doesn’t work anymore
+567	Plugged into phone to test sound and only one side of earphone worked. Decided to return.
+568	Defective|I don’t not hear anything
+569	This did not work with the product I needed to connect to.
+570	The volume control did not work
+571	The headphone jack broke off on the very first use.
+572	Defective|sounds not right
+573	Loud static no clear sound
+574	Certain tones, like a sustained notes from an alto singer, are very raspy, probably from the right earpiece. I listened to the same piece with a different set of ear phones and no raspyness. This was at normal, even low, listening volume.
+575	Bad quality sound - sounds echoey, no bass.
+576	Defective|The sound doesnt come out of both sides
+577	sound doesn't work
+578	The headphones only work out of one ear.
+579	Defective|The volume doesn't work
+580	Defective|No left channel
+581	Sound cuts in and out
+582	the volume up and down control doesn't work

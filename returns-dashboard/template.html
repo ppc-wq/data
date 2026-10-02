@@ -189,6 +189,11 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
 .clist td.txt mark{background:var(--accent-soft);color:inherit;border-radius:2px}
 .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between}
 .pager{display:flex;gap:10px;align-items:center;justify-content:center;padding-top:6px}
+.tbtn{font:inherit;color:inherit;text-align:left;background:transparent;border:0;border-top:1px solid var(--line);cursor:pointer;width:100%;border-radius:0}
+.tbtn:hover b{color:var(--accent-ink)}
+.tbtn.sel{background:var(--accent-soft);border-radius:6px;padding-inline:6px}
+.tb{grid-column:1/-1;height:3px;background:var(--surface-2);border-radius:2px;overflow:hidden}
+.tb i{display:block;height:100%;background:var(--accent)}
 </style>
 <div class="wrap">
   <header>
@@ -292,7 +297,7 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
       <button type="button" class="more" id="sum-more" hidden></button>
     </section>
     <section class="panel">
-      <div class="panel-head"><h2>Most frequent comments</h2><span class="muted small">Exact repeats, after trimming case and punctuation. Click to search.</span></div>
+      <div class="panel-head"><h2>Most frequent comments</h2><span class="muted small">Exact repeats after ignoring case and punctuation. Click one to search.</span></div>
       <div class="phrases" id="phrases"></div>
     </section>
     <section class="panel">
@@ -338,7 +343,7 @@ const NM = D.months.length;
 const asinLabel = s => `${cn(D.asinCat[s])} · ${D.asins[s]}`;
 
 const st = {acct:-1, cat:-1, asin:-1, group:-1, reason:-1, disp:-1, base:'same', heatRows:'group', tableBy:'cat',
-  sort:{key:'ret',dir:-1}, q:'', cq:'', allSummaries:false, cLimit:100, showAllReasons:false, tab:'overview'};
+  sort:{key:'ret',dir:-1}, q:'', cq:'', allSummaries:false, theme:null, cLimit:100, showAllReasons:false, tab:'overview'};
 try{ const s=JSON.parse(localStorage.getItem('returns-dash-v2')||'{}'); if(s.base) st.base=s.base; }catch(e){}
 function save(){ try{ localStorage.setItem('returns-dash-v2', JSON.stringify({base:st.base})); }catch(e){} }
 const salesCov = D.salesCoverage || {};
@@ -424,7 +429,7 @@ function initControls(){
   $('h-reason').onclick=()=>{st.heatRows='reason';render();};
   $('g-cat').onclick=()=>{st.tableBy='cat';st.sort={key:'ret',dir:-1};render();};
   $('g-asin').onclick=()=>{st.tableBy='asin';st.sort={key:'ret',dir:-1};render();};
-  $('reset').onclick=()=>{ Object.assign(st,{acct:-1,cat:-1,asin:-1,group:-1,reason:-1,disp:-1,q:'',cq:'',cLimit:100}); $('q').value=''; $('c-q').value=''; fillAsinOptions(); fillReasonDetail(); render(); };
+  $('reset').onclick=()=>{ Object.assign(st,{acct:-1,cat:-1,asin:-1,group:-1,reason:-1,disp:-1,q:'',cq:'',cLimit:100,theme:null}); $('q').value=''; $('c-q').value=''; fillAsinOptions(); fillReasonDetail(); render(); };
   $('q').oninput = e=>{ st.q=e.target.value.trim().toLowerCase(); renderTable(compute()); };
   $('c-q').oninput = e=>{ st.cq=e.target.value.trim(); st.cLimit=100; renderComments(); };
   $('c-more').onclick = ()=>{ st.cLimit+=200; renderComments(); };
@@ -449,8 +454,9 @@ function syncControls(){
   if(st.group>=0) tags.push(['group', gn(st.group)]);
   if(st.reason>=0) tags.push(['reason', rn(D.reasons[st.reason])]);
   if(st.disp>=0) tags.push(['disp', dn(D.dispositions[st.disp])]);
+  if(st.theme) tags.push(['theme', 'Theme: '+D.summaries[D.reasons[st.theme.r]].themes[st.theme.t].theme]);
   $('active').innerHTML = tags.map(([k,l])=>`<span class="tag">${esc(l)}<button type="button" data-k="${k}" aria-label="Remove filter">×</button></span>`).join('');
-  $('active').querySelectorAll('button').forEach(b=>b.onclick=()=>{ st[b.dataset.k]=-1; if(b.dataset.k==='cat') fillAsinOptions(); if(b.dataset.k==='group') fillReasonDetail(); render(); });
+  $('active').querySelectorAll('button').forEach(b=>b.onclick=()=>{ st[b.dataset.k]= b.dataset.k==='theme'? null : -1; if(b.dataset.k==='cat') fillAsinOptions(); if(b.dataset.k==='group') fillReasonDetail(); render(); });
 }
 
 /* ---------- header ---------- */
@@ -543,9 +549,9 @@ function renderReasons(c){
       <span class="n">${fmt(v)}</span><span class="p">${fp(v/base,1)}</span><span class="rbar"><i style="width:${w}%"></i></span></button>`;
   $('reasons').innerHTML = shown.map(([g,G])=>{
     g=+g; const sel = g===st.group;
-    const single = G.rs.length===1 && D.groups[g]===D.reasons[G.rs[0][0]];
-    let h = `<div class="rgroup">` + row(sel&&st.reason<0?' sel':'', `data-g="${g}" aria-pressed="${sel}"`, gn(g), single? D.reasons[G.rs[0][0]] : `${G.rs.length} reason${G.rs.length>1?'s':''}`, G.t, total, (G.t/max*100).toFixed(1));
-    if (!single && (sel || G.rs.length<=3)) h += `<div class="rsub">` + G.rs.sort((a,b)=>b[1]-a[1]).map(([r,v])=>row(r===st.reason?' sel':'', `data-r="${r}"`, rn(D.reasons[r]), D.reasons[r], v, total, (v/max*100).toFixed(1))).join('') + `</div>`;
+    const single = G.rs.length===1;
+    let h = `<div class="rgroup">` + row(sel&&st.reason<0?' sel':'', `data-g="${g}" aria-pressed="${sel}"`, gn(g), single? (D.grouped? rn(D.reasons[G.rs[0][0]]) : D.reasons[G.rs[0][0]]) : G.rs.sort((a,b)=>b[1]-a[1]).map(([r])=>rn(D.reasons[r])).join(', '), G.t, total, (G.t/max*100).toFixed(1));
+    if (!single && sel) h += `<div class="rsub">` + G.rs.sort((a,b)=>b[1]-a[1]).map(([r,v])=>row(r===st.reason?' sel':'', `data-r="${r}"`, rn(D.reasons[r]), D.reasons[r], v, total, (v/max*100).toFixed(1))).join('') + `</div>`;
     return h+`</div>`;
   }).join('') || '<span class="muted">No returns for the selected filters</span>';
   $('reasons').querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>{ const g=+b.dataset.g; st.group = g===st.group && st.reason<0 ? -1 : g; st.reason=-1; fillReasonDetail(); render(); });
@@ -640,25 +646,54 @@ function renderTable(c){
 const norm = t => t.toLowerCase().replace(/[^a-z0-9 |']+/g,' ').replace(/\s+/g,' ').trim();
 function filteredComments(){
   const q = st.cq.toLowerCase();
-  return D.comments.filter(([a,m,s,r,d,,t])=> keep(a,s,r,d) && (!q || t.toLowerCase().includes(q)));
+  return D.comments.filter(([a,m,s,r,d,,t,tg])=> keep(a,s,r,d) && (!q || t.toLowerCase().includes(q))
+    && (!st.theme || (r===st.theme.r && (tg||[]).includes(st.theme.t))));
+}
+// pick readable example quotes: informative length, newest first, no duplicates
+function examples(rows, n){
+  const seen=new Set(), out=[];
+  const good = rows.filter(c=>c[6].length>=25 && c[6].length<=180);
+  for (const c of (good.length? good : rows)){ const k=norm(c[6]); if(seen.has(k)) continue; seen.add(k); out.push(c[6]); if(out.length>=n) break; }
+  return out;
+}
+function scopeLabel(){
+  const parts=[];
+  if (st.asin>=0) parts.push(asinLabel(st.asin)); else if (st.cat>=0) parts.push(cn(st.cat));
+  if (st.acct>=0) parts.push(D.accounts[st.acct]);
+  if (st.disp>=0) parts.push(dn(D.dispositions[st.disp]));
+  return parts.length ? parts.join(' · ') : 'all products and accounts';
 }
 function renderSummaries(list){
-  const counts = {}; list.forEach(c=>counts[c[3]]=(counts[c[3]]||0)+1);
-  let codes = st.reason>=0 ? [st.reason] : Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([r])=>+r);
-  codes = codes.filter(r=>D.summaries[D.reasons[r]]);
+  const byR = {}; list.forEach(c=>(byR[c[3]] ||= []).push(c));
+  let codes = st.reason>=0 ? [st.reason] : Object.keys(byR).map(Number).sort((a,b)=>byR[b].length-byR[a].length);
+  codes = codes.filter(r=>byR[r] && byR[r].length);
   const moreBtn = $('sum-more'); moreBtn.hidden = codes.length<=3 || st.reason>=0;
   moreBtn.textContent = st.allSummaries ? 'Show fewer reasons' : `Show all ${codes.length} reasons`;
   moreBtn.onclick = ()=>{ st.allSummaries=!st.allSummaries; renderSummaries(list); };
   if (!st.allSummaries) codes = codes.slice(0,3);
-  $('sum-sub').textContent = `Themes from all ${fmt(D.comments.length)} comments, January–September. They do not change with the account, category or ASIN filters.`;
+  $('sum-sub').textContent = `${fmt(list.length)} comments · ${scopeLabel()}. Shares recalculate with the filters.`;
   $('summaries').innerHTML = codes.map(r=>{
-    const S = D.summaries[D.reasons[r]];
-    return `<article class="scard"><div class="panel-head"><h3>${esc(rn(D.reasons[r]))}</h3><span class="muted small">${D.grouped?esc(gn(D.reasonGroup[r])):''}</span></div>
-      <p class="sum" style="margin:0">${esc(S.summary)}</p>
-      ${S.themes.slice(0,4).map(t=>`<div class="theme"><b>${esc(t.theme)}</b><span class="sh">${esc(t.share||'')}</span><p>${esc(t.detail)}</p>${(t.quotes||[]).slice(0,2).map(q=>`<q>${esc(q)}</q>`).join('')}</div>`).join('')}
-      ${S.themes.length>4?`<details><summary class="small" style="cursor:pointer;color:var(--accent-ink)">${S.themes.length-4} more theme${S.themes.length-4>1?'s':''}</summary>${S.themes.slice(4).map(t=>`<div class="theme"><b>${esc(t.theme)}</b><span class="sh">${esc(t.share||'')}</span><p>${esc(t.detail)}</p>${(t.quotes||[]).slice(0,2).map(q=>`<q>${esc(q)}</q>`).join('')}</div>`).join('')}</details>`:''}
+    const rows = byR[r], n = rows.length, S = D.summaries[D.reasons[r]] || {themes:[]};
+    const cnt = S.themes.map((_,i)=>rows.filter(c=>(c[7]||[]).includes(i)).length);
+    const none = rows.filter(c=>!(c[7]||[]).length).length;
+    const order = S.themes.map((_,i)=>i).filter(i=>cnt[i]>0).sort((a,b)=>cnt[b]-cnt[a]);
+    const lead = order.slice(0,2).map(i=>`${S.themes[i].theme.toLowerCase()} (${fp(cnt[i]/n,0)})`);
+    const sentence = n<5 ? `Only ${n} comment${n>1?'s':''} here, so read them directly below.`
+      : lead.length ? `Customers most often mention ${lead.join(' and ')}.${none/n>=0.25?` ${fp(none/n,0)} give no specific detail.`:''}`
+      : 'Comments here give no specific detail.';
+    const theme = i => { const sel = st.theme && st.theme.r===r && st.theme.t===i;
+      const ex = examples(rows.filter(c=>(c[7]||[]).includes(i)), 2);
+      return `<button type="button" class="theme tbtn${sel?' sel':''}" data-r="${r}" data-t="${i}" aria-pressed="${sel}"><b>${esc(S.themes[i].theme)}</b><span class="sh">${fmt(cnt[i])} · ${fp(cnt[i]/n,0)}</span><span class="tb"><i style="width:${(cnt[i]/n*100).toFixed(1)}%"></i></span><p>${esc(S.themes[i].detail)}</p>${ex.map(q=>`<q>${esc(q.replace(/\|/g,' · '))}</q>`).join('')}</button>`; };
+    return `<article class="scard"><div class="panel-head"><h3>${esc(rn(D.reasons[r]))}</h3><span class="muted small">${fmt(n)} comment${n>1?'s':''}${D.grouped?' · '+esc(gn(D.reasonGroup[r])):''}</span></div>
+      <p class="sum" style="margin:0">${esc(sentence)}</p>
+      ${order.slice(0,4).map(theme).join('')}
+      ${order.length>4?`<details><summary class="small" style="cursor:pointer;color:var(--accent-ink)">${order.length-4} more theme${order.length-4>1?'s':''}</summary>${order.slice(4).map(theme).join('')}</details>`:''}
+      ${none?`<span class="muted small">No specific detail: ${fmt(none)} · ${fp(none/n,0)}</span>`:''}
     </article>`;
-  }).join('') || '<span class="muted">No summary for the selected reasons.</span>';
+  }).join('') || '<span class="muted">No comments for the selected filters.</span>';
+  $('summaries').querySelectorAll('.tbtn').forEach(b=>b.onclick=()=>{ const r=+b.dataset.r, t=+b.dataset.t;
+    st.theme = st.theme && st.theme.r===r && st.theme.t===t ? null : {r,t}; st.cLimit=100; renderComments();
+    if (st.theme) $('clist').scrollIntoView({behavior:'smooth', block:'start'}); });
 }
 function renderPhrases(list){
   const c = {}; list.forEach(x=>{ const k=norm(x[6]); if(k) c[k]=(c[k]||0)+1; });
@@ -669,9 +704,9 @@ function renderPhrases(list){
 function renderComments(){
   const all = filteredComments(); // before text search, for summaries/phrases
   const q = st.cq;
-  const base = q ? D.comments.filter(([a,m,s,r,d])=>keep(a,s,r,d)) : all;
+  const base = D.comments.filter(([a,m,s,r,d])=>keep(a,s,r,d));
   renderSummaries(base); renderPhrases(base);
-  $('clist-title').textContent = `Comments · ${fmt(all.length)}`;
+  $('clist-title').textContent = `Comments · ${fmt(all.length)}`+(st.theme?` · theme: ${D.summaries[D.reasons[st.theme.r]].themes[st.theme.t].theme}`:'');
   const shown = all.slice(0, st.cLimit);
   const re = q ? new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig') : null;
   const hl = t => re ? esc(t).replace(re, m=>`<mark>${m}</mark>`) : esc(t);
@@ -688,16 +723,18 @@ function renderComments(){
 
 function renderMethod(){
   $('method').innerHTML = [
-    `<b>Returns</b> come from the FBA Customer Returns report and are counted in the month the item was received back at an Amazon fulfillment center.`,
+    `<b>Returns</b> come from the FBA Customer Returns report and are counted by the UTC date the item was received back at an Amazon fulfillment center, the same day boundary as the Seller Central export.`,
     `<b>Sales</b> come from the All Orders report by order date: Amazon.com only, cancelled orders excluded, in units. Multi-channel (non-Amazon) orders are not counted.`,
     `<b>Return rate</b> = units returned in a month ÷ units sold. “Same month” divides by that month's sales. “Previous month” divides by the prior month's sales. Customers usually return items 2–4 weeks after buying, so after sales peaks (Prime Day in July, August) the previous-month view is more representative.`,
     `When a reason group or reason is selected, the rate counts only returns with that reason. Totals include only months with sales data.`,
-    `<b>Categories</b> and <b>reason groups</b> come from the team's mapping sheet (Info and Reasons tabs). Customer comments are the free-text notes buyers enter on the return request (about 60% of returns have one).`,
+    `<b>Categories</b> and <b>reason groups</b> come from the team's mapping sheet (Info and Reasons tabs). Customer comments are the free-text notes buyers enter on the return request (about 60% of returns have one). Each comment is tagged with the themes of its return reason; theme shares on the comments tab are counted from the comments that match the current filters.`,
+    `<b>Data check.</b> For Jan 1 – Sep 1, 2026 these returns were matched order by order against the team's Seller Central export (Return Data - US): all 6,988 exported returns are here with the same ASIN, quantity and reason, and monthly totals for ASINs on the Info tab match exactly. The dashboard also includes 48 returns of ASINs that are not on the Info tab (flash cards, games, mice, Artix power strips), shown as “Not in Info tab”.`,
     `Source: Windsor.ai, Amazon Seller Central connector (amazon_sp).`
   ].map(t=>`<li>${t}</li>`).join('');
 }
 
 function render(){
+  if (st.theme && st.reason>=0 && st.theme.r!==st.reason) st.theme=null;
   syncControls();
   if (st.tab==='comments'){ renderComments(); return; }
   const c = compute();

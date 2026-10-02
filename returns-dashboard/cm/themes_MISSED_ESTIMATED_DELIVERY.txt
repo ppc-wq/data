@@ -1,0 +1,4 @@
+0	Arrived too late to use	These are plain 'late' or 'too late' comments, often a day past the promised date.
+1	Missed trip or event	The item was needed for travel, school, a test or a holiday and arrived after it.
+2	Bought replacement elsewhere	Customers reordered or bought another pair in a store after the delay.
+3	Cancel or lost-order confusion	Some report cancelled orders that still arrived, or lost or misrouted packages.

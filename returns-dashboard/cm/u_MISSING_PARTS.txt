@@ -1,0 +1,2 @@
+0	it doesn't work
+1	Delivery Issue|Item is missing parts|Buds

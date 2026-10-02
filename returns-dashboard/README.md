@@ -9,5 +9,7 @@ plus a customer-comments tab.
   - `orders_<acct>_*.json` — All Orders (`flat_file_all_orders_data_by_order_date_general__*`).
 - `map/info.csv` — the "Info" tab of the mapping sheet (ASIN → category, product, parent/child).
 - `map/reasons.csv` — the "Reasons" tab (Amazon return reason → reason group).
-- `map/summaries.json` — comment themes per return reason.
+- `map/summaries.json` — comment themes per return reason (label + description).
+- `cm/u_<REASON>.txt` numbers each unique comment; `cm/assign_<REASON>.json` tags it with theme indices (-1 = no specific detail). The dashboard counts themes from the comments matching the current filters.
+- Return months use the UTC return date, the same day boundary as the Seller Central export; sales use the order date.
 - `build.py` aggregates everything into `data.json` and injects it into `template.html` → `dashboard.html`.

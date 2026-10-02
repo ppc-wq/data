@@ -1,0 +1,57 @@
+0	too small
+1	Didn't like the way they fit.
+2	The head set is too small and smashes ears
+3	Found a wireless headphone model
+4	No
+5	Too small for over ear. No other issue.
+6	Did not fit my head.
+7	Did not fit my head correctly.
+8	Ear covers too small
+9	small on ear
+10	Too small for my 10 year olds ears
+11	Too tight
+12	Hurt my son's ears.
+13	Not comfortable
+14	Do not need
+15	Headphones are too small for me
+16	Doesn’t fit around ears
+17	none of the earpieces fit my ears and headphones kept falling out of my ears.
+18	Doesn’t fit over ears
+19	Too small to fit around ears
+20	Doesn't fit head and ears.
+21	Does not fit ears. Keep falling off
+22	Larger head
+23	It doesn’t fit over Childs ears
+24	Does not fit over ears right
+25	they don't fit my head
+26	the ear pads hurt my ears if used for long periods on conf calls
+27	Product is very small
+28	Sits too high on ears
+29	Doesnt fit well
+30	Too small for me
+31	The headphones are too small and hurt my ears.
+32	Headphones did not fit properly and are uncomfortable to wear.
+33	It's uncomfortable to wear, the head band digs into my head - not enough cushion and the earmuffs are too small and cut into my ears. They work fine, just too uncomfortable to wear.
+34	I don't want it
+35	The headphones are quite nice; however, they hurt my head.
+36	dmall
+37	Not large enough
+38	hurts ears
+39	Too small to be comfortable
+40	I decided I like your brand but am ordering the over the ear headphones.these are kinda tight and hurt my ears after a bit.
+41	Size
+42	none
+43	The ears are a bit small
+44	Small
+45	Too small
+46	Ear pieces too small for a toddler.
+47	Christmas gift, but hurts the wearer's ears.
+48	To small
+49	Headphones too small for my child
+50	The wire is not long enough
+51	Do not cover ears fully.
+52	ear pieces were too small
+53	These earbuds are too shorts for my ear canals. They fall out. Also I find the sound is fuzzy. Overall I do not like them.
+54	Cord was too short
+55	The ear buds do not stay in my ears at all when I move around
+56	Too small even with adjustable buds, not fitting right

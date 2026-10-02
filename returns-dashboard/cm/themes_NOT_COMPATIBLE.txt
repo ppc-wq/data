@@ -1,0 +1,8 @@
+0	Wrong plug or connector	The connector (3.5mm vs USB-C vs Lightning, jack size) didn't match the customer's port, often admitted as ordering the wrong version.
+1	Doesn't work with iPhone/iPad	Customers say the product doesn't fit or isn't supported on their iPhone or iPad, sometimes despite the listing claiming compatibility.
+2	Other device incompatibility	Headphones don't work properly with laptops, Chromebooks, school or work computers, pianos, game consoles, TVs or other equipment.
+3	Physical fit / size	Headphones or earbuds are too big, too small, uncomfortable or won't stay in the ears, often for children.
+4	Expected wireless/Bluetooth	Buyers wanted Bluetooth or wireless headphones and didn't realize the item is wired.
+5	Volume control not working	In-line volume control doesn't work with the customer's system or device, a recurring note from multi-user setups.
+6	Microphone or call issues	No microphone, mic doesn't work with the device, or people can't hear the customer on calls.
+7	Poor sound quality	Sound quality is described as terrible, screeching or unclear.

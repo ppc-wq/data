@@ -1,0 +1,673 @@
+0	Changed Mind|My needs changed
+1	Changed Mind|Found other item
+2	Changed Mind|This is a gift
+3	No longer needed
+4	Not needed
+5	Na
+6	Don’t need
+7	No
+8	NA
+9	No longer need
+10	Changed Mind|My needs changed|No
+11	Dont need
+12	N
+13	Changed mind
+14	Dont want it anymore
+15	Don't need
+16	no longer needed
+17	Not compatible with my device
+18	Wrong item
+19	J
+20	Ok
+21	N/A
+22	No need
+23	Arrived too late
+24	Decided to get a different color
+25	n/a
+26	I was unhappy with the quality
+27	Didn't need
+28	Changed Mind|My needs changed|Don’t need
+29	Don’t need it
+30	Wrong color
+31	Thanks
+32	Changed Mind|My needs changed|Accidentally ordered more than needed
+33	na
+34	Changed Mind|Found other item|Did not arrive in time for trip I needed them
+35	no need
+36	Didn’t use
+37	Bought for my granddaughter's birthday, but they already had them.
+38	Accidentally bought 2
+39	Bough usb c and 3.5, don’t need 3.5
+40	New device
+41	The kids don't want them.
+42	Got a different pair
+43	We thought these were blue tooth compatible. No longer needed now.
+44	Don’t want
+45	Didn’t work as well as I hoped
+46	Hurts my ears
+47	didnt use
+48	Didn’t like the fit
+49	Came too late
+50	Found another pair
+51	No longer needed.
+52	no longer need
+53	It didn’t arrive on time
+54	Wrong item for phone
+55	Not damaged but does not connect to my phone. I thought they connected to phone.
+56	New and never opened,  just don't need anymore
+57	Staff are selecting blue tooth over wired headset options.
+58	Arrived late
+59	K
+60	I don’t need
+61	Too big for me
+62	Not comfortable
+63	Both are unopened & unused
+64	No longer need it
+65	Ordered multiple options
+66	need wireless
+67	I thought it was wired and wireless.
+68	I kept another one I ordered after looking at all of them
+69	Changed Mind|Found other item|Didn’t fit
+70	Don't go over the whole ear and don't like that
+71	Changed Mind|Found other item|she wants one in her ears
+72	Changed Mind|My needs changed|ordered two--should have only ordered one
+73	Changed Mind|My needs changed|Don’t think my daughter will use on flight
+74	Changed Mind|This is a gift|No
+75	Changed Mind|My needs changed|Color was more purple than blue
+76	Changed Mind|My needs changed|Bought this for my crazy sister-in-law. Now she doesn't want it. Go figure.
+77	Duplicate
+78	Didn’t need
+79	Changed Mind|My needs changed|Work got me head phones for training.
+80	Changed Mind|My needs changed|It’s in perfect condition, unopened. I just don’t need 2.
+81	Changed Mind|Found other item|I had already ordered some and they weren't delivered when they were supposed to be so I canceled them and ordered these and then they shipped out the original pair and were delivered the same day. I don't need 4 pairs
+82	Ya no lo necesito
+83	Changed Mind|Found other item|I did not need this level of headphones
+84	Changed Mind|Found other item|Other brsnf
+85	Changed Mind|My needs changed|School requires airbuds, not headphones
+86	Changed Mind|Found other item|I ordered 2 and choose another one
+87	Just doesn't seem to work for my ears. Earbuds kept falling out when using.
+88	My sister already buy so thats why I need to return it.
+89	Changed Mind|My needs changed|Needed earbuds
+90	Changed Mind|My needs changed|didn’t want
+91	Find different pair
+92	Changed Mind|Found other item|Did not fit my head
+93	Changed Mind|My needs changed|ok
+94	Changed Mind|My needs changed|I don’t need it
+95	Changed Mind|My needs changed|needed a different plug
+96	Changed Mind|Found other item|Got a different color
+97	Changed Mind|My needs changed|didnt use
+98	Changed Mind|My needs changed|Unopened
+99	Sound
+100	Changed Mind|My needs changed|Bought as a gift, but no longer need. Unopened.
+101	Changed Mind|My needs changed|Added two in cart by mistake
+102	Changed Mind|This is a gift|Didn't need
+103	Changed Mind|Found other item|My husband has earbuds that work just as well and less bulky for trips
+104	Changed Mind|My needs changed|Accidentally ordered
+105	Fine
+106	Changed Mind|My needs changed|Only meant to order 1
+107	We needed a Bluetooth pair instead.
+108	My son felt like they looked like they were for girls.
+109	Decided not needed
+110	Didn’t need 2
+111	Kept other option
+112	Accidently ordered 2
+113	Changed Mind|Found other item|other item works better
+114	I wanted wireless and bought the wrong one
+115	Product hurts ears
+116	He needs a certain headset for school
+117	Teacher changed mind kids don’t need them
+118	Supposed to be earbuds
+119	Supposed to be ear buds
+120	Changed Mind|Found other item|Accidentally ordered 2 but only need 1
+121	Dosnt fit right
+122	Need a different one
+123	Too large
+124	Changed Mind|This is a gift|Grandkid wanted wireless
+125	No longer needed not the item I thought
+126	Fine but no longer needed.
+127	Already purchased elsewhere
+128	Son found his old pair
+129	Changed Mind|My needs changed|Changed mind
+130	Ear piece is too small
+131	Shipping delay no longer needed
+132	Changed Mind|My needs changed|We no longer needed for school
+133	Multiple choice, chose a different brand
+134	Order two
+135	Not right fit for me.
+136	Didn’t like how they worked!
+137	Changed Mind|My needs changed|Needed USB C
+138	No receipt was given so rejected and not needed.
+139	Already had some
+140	Product is fine just don’t need them anymore
+141	Changed Mind|Found other item|didnt like the fit
+142	Daughter wanted other headphones
+143	decided I nee bluetooth
+144	Wrong plug in
+145	No lo necesito
+146	Didn’t arrive in time for trip
+147	The ear phones were Not loud enough
+148	Changed Mind|My needs changed|I bough 2 by accident
+149	Want cordless
+150	Isn't gonna work with what I need it for
+151	Dont like
+152	Found speakers instead
+153	Didn’t like the style didn’t use it
+154	Too puffy
+155	Didn't like how they felt on ears
+156	Bought two by mistake
+157	Changed Mind|My needs changed|feedback loop
+158	Accidentally ordered two pairs
+159	Changed Mind|My needs changed|I ordered two by mistake and only needed one
+160	Item arrived delayed after trip
+161	Not meet my expectations
+162	In person color looks more purple on the box … not midnight blue.. so didn’t open the seal. Will order another color for my son.
+163	Didn’t like color
+164	Changed Mind|My needs changed|Need usb c connection
+165	Weren’t that comfortable
+166	O need
+167	I need ear buds instead
+168	No necwsario
+169	Don’t need them
+170	I don't it anymore
+171	Already have a pair that we can use instead
+172	Wrong plug
+173	We need Bluetooth instead
+174	Did not meet our expectations.
+175	The company replaced them at no cost
+176	Wanted different color didn’t open
+177	Don’t like sound
+178	Changed Mind|My needs changed|I decided on another color and have already received the one in champagne
+179	Changed Mind|Found other item|Na
+180	Other brand worked
+181	I bought two and decided we don’t need a backup as they look to be decent quality
+182	too pricey
+183	Didn’t adapt to the Ipad
+184	It did not fit right.
+185	Not right for me
+186	I don’t have the appropriate adapter I need for it.
+187	Bought as a gift and they wanted a different kind
+188	Don’t need any longer
+189	Changed Mind|My needs changed|Buy by mistake twice
+190	Changed Mind|My needs changed|Wen't with a different kind
+191	Changed Mind|My needs changed|Didn’t need it for a gift
+192	Changed Mind|My needs changed|Using ear buds
+193	Changed Mind|My needs changed|None
+194	Changed Mind|Found other item|too expensive for what they are
+195	Kids don’t want it
+196	It’s the wrong connector for my iPad.
+197	Changed Mind|My needs changed|I just don't need them
+198	Bought by mistake. Needed something without microphone.
+199	I found another item to meet my needs.
+200	Found a replacement more suited to my needs
+201	Not comfortable when using it. Tried it twice and the beads really keep emf away from the head, but it’s not comfortable for walking or moving cause the airtubes create noise
+202	Necesito con micrófono
+203	Won’t fit my ears.
+204	Can’t do the wires, get in the way and the clip is trash
+205	Was a gift but the receiver wanted something different.
+206	I decided I would prefer wireless headphones.
+207	Not the quality I expected
+208	Tubing seems very delicate. Sound quality not so good.
+209	Tried to cancel was already shipped
+210	Does not plug into my phone
+211	Changed Mind|Found other item|Returned Prior headphones due to poor clarity - turns-out it was my PC - and they were more comfortable. So i will reorder prior
+212	I am no longer need it.
+213	bought by mistake
+214	Didn't use it still in the box.
+215	phone that we were using them for broke
+216	I tried several different kinds and ultimately decided to go with a different brand
+217	I bought the wrong version, wanted the non air tube model.
+218	I decided not to use headphones.
+219	I got two, and I like the other one better
+220	m
+221	Doesn't fit adapter plug.
+222	NO LONGER NEEDED
+223	Just not what I expected
+224	Changed Mind|My needs changed|needed the other plug in
+225	I don’t like them
+226	not compatible with the system program
+227	Falls out of my ear.
+228	He needs the one with a microphone
+229	Not useful for what I need.
+230	dont like it
+231	Can’t connect to my ipad
+232	He already purchased a pair
+233	Color is too bright for work
+234	Simplemente no lonocupo
+235	don't need
+236	Doesn’t have volume controls which I like
+237	They are not compatible with our phone and computer.
+238	Chose smaller option.
+239	I liked another pair that I ordered.
+240	I was able to fix my old broken headphones, so I no longer need this one
+241	Needed Bluetooth, didn't realize it wasn't
+242	Didnt like sound quality
+243	Doesn’t cover ears
+244	Ordered wireless pair
+245	child did not like wearing them
+246	I needed a different mic for the headset
+247	Didn’t come in time
+248	Changed Mind|My needs changed|Unopened Box. I bought in-ear headphones on Amazon.
+249	Unopened
+250	ONLY NEEDED ONE PAIR
+251	need blue tooth
+252	Doesn't have much bass
+253	Our child won't wear them
+254	Like others better
+255	Have other No longer needed
+256	I need headphones for work and couldn’t find mine, so I ordered a new pair….but then, of course, I found mine. I no longer need these.
+257	Need it with speaker
+258	Ordered the wrong earphones.
+259	Still un original packaging, no longer needed
+260	Was gifted another pair
+261	Found other pair
+262	Quality
+263	Changed Mind|My needs changed|Returning this pair to get the same pair in black instead!
+264	Ya no lo necesito.
+265	Found something else
+266	Never opened. Was a gift but they didn’t want
+267	Was gifted another pair sooner than these arrived
+268	I had to replace my phone and the new phone does not use a 3.5 audio jack.
+269	Changed Mind|Found other item|Found the ones I thought I lost
+270	No need.
+271	Didn't use them
+272	Has older connection and does not fit my iPhone
+273	They were too small for my daughter’s liking
+274	The cords are uncomfortable and too long
+275	Was checking out earbuds to see what I liked. Good quality but won’t want to use them if I’m not a huge fan.
+276	Bought a different one
+277	No longer have the phone to match
+278	Uncomfortable on my ears
+279	Not usb c
+280	I like the other headset better
+281	Item is fine, unopened, no longer needed
+282	Birthday gift didn't want it
+283	Changed Mind|My needs changed|Order two by accident.  Keeping one.
+284	The cord doesn’t work work my phone
+285	i bought another pair as well
+286	Did not open.  Liked the others I ordered.
+287	want different color
+288	Too small for my son
+289	Wrong connector
+290	Changed Mind|My needs changed|Decided to go wireless
+291	Was a gift, user wants different ones! Product is perfect.
+292	I need a different ones
+293	Changed my mind.
+294	Extra
+295	Changed Mind|My needs changed|l never use the item
+296	Changed Mind|My needs changed|used existing headphones with a cable
+297	Found better product
+298	Could not get them to fit comfortably
+299	I bought these before for my wife and LOVED them.  I thought I was getting the same thing for me but realized these have a lightning connector and I need an rca phono connector..sorry. they are unused
+300	My son found an extra pair of headphones for me.
+301	Changed Mind|My needs changed|These did not cover my ears as I wanted them to.
+302	I just don't like the sound quality not that much bass
+303	Going to purchase different headphones.
+304	Too heavy for head
+305	no issues
+306	Changed Mind|My needs changed|My son didn’t like the design
+307	The item doesn’t meet to customer likeness.
+308	Just not what I had in mind when purchasing
+309	Hasn’t even been open
+310	Arrived after we left for our trip
+311	Bought it for math testing and my kid forgot them. Never been opened
+312	Item is perfectly fine.  I needed a wireless headset not wired.
+313	Son found his other pair
+314	Toddler doesn’t like them
+315	Bought wrong type
+316	Great quality but too big for my ears
+317	Don't like the fit
+318	Item is fine, but no linger needed
+319	Microphone different than needed.
+320	no further reason(s)
+321	Change mind
+322	Changed mind|My needs changed
+323	The wireless earbuds work so well that wired buds are not needed.
+324	Need USB c not headphones jack.
+325	Changed Mind|My needs changed|N/a
+326	Changed Mind|Found other item|None
+327	Found a better alternative.
+328	Color
+329	cost
+330	bought multiple to choose
+331	Changed Mind|Found other item|No longer needed
+332	needed it for my flight but arrived late.
+333	Did not fit over my ears, very uncomfortable
+334	I chose a different pair
+335	no me gusta como quedan en el  oido . es muy plana y se caen. no tiene curvatura
+336	Purchased another pair
+337	don’t need
+338	Not needed have one already
+339	Didn’t like fit
+340	Needed headphones with a microphone this seems like it did but did not
+341	Not correct size
+342	Bought another 1
+343	Did not fit right
+344	Changed Mind|Found other item|My daughter preferred noise cancelling of other brand
+345	No me funcionaron en la computadora de la escuela de mi hijo
+346	Not what I thought I was getting
+347	I thought this would work with my radio but it turns out my radio is not compatible with the volume control on the headphones.
+348	Didn’t like them
+349	No longer needed it
+350	Bought something else
+351	Doesn't fit on ears right
+352	Got it for an mp3 player but the player is broken. The earbuds work fine
+353	Going with a wireless option.
+354	hi, my headphones stopped working on my computer so I got these new wired headphones, but it turns out it was the problem with the computer not the headphones, so I no longer need them.
+355	Bought several to compare and don’t need these
+356	headphones does not have the slide volume control
+357	It was bought as a gift and the recipient did not want them.
+358	Item does not have ambient sound feature.
+359	bought multiples
+360	Did not need
+361	Selected different style
+362	item sound quality is less satisfactory than that of the earbuds i’m trying to replace
+363	Changed Mind|This is a gift|Delivered fine. Just don't need it
+364	bought other set
+365	Didn’t like the sound quality
+366	The cord was too annoying. I was hoping it wouldn’t bother me but it did.
+367	Were not comfortable
+368	Cable is not detachable and I cannot use existing adapter
+369	My daughter purchased a pair already. This was intended as a gift to her.
+370	Purchased another
+371	It does not work for the reason I bought it for
+372	was a gift but not wanted
+373	Didn’t like the color.
+374	Didn't like the color.
+375	Doesn’t have usbc like I thought
+376	Didn’t have a port to plug it into, only Bluetooth
+377	No needed
+378	Used our homeschool funds to buy
+379	Not Noise canceling
+380	Does not fit the IPhone
+381	I ordered 2 by accident
+382	Wrong plug for wat I need
+383	Needed true noise cancelling headphones phones, misleading noise cancelling description
+384	Was delivered late.
+385	I brought two, kept one returning the other
+386	Looking for slightly better quality
+387	I need a wireless headset
+388	The plug doesn’t fit my phone unfortunately
+389	Not compatible with device
+390	Changed Mind|My needs changed|nothing
+391	Not
+392	Changed Mind|My needs changed|Don't want a wire, need wireless now
+393	not what I needed
+394	Dont need them anymore.
+395	Pensé que era bluetooth
+396	I thought it was EMF limiting.
+397	The quality isn’t the same as my AirPods
+398	It doesn’t work with my computer
+399	Arrived too late.
+400	did not need
+401	Didn’t like
+402	Purchased as Birthday gift. Recipient didn't want them. Have not been opened.
+403	Have another pair
+404	My employer told me I'd need these for work, and ended up not needing them at all now after all.
+405	Not what i thought
+406	Wanted noise cancelling
+407	I wanted noise canceling headphones, so I’m going to return these and order some of those
+408	Wrong Jack
+409	Didn’t like the fit in my ears
+410	Changed Mind|This is a gift|Wrong one ordered
+411	Wrong adapter
+412	My son didn’t like them
+413	no need to keep this
+414	Item is not compatible with phone
+415	Don’t care for design fit
+416	I ordered the blue color and got black one.
+417	Found two headphones from that you have that are Bluetooth and noise canceling
+418	Changed Mind|My needs changed|I already had bluetooth in ear headphones and didn't notice that my computer was compatible with those. In addition, I do not like things over my ears so these headphones were not a match
+419	Need USB plug in.
+420	I really wanted to like the wired headphones due to safety concerns about Bluetooth, but it gets in my way.
+421	Need dj headphones
+422	The earbuds were uncomfortable.
+423	We decided to use what we have
+424	Ok not needed
+425	This item doesnt survive my purpose
+426	Changed Mind|My needs changed|Fine but changed mind.
+427	Found another that is more comfortable
+428	needed a lightening chord or iPad
+429	I don’t like how the earbuds keep falling out of my ears. They’re just not comfortable.
+430	Gift. Person already had one
+431	No lo nesecito
+432	Changed Mind|Found other item|Package was not opened and seal around box not torn off.   Wife has a headphone in her supply is not selling one
+433	Opted for USBC headphones
+434	Don't like fit
+435	Thought they were wireless.
+436	Got something different
+437	Didn’t open
+438	It’s fine just doesn’t have what I need
+439	Bought two and the other broke, don’t want to keep one if it’s going to break too
+440	too big
+441	Don’t like sound quality
+442	Changed Mind|Found other item|Nothing wrong
+443	Purchased for a friend but they don’t like the color.
+444	It came too late
+445	Don’t neef
+446	Changed Mind|My needs changed|Nothing. Wrong
+447	Not compatible with android
+448	I don’t like it
+449	Need cordless
+450	Found a better one
+451	I purchased another one
+452	Too small for ears
+453	Do not want
+454	Dont want
+455	Quería unos de Bluetooth
+456	UNCOMFORTABLE
+457	Not compatible with ipad
+458	Not compatible
+459	t
+460	Bought 2 different ones, other was better
+461	Need a headset with a microphone not built in mic
+462	The pins are fir old iPhone and not USB c
+463	I got two by mistake
+464	I purchased two by mistake
+465	Not opened
+466	Too big for toddler
+467	Changed Mind|Found other item|head set too big can't adjust it
+468	Not good waking
+469	Changed Mind|My needs changed|Did not fit my daughter
+470	not satisfied with item
+471	Item fine. My son bought somewhere else didn’t want to wait.
+472	fine
+473	B
+474	I need a 2 striped cord not a 3
+475	Don’t  eed
+476	Does not work with phone
+477	Don’t like style
+478	Not quite what I wanted once I was able to inspect the actual item.
+479	Dont like the quality.
+480	No es compatible con mi pc
+481	Not as noise canceling as expected
+482	Just don’t need
+483	Ordered multiple and did not need this item
+484	I kept another one I ordered through Amazon.
+485	Did not like the way the product fit over the ears.
+486	Changed Mind|My needs changed|don't want in ear headphones
+487	Found better headphones
+488	wasn't as sound cancelling as I needed
+489	Did not like
+490	I don’t need it!!
+491	Gift didn’t need
+492	Christmas gift and recipient does not want it
+493	I found a better quality headphones on sale.
+494	Color expectation different
+495	Item wouldn’t have arrived in time
+496	Did not work with my sound amplifier
+497	Bought the other brown
+498	Ordered another pair
+499	too expensive
+500	Changed Mind|Found other item|Was already gifted the item from someone else
+501	Changed Mind|Found other item|Bought a different one instead
+502	Changed Mind|My needs changed|purchased as a gift for daughter; she does not like it.
+503	Earbuds were not very good audio wise.
+504	I no longer need it
+505	no
+506	Changed Mind|This is a gift|No longer needed
+507	It doesn't work with my iPhone. I didn't even open the box, I just looked at the picture on the box.
+508	She had already purchased one.
+509	Ggg
+510	found different solution to problem
+511	Need a mic.  This one is only headphones.  Not opened.
+512	Bought diff color
+513	incompatible with my amp
+514	Item was fine. Just don’t need them anymore.
+515	She got two
+516	We have iPhone not compatible
+517	Not comfortable to wear
+518	I ordered 2 times, this one was supposed to be cancelled
+519	Does not work with my mobile phone...not compatible
+520	Connection is wrong
+521	Not compatible across devices
+522	To big
+523	My husband bought a different pair for me
+524	Changed Mind|Found other item|Want to go wireless/bluetooth
+525	It was a gift to my granddaughter and she didn’t like it.
+526	Bought the wrong one
+527	Kid wanted ear buds
+528	Itemnis uncomfortable for my head. I also prefer a microphone arm
+529	Item works but there is a bad echo for players
+530	I need a headphone with microphone to talk
+531	overbought
+532	Changed Mind|Found other item|Wanted wireless
+533	Got other headphones
+534	Changed Mind|My needs changed|I needed small ones for my job. Husband ordered these huge ones as a gift. Wrong kind
+535	Just didn’t need after all
+536	Changed Mind|Found other item|didnt need
+537	Need wireless
+538	Product is unopened never used
+539	Didn’t like fit in my head
+540	Just didn't perform as good as I'd hoped
+541	Gift Recipient Wife is boycotting Amazon
+542	Wrong size attachment
+543	Someone bought a different brand as a gift
+544	Ni
+545	Ordered wrong plug
+546	I got 2 for Christmas
+547	Changed Mind|My needs changed|Ordered the wrong ones
+548	Changed Mind|My needs changed|1.
+549	Changed Mind|Found other item|Purchased two pairs and granddaughter picked the one she wanted.
+550	Used older earphones.
+551	Want Bluetooth instead
+552	Work provided
+553	They didn’t work on the system I’m using
+554	Wrong headphones
+555	Wrong input cable, needed for an electronic drumset and doesn’t use the same connection
+556	Did not fit well around the ears of recipient
+557	Got 2
+558	Changed Mind|My needs changed|No need
+559	Didn't like the color
+560	Didn't Fit/Wrong Size/Head to Big
+561	Didn’t get new phone
+562	Changed Mind|This is a gift|Son didn't like wood
+563	Received other headphones I like better
+564	Nothing wrong
+565	Never opened
+566	Changed Mind|My needs changed|Ordered wrong item.
+567	not what i needed
+568	shipping delayed - too late for christmas
+569	Item doesnt cancel noise well enough
+570	I thought two would be needed but only one was.
+571	Not wireless
+572	I dodnt realize the headphones were wired, we wanted wireless headphones.
+573	Unopened - I bought a different one!
+574	Does not work for the application I needed it to.
+575	Gave other gift instead.
+576	Decided against wired headphones
+577	Too late, had to purchase locally
+578	didnt open or use
+579	Changed Mind|This is a gift|Didn’t work with my remote
+580	Sound quality is good however earpieces are very uncomfortable. Not able to wear for extended periods of time as needed.
+581	Changed Mind|This is a gift|Repeat gift
+582	Microphone capability is not compatible with the machine I wanted to use these with. Tested with other set first.
+583	Changed Mind|This is a gift|For elderly mother - didn't like on her ears.
+584	I thought it was also bluetooth
+585	It wasn’t wanted
+586	Found cheaper option.
+587	Wrong colors
+588	Changed Mind|My needs changed|Nothing else
+589	My son thinks they are too purple.
+590	Duplicate gift
+591	Will not use wired
+592	Item is no longer needed
+593	N:a
+594	Lo regalé y no les gustó
+595	I had bought two because I thought I needed two, but only needed one headset
+596	Gift not what he wanted
+597	Bought as gift but son did not want.
+598	Ty
+599	Prefer realistic photos
+600	Gift item i changed my mind on
+601	Didn’t fit right.
+602	Not the right fitting
+603	Needed bluetooth
+604	I found one I like better
+605	Earbuds are too heavy and won’t stay in ears. Unable to put on smaller ear bud after multiple tries. Not noise canceling.
+606	Did not work with my phone
+607	Nothing
+608	I found ones I already had. Bought by mistake. There not used.
+609	Needed wireless
+610	Changed Mind|This is a gift|My daughter doesn’t want wired headphones with babies to pull.
+611	The lowest setting is too loud
+612	Someone bought my daughter some headphones so now I don’t need them
+613	Gift for my daughter but she opted to return it in favor of something else.
+614	Found a different pair that fits better
+615	Got as a gift, didnt want
+616	better item received
+617	I bought 2 head phones and selected the other brand that were more substantial for home use
+618	She ended up getting two of them from two different people.
+619	A different set of headphones arrived sooner
+620	Wrong product purchased
+621	didnt stay on baby head
+622	Same item bought by someone else.
+623	Did not open: no longer need this type of headphone.
+624	Decided on different kind
+625	Wanted wireless.
+626	No recipient
+627	Daughter wanted different headphones
+628	too heavy
+629	Didn’t realize these didn’t have the emf blocking so upgraded to the ones that did
+630	Received two
+631	Bought for my husband and he said it won't work for his needs.
+632	received duplicate
+633	N/a
+634	Changed Mind|This is a gift|Recipient received 2
+635	Bought wrong item need one with ubc
+636	They are a bit too loose
+637	It was a gift, not wanted by person receiving didn’t want it
+638	Item does not need
+639	Chose another
+640	Came later than described. Could not use for gift exchange.
+641	Changed Mind|This is a gift|the person who got the gift needs wireless
+642	Does not cover ears.
+643	Purchased same model that does not perform well. So did not bother to open package.
+644	My son said they were ugly
+645	Son didn’t like color
+646	Bought as gift but person does not want aux
+647	Was not the one my daughter wanted
+648	Gift
+649	Item was fine but not what my daughter wanted.
+650	Not the thing I wanted
+651	Bought by mistake, not opened or used.
+652	Wrong port
+653	e
+654	No nedd
+655	No longer needed for secret Santa
+656	I didn't want a corded one
+657	Not what person wanted for a gift
+658	Bought as a Christmas gift but wasn’t wanted
+659	Not good sound quality
+660	I do not like the sound of these earbuds
+661	Bought the wrong thing that was needed.
+662	Need a different color
+663	Received a duplicate gift.
+664	Bought for a gift and no longer needed.
+665	Got another
+666	Toddler didn’t like
+667	Nnj
+668	Child refuses to wear headphones
+669	Bc
+670	Different brand
+671	Better offer elsewhere
+672	Changed Mind|This is a gift|Already had comparable headphones

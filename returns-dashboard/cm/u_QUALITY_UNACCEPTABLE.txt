@@ -1,0 +1,71 @@
+0	Didn’t like it
+1	Bad sound quality
+2	Headphone jack doesnt work properly one one. The other ia too big for the persons head
+3	Bad sound
+4	tested out on my laptop and the clarity of the sound is not good.
+5	No funciona
+6	Sound transferred along wire, didnt' meet expectations
+7	Causes head pain and headache
+8	Resident these were purchased for stated the sound is "flat"
+9	Feels cheap
+10	Not loud enough
+11	A
+12	They do not sound good.
+13	Does not fit my ear properly
+14	The sound is horrible
+15	The sound is not good.
+16	too muffled
+17	Volume is very low
+18	Not noise cancelling at all
+19	Horrible
+20	The ear pieces are too hard and cause pain in my ears. It was also mentioned thar others were getting alot of static feedback from me.
+21	They do not cancel all noise outside and makes it hard to hear my voice
+22	Doesn’t live up to expectations. Customer support is poor.
+23	Sound quality is not very good.
+24	The volume control switch is difficult
+25	just did not live up to my standard for sound quality
+26	Don't like the quality
+27	Ear buds are not fitting in my ear.
+28	The sound quality did not match my personal preference. It might be normal for this type of earphones, but I did not enjoy the listening experience.
+29	Don’t stay in my ears
+30	didn't work well for my electric keyboard
+31	the sound quality is poor.
+32	Doesn’t work to take calls
+33	Didn’t liked it
+34	Sound wasn’t what I wanted
+35	na
+36	I did not like how they sound.
+37	Not quite the quality needed for my computer
+38	Chose to try different product.
+39	Didn’t like the band, color was beautiful though!
+40	They didn’t stay on well, felt loose
+41	Bought by mistake
+42	Uncomfortable
+43	Poor quality sound and hurt my head after wearing briefly
+44	The microphone is extremely muffled unless it is held up by my mouth, which isn’t functional because I need my hands to type.
+45	They don’t sound good
+46	Didn’t like the sound quality
+47	not the high sound quality as advertised
+48	Item does not fit around my ear.
+49	No need for them now
+50	Doesn't really work for voice audio
+51	Noise canceling feature did not work at all and was painful on ears after a short time of wearing
+52	No tiene la calidad esperada
+53	Don't like the fit
+54	Too loud on minimum volume
+55	Sound quality not good and talking not clear on phone
+56	These are very cheaply made.
+57	The sound quality wasn't as expected, and are not worth keeping
+58	Na
+59	it is not very loud
+60	Didn’t work well
+61	Bad sound quality and very uncomfortable
+62	Uncomfortable on ears and sound quality is poor
+63	The audio was muffled. Not clear, Audible voice.
+64	Microphone is poor. Picks up noise through rustling cord.
+65	seemed to make high pitched sounds sometimes
+66	Sound quality isn’t as good as I had hoped. A little muffled & kept sliding off my head.
+67	Poor quality
+68	Noise canceling doesn't work well
+69	Uncomfortable on head
+70	Sound quality poor

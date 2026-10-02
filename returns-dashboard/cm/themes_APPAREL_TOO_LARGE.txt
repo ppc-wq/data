@@ -1,0 +1,3 @@
+0	Too big for kids	Parents say the headphones are too large for a child or toddler and fall off.
+1	Too big / loose in general	The headphones are too big, loose or wide and slip off.
+2	Other mismatches	A few mention a cord that's too long, the mic placement or connector.

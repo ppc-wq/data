@@ -1,0 +1,22 @@
+Reason,Classification
+APPAREL_TOO_LARGE,Functionality/Compatibility Issue
+APPAREL_TOO_SMALL,Functionality/Compatibility Issue
+DAMAGED_BY_CARRIER,Product Defect (Amazon Handling)
+DAMAGED_BY_FC,Product Defect (Amazon Handling)
+DEFECTIVE,Product Defect (Manufacturer)
+EXTRA_ITEM,Buyer’s Remorse
+FOUND_BETTER_PRICE,Price-Related
+MISORDERED,Customer Selection Error
+MISSED_ESTIMATED_DELIVERY,Shipping Issue
+MISSING_PARTS,Product Defect (Amazon Handling)
+NEVER_ARRIVED,Shipping Issue
+NO_REASON_GIVEN,Unknown
+NOT_AS_DESCRIBED,Listing Quality Issue
+NOT_COMPATIBLE,Functionality/Compatibility Issue
+ORDERED_WRONG_ITEM,Customer Selection Error
+QUALITY_UNACCEPTABLE,Product Defect (Manufacturer)
+SWITCHEROO,Fraudulent Return
+UNAUTHORIZED_PURCHASE,Fraudulent Return
+UNDELIVERABLE_REFUSED,Delivery Issue
+UNDELIVERABLE_UNKNOWN,Delivery Issue
+UNWANTED_ITEM,Buyer’s Remorse

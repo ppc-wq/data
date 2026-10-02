@@ -1,0 +1,8 @@
+0	No sound / dead on arrival	Earphones produce no audio at all when plugged in, often across multiple devices, or stop working entirely after hours to a few weeks.
+1	Sound in one ear only	One earpiece (left or right) is silent, weak, or cuts in and out while the other side works.
+2	Distorted or poor sound	Audio is distorted, staticky, crackling, muffled, tinny or lacks bass, sometimes with constant hiss or white noise.
+3	Volume/inline controls broken	In-line volume, play/pause or mute buttons don't respond, jump between max and mute, change volume on their own, or sound only works while a button is held.
+4	Intermittent connection / loose plug	Sound cuts in and out or the device keeps disconnecting due to a loose plug, short in the cord or flaky connector.
+5	Microphone not working	The mic doesn't pick up voice or sounds garbled/distant, so callers can't hear the customer on phone or Zoom calls.
+6	Fit and comfort issues	Earbuds fall out, are too small or too big, or are uncomfortable or painful to wear even with alternate tips.
+7	Compatibility, noise and used items	Smaller groups report wrong connector or device incompatibility, lack of noise cancelling, volume too loud even at minimum, or items that arrived used, opened or damaged.

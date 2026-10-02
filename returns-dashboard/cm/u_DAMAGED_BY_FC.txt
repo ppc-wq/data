@@ -1,0 +1,11 @@
+0	one package was already open with some slight scraps on headphone.
+1	Damaged|No|Doesn't play out of left ear phone
+2	Damaged|No|It’s used
+3	The item is broken!
+4	Damaged|No|Metal plug was chipped and headphones had to be held at extremely specific angles to produce sound
+5	Looks like used headphones were send to me
+6	The plug is a little bent, I have had this issue before.  Love the headphones, hard to order because of quality issues.
+7	Damaged|No|It doesn’t have no sound|All of it
+8	Damaged|No|Used. Ear wax and hair on the product
+9	Damaged|No|Plug bent
+10	Damaged|No|The plug is broken off

@@ -1,0 +1,3 @@
+0	Accidental purchase	These use the stock accidental-purchase text, sometimes naming the variant they meant to buy.
+1	Unauthorized / not approved	These use the stock unauthorized option or say the customer didn't order or approve the item.
+2	Product complaints	Some comments are really fit or performance complaints.

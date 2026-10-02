@@ -1,0 +1,20 @@
+0	Ordering Issue|Accidental purchase
+1	Ordering Issue|Unauthorized purchase
+2	Too big
+3	Ordering Issue|Accidental purchase|Bought 3 by accident
+4	Ordering Issue|Accidental purchase|Needed usbc not 3.5mm
+5	Didnt approve
+6	Wanted a different pair
+7	This item does not work as I expected.  It is not simple to use!!!!!!!
+8	Didn't approve
+9	Ordering Issue|Accidental purchase|I meant to order the airtube version
+10	I didn't;t order this one.
+11	N
+12	Doesn’t cancel noise
+13	Very uncomfortable because they pop out of your ears every 2 minutes.
+14	H
+15	Swap
+16	I didn't order this product.
+17	Item hurt my ears. Quality was not up to standard as description.
+18	Ordering Issue|Accidental purchase|No
+19	The wired didn’t fix my phone

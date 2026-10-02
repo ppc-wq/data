@@ -1,0 +1,7 @@
+0	Ordered too many / duplicate	The largest group accidentally ordered two or more units, or ordered twice.
+1	Wrong connector or device fit	The plug didn't match the customer's device: they needed USB-C or Lightning, or the item didn't fit their iPhone/Android/iPad.
+2	Generic bought by mistake	Customers wrote 'bought by mistake' or chose the 'Ordered wrong item' option without saying more.
+3	Wanted wireless / Bluetooth	Customers didn't realize the headphones are wired and needed Bluetooth.
+4	Missing mic, ANC or air-tube	Customers expected a microphone, true noise cancelling or the air-tube/EMF model, which this item doesn't have.
+5	No longer needed / already owned	Customers no longer needed the item or already had a pair.
+6	Fit, comfort, sound or color	A few cite discomfort, size, sound quality or the wrong color (blue that looks purple).

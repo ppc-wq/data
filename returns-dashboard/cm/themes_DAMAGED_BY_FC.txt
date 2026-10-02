@@ -1,0 +1,3 @@
+0	Bent or broken plug	The 3.5mm plug was bent, chipped or broken off.
+1	Used or opened item	The package was already open or the item showed signs of use.
+2	No sound	One or both earpieces produced no sound.

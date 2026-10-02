@@ -1,0 +1,48 @@
+0	Received Wrong Item|Wrong color
+1	The headphones don't have have the volume and skip feature on the pad. Also they are they are the wrong color.
+2	iPhone 14 not iPhone 17
+3	Received Wrong Item|Thought it was navy blue not purple
+4	Received Wrong Item|I just re-ordered another one
+5	Received Wrong Item|Nothing
+6	Received Wrong Item|I have a boy and dont want purple colour
+7	Received Wrong Item|Not good ?
+8	Received Wrong Item|Wrong second one
+9	Received Wrong Item|Receive purple color headphone. Not blue
+10	Received Wrong Item|Headphones were supposed to be blue in color but received a purple pair.
+11	Received Wrong Item|It has a different plug in than what I thought I ordered. It won't work with my phone/iPad
+12	Received Wrong Item|Purple instead of blue
+13	Received Wrong Item|I want it for my iphone 16, usb-c, and I pick the wrong one.  I want to make the order for my iphone 16, usb-c. As soon I get the return I will place the order with the right one.
+14	ARTIX CL750 Wired Headphones. I ordered wireless.
+15	Thought this had a microphone
+16	Received Wrong Item|Ordered blue headphones was sent purple
+17	Received Wrong Item|I need wireless
+18	Received Wrong Item|Need a wireless
+19	Received Wrong Item|Ordered midnight blue and received purple instead
+20	Received Wrong Item|Item was purple, and not blue as described
+21	Received Wrong Item|Wrong item
+22	Wrong color sent
+23	Very big for my son
+24	It’s too big ear head
+25	i thought i ordered it with the iphone end
+26	This is for a phone with usb c plug I need the  iPhone lightning plug
+27	Received Wrong Item|I thought I ordered the usb c
+28	The iPhone 15 does not use a C charger
+29	I am sure I ordered navy but they are purple
+30	Wrong color
+31	I ordered a black headset with a mic supposed to fit my iPad. What I received was a turquoise headset with no microphone!
+32	NRG C headphones in Rose Gold - 1) these are not compatible with Android phone 2) ordered color was Blushed Pink, not Rose Gold.
+33	color
+34	I need lightning cable to work with my phone.
+35	Needed type c connector
+36	Need USB C Was certain that’s what I ordered.
+37	Thought they were wireless
+38	I wanted one that would work with my iPhone connection. Is wrong
+39	I need a different color.
+40	We needed Bluetooth not chorded
+41	The item I’m a need of is for the iPhone 15
+42	Item is iPhone lightning and not 3.5mm jack as listed.
+43	The wrong color was sent.
+44	dupliocate
+45	you sent duplicate boxes
+46	duplicate
+47	I ordered NEW teal/grey ARTIX headphones. The box contained pink generic USED headphones. This was not the item I purchased.

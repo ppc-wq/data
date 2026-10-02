@@ -1,0 +1,4 @@
+0	Too small / doesn't fit	The headphones are too small for the head or ears, and the ear cups don't fit over the ears.
+1	Tight and painful	Customers say the headphones are tight and hurt the ears or head with longer wear.
+2	Earbuds fall out	Some say the earbuds don't stay in the ear canal.
+3	Cord too short / other	A few mention a short cord, wanting wireless or not needing the item.

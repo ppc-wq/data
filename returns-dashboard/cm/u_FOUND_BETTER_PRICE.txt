@@ -1,0 +1,39 @@
+0	Changed Mind|Found a better price
+1	Changed Mind|Found a better price|Amazon
+2	Do not need
+3	Changed Mind|Found a better price|Na
+4	Fpond a better price
+5	Changed Mind|Found a better price|don’t want it
+6	N/a
+7	Went to 5 below and it didn't arrive on time
+8	These are cheaply made, found a better pair for the same price
+9	Through Amazon.
+10	Cheaper price available
+11	Better price available on tiktok shop
+12	Better price
+13	Amazon has lower price for Prime Day
+14	better price available
+15	not the quality I expected
+16	BestBuy
+17	found better price and better quality at different shop
+18	There is no built-in mic.
+19	I bought the turquoise pair
+20	found a better item for a better price
+21	I found a different headset for a better price, better quality
+22	Changed Mind|Found a better price|internet
+23	Found better price
+24	The sound quality didn’t meet my needs in music.
+25	Changed Mind|Found a better price|amazon diff product
+26	Temu
+27	Changed Mind|Found a better price|mm
+28	Better price on amazon
+29	Changed Mind|Found a better price|Amazon—different brand
+30	Got a better price
+31	Better price available
+32	Better price found
+33	These are way too tight on the head.
+34	I found a better deal
+35	i need a higher quality headphone.   this model doesn’t meet minimum requirements needed.
+36	Found Samsung headphones for cheaper
+37	Very low quality.
+38	Amazon black Friday deals

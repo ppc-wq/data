@@ -1,0 +1,4 @@
+0	Poor sound quality	Audio is described as bad, muffled, flat, too quiet or carrying cable noise.
+1	Discomfort and poor fit	The headphones hurt the ears or head, earbuds don't stay in, or the headband slides off.
+2	Weak mic / noise cancelling	Customers say the microphone is muffled or noisy and noise cancelling doesn't work.
+3	Feels cheap / general dislike	Some give only a vague dislike or say the build feels cheap.
