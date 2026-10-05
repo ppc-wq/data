@@ -105,6 +105,67 @@ for path in sorted(glob.glob(os.path.join(RAW, 'orders_*.json'))):
             last_day[(acct, m)] = day
         sales[(acct, m, r[OP + 'asin'])] += int(r[OP + 'quantity'] or 0)
 
+# ---- refunds without a received return (settlement report, last ~90 days) ---
+# Each settlement 'Refund' / 'Principal' line is one refunded order item. Lines whose order has
+# no matching FBA return are added as returns with a synthetic reason: still pending if the refund
+# is under PENDING_DAYS old at LAST_DAY, otherwise refunded without a return.
+SP = 'v2_settlement_report_data_flat_file_v2__'
+PENDING_DAYS = 30
+NO_RETURN_GROUP = 'Refund without return'
+NO_RETURN = {'REFUND_RETURN_PENDING', 'REFUND_NO_RETURN'}
+settle_from = None
+sku2asin = {}
+for path in glob.glob(os.path.join(RAW, 'fba_*.json')):
+    for r in load(path):
+        sku2asin.setdefault(r[FP + 'sku'], r[FP + 'asin'])
+for path in glob.glob(os.path.join(RAW, 'orders_*.json')):
+    for r in load(path):
+        if r.get(OP + 'sku'):
+            sku2asin.setdefault(r[OP + 'sku'], r[OP + 'asin'])
+for row in (info or [])[1:]:
+    if len(row) > 1 and row[0].strip() and row[1].strip():
+        sku2asin.setdefault(row[1].strip(), row[0].strip())
+returned = collections.Counter()     # (acct, order) -> returned units, any date
+for path in glob.glob(os.path.join(RAW, 'fba_*.json')):
+    acct = re.match(r'fba_(A\d)_', os.path.basename(path)).group(1)
+    for r in load(path):
+        returned[(acct, r[FP + 'order_id'])] += int(r[FP + 'quantity'] or 0) or 1
+refund_lines = collections.defaultdict(list)
+inv_acct = {v: k for k, v in ACCOUNTS.items()}
+for path in glob.glob(os.path.join(HERE, 'raw2', 'settle_*.json')):
+    for r in json.load(open(path)):
+        if r[SP + 'marketplace_name'] != 'Amazon.com' or (r[SP + 'amount'] or 0) >= 0:
+            continue   # positive principal lines are adjustments (e.g. restocking fee), not refunds
+        acct = inv_acct[r['account_id']]
+        asin = sku2asin.get(r[SP + 'sku'], 'SKU:' + r[SP + 'sku'])
+        refund_lines[(acct, r[SP + 'order_id'])].append((r[SP + 'posted_date'][:10], asin))
+        settle_from = min(settle_from or '9999', r[SP + 'posted_date'][:10])
+no_return_units = collections.Counter()
+for (acct, order), lines in refund_lines.items():
+    extra = len(lines) - returned[(acct, order)]
+    for day, asin in sorted(lines, reverse=True)[:max(0, extra)]:
+        m = day[:7]
+        if m not in MONTHS:
+            continue
+        age = (datetime.date.fromisoformat(LAST_DAY) - datetime.date.fromisoformat(day)).days
+        reason = 'REFUND_RETURN_PENDING' if age < PENDING_DAYS else 'REFUND_NO_RETURN'
+        returns[(acct, m, asin, reason, 'NOT_RECEIVED')] += 1
+        no_return_units[reason] += 1
+        names.setdefault(asin, '')
+
+# ---- refunded units from the Business Report (Sales & Traffic), whole period ---
+# Account-level daily totals: Amazon no longer serves the by-ASIN report for 2025.
+br_refunds = collections.Counter()   # (acct, month) -> refunded units
+for path in glob.glob(os.path.join(HERE, 'raw2', 'bd_*.json')):
+    seen_days = set()
+    for r in json.load(open(path)):
+        key = (r['account_id'], r['date'])
+        if key in seen_days or r['date'][:7] not in MONTHS:
+            continue
+        seen_days.add(key)
+        br_refunds[(inv_acct[r['account_id']], r['date'][:7])] += \
+            int(r['sales_and_traffic_report_by_date__salesbydate_unitsrefunded'] or 0)
+
 # ---- encode --------------------------------------------------------------
 asins = sorted({k[2] for k in returns} | {k[2] for k in sales})
 reasons = sorted({k[3] for k in returns})
@@ -112,7 +173,7 @@ disps = sorted({k[4] for k in returns})
 accts = sorted(ACCOUNTS)
 cat_of = {a: asin_info.get(a, {}).get('category', UNCAT) for a in asins}
 cats = sorted(set(cat_of.values()), key=lambda c: (c == UNCAT, c.lower()))
-group_of = {r: reason_group.get(r, r) for r in reasons}
+group_of = {r: NO_RETURN_GROUP if r in NO_RETURN else reason_group.get(r, r) for r in reasons}
 groups = sorted(set(group_of.values()))
 ai = {a: i for i, a in enumerate(asins)}
 ri = {r: i for i, r in enumerate(reasons)}
@@ -156,6 +217,10 @@ data = {
     'comments': [[accts.index(c[0]), MONTHS.index(c[1]), ai[c[2]], ri[c[3]], di[c[4]], c[5], c[6],
                   tags.get((c[3], c[6].replace('\n', ' ').replace('\t', ' ')), [])]
                  for c in comments],
+    # [account, month, refunded units] from the Business Report (account level)
+    'brRefunds': [[accts.index(k[0]), MONTHS.index(k[1]), v] for k, v in sorted(br_refunds.items())],
+    'noReturnFrom': settle_from,
+    'noReturnGroup': NO_RETURN_GROUP,
     'salesCoverage': {ACCOUNTS[a]: {m: {'through': d, 'partial': d < month_end(m)}
                                     for (aa, m), d in sorted(last_day.items()) if aa == a}
                       for a in accts},
@@ -166,6 +231,7 @@ data['summaries'] = json.load(open(summ)) if os.path.exists(summ) else {}
 out = os.path.join(HERE, 'data.json')
 json.dump(data, open(out, 'w'), separators=(',', ':'), ensure_ascii=False)
 print('comments without theme tags:', untagged)
+print('refunds without a received return:', dict(no_return_units), 'settlement from', settle_from)
 print('asins', len(asins), 'mapped', sum(a in asin_info for a in asins),
       'categories', len(cats), 'reasons', len(reasons), 'groups', len(groups),
       'return rows', len(data['returns']), 'comments', len(comments), 'bytes', os.path.getsize(out))

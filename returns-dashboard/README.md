@@ -7,9 +7,12 @@ plus a customer-comments tab.
 - `raw/` (not committed) — Windsor.ai exports, connector `amazon_sp`:
   - `fba_<acct>_*.json` — FBA Customer Returns (`fba_fulfillment_customer_returns_data__*`, incl. `customer_comments`);
   - `orders_<acct>_*.json` — All Orders (`flat_file_all_orders_data_by_order_date_general__*`).
+- `raw2/` (not committed) — settlement report refund lines (`settle_*.json`, last 90 days only) and Business Report daily refund totals (`bd_*.json`).
 - `map/info.csv` — the "Info" tab of the mapping sheet (ASIN → category, product, parent/child).
 - `map/reasons.csv` — the "Reasons" tab (Amazon return reason → reason group).
 - `map/summaries.json` — comment themes per return reason (label + description).
 - `cm/u_<REASON>.txt` numbers each unique comment; `cm/assign_<REASON>.json` tags it with theme indices (-1 = no specific detail). The dashboard counts themes from the comments matching the current filters.
 - Return months use the UTC return date, the same day boundary as the Seller Central export; sales use the order date.
 - `build.py` aggregates everything into `data.json` and injects it into `template.html` → `dashboard.html`.
+
+- Refunds in the settlement report with no matching FBA return are added as reason group "Refund without return" (pending if under 30 days old, otherwise no return received).
