@@ -194,6 +194,9 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
 .tbtn.sel{background:var(--accent-soft);border-radius:6px;padding-inline:6px}
 .tb{grid-column:1/-1;height:3px;background:var(--surface-2);border-radius:2px;overflow:hidden}
 .tb i{display:block;height:100%;background:var(--accent)}
+.field[hidden]{display:none}
+.rangepair{display:flex;gap:6px;align-items:center}
+.rangepair input[type=date]{font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:5px 7px}
 </style>
 <div class="wrap">
   <header>
@@ -213,7 +216,9 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
   </nav>
 
   <div class="filters" role="region" aria-label="Filters">
-    <div class="field"><label for="f-period">Period</label><select id="f-period"></select></div>
+    <div class="field"><label for="f-period">Period</label><select id="f-period"></select><span class="muted small" id="period-range"></span></div>
+    <div class="field" id="custom-months" hidden><label for="m-from">From – to month</label><div class="rangepair"><select id="m-from" aria-label="First month"></select><span>–</span><select id="m-to" aria-label="Last month"></select></div></div>
+    <div class="field" id="custom-dates" hidden><label for="d-from">From – to date</label><div class="rangepair"><input type="date" id="d-from" aria-label="First day"><span>–</span><input type="date" id="d-to" aria-label="Last day"></div></div>
     <div class="field"><label for="f-acct">Account</label><select id="f-acct"></select></div>
     <div class="field"><label for="f-cat">Product</label><select id="f-cat"></select></div>
     <div class="field"><label for="f-asin">Variation</label><select id="f-asin"></select></div>
@@ -241,7 +246,7 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
     <div class="grid2">
       <section class="panel">
         <div class="panel-head">
-          <h2>Return rate by month</h2>
+          <h2 id="rate-title">Return rate by month</h2>
           <div class="legend"><span><i style="background:var(--accent)"></i>return rate</span><span><i style="background:var(--sold)"></i>units sold</span></div>
         </div>
         <div class="chart" id="rate-chart"></div>
@@ -260,7 +265,7 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
 
     <section class="panel">
       <div class="panel-head">
-        <h2>Reasons by month, units</h2>
+        <h2 id="heat-title">Reasons by month, units</h2>
         <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
           <div class="seg small" role="group" aria-label="Heatmap rows">
             <button type="button" id="h-group" aria-pressed="true">Reason groups</button>
@@ -273,7 +278,7 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
     </section>
 
     <section class="panel">
-      <div class="panel-head"><h2>By month</h2><span class="muted small">Follows the filters above</span></div>
+      <div class="panel-head"><h2 id="per-title">By month</h2><span class="muted small">Follows the filters above</span></div>
       <div class="tscroll"><table id="months"></table></div>
     </section>
 
@@ -289,7 +294,7 @@ details.method ul{margin:10px 0 2px;padding-left:18px;display:flex;flex-directio
         </div>
       </div>
       <div class="tscroll" style="max-height:620px;overflow-y:auto"><table id="asins"></table></div>
-      <span class="muted small">Click a row to filter by it. The trend line shows the monthly return rate.</span>
+      <span class="muted small" id="trend-note">Click a row to filter by it. The trend line shows the monthly return rate.</span>
     </section>
 
     <details class="method">
@@ -341,37 +346,89 @@ const rn = c => REASON_EN[c] || c.replace(/_/g,' ').toLowerCase().replace(/^./,x
 const gn = g => D.grouped ? D.groups[g] : rn(D.groups[g]);
 const dn = c => DISP_EN[c] || c;
 const cn = i => D.categories[i];
-const mi = i => +D.months[i].slice(5)-1;
-const mLabel = i => mLabelY(i);
-const fmt = n => n.toLocaleString('en-US');
+const fmt = n => Math.round(n).toLocaleString('en-US');
 const pct = (a,b) => b>0 ? a/b : null;
 const fp = (v,d=1) => v==null ? '—' : (v*100).toFixed(d)+'%';
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const fday = d => `${MON[+d.slice(5,7)-1]} ${+d.slice(8,10)}`;
-const NM = D.months.length;
-const yearOf = i => D.months[i].slice(0,4);
-const PERIODS = (()=>{ const ys=[...new Set(D.months.map(m=>m.slice(0,4)))].sort().reverse(); const out=[];
-  ys.forEach(y=>{ const idx=D.months.map((m,i)=>m.startsWith(y)?i:-1).filter(i=>i>=0); out.push({id:y, label:`${y} (${MON[mi(idx[0])]}–${MON[mi(idx[idx.length-1])]})`, m0:idx[0], m1:idx[idx.length-1]}); });
-  out.push({id:'l12', label:'Last 12 months', m0:Math.max(0,NM-12), m1:NM-1});
-  out.push({id:'all', label:`${MON[mi(0)]} ${yearOf(0)} – ${MON[mi(NM-1)]} ${yearOf(NM-1)}`, m0:0, m1:NM-1});
-  return out; })();
-const VIS = () => { const out=[]; for (let m=st.m0;m<=st.m1;m++) out.push(m); return out; };
-const inVis = m => m>=st.m0 && m<=st.m1;
-const multiYear = () => yearOf(st.m0)!==yearOf(st.m1);
-const mLabelY = i => multiYear() ? `${MON[mi(i)]} ’${yearOf(i).slice(2)}` : MON[mi(i)];
 const varLabel = v => `${cn(D.variants[v][0])} · ${D.variants[v][1]}`;
 const asinLabel = s => varLabel(D.asinVar[s]);
 const varAsins = v => D.asins.filter((_,i)=>D.asinVar[i]===v);
 
+/* ---------- days ---------- */
+const MS = 86400000, DAY0 = Date.parse(D.day0+'T00:00:00Z'), ND = D.nDays, LAST = ND-1;
+const dDate = i => new Date(DAY0 + i*MS);
+const dStr = i => dDate(i).toISOString().slice(0,10);
+const dIdx = s => Math.round((Date.parse(s+'T00:00:00Z')-DAY0)/MS);
+const fdate = (i, yr) => { const d=dDate(i); return `${MON[d.getUTCMonth()]} ${d.getUTCDate()}${yr?`, ${d.getUTCFullYear()}`:''}`; };
+const yearOfDay = i => dDate(i).getUTCFullYear();
+const monthStart = i => { const d=dDate(i); return dIdx(new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1)).toISOString().slice(0,10)); };
+const monthEnd = i => { const d=dDate(i); return dIdx(new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth()+1, 0)).toISOString().slice(0,10)); };
+// same day k months away (clamped to the month's length); may fall outside the data range
+function shiftMonths(i, k){ const d=dDate(i), y=d.getUTCFullYear(), m=d.getUTCMonth()+k; const last=new Date(Date.UTC(y,m+1,0)).getUTCDate();
+  return Math.round((Date.UTC(y,m,Math.min(d.getUTCDate(),last))-DAY0)/MS); }
+const fullMonth = (a,b) => a===monthStart(a) && b===monthEnd(a);
+function rangeLabel(a,b){
+  if (a===b) return fdate(a,true);
+  if (fullMonth(a,b)) { const d=dDate(a); return `${MON_FULL[d.getUTCMonth()]} ${d.getUTCFullYear()}`; }
+  const sameYear = yearOfDay(a)===yearOfDay(b);
+  return `${fdate(a,!sameYear)} – ${fdate(b,true)}`;
+}
+// month list for the custom-month pickers: [first day, last day] per calendar month
+const MONTHS = (()=>{ const out=[]; for (let a=0; a<=LAST; a=monthEnd(a)+1) out.push([a, Math.min(monthEnd(a), LAST)]); return out; })();
+
+/* ---------- periods ---------- */
+const PERIODS = (()=>{
+  const out=[], years=[...new Set(MONTHS.map(([a])=>yearOfDay(a)))].sort((x,y)=>y-x);
+  years.forEach(y=>{ const a=Math.max(0,dIdx(`${y}-01-01`)), b=Math.min(LAST,dIdx(`${y}-12-31`));
+    out.push({id:String(y), label: b<dIdx(`${y}-12-31`) ? `${y} to date (Jan 1 – ${fdate(b)})` : String(y), d0:a, d1:b}); });
+  out.push({id:'l30', label:'Last 30 days', d0:LAST-29, d1:LAST});
+  out.push({id:'l90', label:'Last 90 days', d0:LAST-89, d1:LAST});
+  out.push({id:'l12', label:'Last 12 months', d0:Math.max(0,shiftMonths(LAST,-12)+1), d1:LAST});
+  out.push({id:'all', label:`All data (${fdate(0,true)} – ${fdate(LAST,true)})`, d0:0, d1:LAST});
+  out.push({id:'cm', label:'Custom months…'});
+  out.push({id:'cd', label:'Custom dates…'});
+  return out; })();
+
 const st = {acct:-1, cat:-1, asin:-1, group:-1, reason:-1, disp:-1, base:'same', heatRows:'group', tableBy:'cat',
-  sort:{key:'ret',dir:-1}, q:'', cq:'', allSummaries:false, theme:null, noRet:true, cLimit:100, showAllReasons:false, tab:'overview', period:null, m0:0, m1:0};
-try{ const s=JSON.parse(localStorage.getItem('returns-dash-v2')||'{}'); if(s.base) st.base=s.base; if(s.period) st.period=s.period; }catch(e){}
-function save(){ try{ localStorage.setItem('returns-dash-v2', JSON.stringify({base:st.base, period:st.period})); }catch(e){} }
-const salesCov = D.salesCoverage || {};
+  sort:{key:'ret',dir:-1}, q:'', cq:'', allSummaries:false, theme:null, noRet:true, cLimit:100, showAllReasons:false, tab:'overview',
+  period:null, d0:0, d1:LAST, cm0:Math.max(0,MONTHS.length-3), cm1:MONTHS.length-1, cd0:LAST-29, cd1:LAST};
+try{ const s=JSON.parse(localStorage.getItem('returns-dash-v3')||'{}');
+  if(s.base) st.base=s.base; if(s.period) st.period=s.period;
+  ['cm0','cm1','cd0','cd1'].forEach(k=>{ if(Number.isInteger(s[k])) st[k]=Math.max(0,Math.min(k.startsWith('cm')?MONTHS.length-1:LAST, s[k])); });
+}catch(e){}
+function save(){ try{ localStorage.setItem('returns-dash-v3', JSON.stringify({base:st.base, period:st.period, cm0:st.cm0, cm1:st.cm1, cd0:st.cd0, cd1:st.cd1})); }catch(e){} }
+function setPeriod(id){
+  const p = PERIODS.find(x=>x.id===id) || PERIODS[0]; st.period=p.id;
+  if (p.id==='cm'){ if (st.cm0>st.cm1) [st.cm0,st.cm1]=[st.cm1,st.cm0]; st.d0=MONTHS[st.cm0][0]; st.d1=MONTHS[st.cm1][1]; }
+  else if (p.id==='cd'){ if (st.cd0>st.cd1) [st.cd0,st.cd1]=[st.cd1,st.cd0]; st.d0=st.cd0; st.d1=st.cd1; }
+  else { st.d0=p.d0; st.d1=p.d1; }
+}
+const periodLabel = () => { const p=PERIODS.find(x=>x.id===st.period); return (p && p.d0!=null && !['l30','l90','l12'].includes(p.id)) ? p.label : rangeLabel(st.d0, st.d1); };
+
+// buckets: days for short ranges, weeks for medium, calendar months otherwise
+function buckets(){
+  const span = st.d1-st.d0+1, unit = span<=45 ? 'day' : span<=190 ? 'week' : 'month', list=[];
+  if (unit==='day') for (let a=st.d0; a<=st.d1; a++) list.push({a, b:a});
+  else if (unit==='week') for (let a=st.d0; a<=st.d1; a+=7) list.push({a, b:Math.min(a+6, st.d1)});
+  else for (let a=st.d0; a<=st.d1; ){ const b=Math.min(monthEnd(a), st.d1); list.push({a, b}); a=b+1; }
+  return {unit, list};
+}
+const UNIT_NAME = {day:'day', week:'week', month:'month'};
+function shortLabel(bk, unit, multi){
+  const d=dDate(bk.a);
+  if (unit==='month') return multi ? `${MON[d.getUTCMonth()]} ’${String(d.getUTCFullYear()).slice(2)}` : MON[d.getUTCMonth()];
+  return `${MON[d.getUTCMonth()]} ${d.getUTCDate()}`;
+}
+// window of the same length one month earlier (base “Month earlier”) or twelve months earlier (year over year)
+const shiftWin = (a,b,k) => [shiftMonths(a,k), shiftMonths(b,k)];
+function priorWin(bk, unit){
+  if (unit==='month' && fullMonth(bk.a,bk.b)) { const a=shiftMonths(bk.a,-1); return [monthStart(a), monthEnd(a)]; }
+  const n=bk.b-bk.a+1; return [bk.a-n, bk.b-n];
+}
+
 const an = i => (D.accountNames||D.accounts)[i];
 const accountsIn = a => a<0 ? D.accounts.map((_,i)=>i) : [a];
-const hasSales = (a,m) => accountsIn(a).every(x => (salesCov[D.accounts[x]]||{})[D.months[m]]);
-const partialNote = (a,m) => { const p = accountsIn(a).map(x=>(salesCov[D.accounts[x]]||{})[D.months[m]]).find(n=>n&&n.partial); return p ? fday(p.through) : null; };
+const salesOK = (a,b) => a>=0 && b<=LAST && accountsIn(st.acct).every(x => a>=D.salesRange[x][0] && b<=D.salesRange[x][1]);
 
 // row-level filter shared by returns, sales and comments
 const NORET = new Set(D.reasons.map((c,i)=>[c,i]).filter(([c])=>c.startsWith('REFUND_')).map(([,i])=>i));
@@ -390,38 +447,50 @@ function keep(a,s,r,d, opts={}){
   return true;
 }
 
+/* ---------- aggregation: daily prefix sums under the current filters ---------- */
+const newP = () => new Float64Array(ND+1);
+function cum(P){ for (let i=1;i<P.length;i++) P[i]+=P[i-1]; return P; }
+const win = (P,a,b) => (P && a>=0 && b<=LAST && a<=b) ? P[b+1]-P[a] : null;
 function compute(){
-  const retM = new Array(NM).fill(0), soldM = new Array(NM).fill(0);
-  const reasonAll = {}, byDisp = {}, heatG = {}, heatR = {}, byAsin = {};
-  for (const [a,m,s,r,d,u] of D.returns){
-    if (!keep(a,s,r,d,{ignoreReason:true})) continue;
-    const v = inVis(m);
-    if (v) reasonAll[r] = (reasonAll[r]||0)+u;
+  const R=newP(), S=newP(), BR=(st.cat<0 && st.asin<0) ? newP() : null;
+  const reasonAll={}, byDisp={}, heatG={}, heatR={}, byAsin={};
+  const inP = d => d>=st.d0 && d<=st.d1;
+  for (const [a,d,s,r,disp,u] of D.returns){
+    if (!keep(a,s,r,disp,{ignoreReason:true})) continue;
+    const v = inP(d);
+    if (v) reasonAll[r]=(reasonAll[r]||0)+u;
     if (st.group>=0 && D.reasonGroup[r]!==st.group) continue;
-    (heatR[r] ||= new Array(NM).fill(0))[m] += u;
-    (heatG[D.reasonGroup[r]] ||= new Array(NM).fill(0))[m] += u;
+    (heatR[r] ||= newP())[d+1]+=u;
+    (heatG[D.reasonGroup[r]] ||= newP())[d+1]+=u;
     if (st.reason>=0 && r!==st.reason) continue;
-    retM[m]+=u; if (v) byDisp[d]=(byDisp[d]||0)+u;
-    const A = byAsin[s] ||= {ret:new Array(NM).fill(0), sold:new Array(NM).fill(0), reasons:{}};
-    A.ret[m]+=u; if (v) A.reasons[r]=(A.reasons[r]||0)+u;
+    R[d+1]+=u; if (v) byDisp[disp]=(byDisp[disp]||0)+u;
+    const A = byAsin[s] ||= {ret:newP(), sold:newP(), reasons:{}};
+    A.ret[d+1]+=u; if (v) A.reasons[r]=(A.reasons[r]||0)+u;
   }
-  for (const [a,m,s,u] of D.sales){
+  for (const [a,d,s,u] of D.sales){
     if (!keep(a,s,null,null)) continue;
-    soldM[m]+=u;
-    const A = byAsin[s] ||= {ret:new Array(NM).fill(0), sold:new Array(NM).fill(0), reasons:{}};
-    A.sold[m]+=u;
+    S[d+1]+=u;
+    const A = byAsin[s] ||= {ret:newP(), sold:newP(), reasons:{}};
+    A.sold[d+1]+=u;
   }
   // Business Report refunds exist per account only, so they show when no product/variation filter is set
-  const brM = (st.cat<0 && st.asin<0) ? new Array(NM).fill(0) : null;
-  if (brM) for (const [a,m,u] of (D.brRefunds||[])) if (st.acct<0 || a===st.acct) brM[m]+=u;
-  return {retM, soldM, reasonAll, byDisp, heatG, heatR, byAsin, brM};
+  if (BR) for (const [a,d,u] of (D.brRefunds||[])) if (st.acct<0 || a===st.acct) BR[d+1]+=u;
+  [R,S,BR].forEach(P=>P&&cum(P)); Object.values(heatG).forEach(cum); Object.values(heatR).forEach(cum);
+  Object.values(byAsin).forEach(A=>{ cum(A.ret); cum(A.sold); });
+  return {R, S, BR, reasonAll, byDisp, heatG, heatR, byAsin, bk:buckets()};
 }
-function denom(sold, m){
-  if (st.base==='prev') return m>0 && hasSales(st.acct,m-1) ? sold[m-1] : null;
-  return hasSales(st.acct,m) ? sold[m] : null;
+// denominator for returns in [a,b]: sales in the same window, or the window one month earlier
+function denomWin(S, a, b){
+  const [x,y] = st.base==='prev' ? shiftWin(a,b,-1) : [a,b];
+  return salesOK(x,y) ? win(S,x,y) : null;
 }
-const rateArr = (ret,sold) => ret.map((r,m)=>{ const d=denom(sold,m); return d ? r/d : null; });
-function totals(ret, sold, m0=st.m0, m1=st.m1){ let r=0,s=0; for (let m=m0;m<=m1;m++){ const d=denom(sold,m); if(d){ r+=ret[m]; s+=d; } } return {r,s,rate:pct(r,s)}; }
+const rateWin = (R,S,a,b) => { const d=denomWin(S,a,b); return d ? win(R,a,b)/d : null; };
+// period total: sum over buckets that have a denominator, so partial sales coverage does not skew it
+function totals(R, S, list, shift=0){
+  let r=0,s=0;
+  for (const bk of list){ const [a,b] = shift ? shiftWin(bk.a,bk.b,shift) : [bk.a,bk.b]; if (a<0) continue; const d=denomWin(S,a,b); if (d){ r+=win(R,a,b); s+=d; } }
+  return {r, s, rate:pct(r,s)};
+}
 
 /* ---------- controls ---------- */
 const $ = id => document.getElementById(id);
@@ -430,8 +499,9 @@ const retBy = idx => { const o={}; for (const r of D.returns) o[r[idx]]=(o[r[idx
 function fillAsinOptions(){
   const ra = retBy(2);
   const rv = {}; for (const [k,v] of Object.entries(ra)) rv[D.asinVar[k]]=(rv[D.asinVar[k]]||0)+v;
+  const sv = new Set(D.sales.map(r=>D.asinVar[r[2]]));
   // named variations first within each product, then bare ASINs; busiest first
-  const list = D.variants.map((_,i)=>i).filter(i=>(st.cat<0 || D.variants[i][0]===st.cat) && (rv[i]||D.sales.some(r=>D.asinVar[r[2]]===i)))
+  const list = D.variants.map((_,i)=>i).filter(i=>(st.cat<0 || D.variants[i][0]===st.cat) && (rv[i]||sv.has(i)))
     .sort((a,b)=> cn(D.variants[a][0]).localeCompare(cn(D.variants[b][0])) || (D.variants[b][2]-D.variants[a][2]) || (rv[b]||0)-(rv[a]||0));
   opts($('f-asin'), list.map(i=>[i, st.cat>=0 ? D.variants[i][1] : varLabel(i)]), st.cat>=0 ? 'All variations of this product' : 'All variations');
 }
@@ -443,6 +513,14 @@ function fillReasonDetail(){
 function initControls(){
   $('f-period').innerHTML = PERIODS.map(p=>`<option value="${p.id}">${esc(p.label)}</option>`).join('');
   $('f-period').onchange = e=>{ setPeriod(e.target.value); save(); render(); };
+  const mopt = MONTHS.map(([a],i)=>{ const d=dDate(a); return `<option value="${i}">${MON[d.getUTCMonth()]} ${d.getUTCFullYear()}</option>`; }).join('');
+  $('m-from').innerHTML = mopt; $('m-to').innerHTML = mopt;
+  $('m-from').onchange = e=>{ st.cm0=+e.target.value; if (st.cm1<st.cm0) st.cm1=st.cm0; setPeriod('cm'); save(); render(); };
+  $('m-to').onchange = e=>{ st.cm1=+e.target.value; if (st.cm0>st.cm1) st.cm0=st.cm1; setPeriod('cm'); save(); render(); };
+  ['d-from','d-to'].forEach(id=>{ $(id).min=dStr(0); $(id).max=dStr(LAST); });
+  const onDate = (k, other, cmp) => e=>{ const v=e.target.value; if (!v) return; let i=Math.max(0,Math.min(LAST,dIdx(v))); st[k]=i; if (cmp(st[other],i)) st[other]=i; setPeriod('cd'); save(); render(); };
+  $('d-from').onchange = onDate('cd0','cd1',(o,i)=>o<i);
+  $('d-to').onchange = onDate('cd1','cd0',(o,i)=>o>i);
   opts($('f-acct'), D.accounts.map((a,i)=>[i,an(i)]), 'All accounts');
   opts($('f-cat'), D.categories.map((c,i)=>[i,c]), 'All products');
   const rg = {}; D.returns.forEach(r=>{ const g=D.reasonGroup[r[3]]; rg[g]=(rg[g]||0)+r[5]; });
@@ -469,7 +547,6 @@ function initControls(){
   $('c-more').onclick = ()=>{ st.cLimit+=200; renderComments(); };
   window.addEventListener('hashchange', applyHash);
 }
-function setPeriod(id){ const p = PERIODS.find(x=>x.id===id) || PERIODS[0]; st.period=p.id; st.m0=p.m0; st.m1=p.m1; }
 function applyHash(){
   st.tab = location.hash==='#comments' ? 'comments' : 'overview';
   $('t-overview').setAttribute('aria-selected', st.tab==='overview'); $('t-comments').setAttribute('aria-selected', st.tab==='comments');
@@ -480,6 +557,9 @@ function applyHash(){
 }
 function syncControls(){
   $('f-period').value=st.period; $('f-acct').value=st.acct; $('f-cat').value=st.cat; $('f-asin').value=st.asin; $('f-group').value=st.group; $('f-disp').value=st.disp; $('c-reason').value=st.reason;
+  $('custom-months').hidden = st.period!=='cm'; $('custom-dates').hidden = st.period!=='cd';
+  $('m-from').value=st.cm0; $('m-to').value=st.cm1; $('d-from').value=dStr(st.cd0); $('d-to').value=dStr(st.cd1);
+  $('period-range').textContent = st.period==='cm'||st.period==='cd' ? '' : rangeLabel(st.d0, st.d1);
   [['nr-on',st.noRet],['nr-off',!st.noRet],['b-same',st.base==='same'],['b-prev',st.base==='prev'],['h-group',st.heatRows==='group'],['h-reason',st.heatRows==='reason'],['g-cat',st.tableBy==='cat'],['g-asin',st.tableBy==='asin']]
     .forEach(([id,v])=>$(id).setAttribute('aria-pressed', v));
   const tags=[];
@@ -496,11 +576,10 @@ function syncControls(){
 
 /* ---------- header ---------- */
 function renderHeader(){
-  $('period').textContent = `${MON_FULL[mi(0)]} ${yearOf(0)} – ${MON_FULL[mi(NM-1)]} ${yearOf(NM-1)} · data through ${D.asOf}`;
+  $('period').textContent = `${fdate(0,true)} – ${fdate(LAST,true)} · data through ${D.asOf}`;
   $('coverage').innerHTML = D.accounts.map((a,i)=>{
-    const cov = salesCov[a]||{}, missing = D.months.filter(m=>!cov[m]);
-    const warn = missing.length>0;
-    const txt = warn ? `${an(i)}: no sales for ${missing.map(m=>MON[+m.slice(5)-1]+' '+m.slice(2,4)).join(', ')}` : `${an(i)}: complete`;
+    const [f,l] = D.salesRange[i], warn = f>0 || l<LAST;
+    const txt = warn ? `${an(i)}: sales ${fdate(f,true)} – ${fdate(l,true)}` : `${an(i)}: complete`;
     return `<span class="chip${warn?' warn':''}"><span class="dot"></span>${esc(txt)}</span>`;
   }).join('');
   const notes=[];
@@ -509,22 +588,33 @@ function renderHeader(){
   $('map-banner').hidden = !notes.length; $('map-banner').textContent = notes.join(' ');
   $('t-ccount').textContent = fmt(D.comments.length);
 }
+function renderTitles(c){
+  const u = UNIT_NAME[c.bk.unit];
+  $('rate-title').textContent = `Return rate by ${u}`;
+  $('heat-title').textContent = `Reasons by ${u}, units`;
+  $('per-title').textContent = `By ${u}`;
+  $('b-same').textContent = 'Same period'; $('b-prev').textContent = 'Month earlier';
+  $('b-same').title = `Returns in each ${u} ÷ units sold in the same ${u}`;
+  $('b-prev').title = `Returns in each ${u} ÷ units sold in the same days one month earlier`;
+}
 
 /* ---------- KPIs ---------- */
 function renderKpis(c){
-  const t = totals(c.retM, c.soldM);
-  const V = VIS(), allRet = V.reduce((x,m)=>x+c.retM[m],0), allSold = V.reduce((x,m)=>x+c.soldM[m],0);
-  const ly = st.m0>=12 ? totals(c.retM, c.soldM, st.m0-12, st.m1-12) : null;
-  const lyTxt = ly && ly.rate!=null && t.rate!=null ? ` · ${t.rate>=ly.rate?'+':''}${((t.rate-ly.rate)*100).toFixed(1)} pp vs ${fp(ly.rate)} a year earlier` : '';
+  const L = c.bk.list, t = totals(c.R, c.S, L);
+  const allRet = win(c.R, st.d0, st.d1), allSold = win(c.S, st.d0, st.d1);
+  // year-over-year only on buckets that have data a year earlier, compared like for like
+  const L2 = L.filter(bk=>{ const [x,y]=shiftWin(bk.a,bk.b,-12); return x>=0 && denomWin(c.S,x,y) && denomWin(c.S,bk.a,bk.b); });
+  const ly = totals(c.R, c.S, L2, -12), t2 = L2.length===L.length ? t : totals(c.R, c.S, L2);
+  const lyTxt = L2.length && ly.rate!=null && t2.rate!=null ? ` · ${t2.rate>=ly.rate?'+':''}${((t2.rate-ly.rate)*100).toFixed(1)} pp vs ${fp(ly.rate)} a year earlier${L2.length<L.length?` (${rangeLabel(L2[0].a, L2[L2.length-1].b)} only, ${fp(t2.rate)} now)`:''}` : '';
   const gTot = {}; for (const [r,v] of Object.entries(c.reasonAll)){ const g=D.reasonGroup[r]; gTot[g]=(gTot[g]||0)+v; }
   const sumAll = Object.values(gTot).reduce((a,b)=>a+b,0);
   const topG = st.group>=0 ? [st.group, gTot[st.group]||0] : Object.entries(gTot).sort((a,b)=>b[1]-a[1])[0];
   const sellable = c.byDisp[D.dispositions.indexOf('SELLABLE')]||0;
   const notRec = c.byDisp[D.dispositions.indexOf('NOT_RECEIVED')]||0;
-  const baseTxt = st.base==='prev' ? "of the previous month's sales" : "of the same month's sales";
+  const baseTxt = st.base==='prev' ? "of sales one month earlier" : "of sales in the same period";
   $('kpis').innerHTML = `
     <div class="kpi"><span class="eyebrow">Units returned</span><span class="v num">${fmt(allRet)}</span><span class="s">${allRet? fp(sellable/Math.max(1,allRet-notRec),0)+' of received units came back sellable'+(notRec?` · ${fmt(notRec)} refunded without a return`:''):'&nbsp;'}</span></div>
-    <div class="kpi"><span class="eyebrow">Units sold</span><span class="v num">${fmt(allSold)}</span><span class="s">Amazon.com, cancelled orders excluded</span></div>
+    <div class="kpi"><span class="eyebrow">Units sold</span><span class="v num">${fmt(allSold)}</span><span class="s">${esc(rangeLabel(st.d0,st.d1))} · Amazon.com, cancelled orders excluded</span></div>
     <div class="kpi"><span class="eyebrow">Return rate</span><span class="v num accent">${fp(t.rate)}</span><span class="s">${(st.group>=0||st.reason>=0)?'selected reasons only, ':''}${baseTxt}${lyTxt}</span></div>
     <div class="kpi"><span class="eyebrow">${st.group>=0?'Group share':'Top reason group'}</span><span class="v" style="font-size:19px;line-height:1.25">${topG? esc(gn(+topG[0])) : '—'}</span><span class="s">${topG? fmt(topG[1])+' units · '+fp(pct(topG[1],sumAll),0)+' of all returns':''}</span></div>`;
 }
@@ -534,46 +624,61 @@ const tip = document.createElement('div'); tip.className='tip'; tip.setAttribute
 function showTip(host,x,y,html){ if(tip.parentNode!==host) host.appendChild(tip); tip.innerHTML=html; tip.style.left=x+'px'; tip.style.top=y+'px'; tip.classList.add('on'); }
 const hideTip = () => tip.classList.remove('on');
 function niceMax(v){ if(v<=0) return 1; const p=Math.pow(10,Math.floor(Math.log10(v))), n=v/p; return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*p; }
-const kfmt = v => v>=1000 ? (v/1000).toFixed(v>=10000?0:1).replace(/\.0$/,'')+'k' : String(v);
-
+const kfmt = v => v>=1000 ? (v/1000).toFixed(v>=10000?0:1).replace(/\.0$/,'')+'k' : String(Math.round(v));
+const partialBk = bk => bk.b===LAST && LAST<monthEnd(bk.b) && fullMonth(bk.a, monthEnd(bk.a));
+// x-axis label plan: every bucket when few, otherwise thinned; month charts mark each new year
+function axisLabels(list, unit){
+  const n=list.length, multi = yearOfDay(list[0].a)!==yearOfDay(list[n-1].b);
+  if (unit==='month'){
+    const dense = n>12;
+    return list.map((bk,j)=>({ text: dense ? MON[dDate(bk.a).getUTCMonth()].slice(0,1) : shortLabel(bk,unit,false), year: (multi && (j===0 || dDate(bk.a).getUTCMonth()===0)) ? yearOfDay(bk.a) : null }));
+  }
+  const every = Math.ceil(n/(unit==='day'?10:9));
+  return list.map((bk,j)=>({ text: j%every===0 ? shortLabel(bk,unit,false) : '', year:null }));
+}
 function renderRateChart(c){
-  const host=$('rate-chart'), W=640,H=230,L=44,R=8,T=18,B=26;
-  const all = rateArr(c.retM,c.soldM), V = VIS(), rates = V.map(m=>all[m]), max = niceMax(Math.max(0.01,...rates.filter(v=>v!=null)));
-  const iw=(W-L-R)/V.length, bw=Math.min(40,iw*0.56), y=v=>T+(H-T-B)*(1-v/max), dense = V.length>12;
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Return rate by month"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--surface-2)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--line-strong)" stroke-width="2"/></pattern></defs><g class="axis">`;
+  const host=$('rate-chart'), W=640,H=230,L=44,R=8,T=18,B=26, {unit,list}=c.bk;
+  const rates = list.map(bk=>rateWin(c.R,c.S,bk.a,bk.b)), max = niceMax(Math.max(0.01,...rates.filter(v=>v!=null)));
+  const iw=(W-L-R)/list.length, bw=Math.max(2,Math.min(40,iw*0.62)), y=v=>T+(H-T-B)*(1-v/max), showVals = list.length<=12;
+  const labels = axisLabels(list, unit);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Return rate by ${unit}"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--surface-2)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--line-strong)" stroke-width="2"/></pattern></defs><g class="axis">`;
   [0,.25,.5,.75,1].map(f=>f*max).forEach(t=>{ s+=`<line class="gridline" x1="${L}" x2="${W-R}" y1="${y(t)}" y2="${y(t)}"/><text x="${L-8}" y="${y(t)+4}" text-anchor="end">${fp(t,max<0.05?1:0)}</text>`; });
   s+='</g>';
   rates.forEach((v,j)=>{
-    const m=V[j], cx=L+iw*j+iw/2, x=cx-bw/2;
-    if (v==null){ s+=`<rect class="bar-nodata" x="${x}" y="${y(max*0.35)}" width="${bw}" height="${y(0)-y(max*0.35)}" rx="3"/><text class="lbl" x="${cx}" y="${y(max*0.35)-6}" text-anchor="middle">n/a</text>`; }
-    else { const h=Math.max(1,y(0)-y(v)), rr=Math.min(4,h); s+=`<path class="bar-rate" d="M${x},${y(0)} v${-(h-rr)} q0,${-rr} ${rr},${-rr} h${bw-2*rr} q${rr},0 ${rr},${rr} v${h-rr} z"/>${dense?'':`<text class="val" x="${cx}" y="${y(v)-6}" text-anchor="middle">${fp(v)}</text>`}`; }
-    s+=`<text class="lbl" x="${cx}" y="${H-8}" text-anchor="middle">${dense? MON[mi(m)].slice(0,1) : mLabel(m)}${partialNote(st.acct,m)?'*':''}</text>${dense&&(mi(m)===0||j===0)?`<text class="lbl" x="${cx}" y="${T-6}" text-anchor="start">${yearOf(m)}</text><line class="gridline" x1="${L+iw*j}" x2="${L+iw*j}" y1="${T}" y2="${H-B}"/>`:''}<rect class="hit" data-m="${m}" x="${L+iw*j}" y="${T}" width="${iw}" height="${H-T-B}"/>`;
+    const bk=list[j], cx=L+iw*j+iw/2, x=cx-bw/2;
+    if (v==null){ s+=`<rect class="bar-nodata" x="${x}" y="${y(max*0.35)}" width="${bw}" height="${y(0)-y(max*0.35)}" rx="2"/>${showVals?`<text class="lbl" x="${cx}" y="${y(max*0.35)-6}" text-anchor="middle">n/a</text>`:''}`; }
+    else { const h=Math.max(1,y(0)-y(v)), rr=Math.min(bw/3,4,h); s+=`<path class="bar-rate" d="M${x},${y(0)} v${-(h-rr)} q0,${-rr} ${rr},${-rr} h${bw-2*rr} q${rr},0 ${rr},${rr} v${h-rr} z"/>${showVals?`<text class="val" x="${cx}" y="${y(v)-6}" text-anchor="middle">${fp(v)}</text>`:''}`; }
+    const lb=labels[j];
+    if (lb.text) s+=`<text class="lbl" x="${cx}" y="${H-8}" text-anchor="middle">${lb.text}${partialBk(bk)?'*':''}</text>`;
+    if (lb.year!=null) s+=`<text class="lbl" x="${L+iw*j+2}" y="${T-6}" text-anchor="start">${lb.year}</text>${j?`<line class="gridline" x1="${L+iw*j}" x2="${L+iw*j}" y1="${T}" y2="${H-B}"/>`:''}`;
+    s+=`<rect class="hit" data-j="${j}" x="${L+iw*j}" y="${T}" width="${iw}" height="${H-T-B}"/>`;
   });
   host.innerHTML = s+'</svg>';
   host.querySelectorAll('.hit').forEach(el=>{
     el.addEventListener('mousemove',ev=>{
-      const m=+el.dataset.m, d=denom(c.soldM,m), r=host.getBoundingClientRect(), pn=partialNote(st.acct,m);
-      const lr = m>=12 ? all[m-12] : null;
-      showTip(host, ev.clientX-r.left, ev.clientY-r.top, `<b>${MON_FULL[mi(m)]} ${yearOf(m)}</b><br>Returned: ${fmt(c.retM[m])} units<br>${st.base==='prev'?'Sold previous month':'Sold'}: ${d==null?'no data':fmt(d)+' units'}<br>Return rate: <b>${fp(pct(c.retM[m],d))}</b>${lr!=null?`<br>Same month a year earlier: ${fp(lr)}`:''}${pn?`<br>Sales loaded through ${pn}`:''}`);
+      const bk=list[+el.dataset.j], d=denomWin(c.S,bk.a,bk.b), r=host.getBoundingClientRect();
+      const [la,lb]=shiftWin(bk.a,bk.b,-12), lr = la>=0 ? rateWin(c.R,c.S,la,lb) : null;
+      showTip(host, ev.clientX-r.left, ev.clientY-r.top, `<b>${esc(rangeLabel(bk.a,bk.b))}</b><br>Returned: ${fmt(win(c.R,bk.a,bk.b))} units<br>${st.base==='prev'?'Sold one month earlier':'Sold'}: ${d==null?'no data':fmt(d)+' units'}<br>Return rate: <b>${fp(pct(win(c.R,bk.a,bk.b),d))}</b>${lr!=null?`<br>Same period a year earlier: ${fp(lr)}`:''}${partialBk(bk)?`<br>Month in progress: data through ${fdate(LAST)}`:''}`);
     });
     el.addEventListener('mouseleave',hideTip);
   });
 }
 function renderNrNote(){
-  const from = D.noReturnFrom ? new Date(D.noReturnFrom+'T00:00:00Z') : null;
-  $('nr-note').textContent = !from ? '' : st.noRet
-    ? `Refunds without a received return are included from ${MON_FULL[from.getUTCMonth()]} ${from.getUTCDate()}, ${from.getUTCFullYear()}${D.noReturnTo?` through ${fday(D.noReturnTo)}, the end of the latest closed settlement`:''}. Amazon keeps settlement data for 90 days, so earlier months show returns only; the Business Report refund count is in the monthly table for comparison.`
+  const from = D.noReturnFrom ? dIdx(D.noReturnFrom) : null, to = D.noReturnTo ? dIdx(D.noReturnTo) : null;
+  $('nr-note').textContent = from==null ? '' : st.noRet
+    ? `Refunds without a received return are included from ${fdate(from,true)}${to!=null?` through ${fdate(to,true)}, the end of the latest closed settlement`:''}. Amazon keeps settlement data for 90 days, so earlier dates show returns only; the Business Report refund count is in the table below for comparison.`
     : 'Showing returns received at Amazon only. Refunds without a received return are excluded.';
 }
 function renderSoldChart(c){
-  const V = VIS(), host=$('sold-chart'), W=640,H=92,L=44,R=8,T=14,B=6, max=niceMax(Math.max(1,...V.map(m=>c.soldM[m])));
-  const iw=(W-L-R)/V.length, bw=Math.min(40,iw*0.56), y=v=>T+(H-T-B)*(1-v/max), dense = V.length>12;
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Units sold by month"><g class="axis"><line class="gridline" x1="${L}" x2="${W-R}" y1="${y(0)}" y2="${y(0)}"/><text x="${L-8}" y="${y(max)+4}" text-anchor="end">${kfmt(max)}</text></g>`;
-  V.forEach((m,j)=>{
-    const v=c.soldM[m], cx=L+iw*j+iw/2, x=cx-bw/2, h=y(0)-y(v);
-    if(!hasSales(st.acct,m)){ s+=`<text class="lbl" x="${cx}" y="${y(0)-4}" text-anchor="middle">—</text>`; return; }
-    if(h>0){ const rr=Math.min(3,h); s+=`<path class="bar-sold" d="M${x},${y(0)} v${-(h-rr)} q0,${-rr} ${rr},${-rr} h${bw-2*rr} q${rr},0 ${rr},${rr} v${h-rr} z"/>`; }
-    if (!dense) s+=`<text class="lbl" x="${cx}" y="${y(v)-4}" text-anchor="middle">${kfmt(v)}</text>`;
+  const {list}=c.bk, host=$('sold-chart'), W=640,H=92,L=44,R=8,T=14,B=6;
+  const vals = list.map(bk=>win(c.S,bk.a,bk.b)||0), max=niceMax(Math.max(1,...vals));
+  const iw=(W-L-R)/list.length, bw=Math.max(2,Math.min(40,iw*0.62)), y=v=>T+(H-T-B)*(1-v/max), showVals = list.length<=12;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Units sold"><g class="axis"><line class="gridline" x1="${L}" x2="${W-R}" y1="${y(0)}" y2="${y(0)}"/><text x="${L-8}" y="${y(max)+4}" text-anchor="end">${kfmt(max)}</text></g>`;
+  list.forEach((bk,j)=>{
+    const v=vals[j], cx=L+iw*j+iw/2, x=cx-bw/2, h=y(0)-y(v);
+    if(!salesOK(bk.a,bk.b)){ if (showVals) s+=`<text class="lbl" x="${cx}" y="${y(0)-4}" text-anchor="middle">—</text>`; return; }
+    if(h>0){ const rr=Math.min(bw/3,3,h); s+=`<path class="bar-sold" d="M${x},${y(0)} v${-(h-rr)} q0,${-rr} ${rr},${-rr} h${bw-2*rr} q${rr},0 ${rr},${rr} v${h-rr} z"/>`; }
+    if (showVals) s+=`<text class="lbl" x="${cx}" y="${y(v)-4}" text-anchor="middle">${kfmt(v)}</text>`;
   });
   host.innerHTML = s+'</svg>';
 }
@@ -604,19 +709,19 @@ function renderReasons(c){
 
 /* ---------- heatmap ---------- */
 function renderHeat(c){
-  const byGroup = st.heatRows==='group', src = byGroup ? c.heatG : c.heatR;
-  const V = VIS();
-  const rows = Object.entries(src).map(([k,a])=>[+k,V.map(m=>a[m]),V.reduce((x,m)=>x+a[m],0)]).filter(r=>r[2]>0).sort((a,b)=>b[2]-a[2]);
+  const byGroup = st.heatRows==='group', src = byGroup ? c.heatG : c.heatR, {unit,list}=c.bk;
+  const multi = yearOfDay(list[0].a)!==yearOfDay(list[list.length-1].b);
+  const rows = Object.entries(src).map(([k,P])=>{ const a=list.map(bk=>win(P,bk.a,bk.b)); return [+k,a,win(P,st.d0,st.d1)]; }).filter(r=>r[2]>0).sort((a,b)=>b[2]-a[2]);
   const max = Math.max(1,...rows.flatMap(r=>r[1]));
   const steps=['--heat-1','--heat-2','--heat-3','--heat-4','--heat-5','--heat-6'];
   const cls = v => v<=0 ? '--heat-0' : steps[Math.min(steps.length-1, Math.floor(Math.sqrt(v/max)*steps.length))];
   const inkFor = k => steps.indexOf(k)>=3 ? 'var(--bg)' : 'var(--ink)';
   const label = k => byGroup ? gn(k) : rn(D.reasons[k]);
   const isSel = k => byGroup ? k===st.group : k===st.reason;
-  let h = `<thead><tr><th class="l"></th>${V.map(m=>`<th>${mLabel(m)}</th>`).join('')}<th>Total</th></tr></thead><tbody>`;
+  let h = `<thead><tr><th class="l"></th>${list.map(bk=>`<th title="${esc(rangeLabel(bk.a,bk.b))}">${shortLabel(bk,unit,multi)}</th>`).join('')}<th>Total</th></tr></thead><tbody>`;
   for (const [k,a,t] of rows){
     h += `<tr class="${isSel(k)?'sel':''}"><td class="rl" data-k="${k}">${esc(label(k))}</td>`;
-    a.forEach((v,j)=>{ const m=V[j], kk=cls(v); h+=`<td class="cell" data-k="${k}" style="background:var(${kk});color:${inkFor(kk)}" title="${esc(label(k))} · ${MON_FULL[mi(m)]} ${yearOf(m)}: ${v} units">${v||''}</td>`; });
+    a.forEach((v,j)=>{ const kk=cls(v); h+=`<td class="cell" data-k="${k}" style="background:var(${kk});color:${inkFor(kk)}" title="${esc(label(k))} · ${esc(rangeLabel(list[j].a,list[j].b))}: ${fmt(v)} units">${v||''}</td>`; });
     h += `<td class="tot">${fmt(t)}</td></tr>`;
   }
   $('heat').innerHTML = h+'</tbody>';
@@ -626,54 +731,54 @@ function renderHeat(c){
   $('heat-scale').innerHTML = `0 ${['--heat-0',...steps].map(k=>`<span class="sw" style="background:var(${k})"></span>`).join('')} ${fmt(max)}`;
 }
 
-/* ---------- monthly table ---------- */
-function renderMonths(c){
-  const rates = rateArr(c.retM,c.soldM);
-  const top = m => { let best=-1,bv=0; for (const [g,a] of Object.entries(c.heatG)) if(a[m]>bv){bv=a[m];best=+g;} return best>=0? `${esc(gn(best))} <span class="muted">(${bv})</span>`:'—'; };
-  const showBr = !!c.brM && VIS().some(m=>c.brM[m]>0);
+/* ---------- per-period table ---------- */
+function renderPeriods(c){
+  const {unit,list}=c.bk;
+  const top = bk => { let best=-1,bv=0; for (const [g,P] of Object.entries(c.heatG)){ const v=win(P,bk.a,bk.b); if(v>bv){bv=v;best=+g;} } return best>=0? `${esc(gn(best))} <span class="muted">(${fmt(bv)})</span>`:'—'; };
+  const showBr = !!c.BR && win(c.BR, st.d0, st.d1)>0;
   const dl = d => d==null ? '<td>—</td>' : `<td class="${d>0?'delta-up':'delta-down'}">${(d>0?'+':'')+(d*100).toFixed(1)} pp</td>`;
-  let h=`<thead><tr><th class="l">Month</th><th>Units sold</th><th>Units returned</th>${showBr?'':'<!--'}<th title="Refunded units in Amazon's Business Report (Sales & Traffic): all refunds, with or without a return">Refunds (Business Report)</th>${showBr?'':'-->'}<th>Return rate</th><th>vs prior month</th><th>Same month last year</th><th>vs last year</th><th class="l">Top reason group</th></tr></thead><tbody>`;
-  VIS().forEach(m=>{
-    const r=rates[m], p=m>0?rates[m-1]:null, d=(r!=null&&p!=null)?r-p:null, pn=partialNote(st.acct,m);
-    const l=m>=12?rates[m-12]:null, dy=(r!=null&&l!=null)?r-l:null;
-    h+=`<tr><td class="l">${MON_FULL[mi(m)]} ${yearOf(m)}${pn?` <span class="muted small">(sales through ${pn})</span>`:''}</td>
-      <td>${hasSales(st.acct,m)?fmt(c.soldM[m]):'<span class="nodata">no data</span>'}</td><td>${fmt(c.retM[m])}</td>${showBr?`<td class="muted">${c.brM[m]?fmt(c.brM[m]):'—'}</td>`:''}<td><b>${fp(r)}</b></td>
-      ${dl(d)}<td>${fp(l)}</td>${dl(dy)}<td class="l">${top(m)}</td></tr>`;
+  const pw = {day:'day',week:'week',month:'month'}[unit];
+  let h=`<thead><tr><th class="l">${unit==='day'?'Day':unit==='week'?'Week':'Month'}</th><th>Units sold</th><th>Units returned</th>${showBr?`<th title="Refunded units in Amazon's Business Report (Sales & Traffic): all refunds, with or without a return">Refunds (Business Report)</th>`:''}<th>Return rate</th><th>vs prior ${pw}</th><th>Same period last year</th><th>vs last year</th><th class="l">Top reason group</th></tr></thead><tbody>`;
+  list.forEach(bk=>{
+    const r=rateWin(c.R,c.S,bk.a,bk.b), [pa,pb]=priorWin(bk,unit), p=pa>=0?rateWin(c.R,c.S,pa,pb):null, d=(r!=null&&p!=null)?r-p:null;
+    const [la,lb]=shiftWin(bk.a,bk.b,-12), l=la>=0?rateWin(c.R,c.S,la,lb):null, dy=(r!=null&&l!=null)?r-l:null;
+    h+=`<tr><td class="l">${esc(rangeLabel(bk.a,bk.b))}${partialBk(bk)?` <span class="muted small">(through ${fdate(LAST)})</span>`:''}</td>
+      <td>${salesOK(bk.a,bk.b)?fmt(win(c.S,bk.a,bk.b)):'<span class="nodata">no data</span>'}</td><td>${fmt(win(c.R,bk.a,bk.b))}</td>${showBr?`<td class="muted">${win(c.BR,bk.a,bk.b)?fmt(win(c.BR,bk.a,bk.b)):'—'}</td>`:''}<td><b>${fp(r)}</b></td>
+      ${dl(d)}<td>${fp(l)}</td>${dl(dy)}<td class="l">${top(bk)}</td></tr>`;
   });
-  const t=totals(c.retM,c.soldM);
-  h+=`</tbody><tfoot><tr class="tfoot"><td class="l">Total</td><td>${fmt(VIS().reduce((x,m)=>x+c.soldM[m],0))}</td><td>${fmt(VIS().reduce((x,m)=>x+c.retM[m],0))}</td>${showBr?`<td class="muted">${fmt(VIS().reduce((x,m)=>x+c.brM[m],0))}</td>`:''}<td>${fp(t.rate)}</td><td></td><td>${st.m0>=12?fp(totals(c.retM,c.soldM,st.m0-12,st.m1-12).rate):'—'}</td><td></td><td></td></tr></tfoot>`;
+  const t=totals(c.R,c.S,list), ly=totals(c.R,c.S,list,-12);
+  h+=`</tbody><tfoot><tr class="tfoot"><td class="l">Total</td><td>${fmt(win(c.S,st.d0,st.d1))}</td><td>${fmt(win(c.R,st.d0,st.d1))}</td>${showBr?`<td class="muted">${fmt(win(c.BR,st.d0,st.d1))}</td>`:''}<td>${fp(t.rate)}</td><td></td><td>${fp(ly.rate)}</td><td></td><td></td></tr></tfoot>`;
   $('months').innerHTML=h;
 }
 
-/* ---------- category / ASIN table ---------- */
-function spark(all){
-  const rates = VIS().map(m=>all[m]), N = rates.length;
-  const W=96,H=24, mx=Math.max(0.0001,...rates.filter(v=>v!=null));
+/* ---------- product / variation table ---------- */
+function spark(rates){
+  const N = rates.length, W=96,H=24, mx=Math.max(0.0001,...rates.filter(v=>v!=null));
   const pts=rates.map((v,i)=>v==null?null:[2+i*(W-4)/Math.max(1,N-1), H-2-(H-4)*v/mx]);
   let d='',pen=false; pts.forEach(p=>{ if(!p){pen=false;return;} d+=(pen?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1); pen=true; });
   const last=[...pts].reverse().find(Boolean);
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="${d}" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/>${last?`<circle cx="${last[0]}" cy="${last[1]}" r="2.6" fill="var(--accent)"/>`:''}</svg>`;
 }
 function renderTable(c){
-  const byCat = st.tableBy==='cat';
+  const byCat = st.tableBy==='cat', list=c.bk.list;
   $('prod-title').textContent = byCat ? 'By product' : 'By variation';
   const agg = {};
   for (const [s,A] of Object.entries(c.byAsin)){
     const key = byCat ? D.asinCat[+s] : D.asinVar[+s];
-    const G = agg[key] ||= {ret:new Array(NM).fill(0), sold:new Array(NM).fill(0), reasons:{}, n:0};
-    A.ret.forEach((v,m)=>G.ret[m]+=v); A.sold.forEach((v,m)=>G.sold[m]+=v); G.n++;
+    const G = agg[key] ||= {ret:newP(), sold:newP(), reasons:{}, n:0};
+    for (let i=0;i<=ND;i++){ G.ret[i]+=A.ret[i]; G.sold[i]+=A.sold[i]; } G.n++;
     for (const [r,v] of Object.entries(A.reasons)){ const g=D.reasonGroup[r]; G.reasons[g]=(G.reasons[g]||0)+v; }
   }
-  let rows = Object.entries(agg).map(([k,G])=>{ k=+k; const t=totals(G.ret,G.sold);
+  let rows = Object.entries(agg).map(([k,G])=>{ k=+k; const t=totals(G.ret,G.sold,list);
     const vA = byCat ? [] : varAsins(k), named = !byCat && D.variants[k][2];
     return {k, label: byCat? cn(k) : cn(D.variants[k][0]), variation: byCat? '' : (named ? D.variants[k][1] : '—'), asin: vA.join(', '),
       title: byCat? `${G.n} ASIN${G.n>1?'s':''}` : (vA.map(a=>D.names[D.asins.indexOf(a)]).find(Boolean) || ''),
-      ret:VIS().reduce((x,m)=>x+G.ret[m],0), sold:VIS().reduce((x,m)=>x+G.sold[m],0), rate:t.rate, top:Object.entries(G.reasons).sort((a,b)=>b[1]-a[1])[0], rates:rateArr(G.ret,G.sold)}; })
+      ret:win(G.ret,st.d0,st.d1), sold:win(G.sold,st.d0,st.d1), rate:t.rate, top:Object.entries(G.reasons).sort((a,b)=>b[1]-a[1])[0], rates:list.map(bk=>rateWin(G.ret,G.sold,bk.a,bk.b))}; })
     .filter(r=>r.ret>0||r.sold>0)
     .filter(r=>!st.q || r.label.toLowerCase().includes(st.q) || r.asin.toLowerCase().includes(st.q) || r.variation.toLowerCase().includes(st.q) || r.title.toLowerCase().includes(st.q));
   const {key,dir}=st.sort;
   rows.sort((a,b)=>{ const x=a[key], y=b[key]; if(x==null) return 1; if(y==null) return -1; return (typeof x==='string'? x.localeCompare(y) : x-y)*dir; });
-  const allRate = totals(c.retM,c.soldM).rate;
+  const allRate = totals(c.R,c.S,list).rate;
   const th=(k,l,cl='')=>`<th class="sortable ${cl}" data-k="${k}" aria-sort="${key===k?(dir<0?'descending':'ascending'):'none'}" tabindex="0">${l}</th>`;
   let h=`<thead><tr>${th('label','Product','l')}${byCat?'<th class="l">ASINs</th>':th('variation','Variation','l')+th('asin','ASIN','l')+'<th class="l">Title</th>'}${th('sold','Units sold')}${th('ret','Units returned')}${th('rate','Return rate')}<th class="l">Top reason group</th><th class="l">Rate trend</th></tr></thead><tbody>`;
   for (const r of rows){
@@ -682,7 +787,7 @@ function renderTable(c){
     h+=`<tr class="click${sel?' sel':''}" data-k="${r.k}" tabindex="0"><td class="l"><span class="cat">${esc(r.label)}</span></td>
       ${byCat? `<td class="l muted">${esc(r.title)}</td>` : `<td class="l">${esc(r.variation)}</td><td class="l mono">${r.asin}</td><td class="l"><span class="pname" title="${esc(r.title)}">${esc(r.title)||'<span class="nodata">no title</span>'}</span></td>`}
       <td>${fmt(r.sold)}</td><td>${fmt(r.ret)}</td><td><span class="pill${hi?' hi':''}">${fp(r.rate)}</span></td>
-      <td class="l">${r.top? esc(gn(+r.top[0]))+` <span class="muted">(${r.top[1]})</span>`:'—'}</td><td class="l">${spark(r.rates)}</td></tr>`;
+      <td class="l">${r.top? esc(gn(+r.top[0]))+` <span class="muted">(${fmt(r.top[1])})</span>`:'—'}</td><td class="l">${spark(r.rates)}</td></tr>`;
   }
   if(!rows.length) h+=`<tr><td class="l muted" colspan="9">Nothing found</td></tr>`;
   $('asins').innerHTML = h+'</tbody>';
@@ -691,13 +796,15 @@ function renderTable(c){
       if (byCat){ st.cat = k===st.cat?-1:k; st.asin=-1; fillAsinOptions(); } else { st.asin = k===st.asin?-1:k; }
       render(); window.scrollTo({top:0,behavior:'smooth'}); };
     el.onclick=go; el.onkeydown=e=>{ if(e.key==='Enter') go(); }; });
+  $('trend-note').textContent = `Click a row to filter by it. The trend line shows the return rate by ${UNIT_NAME[c.bk.unit]}.`;
 }
 
 /* ---------- comments ---------- */
 const norm = t => t.toLowerCase().replace(/[^a-z0-9 |']+/g,' ').replace(/\s+/g,' ').trim();
+const inPeriod = d => d>=st.d0 && d<=st.d1;
 function filteredComments(){
   const q = st.cq.toLowerCase();
-  return D.comments.filter(([a,m,s,r,d,,t,tg])=> inVis(m) && keep(a,s,r,d) && (!q || t.toLowerCase().includes(q))
+  return D.comments.filter(([a,d,s,r,disp,,t,tg])=> inPeriod(d) && keep(a,s,r,disp) && (!q || t.toLowerCase().includes(q))
     && (!st.theme || (r===st.theme.r && (tg||[]).includes(st.theme.t))));
 }
 // pick readable example quotes: informative length, newest first, no duplicates
@@ -708,10 +815,9 @@ function examples(rows, n){
   return out;
 }
 function scopeLabel(){
-  const parts=[];
+  const parts=[periodLabel()];
   if (st.asin>=0) parts.push(varLabel(st.asin)); else if (st.cat>=0) parts.push(cn(st.cat));
   if (st.acct>=0) parts.push(an(st.acct));
-  parts.unshift((PERIODS.find(p=>p.id===st.period)||{}).label);
   if (st.disp>=0) parts.push(dn(D.dispositions[st.disp]));
   return parts.filter(Boolean).join(' · ');
 }
@@ -754,18 +860,18 @@ function renderPhrases(list){
   $('phrases').querySelectorAll('.phrase').forEach(b=>b.onclick=()=>{ $('c-q').value=b.dataset.q; st.cq=b.dataset.q; st.cLimit=100; renderComments(); });
 }
 function renderComments(){
-  const all = filteredComments(); // before text search, for summaries/phrases
+  const all = filteredComments();
   const q = st.cq;
-  const base = D.comments.filter(([a,m,s,r,d])=>inVis(m) && keep(a,s,r,d));
+  const base = D.comments.filter(([a,d,s,r,disp])=>inPeriod(d) && keep(a,s,r,disp));
   renderSummaries(base); renderPhrases(base);
   $('clist-title').textContent = `Comments · ${fmt(all.length)}`+(st.theme?` · theme: ${D.summaries[D.reasons[st.theme.r]].themes[st.theme.t].theme}`:'');
   const shown = all.slice(0, st.cLimit);
   const re = q ? new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig') : null;
   const hl = t => re ? esc(t).replace(re, m=>`<mark>${m}</mark>`) : esc(t);
   let h = `<thead><tr><th class="l">Date</th><th class="l">Product · Variation</th><th class="l">Reason</th><th class="l">Condition</th><th class="l">Comment</th></tr></thead><tbody>`;
-  for (const [a,m,s,r,d,day,t] of shown){
-    h += `<tr><td class="l num" style="white-space:nowrap">${fday(day)}</td><td class="l"><span class="cat">${esc(cn(D.asinCat[s]))}</span><br><span class="${D.variants[D.asinVar[s]][2]?'':'mono '}muted">${esc(D.variants[D.asinVar[s]][2]?D.variants[D.asinVar[s]][1]:D.asins[s])}</span></td>
-      <td class="l">${esc(rn(D.reasons[r]))}${D.grouped?`<br><span class="muted small">${esc(gn(D.reasonGroup[r]))}</span>`:''}</td><td class="l small">${esc(dn(D.dispositions[d]))}</td><td class="txt">${hl(t).replace(/\|/g,' · ')}</td></tr>`;
+  for (const [a,d,s,r,disp,day,t] of shown){
+    h += `<tr><td class="l num" style="white-space:nowrap">${fdate(d, yearOfDay(st.d0)!==yearOfDay(st.d1))}</td><td class="l"><span class="cat">${esc(cn(D.asinCat[s]))}</span><br><span class="${D.variants[D.asinVar[s]][2]?'':'mono '}muted">${esc(D.variants[D.asinVar[s]][2]?D.variants[D.asinVar[s]][1]:D.asins[s])}</span></td>
+      <td class="l">${esc(rn(D.reasons[r]))}${D.grouped?`<br><span class="muted small">${esc(gn(D.reasonGroup[r]))}</span>`:''}</td><td class="l small">${esc(dn(D.dispositions[disp]))}</td><td class="txt">${hl(t).replace(/\|/g,' · ')}</td></tr>`;
   }
   if (!shown.length) h += `<tr><td class="l muted" colspan="5">No comments for the selected filters</td></tr>`;
   $('clist').innerHTML = h+'</tbody>';
@@ -777,13 +883,13 @@ function renderMethod(){
   $('method').innerHTML = [
     `<b>Returns</b> come from the FBA Customer Returns report and are counted by the UTC date the item was received back at an Amazon fulfillment center, the same day boundary as the Seller Central export.`,
     `<b>Sales</b> come from the All Orders report by order date: Amazon.com only, cancelled orders excluded, in units. Multi-channel (non-Amazon) orders are not counted.`,
-    `<b>Return rate</b> = units returned in a month ÷ units sold. “Same month” divides by that month's sales. “Previous month” divides by the prior month's sales. Customers usually return items 2–4 weeks after buying, so after sales peaks (Prime Day in July, August) the previous-month view is more representative.`,
-    `<b>Refunds without a return.</b> The settlement report lists every refund. A refund whose order has no matching FBA return is added as “Refunded, return still pending” if it is less than 30 days old on ${D.asOf}, otherwise as “Refunded, no return received” (returnless refunds and items never sent back). Both sit in the reason group “Refund without return” and are counted in the month of the refund. Amazon makes settlement data available for the last 90 days only, so these refunds start on ${D.noReturnFrom}.`,
-    `<b>Refunds (Business Report)</b> is Amazon's own refunded-units count from the Sales & Traffic report, dated by refund. It includes every refund but no reason, is available per account only (it shows when no product or variation is selected), and it does not line up month by month with returns, which are dated by when the item reaches Amazon.`,
-    `<b>Period.</b> Pick a year, the last 12 months or the whole range. “Same month last year” and the year-over-year changes compare each month with the same month twelve months earlier.`,
-    `When a reason group or reason is selected, the rate counts only returns with that reason. Totals include only months with sales data.`,
+    `<b>Period.</b> Pick a year, the last 30 or 90 days, the last 12 months, all data, or a custom range of months or exact dates. Ranges up to 45 days are shown by day, up to about six months by week (starting on the first day of the range), and longer ranges by calendar month; the first and last month are cut to the range.`,
+    `<b>Return rate</b> = units returned ÷ units sold. “Same period” divides by sales in the same days. “Month earlier” divides by sales in the same days one month earlier: customers usually return items 2–4 weeks after buying, so after sales peaks (Prime Day in July, August) this view is more representative. “Same period last year” uses the same days twelve months earlier.`,
+    `<b>Refunds without a return.</b> The settlement report lists every refund. A refund whose order has no matching FBA return is added as “Refunded, return still pending” if it is less than 30 days old on ${D.asOf}, otherwise as “Refunded, no return received” (returnless refunds and items never sent back). Both sit in the reason group “Refund without return” and are counted on the refund date. Amazon makes settlement data available for the last 90 days only, so these refunds start on ${D.noReturnFrom}.`,
+    `<b>Refunds (Business Report)</b> is Amazon's own refunded-units count from the Sales & Traffic report, dated by refund. It includes every refund but no reason, is available per account only (it shows when no product or variation is selected), and it does not line up day by day with returns, which are dated by when the item reaches Amazon.`,
+    `When a reason group or reason is selected, the rate counts only returns with that reason. Totals include only days with sales data.`,
     `<b>Products</b> (the Category column) and <b>variations</b> (colour or plug type; the ASIN where none is given) come from the Info tab of the team's mapping file, <b>reason groups</b> from the Reasons tab. Customer comments are the free-text notes buyers enter on the return request (about 60% of returns have one). Each comment is tagged with the themes of its return reason; theme shares on the comments tab are counted from the comments that match the current filters.`,
-    `<b>Data check.</b> For Jan 1 – Sep 1, 2026 the returns were matched order by order against the team's Seller Central export (Return Data - US): all 6,988 exported returns are here with the same ASIN, quantity and reason, and monthly totals for ASINs on the Info tab match exactly. The dashboard also includes 48 returns of ASINs that are not on the Info tab (flash cards, games, mice, Artix power strips), shown as “Not in Info tab”.`,
+    `<b>Data check.</b> For Jan 1 – Sep 1, 2026 the returns were matched order by order against the team's Seller Central export (Return Data - US): all 6,988 exported returns are here with the same ASIN, quantity and reason, and monthly totals for ASINs on the Info tab match exactly. The dashboard also includes returns of ASINs that are not on the Info tab (flash cards, games, mice, Artix power strips), shown as “Not in Info tab”.`,
     `Source: Windsor.ai, Amazon Seller Central connector (amazon_sp).`
   ].map(t=>`<li>${t}</li>`).join('');
 }
@@ -793,7 +899,7 @@ function render(){
   syncControls();
   if (st.tab==='comments'){ renderComments(); return; }
   const c = compute();
-  renderKpis(c); renderRateChart(c); renderNrNote(); renderSoldChart(c); renderReasons(c); renderHeat(c); renderMonths(c); renderTable(c);
+  renderTitles(c); renderKpis(c); renderRateChart(c); renderNrNote(); renderSoldChart(c); renderReasons(c); renderHeat(c); renderPeriods(c); renderTable(c);
 }
 setPeriod(st.period || PERIODS[0].id); initControls(); renderHeader(); renderMethod(); applyHash();
 </script>

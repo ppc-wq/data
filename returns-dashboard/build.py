@@ -86,14 +86,15 @@ for path in sorted(glob.glob(os.path.join(RAW, 'fba_*.json'))):
         reason = r[FP + 'reason'] or 'UNKNOWN'
         disp = r[FP + 'detailed_disposition'] or 'UNKNOWN'
         names.setdefault(asin, r.get(FP + 'product_name') or '')
-        returns[(acct, m, asin, reason, disp)] += int(r[FP + 'quantity'] or 0)
+        returns[(acct, day, asin, reason, disp)] += int(r[FP + 'quantity'] or 0)
         text = html.unescape((r.get(FP + 'customer_comments') or '').strip())
         if text:
-            comments.append((acct, m, asin, reason, disp, day, text))
+            comments.append((acct, day, asin, reason, disp, day, text))
 
 # ---- sales ---------------------------------------------------------------
-sales = collections.Counter()        # (acct, month, asin) -> units
+sales = collections.Counter()        # (acct, day, asin) -> units
 last_day = {}
+first_day = {}
 for path in sorted(glob.glob(os.path.join(RAW, 'orders_*.json'))):
     acct = re.match(r'orders_(A\d)_', os.path.basename(path)).group(1)
     for r in load(path):
@@ -105,7 +106,9 @@ for path in sorted(glob.glob(os.path.join(RAW, 'orders_*.json'))):
         day = r[OP + 'purchase_date'][:10]
         if day > last_day.get((acct, m), ''):
             last_day[(acct, m)] = day
-        sales[(acct, m, r[OP + 'asin'])] += int(r[OP + 'quantity'] or 0)
+        if day < first_day.get((acct, m), '9999'):
+            first_day[(acct, m)] = day
+        sales[(acct, day, r[OP + 'asin'])] += int(r[OP + 'quantity'] or 0)
 
 # ---- refunds without a received return (settlement report, last ~90 days) ---
 # Each settlement 'Refund' / 'Principal' line is one refunded order item. Lines whose order has
@@ -153,13 +156,13 @@ for (acct, order), lines in refund_lines.items():
             continue
         age = (datetime.date.fromisoformat(LAST_DAY) - datetime.date.fromisoformat(day)).days
         reason = 'REFUND_RETURN_PENDING' if age < PENDING_DAYS else 'REFUND_NO_RETURN'
-        returns[(acct, m, asin, reason, 'NOT_RECEIVED')] += 1
+        returns[(acct, day, asin, reason, 'NOT_RECEIVED')] += 1
         no_return_units[reason] += 1
         names.setdefault(asin, '')
 
 # ---- refunded units from the Business Report (Sales & Traffic), whole period ---
 # Account-level daily totals: Amazon no longer serves the by-ASIN report for 2025.
-br_refunds = collections.Counter()   # (acct, month) -> refunded units
+br_refunds = collections.Counter()   # (acct, day) -> refunded units
 seen_days = set()
 for path in sorted(glob.glob(os.path.join(HERE, 'raw2', 'bd_*.json')), reverse=True):   # newest file wins
     for r in json.load(open(path)):
@@ -167,7 +170,7 @@ for path in sorted(glob.glob(os.path.join(HERE, 'raw2', 'bd_*.json')), reverse=T
         if key in seen_days or r['date'][:7] not in MONTHS:
             continue
         seen_days.add(key)
-        br_refunds[(inv_acct[r['account_id']], r['date'][:7])] += \
+        br_refunds[(inv_acct[r['account_id']], r['date'])] += \
             int(r['sales_and_traffic_report_by_date__salesbydate_unitsrefunded'] or 0)
 
 # ---- encode --------------------------------------------------------------
@@ -201,8 +204,15 @@ for r in reasons:
         tags[(r, text)] = [t for t in assign.get(i, [-1]) if t >= 0]
 untagged = sum((c[3], c[6].replace('\n', ' ').replace('\t', ' ')) not in tags for c in comments)
 
+DAY0 = datetime.date.fromisoformat(f'{MONTHS[0]}-01')
+dix = lambda d: (datetime.date.fromisoformat(d) - DAY0).days
+n_days = dix(LAST_DAY) + 1
+sales_range = {a: [min(d for (aa, m), d in first_day.items() if aa == a), max(d for (aa, m), d in last_day.items() if aa == a)] for a in accts}
+
 data = {
     'months': MONTHS,
+    'day0': DAY0.isoformat(),
+    'nDays': n_days,
     'asOf': AS_OF,
     'accounts': [ACCOUNTS[a] for a in accts],
     'accountNames': [ACCOUNT_NAMES.get(ACCOUNTS[a], ACCOUNTS[a]) for a in accts],
@@ -221,23 +231,22 @@ data = {
     'reasonGroup': [groups.index(group_of[r]) for r in reasons],
     'grouped': bool(reason_group),
     'dispositions': disps,
-    # [account, month, asin, reason, disposition, units]
-    'returns': [[accts.index(k[0]), MONTHS.index(k[1]), ai[k[2]], ri[k[3]], di[k[4]], v]
+    # [account, day index, asin, reason, disposition, units]
+    'returns': [[accts.index(k[0]), dix(k[1]), ai[k[2]], ri[k[3]], di[k[4]], v]
                 for k, v in sorted(returns.items())],
-    # [account, month, asin, units]
-    'sales': [[accts.index(k[0]), MONTHS.index(k[1]), ai[k[2]], v] for k, v in sorted(sales.items())],
-    # [account, month, asin, reason, disposition, 'YYYY-MM-DD', text, [theme indices]]
-    'comments': [[accts.index(c[0]), MONTHS.index(c[1]), ai[c[2]], ri[c[3]], di[c[4]], c[5], c[6],
+    # [account, day index, asin, units]
+    'sales': [[accts.index(k[0]), dix(k[1]), ai[k[2]], v] for k, v in sorted(sales.items())],
+    # [account, day index, asin, reason, disposition, 'YYYY-MM-DD', text, [theme indices]]
+    'comments': [[accts.index(c[0]), dix(c[1]), ai[c[2]], ri[c[3]], di[c[4]], c[5], c[6],
                   tags.get((c[3], c[6].replace('\n', ' ').replace('\t', ' ')), [])]
                  for c in comments],
-    # [account, month, refunded units] from the Business Report (account level)
-    'brRefunds': [[accts.index(k[0]), MONTHS.index(k[1]), v] for k, v in sorted(br_refunds.items())],
+    # [account, day index, refunded units] from the Business Report (account level)
+    'brRefunds': [[accts.index(k[0]), dix(k[1]), v] for k, v in sorted(br_refunds.items())],
     'noReturnFrom': settle_from,
     'noReturnTo': settle_to,
     'noReturnGroup': NO_RETURN_GROUP,
-    'salesCoverage': {ACCOUNTS[a]: {m: {'through': d, 'partial': d < month_end(m)}
-                                    for (aa, m), d in sorted(last_day.items()) if aa == a}
-                      for a in accts},
+    # first and last day index with sales loaded, per account
+    'salesRange': [[dix(sales_range[a][0]), dix(sales_range[a][1])] for a in accts],
 }
 summ = os.path.join(MAP, 'summaries.json')
 data['summaries'] = json.load(open(summ)) if os.path.exists(summ) else {}
@@ -251,8 +260,8 @@ print('asins', len(asins), 'mapped', sum(a in asin_info for a in asins),
       'return rows', len(data['returns']), 'comments', len(comments), 'bytes', os.path.getsize(out))
 for a in accts:
     for m in MONTHS:
-        ru = sum(v for k, v in returns.items() if k[0] == a and k[1] == m)
-        su = sum(v for k, v in sales.items() if k[0] == a and k[1] == m)
+        ru = sum(v for k, v in returns.items() if k[0] == a and k[1][:7] == m)
+        su = sum(v for k, v in sales.items() if k[0] == a and k[1][:7] == m)
         print(a, m, 'returns', ru, 'sold', su, f'{ru / su:.1%}' if su else '-')
 unmapped = [a for a in asins if a not in asin_info]
 if asin_info and unmapped:
