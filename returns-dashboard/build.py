@@ -12,6 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, 'raw')
 MAP = os.path.join(HERE, 'map')
 ACCOUNTS = {'A1': 'A1H3J68XZ5X5W7-US', 'A2': 'A2X0F4F8T5BV34-US'}
+ACCOUNT_NAMES = {'A1H3J68XZ5X5W7-US': '7th Continent', 'A2X0F4F8T5BV34-US': 'Symphonized'}
 MONTHS = [f'2025-{m:02d}' for m in range(1, 13)] + [f'2026-{m:02d}' for m in range(1, 10)]
 LAST_DAY = '2026-09-30'
 AS_OF = 'Sep 30, 2026'
@@ -202,6 +203,7 @@ data = {
     'months': MONTHS,
     'asOf': AS_OF,
     'accounts': [ACCOUNTS[a] for a in accts],
+    'accountNames': [ACCOUNT_NAMES.get(ACCOUNTS[a], ACCOUNTS[a]) for a in accts],
     'asins': asins,
     'names': [names.get(a, '') for a in asins],
     'products': [asin_info.get(a, {}).get('product', '') for a in asins],
