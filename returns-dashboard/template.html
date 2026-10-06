@@ -562,7 +562,7 @@ function renderRateChart(c){
 function renderNrNote(){
   const from = D.noReturnFrom ? new Date(D.noReturnFrom+'T00:00:00Z') : null;
   $('nr-note').textContent = !from ? '' : st.noRet
-    ? `Refunds without a received return are included from ${MON_FULL[from.getUTCMonth()]} ${from.getUTCDate()}, ${from.getUTCFullYear()}. Amazon keeps settlement data for 90 days, so earlier months show returns only; the Business Report refund count is in the monthly table for comparison.`
+    ? `Refunds without a received return are included from ${MON_FULL[from.getUTCMonth()]} ${from.getUTCDate()}, ${from.getUTCFullYear()}${D.noReturnTo?` through ${fday(D.noReturnTo)}, the end of the latest closed settlement`:''}. Amazon keeps settlement data for 90 days, so earlier months show returns only; the Business Report refund count is in the monthly table for comparison.`
     : 'Showing returns received at Amazon only. Refunds without a received return are excluded.';
 }
 function renderSoldChart(c){

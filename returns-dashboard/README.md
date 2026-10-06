@@ -1,6 +1,6 @@
 # Amazon Returns (FBA)
 
-Returns dashboard for January 2025 – September 2026, accounts A1H3J68XZ5X5W7-US and A2X0F4F8T5BV34-US:
+Returns dashboard for January 2025 – October 2026, accounts A1H3J68XZ5X5W7-US and A2X0F4F8T5BV34-US:
 monthly return rate vs. units sold, filters by account, category, ASIN, reason group and item condition,
 plus a customer-comments tab.
 

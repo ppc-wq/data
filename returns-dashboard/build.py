@@ -13,9 +13,9 @@ RAW = os.path.join(HERE, 'raw')
 MAP = os.path.join(HERE, 'map')
 ACCOUNTS = {'A1': 'A1H3J68XZ5X5W7-US', 'A2': 'A2X0F4F8T5BV34-US'}
 ACCOUNT_NAMES = {'A1H3J68XZ5X5W7-US': '7th Continent', 'A2X0F4F8T5BV34-US': 'Symphonized'}
-MONTHS = [f'2025-{m:02d}' for m in range(1, 13)] + [f'2026-{m:02d}' for m in range(1, 10)]
-LAST_DAY = '2026-09-30'
-AS_OF = 'Sep 30, 2026'
+MONTHS = [f'2025-{m:02d}' for m in range(1, 13)] + [f'2026-{m:02d}' for m in range(1, 11)]
+LAST_DAY = '2026-10-05'
+AS_OF = 'Oct 5, 2026'
 FP = 'fba_fulfillment_customer_returns_data__'
 OP = 'flat_file_all_orders_data_by_order_date_general__'
 UNCAT = 'Not in Info tab'
@@ -23,7 +23,7 @@ UNCAT = 'Not in Info tab'
 
 def month_end(m):
     y, mo = map(int, m.split('-'))
-    return min(f'{m}-{calendar.monthrange(y, mo)[1]:02d}', LAST_DAY)
+    return f'{m}-{calendar.monthrange(y, mo)[1]:02d}'   # a month with fewer loaded days is flagged as partial
 
 
 def load(path):
@@ -116,6 +116,7 @@ PENDING_DAYS = 30
 NO_RETURN_GROUP = 'Refund without return'
 NO_RETURN = {'REFUND_RETURN_PENDING', 'REFUND_NO_RETURN'}
 settle_from = None
+settle_to = None
 sku2asin = {}
 for path in glob.glob(os.path.join(RAW, 'fba_*.json')):
     for r in load(path):
@@ -142,6 +143,7 @@ for path in glob.glob(os.path.join(HERE, 'raw2', 'settle_*.json')):
         asin = sku2asin.get(r[SP + 'sku'], 'SKU:' + r[SP + 'sku'])
         refund_lines[(acct, r[SP + 'order_id'])].append((r[SP + 'posted_date'][:10], asin))
         settle_from = min(settle_from or '9999', r[SP + 'posted_date'][:10])
+        settle_to = max(settle_to or '', r[SP + 'posted_date'][:10])
 no_return_units = collections.Counter()
 for (acct, order), lines in refund_lines.items():
     extra = len(lines) - returned[(acct, order)]
@@ -158,8 +160,8 @@ for (acct, order), lines in refund_lines.items():
 # ---- refunded units from the Business Report (Sales & Traffic), whole period ---
 # Account-level daily totals: Amazon no longer serves the by-ASIN report for 2025.
 br_refunds = collections.Counter()   # (acct, month) -> refunded units
-for path in glob.glob(os.path.join(HERE, 'raw2', 'bd_*.json')):
-    seen_days = set()
+seen_days = set()
+for path in sorted(glob.glob(os.path.join(HERE, 'raw2', 'bd_*.json')), reverse=True):   # newest file wins
     for r in json.load(open(path)):
         key = (r['account_id'], r['date'])
         if key in seen_days or r['date'][:7] not in MONTHS:
@@ -231,6 +233,7 @@ data = {
     # [account, month, refunded units] from the Business Report (account level)
     'brRefunds': [[accts.index(k[0]), MONTHS.index(k[1]), v] for k, v in sorted(br_refunds.items())],
     'noReturnFrom': settle_from,
+    'noReturnTo': settle_to,
     'noReturnGroup': NO_RETURN_GROUP,
     'salesCoverage': {ACCOUNTS[a]: {m: {'through': d, 'partial': d < month_end(m)}
                                     for (aa, m), d in sorted(last_day.items()) if aa == a}

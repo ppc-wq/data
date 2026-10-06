@@ -1776,3 +1776,18 @@
 1775	Didn't like the quality of the item.
 1776	Headphones are much smaller than expected
 1777	I thought it said it was a 2+ player game but it says 3 or more on the box
+1778	Not as Expected|I ordered the blue and got the purple|I must’ve ordered the wrong onw
+1779	Not as Expected|Poor sound quality in upper frequencies.  Flat sound|ahard to quantify sound by description and pictures
+1780	Not as Expected|Didn’t fit my computer|Not that I’m aware of
+1781	Not as Expected|Uncomfortable for my autistic son|No
+1782	Not as Expected|the fit was not comfortable. was hoping the ear covering was smaller,|no
+1783	Not as Expected|Too small|I don't know
+1784	Not as Expected|Not what I need|Dksc|No
+1785	Not as Expected|Disliked fit|No
+1786	Not as Expected|Wasn’t wrapped, seemed like it was an open product|No
+1787	Not as Expected|inaccurate information
+1788	Not as Expected|Not up to the sound quality that I assumed they would be|?|Yes, was not as expected based on what I read of the description
+1789	Not as Expected|It didn’t fit comfortably on me|No, nothing was inaccurate, it just didn’t fit to my liking.
+1790	Not as Expected|arrived too late|no
+1791	Changed Mind|Not as Expected|The ear piece moves
+1792	Not as Expected|Not as comfortable as I wanted|No

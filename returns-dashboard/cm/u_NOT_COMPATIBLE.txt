@@ -553,3 +553,13 @@
 552	Not Compatible|I wanted to use them on my macbook air but the microphone portion did not work with zoom and Epic video calls.
 553	Not Compatible|Device|Aux|I didn't know how to answer
 554	No le queda a los niños
+555	Not Compatible|Doesn’t match devices
+556	Not Compatible|Wouldn’t work with device needed
+557	Not Compatible|I ordered the correct one
+558	Not Compatible|They did not work with the sound bar.
+559	Not Compatible|Not working with specific device
+560	Not Compatible|Pin style hook up
+561	Not Compatible|Not WiFi
+562	Not Compatible|The wire
+563	Not Compatible|N/A|Don’t need it . Order 2|It’s okay
+564	Not Compatible|description

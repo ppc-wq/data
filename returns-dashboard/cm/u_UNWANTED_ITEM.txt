@@ -1801,3 +1801,9 @@
 1800	I purchased the wrong headphones.
 1801	Gift no longer needed
 1802	Will need wireless
+1803	Changed Mind|My needs changed|Child no longer needed them
+1804	The content of the material is confusing and so are the photos. I've tried to use it as therapy material with my autistic daughter and it hasn't worked, because the content and the photos are confusin
+1805	Changed Mind|Found other item|I found my pair in my
+1806	Daughter wanted a different kind
+1807	Changed Mind|My needs changed|Fine
+1808	Changed Mind|This is a gift|I thought I was buying children's headphones

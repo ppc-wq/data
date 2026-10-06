@@ -1052,3 +1052,9 @@
 1051	My toddler is not comfortable wearing it.
 1052	Sometimes the sound doesn’t play through the earbuds.  I tried 7 times; 4 times it did but 3 times the sound came from the speaker not the earbuds
 1053	N/A
+1054	Defective|Sound cuts out. Wire insde is damaged only works if I hold it right
+1055	Defective|Earbuds maintain only intermittent connection with my iPad or iPhone.
+1056	Defective|With bad|The sounds is bad
+1057	Defective|only one channel works
+1058	Defective|loss of hearing during calls
+1059	No conectada a ningun dispositivo y ni se escucha lo que se reproduce en cualquier dispositivo
