@@ -44,7 +44,7 @@ info = read_csv('info.csv')
 if info:
     head = [h.strip().lower() for h in info[0]]
     col = lambda *names: next((i for i, h in enumerate(head) if any(n in h for n in names)), None)
-    ci, cc, cp, cr = col('asin'), col('categor'), col('product'), col('parent', 'child', 'type')
+    ci, cc, cp, cr, cv = col('asin'), col('categor'), col('product'), col('parent', 'child', 'type'), col('variation')
     for row in info[1:]:
         if ci is None or len(row) <= ci or not row[ci].strip():
             continue
@@ -53,6 +53,7 @@ if info:
             'category': (row[cc].strip() if cc is not None and len(row) > cc else '') or UNCAT,
             'product': row[cp].strip() if cp is not None and len(row) > cp else '',
             'role': row[cr].strip() if cr is not None and len(row) > cr else '',
+            'variation': row[cv].strip() if cv is not None and len(row) > cv else '',
         })
 
 reason_group = {}    # reason code -> classification
@@ -176,6 +177,11 @@ cats = sorted(set(cat_of.values()), key=lambda c: (c == UNCAT, c.lower()))
 group_of = {r: NO_RETURN_GROUP if r in NO_RETURN else reason_group.get(r, r) for r in reasons}
 groups = sorted(set(group_of.values()))
 ai = {a: i for i, a in enumerate(asins)}
+# Variation = product + colour / plug type from the Info tab; ASINs without one stand alone.
+# ASINs sharing a product and variation (e.g. a relisted child) collapse into one option.
+var_key = {a: (cat_of[a], asin_info.get(a, {}).get('variation') or a) for a in asins}
+variants = sorted(set(var_key.values()), key=lambda k: (cats.index(k[0]), k[1] in asins, k[1].lower()))
+vi = {k: i for i, k in enumerate(variants)}
 ri = {r: i for i, r in enumerate(reasons)}
 di = {d: i for i, d in enumerate(disps)}
 comments.sort(key=lambda c: c[5], reverse=True)
@@ -202,6 +208,9 @@ data = {
     'roles': [asin_info.get(a, {}).get('role', '') for a in asins],
     'categories': cats,
     'asinCat': [cats.index(cat_of[a]) for a in asins],
+    # [product index, label, has a named variation]
+    'variants': [[cats.index(c), v, v not in ai] for c, v in variants],
+    'asinVar': [vi[var_key[a]] for a in asins],
     'mapped': bool(asin_info),
     'reasons': reasons,
     'groups': groups,

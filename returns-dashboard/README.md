@@ -8,7 +8,7 @@ plus a customer-comments tab.
   - `fba_<acct>_*.json` — FBA Customer Returns (`fba_fulfillment_customer_returns_data__*`, incl. `customer_comments`);
   - `orders_<acct>_*.json` — All Orders (`flat_file_all_orders_data_by_order_date_general__*`).
 - `raw2/` (not committed) — settlement report refund lines (`settle_*.json`, last 90 days only) and Business Report daily refund totals (`bd_*.json`).
-- `map/info.csv` — the "Info" tab of the mapping sheet (ASIN → category, product, parent/child).
+- `map/info.csv` — the "Info" tab of the mapping file (ASIN → product (Category column), variation, parent/child).
 - `map/reasons.csv` — the "Reasons" tab (Amazon return reason → reason group).
 - `map/summaries.json` — comment themes per return reason (label + description).
 - `cm/u_<REASON>.txt` numbers each unique comment; `cm/assign_<REASON>.json` tags it with theme indices (-1 = no specific detail). The dashboard counts themes from the comments matching the current filters.
