@@ -14,8 +14,8 @@ MAP = os.path.join(HERE, 'map')
 ACCOUNTS = {'A1': 'A1H3J68XZ5X5W7-US', 'A2': 'A2X0F4F8T5BV34-US'}
 ACCOUNT_NAMES = {'A1H3J68XZ5X5W7-US': '7th Continent', 'A2X0F4F8T5BV34-US': 'Symphonized'}
 MONTHS = [f'2025-{m:02d}' for m in range(1, 13)] + [f'2026-{m:02d}' for m in range(1, 11)]
-LAST_DAY = '2026-10-05'
-AS_OF = 'Oct 5, 2026'
+LAST_DAY = '2026-10-25'
+AS_OF = 'Oct 25, 2026'
 FP = 'fba_fulfillment_customer_returns_data__'
 OP = 'flat_file_all_orders_data_by_order_date_general__'
 UNCAT = 'Not in Info tab'
@@ -80,7 +80,7 @@ for path in sorted(glob.glob(os.path.join(RAW, 'fba_*.json'))):
         # Seller Central's return report dates returns in UTC; use the same day boundary
         day = datetime.datetime.fromisoformat(r[FP + 'return_date']).astimezone(datetime.timezone.utc).strftime('%Y-%m-%d')
         m = day[:7]
-        if m not in MONTHS:
+        if m not in MONTHS or day > LAST_DAY:
             continue
         asin = r[FP + 'asin']
         reason = r[FP + 'reason'] or 'UNKNOWN'
@@ -138,8 +138,14 @@ for path in glob.glob(os.path.join(RAW, 'fba_*.json')):
         returned[(acct, r[FP + 'order_id'])] += int(r[FP + 'quantity'] or 0) or 1
 refund_lines = collections.defaultdict(list)
 inv_acct = {v: k for k, v in ACCOUNTS.items()}
-for path in glob.glob(os.path.join(HERE, 'raw2', 'settle_*.json')):
-    for r in json.load(open(path)):
+# settle_<from>_<to>_v2.json; newest first, an older file only fills days before the newer one starts
+covered_from = '9999'
+for path in sorted(glob.glob(os.path.join(HERE, 'raw2', 'settle_*.json')), reverse=True):
+    rows = json.load(open(path))
+    file_from = min(r[SP + 'posted_date'][:10] for r in rows)
+    for r in rows:
+        if r[SP + 'posted_date'][:10] >= covered_from:
+            continue
         if r[SP + 'marketplace_name'] != 'Amazon.com' or (r[SP + 'amount'] or 0) >= 0:
             continue   # positive principal lines are adjustments (e.g. restocking fee), not refunds
         acct = inv_acct[r['account_id']]
@@ -147,6 +153,7 @@ for path in glob.glob(os.path.join(HERE, 'raw2', 'settle_*.json')):
         refund_lines[(acct, r[SP + 'order_id'])].append((r[SP + 'posted_date'][:10], asin))
         settle_from = min(settle_from or '9999', r[SP + 'posted_date'][:10])
         settle_to = max(settle_to or '', r[SP + 'posted_date'][:10])
+    covered_from = min(covered_from, file_from)
 no_return_units = collections.Counter()
 for (acct, order), lines in refund_lines.items():
     extra = len(lines) - returned[(acct, order)]
@@ -180,7 +187,8 @@ disps = sorted({k[4] for k in returns})
 accts = sorted(ACCOUNTS)
 cat_of = {a: asin_info.get(a, {}).get('category', UNCAT) for a in asins}
 cats = sorted(set(cat_of.values()), key=lambda c: (c == UNCAT, c.lower()))
-group_of = {r: NO_RETURN_GROUP if r in NO_RETURN else reason_group.get(r, r) for r in reasons}
+EXTRA_GROUPS = {'RECALL': 'Unknown'}   # reasons missing from the Reasons tab
+group_of = {r: NO_RETURN_GROUP if r in NO_RETURN else reason_group.get(r, EXTRA_GROUPS.get(r, r)) for r in reasons}
 groups = sorted(set(group_of.values()))
 ai = {a: i for i, a in enumerate(asins)}
 # Variation = product + colour / plug type from the Info tab; ASINs without one stand alone.
@@ -242,6 +250,7 @@ data = {
                  for c in comments],
     # [account, day index, refunded units] from the Business Report (account level)
     'brRefunds': [[accts.index(k[0]), dix(k[1]), v] for k, v in sorted(br_refunds.items())],
+    'brTo': max((dix(k[1]) for k in br_refunds), default=-1),
     'noReturnFrom': settle_from,
     'noReturnTo': settle_to,
     'noReturnGroup': NO_RETURN_GROUP,

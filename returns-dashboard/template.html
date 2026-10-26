@@ -336,7 +336,7 @@ const REASON_EN = {
   MISSED_ESTIMATED_DELIVERY:'Missed delivery estimate', MISSING_PARTS:'Missing parts', DAMAGED_BY_CARRIER:'Damaged by carrier',
   DAMAGED_BY_FC:'Damaged at Amazon FC', NEVER_ARRIVED:'Never arrived', SWITCHEROO:'Different item returned',
   UNAUTHORIZED_PURCHASE:'Unauthorized purchase', NO_REASON_GIVEN:'No reason given', APPAREL_TOO_LARGE:'Too large',
-  APPAREL_TOO_SMALL:'Too small', EXTRA_ITEM:'Extra item', UNKNOWN:'Not specified',
+  APPAREL_TOO_SMALL:'Too small', EXTRA_ITEM:'Extra item', UNKNOWN:'Not specified', RECALL:'Product recall',
   REFUND_RETURN_PENDING:'Refunded, return still pending', REFUND_NO_RETURN:'Refunded, no return received', UNDELIVERABLE_REFUSED:'Delivery refused'
 };
 const DISP_EN = {SELLABLE:'Sellable', CUSTOMER_DAMAGED:'Customer damaged', DEFECTIVE:'Defective', CARRIER_DAMAGED:'Carrier damaged', DAMAGED:'Damaged', NOT_RECEIVED:'Not received', UNKNOWN:'Not specified'};
@@ -492,6 +492,13 @@ function totals(R, S, list, shift=0){
   return {r, s, rate:pct(r,s)};
 }
 
+// Business Report refunds can lag the other reports; flag windows that run past its last day
+function brCell(c, a, b){
+  const to = D.brTo ?? LAST;
+  if (a > to) return '<span class="nodata">no data</span>';
+  const v = win(c.BR, a, Math.min(b, to));
+  return (v ? fmt(v) : '—') + (b > to ? `<span class="small" title="Business Report data runs through ${fdate(to,1)}"> · to ${fdate(to)}</span>` : '');
+}
 /* ---------- controls ---------- */
 const $ = id => document.getElementById(id);
 function opts(sel, items, allLabel){ sel.innerHTML = `<option value="-1">${allLabel}</option>` + items.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join(''); }
@@ -743,11 +750,11 @@ function renderPeriods(c){
     const r=rateWin(c.R,c.S,bk.a,bk.b), [pa,pb]=priorWin(bk,unit), p=pa>=0?rateWin(c.R,c.S,pa,pb):null, d=(r!=null&&p!=null)?r-p:null;
     const [la,lb]=shiftWin(bk.a,bk.b,-12), l=la>=0?rateWin(c.R,c.S,la,lb):null, dy=(r!=null&&l!=null)?r-l:null;
     h+=`<tr><td class="l">${esc(rangeLabel(bk.a,bk.b))}${partialBk(bk)?` <span class="muted small">(through ${fdate(LAST)})</span>`:''}</td>
-      <td>${salesOK(bk.a,bk.b)?fmt(win(c.S,bk.a,bk.b)):'<span class="nodata">no data</span>'}</td><td>${fmt(win(c.R,bk.a,bk.b))}</td>${showBr?`<td class="muted">${win(c.BR,bk.a,bk.b)?fmt(win(c.BR,bk.a,bk.b)):'—'}</td>`:''}<td><b>${fp(r)}</b></td>
+      <td>${salesOK(bk.a,bk.b)?fmt(win(c.S,bk.a,bk.b)):'<span class="nodata">no data</span>'}</td><td>${fmt(win(c.R,bk.a,bk.b))}</td>${showBr?`<td class="muted">${brCell(c,bk.a,bk.b)}</td>`:''}<td><b>${fp(r)}</b></td>
       ${dl(d)}<td>${fp(l)}</td>${dl(dy)}<td class="l">${top(bk)}</td></tr>`;
   });
   const t=totals(c.R,c.S,list), ly=totals(c.R,c.S,list,-12);
-  h+=`</tbody><tfoot><tr class="tfoot"><td class="l">Total</td><td>${fmt(win(c.S,st.d0,st.d1))}</td><td>${fmt(win(c.R,st.d0,st.d1))}</td>${showBr?`<td class="muted">${fmt(win(c.BR,st.d0,st.d1))}</td>`:''}<td>${fp(t.rate)}</td><td></td><td>${fp(ly.rate)}</td><td></td><td></td></tr></tfoot>`;
+  h+=`</tbody><tfoot><tr class="tfoot"><td class="l">Total</td><td>${fmt(win(c.S,st.d0,st.d1))}</td><td>${fmt(win(c.R,st.d0,st.d1))}</td>${showBr?`<td class="muted">${brCell(c,st.d0,st.d1)}</td>`:''}<td>${fp(t.rate)}</td><td></td><td>${fp(ly.rate)}</td><td></td><td></td></tr></tfoot>`;
   $('months').innerHTML=h;
 }
 
