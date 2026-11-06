@@ -1,0 +1,510 @@
+{%- comment -%}
+  Artix Pro presale landing page (single section, used by templates/page.artix-presale.json).
+
+  Shopify setup this section expects (see artix-presale/README.md):
+  - One product, three variants in this order: Tier 1, Tier 2, Tier 3.
+    Each variant tracks its own inventory (100 / 300 / 600) with "continue selling" OFF.
+  - A pre-order selling plan on that product: $5 charged at checkout, balance later.
+  - Color (Navy / Black) is sent as the line-item property "Color".
+  Every unit count on the page comes from variant.inventory_quantity; nothing is hard-coded.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign p = s.product
+  assign launch = s.launch_price_cents | default: 14999
+  assign ship = s.ship_date | default: 'December 15'
+  assign open_index = 0
+  assign total_cap = 0
+  assign total_reserved = 0
+  if p != blank
+    for v in p.variants limit: 3
+      assign i = forloop.index
+      assign k = 'tier_' | append: i | append: '_capacity'
+      assign cap = s[k] | default: 0
+      assign rem = v.inventory_quantity | at_least: 0 | at_most: cap
+      assign total_cap = total_cap | plus: cap
+      assign total_reserved = total_reserved | plus: cap | minus: rem
+      if open_index == 0 and rem > 0 and v.available
+        assign open_index = i
+      endif
+    endfor
+  endif
+  if open_index > 0
+    assign oi = open_index | minus: 1
+    assign open_v = p.variants[oi]
+    assign ok = 'tier_' | append: open_index | append: '_capacity'
+    assign open_rem = open_v.inventory_quantity | at_least: 0 | at_most: s[ok]
+    assign open_pct = launch | minus: open_v.price | times: 100.0 | divided_by: launch | round
+  endif
+  assign launch_money = launch | money
+-%}
+
+<div class="ax" data-artix data-color="navy">
+  <a class="ax-skip" href="#main">Skip to content</a>
+
+  {%- if p == blank -%}
+    <div class="ax-setup-note" role="note">Select the presale product in the theme editor (Artix presale section → Presale product) to show prices and live availability.</div>
+  {%- endif -%}
+
+  {%- comment -%} 1. Sticky header {%- endcomment -%}
+  <header class="ax-header">
+    <div class="ax-wrap ax-header__row">
+      <a class="ax-wordmark" href="#top" aria-label="artix, back to top">artix</a>
+      <nav class="ax-nav" aria-label="Page sections">
+        <button class="ax-nav__toggle" type="button" aria-expanded="false" aria-controls="ax-nav-list">
+          <span>Menu</span>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul id="ax-nav-list" class="ax-nav__list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#compare">Compare</a></li>
+          <li><a href="#specs">Specs</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="ax-btn ax-btn--dark ax-btn--sm" type="button" data-reserve="header">Reserve for $5</button>
+    </div>
+  </header>
+
+  <main id="main">
+    {%- comment -%} 2. Hero {%- endcomment -%}
+    <section class="ax-hero" id="top" aria-labelledby="ax-hero-title">
+      <div class="ax-wrap ax-hero__grid">
+        <div class="ax-hero__media ax-card">
+          <div class="ax-swap" data-only="navy">
+            {%- render 'artix-img', image: s.hero_navy, alt: 'Artix Pro earbuds in Navy in their open charging case', sizes: '(min-width: 960px) 50vw, 100vw', eager: true -%}
+          </div>
+          <div class="ax-swap" data-only="black">
+            {%- render 'artix-img', image: s.hero_black, alt: 'Artix Pro earbuds in Black in their open charging case', sizes: '(min-width: 960px) 50vw, 100vw' -%}
+          </div>
+        </div>
+        <div class="ax-hero__copy">
+          <p class="ax-pill">Presale · Ships {{ ship }}</p>
+          <h1 id="ax-hero-title" class="ax-h1">Silence, tuned.</h1>
+          <p class="ax-lead">Artix Pro wireless earbuds with hybrid adaptive noise cancelling, 6 microphones for crystal-clear calls and Bluetooth 6.1, in an ergonomic fit that stays put. Reserve yours for $5 and lock in the presale price.</p>
+
+          <p class="ax-price" data-when-open {% if open_index == 0 %}hidden{% endif %}>
+            <span class="ax-price__big" data-open-price>{% if open_v %}{{ open_v.price | money }}{% endif %}</span>
+            <span class="ax-badge ax-badge--amber" data-open-pct>{% if open_v %}{{ open_pct }}% off{% endif %}</span>
+            <span class="ax-price__note">presale price · {{ launch_money }} at launch</span>
+          </p>
+          <p class="ax-price ax-price--soldout" data-when-soldout {% if open_index > 0 %}hidden{% endif %}>
+            <span class="ax-price__note">Presale is sold out. Artix Pro launches at {{ launch_money }}.</span>
+          </p>
+
+          <fieldset class="ax-colors">
+            <legend class="ax-colors__legend">Color: <span data-color-label>Navy</span></legend>
+            <div class="ax-colors__row">
+              <button type="button" class="ax-chip" data-set-color="navy" aria-pressed="true"><span class="ax-swatch ax-swatch--navy" aria-hidden="true"></span>Navy</button>
+              <button type="button" class="ax-chip" data-set-color="black" aria-pressed="false"><span class="ax-swatch ax-swatch--black" aria-hidden="true"></span>Black</button>
+            </div>
+          </fieldset>
+
+          <div class="ax-actions">
+            <button class="ax-btn ax-btn--dark" type="button" data-reserve="hero">Reserve for $5</button>
+            <a class="ax-btn ax-btn--outline" href="#how">How presale works</a>
+          </div>
+
+          <ul class="ax-trust">
+            <li>{%- render 'artix-icon', name: 'check' -%}$5 fully refundable</li>
+            <li>{%- render 'artix-icon', name: 'check' -%}Pay the rest when it ships</li>
+            <li>{%- render 'artix-icon', name: 'check' -%}Ships {{ ship }}, in time for Christmas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {%- comment -%} 3. Tiers {%- endcomment -%}
+    <section class="ax-section" id="reserve" aria-labelledby="ax-tiers-title" data-view-content>
+      <div class="ax-wrap">
+        <div class="ax-head ax-head--split">
+          <div>
+            <p class="ax-eyebrow">Pick your tier</p>
+            <h2 id="ax-tiers-title" class="ax-h2" tabindex="-1">The earlier you reserve, the less you pay.</h2>
+          </div>
+          {%- liquid
+            assign cap_th = total_cap | divided_by: 1000
+            assign cap_rest = total_cap | modulo: 1000 | prepend: '00' | slice: -3, 3
+            assign res_th = total_reserved | divided_by: 1000
+            assign res_rest = total_reserved | modulo: 1000 | prepend: '00' | slice: -3, 3
+          -%}
+          <p class="ax-counter" aria-live="polite"><strong data-total-reserved>{% if res_th > 0 %}{{ res_th }},{{ res_rest }}{% else %}{{ total_reserved | default: 0 }}{% endif %}</strong> of {% if cap_th > 0 %}{{ cap_th }},{{ cap_rest }}{% else %}{{ total_cap | default: 0 }}{% endif %} reserved</p>
+        </div>
+
+        <div class="ax-tiers" role="radiogroup" aria-labelledby="ax-tiers-title">
+          {%- if p != blank -%}
+          {%- for v in p.variants limit: 3 -%}
+            {%- liquid
+              assign i = forloop.index
+              assign k = 'tier_' | append: i | append: '_capacity'
+              assign nk = 'tier_' | append: i | append: '_name'
+              assign cap = s[k] | default: 0
+              assign tname = s[nk]
+              assign rem = v.inventory_quantity | at_least: 0 | at_most: cap
+              assign reserved = cap | minus: rem
+              assign pct_off = launch | minus: v.price | times: 100.0 | divided_by: launch | round
+              assign save = launch | minus: v.price | money_without_trailing_zeros
+              if cap > 0
+                assign fill = reserved | times: 100.0 | divided_by: cap | round
+              else
+                assign fill = 0
+              endif
+              if i == open_index
+                assign status = 'open'
+              elsif rem == 0 or v.available == false
+                assign status = 'soldout'
+              else
+                assign status = 'next'
+              endif
+            -%}
+            <div class="ax-tier ax-card" data-tier="{{ i }}" data-status="{{ status }}">
+              <input class="ax-sr" type="radio" name="ax-tier" id="ax-tier-{{ i }}" value="{{ i }}" {% unless status == 'open' %}disabled{% endunless %}
+                aria-label="Tier {{ i }} · {{ tname }}, {{ v.price | money }}, {{ rem }} left">
+              <label class="ax-tier__hit" for="ax-tier-{{ i }}" aria-hidden="true"></label>
+              <div class="ax-tier__top">
+                <p class="ax-tier__name">Tier {{ i }} · {{ tname }}</p>
+                <span class="ax-badge" data-tier-badge>{% case status %}{% when 'open' %}Open now{% when 'soldout' %}Sold out{% else %}Next{% endcase %}</span>
+              </div>
+              <p class="ax-tier__price"><span class="ax-tier__amount">{{ v.price | money }}</span> <s class="ax-tier__launch"><span class="ax-sr">launch price </span>{{ launch_money }}</s></p>
+              <p class="ax-tier__save">{{ pct_off }}% off · save {{ save }} vs launch price</p>
+              <div class="ax-bar" role="progressbar" aria-label="Tier {{ i }} units reserved" aria-valuemin="0" aria-valuemax="{{ cap }}" aria-valuenow="{{ reserved }}" data-tier-bar>
+                <span style="width: {{ fill }}%"></span>
+              </div>
+              <p class="ax-tier__units" data-tier-units>{{ reserved }} / {{ cap }} reserved · {{ rem }} left</p>
+              <button class="ax-btn ax-btn--dark ax-btn--block ax-tier__cta" type="button" data-reserve-tier="{{ i }}" {% unless status == 'open' %}disabled{% endunless %}>
+                {%- case status -%}{%- when 'open' -%}Reserve for $5{%- when 'soldout' -%}Sold out{%- else -%}Opens when Tier {{ i | minus: 1 }} sells out{%- endcase -%}
+              </button>
+            </div>
+          {%- endfor -%}
+          {%- endif -%}
+        </div>
+
+        <div class="ax-tiers__foot">
+          <div class="ax-colors ax-colors--inline" role="group" aria-label="Color">
+            <span class="ax-muted">Color:</span>
+            <button type="button" class="ax-chip ax-chip--sm" data-set-color="navy" aria-pressed="true"><span class="ax-swatch ax-swatch--navy" aria-hidden="true"></span>Navy</button>
+            <button type="button" class="ax-chip ax-chip--sm" data-set-color="black" aria-pressed="false"><span class="ax-swatch ax-swatch--black" aria-hidden="true"></span>Black</button>
+          </div>
+          <p class="ax-small">Your price is locked the moment your $5 deposit goes through. Orders ship from {{ ship }}.</p>
+          <p class="ax-status" role="status" aria-live="polite" data-status-msg></p>
+        </div>
+      </div>
+    </section>
+
+    {%- comment -%} 4. How presale works {%- endcomment -%}
+    <section class="ax-section ax-section--tight" id="how" aria-labelledby="ax-how-title">
+      <div class="ax-wrap">
+        <div class="ax-head">
+          <p class="ax-eyebrow">How presale works</p>
+          <h2 id="ax-how-title" class="ax-h2">Reserve now. Pay when it ships.</h2>
+        </div>
+        <ol class="ax-steps">
+          <li class="ax-card ax-step"><span class="ax-step__n">01</span><h3 class="ax-h3">Reserve for $5</h3><p>Lock in your tier price today. The $5 counts toward your total and is refundable anytime.</p></li>
+          <li class="ax-card ax-step"><span class="ax-step__n">02</span><h3 class="ax-h3">Pay when it ships</h3><p>We charge the balance, minus any referral credits, only when your pair leaves our warehouse.</p></li>
+          <li class="ax-card ax-step"><span class="ax-step__n">03</span><h3 class="ax-h3">Delivered for the holidays</h3><p>Shipping starts {{ ship }}, in time for Christmas. We email you tracking the moment your order ships.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    {%- comment -%} 5. Invite friends {%- endcomment -%}
+    <section class="ax-section ax-section--tight" aria-labelledby="ax-ref-title">
+      <div class="ax-wrap">
+        <div class="ax-card ax-ref">
+          <div class="ax-ref__copy">
+            <p class="ax-eyebrow">Bring friends, pay less</p>
+            <h2 id="ax-ref-title" class="ax-h2">Get $10 off for every friend who orders.</h2>
+            <p class="ax-body">After you reserve, you get a personal invite link. Every friend who reserves and completes their purchase takes $10 off your balance, up to 3 friends and $30 off. Your friends get the presale price of the tier that is open when they order.</p>
+          </div>
+          <div class="ax-ref__side">
+            <ul class="ax-ref__tiles">
+              <li><strong>−$10</strong><span>1 friend</span></li>
+              <li><strong>−$20</strong><span>2 friends</span></li>
+              <li><strong>−$30</strong><span>3 friends</span></li>
+            </ul>
+            <p class="ax-fine">Credit is applied after your friend's final payment. One credit per shipping address and payment card. Maximum 3 credits per customer. If you share your link for a reward, please mark your post as #ad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {%- comment -%} 6. Features (white section) + gallery {%- endcomment -%}
+    <section class="ax-section ax-white" id="features" aria-labelledby="ax-feat-title">
+      <div class="ax-wrap">
+        <div class="ax-feat">
+          <div class="ax-feat__media">
+            <div class="ax-swap" data-only="navy">
+              {%- render 'artix-img', image: s.pair_navy, alt: 'A pair of Artix Pro earbuds in Navy with brushed-silver caps', sizes: '(min-width: 960px) 45vw, 100vw' -%}
+            </div>
+            <div class="ax-swap" data-only="black">
+              {%- render 'artix-img', image: s.pair_black, alt: 'A pair of Artix Pro earbuds in Black with brushed-silver caps', sizes: '(min-width: 960px) 45vw, 100vw' -%}
+            </div>
+          </div>
+          <div class="ax-feat__copy">
+            <h2 id="ax-feat-title" class="ax-h2">Everything you need. Nothing you don't.</h2>
+            <ul class="ax-benefits">
+              <li>{%- render 'artix-icon', name: 'fit' -%}<h3 class="ax-h3">Stays in, all day</h3><p>Ergonomic shape that sits securely in your ear, so the earbuds stay put on runs, commutes and long calls.</p></li>
+              <li>{%- render 'artix-icon', name: 'sound' -%}<h3 class="ax-h3">Big, rich sound</h3><p>11 mm dynamic drivers tuned for deep bass and clear vocals, at up to 110 dB.</p></li>
+              <li>{%- render 'artix-icon', name: 'anc' -%}<h3 class="ax-h3">Hybrid adaptive ANC</h3><p>Up to 40 dB of noise reduction that adapts to your surroundings, plus Transparency mode when you want to hear the world.</p></li>
+              <li>{%- render 'artix-icon', name: 'mic' -%}<h3 class="ax-h3">6 mics, clear calls</h3><p>Three microphones in each earbud, with environmental noise cancellation that keeps your voice clear on calls.</p></li>
+              <li>{%- render 'artix-icon', name: 'bolt' -%}<h3 class="ax-h3">Fast charge</h3><p>0 to 60% in 20 minutes, 80% in 30 minutes. Up to 9 hours per charge and 45 hours with the case (ANC off).</p></li>
+              <li>{%- render 'artix-icon', name: 'gift' -%}<h3 class="ax-h3">Two finishes, made to impress</h3><p>Navy or Black with brushed-silver caps, in a giftable branded box.</p></li>
+            </ul>
+          </div>
+        </div>
+
+        {%- if section.blocks.size > 0 -%}
+        <ul class="ax-gallery" aria-label="Product gallery">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.image != blank -%}
+            <li class="ax-gallery__item" {{ block.shopify_attributes }}>
+              {%- render 'artix-img', image: block.settings.image, alt: block.settings.alt, sizes: '(min-width: 960px) 33vw, 50vw' -%}
+            </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+        {%- endif -%}
+      </div>
+    </section>
+
+    {%- comment -%} 7. Comparison {%- endcomment -%}
+    <section class="ax-section" id="compare" aria-labelledby="ax-cmp-title">
+      <div class="ax-wrap">
+        <div class="ax-head">
+          <p class="ax-eyebrow">How it stacks up</p>
+          <h2 id="ax-cmp-title" class="ax-h2">{{ s.compare_heading | default: 'Flagship features. Half the price of AirPods Pro 3.' }}</h2>
+        </div>
+        <div class="ax-table-box ax-card" role="region" aria-labelledby="ax-cmp-title" tabindex="0">
+          <table class="ax-table">
+            <caption class="ax-sr">Artix Pro compared with AirPods Pro 3, Sony WF-1000XM6, Beats Studio Buds+ and Bose QuietComfort Ultra Earbuds (2nd Gen)</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col" class="ax-us">Artix Pro</th>
+                <th scope="col">AirPods Pro 3</th>
+                <th scope="col">Sony WF-1000XM6</th>
+                <th scope="col">Beats Studio Buds+</th>
+                <th scope="col">Bose QuietComfort Ultra Earbuds (2nd Gen)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">List price</th><td class="ax-us">{{ launch_money }} <span class="ax-us__sub">(presale from {{ p.price_min | default: p.price | money }})</span></td><td>$249</td><td>$329.99</td><td>$169.99</td><td>$299</td></tr>
+              <tr><th scope="row">Bluetooth version</th><td class="ax-us">6.1</td><td>5.3</td><td>5.3</td><td>5.3</td><td>5.3</td></tr>
+              <tr><th scope="row">Total playtime with case, ANC on</th><td class="ax-us">30 h</td><td>24 h</td><td>24 h</td><td>24 h</td><td>24 h</td></tr>
+              <tr><th scope="row">Water resistance</th><td class="ax-us">IPX5</td><td>IP57</td><td>IPX4</td><td>IPX4</td><td>IPX4</td></tr>
+              <tr><th scope="row">Active noise cancelling + transparency mode</th>
+                <td class="ax-us">{%- render 'artix-icon', name: 'yes' -%}</td><td>{%- render 'artix-icon', name: 'yes' -%}</td><td>{%- render 'artix-icon', name: 'yes' -%}</td><td>{%- render 'artix-icon', name: 'yes' -%}</td><td>{%- render 'artix-icon', name: 'yes' -%}</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="ax-foot">Competitor specs and list prices from manufacturer pages and published reviews, checked November 2026; retailer prices vary. Battery life figures are manufacturer claims under each brand's own test conditions. AirPods is a trademark of Apple Inc.; Sony is a trademark of Sony Group Corporation; Beats is a trademark of Beats Electronics, LLC; Bose and QuietComfort are trademarks of Bose Corporation. Artix is not affiliated with these companies.</p>
+      </div>
+    </section>
+
+    {%- comment -%} 8. Specs {%- endcomment -%}
+    <section class="ax-section ax-section--tight" id="specs" aria-labelledby="ax-specs-title">
+      <div class="ax-wrap">
+        <div class="ax-head">
+          <p class="ax-eyebrow">Tech specs</p>
+          <h2 id="ax-specs-title" class="ax-h2">The details.</h2>
+        </div>
+        <dl class="ax-specs ax-card">
+          <div><dt>Colors</dt><dd>Navy, Black</dd></div>
+          <div><dt>Bluetooth</dt><dd>6.1</dd></div>
+          <div><dt>Chipset</dt><dd>BES2710</dd></div>
+          <div><dt>Audio codecs</dt><dd>SBC, AAC, LC3 (LE Audio)</dd></div>
+          <div><dt>Noise cancelling</dt><dd>Hybrid adaptive ANC, up to 40 dB</dd></div>
+          <div><dt>Modes</dt><dd>ANC, Transparency</dd></div>
+          <div><dt>Microphones</dt><dd>6 (3 per earbud)</dd></div>
+          <div><dt>Driver</dt><dd>11 mm dynamic, 32 Ω</dd></div>
+          <div><dt>Max sound pressure level</dt><dd>110 dB ±3 dB</dd></div>
+          <div><dt>Playtime, ANC off</dt><dd>Up to 9 h earbuds · 45 h with case</dd></div>
+          <div><dt>Playtime, ANC on</dt><dd>Up to 6 h earbuds · 30 h with case</dd></div>
+          <div><dt>Fast charging</dt><dd>0–60% in 20 min, 0–80% in 30 min</dd></div>
+          <div><dt>Case charging</dt><dd>USB-C, full charge in under 2 h</dd></div>
+          <div><dt>Battery</dt><dd>50 mAh per earbud, 500 mAh case</dd></div>
+          <div><dt>Pairing</dt><dd>Pop-up pairing when the case opens (Hall sensor)</dd></div>
+          <div><dt>Controls</dt><dd>Touch</dd></div>
+          <div><dt>Water resistance</dt><dd>IPX5 (sweat and splash resistant)</dd></div>
+          <div><dt>In the box</dt><dd>Earbuds, charging case, USB-C cable, ear tips in multiple sizes, giftable branded box</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    {%- comment -%} 9. Peace of mind {%- endcomment -%}
+    <section class="ax-section ax-section--tight" aria-labelledby="ax-care-title">
+      <div class="ax-wrap">
+        <div class="ax-head">
+          <h2 id="ax-care-title" class="ax-h2">We've got you covered.</h2>
+        </div>
+        <ul class="ax-care">
+          <li class="ax-card">{%- render 'artix-icon', name: 'shield' -%}<h3 class="ax-h3">1-year warranty</h3><p>If anything goes wrong with your earbuds in the first year, we repair or replace them.</p></li>
+          <li class="ax-card">{%- render 'artix-icon', name: 'return' -%}<h3 class="ax-h3">30-day free returns</h3><p>Not in love? Send them back within 30 days for a full refund. Return shipping is on us.</p></li>
+          <li class="ax-card">{%- render 'artix-icon', name: 'box' -%}<h3 class="ax-h3">Arrives safe, or it's on us</h3><p>We're responsible for your order until it's in your hands. If it arrives damaged, we'll send a replacement or give you a full refund, your choice.</p></li>
+          <li class="ax-card">{%- render 'artix-icon', name: 'chat' -%}<h3 class="ax-h3">Real people, real fast</h3><p>Questions about your order, a return or a glitch with your earbuds? Our friendly support team answers quickly and sorts it out without the runaround.</p></li>
+        </ul>
+        <p class="ax-care__link"><a class="ax-link" href="{{ s.url_contact | default: '/pages/contact' }}">Contact support</a></p>
+      </div>
+    </section>
+
+    {%- comment -%} 10. Gift {%- endcomment -%}
+    <section class="ax-section ax-section--tight" aria-labelledby="ax-gift-title">
+      <div class="ax-wrap">
+        <div class="ax-card ax-gift">
+          <div class="ax-gift__media">
+            <div class="ax-swap" data-only="navy">
+              {%- render 'artix-img', image: s.closed_navy, alt: 'Closed Artix Pro charging case in Navy', sizes: '(min-width: 960px) 40vw, 100vw' -%}
+            </div>
+            <div class="ax-swap" data-only="black">
+              {%- render 'artix-img', image: s.closed_black, alt: 'Closed Artix Pro charging case in Black', sizes: '(min-width: 960px) 40vw, 100vw' -%}
+            </div>
+          </div>
+          <div class="ax-gift__copy">
+            <h2 id="ax-gift-title" class="ax-h2">Ready to gift.</h2>
+            <p class="ax-body">Every Artix Pro ships in a premium branded box, ready to wrap. Shipping starts {{ ship }}, in time for Christmas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {%- comment -%} 11. FAQ {%- endcomment -%}
+    <section class="ax-section ax-section--tight" id="faq" aria-labelledby="ax-faq-title">
+      <div class="ax-wrap ax-faq-wrap">
+        <div class="ax-head">
+          <p class="ax-eyebrow">FAQ</p>
+          <h2 id="ax-faq-title" class="ax-h2">Good questions.</h2>
+        </div>
+        <div class="ax-faq ax-card">
+          {%- capture faq -%}
+When will my order ship?|Shipping starts {{ ship }}, in time for Christmas. You'll get a tracking email as soon as your order ships.
+When am I charged?|$5 today to reserve. The rest of your tier price, minus any referral credits, is charged when your order ships.
+Can I cancel?|Yes, anytime before your order ships. Your $5 deposit is refunded in full.
+Can I change my color?|Yes, switch between Navy and Black anytime before shipping by replying to your order email.
+How does the invite reward work?|Share your personal link. Each friend who reserves and completes their purchase takes $10 off your balance, up to 3 friends ($30).
+What if my tier sells out during checkout?|Your price is locked when your $5 deposit goes through. If the tier fills before that, you'll see the next tier's price before you pay.
+What's covered by the warranty?|Defects in materials and workmanship for 1 year from delivery. We repair or replace the earbuds.
+What if my order arrives damaged?|Contact us and we'll send a replacement or issue a full refund, your choice.
+How do returns work?|You have 30 days from delivery to return your earbuds for a full refund, with free return shipping.
+Do they work with iPhone and Android?|Yes. They connect to any Bluetooth device, including iPhone, Android, tablets and laptops.
+Will they stay in during workouts?|Yes. The ergonomic shape sits securely in the ear, and IPX5 protects against sweat and splashes.
+Will Artix Pro be on Amazon?|Yes, after launch at {{ launch_money }}. Presale prices are available only on this site, only during presale.
+          {%- endcapture -%}
+          {%- assign rows = faq | strip | newline_to_br | split: '<br />' -%}
+          {%- for row in rows -%}
+            {%- assign qa = row | strip | split: '|' -%}
+            <details class="ax-faq__item" name="ax-faq">
+              <summary><span>{{ qa[0] }}</span>{%- render 'artix-icon', name: 'plus' -%}</summary>
+              <p>{{ qa[1] }}</p>
+            </details>
+          {%- endfor -%}
+        </div>
+      </div>
+    </section>
+
+    {%- comment -%} 12. Final CTA {%- endcomment -%}
+    <section class="ax-final" aria-labelledby="ax-final-title">
+      <div class="ax-wrap ax-final__inner">
+        <h2 id="ax-final-title" class="ax-h2" data-final-title>
+          {%- if open_v -%}Only {{ open_rem }} pairs left at {{ open_v.price | money }}.{%- else -%}Presale is sold out.{%- endif -%}
+        </h2>
+        <p data-final-sub>{% if open_v %}Reserve now for $5. Fully refundable, ships {{ ship }}.{% else %}Artix Pro launches at {{ launch_money }}.{% endif %}</p>
+        <button class="ax-btn ax-btn--amber" type="button" data-reserve="final" {% unless open_v %}disabled{% endunless %}>Reserve for $5</button>
+      </div>
+    </section>
+  </main>
+
+  {%- comment -%} 13. Footer {%- endcomment -%}
+  <footer class="ax-footer">
+    <div class="ax-wrap">
+      <div class="ax-footer__row">
+        <span class="ax-wordmark">artix</span>
+        <ul class="ax-footer__links">
+          <li><a href="{{ s.url_presale_terms | default: '/pages/presale-terms' }}">Presale terms</a></li>
+          <li><a href="{{ s.url_referral_terms | default: '/pages/referral-terms' }}">Referral terms</a></li>
+          <li><a href="{{ s.url_warranty | default: '/pages/warranty' }}">Warranty</a></li>
+          <li><a href="{{ s.url_returns | default: '/policies/refund-policy' }}">Returns</a></li>
+          <li><a href="{{ s.url_shipping | default: '/policies/shipping-policy' }}">Shipping</a></li>
+          <li><a href="{{ s.url_privacy | default: '/policies/privacy-policy' }}">Privacy</a></li>
+          <li><a href="{{ s.url_contact | default: '/pages/contact' }}">Contact</a></li>
+        </ul>
+      </div>
+      <p class="ax-fine">Presale terms: a $5 refundable deposit reserves one pair at the tier price shown at checkout. The remaining balance is charged when your order ships. Shipping starts {{ ship }}. If we cannot ship as promised, we will notify you and you may cancel for a full refund. Noise reduction and battery figures are measured under laboratory conditions; actual results vary with volume, environment and usage.</p>
+      <p class="ax-fine">© {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+    </div>
+  </footer>
+
+  {%- comment -%} Config for artix-presale.js. Live values are refreshed from the artix-inventory section. {%- endcomment -%}
+  <script type="application/json" data-artix-config>
+  {
+    "handle": {{ p.handle | json }},
+    "launch": {{ launch }},
+    "shipDate": {{ ship | json }},
+    "currency": {{ cart.currency.iso_code | default: 'USD' | json }},
+    "pollSeconds": {{ s.poll_seconds | default: 30 }},
+    "metaPixelId": {{ s.meta_pixel_id | strip | json }},
+    "ga4Id": {{ s.ga4_id | strip | json }},
+    "tiers": [
+      {%- if p != blank -%}
+      {%- for v in p.variants limit: 3 -%}
+        {%- assign k = 'tier_' | append: forloop.index | append: '_capacity' -%}
+        {%- assign nk = 'tier_' | append: forloop.index | append: '_name' -%}
+        {"n": {{ forloop.index }}, "name": {{ s[nk] | json }}, "id": {{ v.id }}, "plan": {{ v.selling_plan_allocations.first.selling_plan.id | json }}, "price": {{ v.price }}, "cap": {{ s[k] | default: 0 }}, "q": {{ v.inventory_quantity | at_least: 0 }}, "a": {{ v.available | json }}}{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+      {%- endif -%}
+    ]
+  }
+  </script>
+</div>
+
+{% schema %}
+{
+  "name": "Artix presale",
+  "tag": "div",
+  "class": "ax-section-root",
+  "settings": [
+    { "type": "header", "content": "Offer" },
+    { "type": "product", "id": "product", "label": "Presale product", "info": "One product with three variants in tier order (Tier 1, 2, 3). Each variant tracks its own inventory and has the pre-order selling plan." },
+    { "type": "number", "id": "launch_price_cents", "label": "Launch price in cents", "default": 14999 },
+    { "type": "text", "id": "ship_date", "label": "Ship date text", "default": "December 15" },
+    { "type": "text", "id": "tier_1_name", "label": "Tier 1 name", "default": "Early Bird" },
+    { "type": "number", "id": "tier_1_capacity", "label": "Tier 1 total units", "default": 100 },
+    { "type": "text", "id": "tier_2_name", "label": "Tier 2 name", "default": "Presale" },
+    { "type": "number", "id": "tier_2_capacity", "label": "Tier 2 total units", "default": 300 },
+    { "type": "text", "id": "tier_3_name", "label": "Tier 3 name", "default": "Last Call" },
+    { "type": "number", "id": "tier_3_capacity", "label": "Tier 3 total units", "default": 600 },
+    { "type": "range", "id": "poll_seconds", "label": "Inventory refresh interval", "min": 15, "max": 120, "step": 5, "unit": "s", "default": 30 },
+    { "type": "text", "id": "compare_heading", "label": "Comparison heading", "default": "Flagship features. Half the price of AirPods Pro 3." },
+
+    { "type": "header", "content": "Images (light or white backgrounds only)" },
+    { "type": "image_picker", "id": "hero_navy", "label": "Hero: Navy open case" },
+    { "type": "image_picker", "id": "hero_black", "label": "Hero: Black open case" },
+    { "type": "image_picker", "id": "pair_navy", "label": "Features: Navy pair of earbuds" },
+    { "type": "image_picker", "id": "pair_black", "label": "Features: Black pair of earbuds" },
+    { "type": "image_picker", "id": "closed_navy", "label": "Gift: Navy closed case" },
+    { "type": "image_picker", "id": "closed_black", "label": "Gift: Black closed case" },
+
+    { "type": "header", "content": "Tracking" },
+    { "type": "text", "id": "meta_pixel_id", "label": "Meta Pixel ID", "info": "Leave empty if the Facebook & Instagram sales channel already runs your pixel, to avoid double counting." },
+    { "type": "text", "id": "ga4_id", "label": "GA4 measurement ID (G-XXXX)", "info": "Leave empty if Google & YouTube or GTM already loads GA4. Events are always pushed to window.dataLayer." },
+
+    { "type": "header", "content": "Footer links" },
+    { "type": "text", "id": "url_presale_terms", "label": "Presale terms URL", "default": "/pages/presale-terms" },
+    { "type": "text", "id": "url_referral_terms", "label": "Referral terms URL", "default": "/pages/referral-terms" },
+    { "type": "text", "id": "url_warranty", "label": "Warranty URL", "default": "/pages/warranty" },
+    { "type": "text", "id": "url_returns", "label": "Returns URL", "default": "/policies/refund-policy" },
+    { "type": "text", "id": "url_shipping", "label": "Shipping URL", "default": "/policies/shipping-policy" },
+    { "type": "text", "id": "url_privacy", "label": "Privacy URL", "default": "/policies/privacy-policy" },
+    { "type": "text", "id": "url_contact", "label": "Contact URL", "default": "/pages/contact" }
+  ],
+  "blocks": [
+    {
+      "type": "gallery_image",
+      "name": "Gallery image",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "alt", "label": "Alt text", "default": "Artix Pro earbuds" }
+      ]
+    }
+  ],
+  "max_blocks": 8
+}
+{% endschema %}

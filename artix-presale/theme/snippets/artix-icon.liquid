@@ -1,0 +1,22 @@
+{%- comment -%} Simple 24px line icons, decorative unless name == 'yes'. {%- endcomment -%}
+{%- case name -%}
+  {%- when 'yes' -%}
+    <svg class="ax-ico ax-ico--yes" width="20" height="20" viewBox="0 0 24 24" role="img" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  {%- else -%}
+    <svg class="ax-ico ax-ico--{{ name }}" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    {%- case name -%}
+      {%- when 'check' -%}<path d="M5 12.5l4.5 4.5L19 7.5"/>
+      {%- when 'plus' -%}<path d="M12 5v14M5 12h14"/>
+      {%- when 'fit' -%}<path d="M9 4.5a5.5 5.5 0 0 1 5.5 5.5v1.5a3 3 0 0 1-3 3H11v3.5a2 2 0 0 1-4 0V10A5.5 5.5 0 0 1 9 4.5z"/><circle cx="10" cy="10" r="1.6"/>
+      {%- when 'sound' -%}<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>
+      {%- when 'anc' -%}<path d="M3 12h2M7 8v8M11 5v14M15 9v6M19 11v2M21 12h0"/>
+      {%- when 'mic' -%}<rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11.5a6 6 0 0 0 12 0M12 17.5v3"/>
+      {%- when 'bolt' -%}<path d="M13 3L5.5 13.5H12L11 21l7.5-10.5H12z"/>
+      {%- when 'gift' -%}<rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11M12 9c-1.5-3.5-5-4-5-1.5S10 9 12 9zM12 9c1.5-3.5 5-4 5-1.5S14 9 12 9z"/>
+      {%- when 'shield' -%}<path d="M12 3.5l7 2.5v5.5c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/>
+      {%- when 'return' -%}<path d="M9 7L5 11l4 4"/><path d="M5 11h9.5a4.5 4.5 0 0 1 0 9H11"/>
+      {%- when 'box' -%}<path d="M3.5 7.5L12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5L12 11.5l8.5-4M12 11.5v9"/>
+      {%- when 'chat' -%}<path d="M4.5 5.5h15v10h-8l-4.5 3.5v-3.5H4.5z"/><path d="M8.5 10.5h7"/>
+    {%- endcase -%}
+    </svg>
+{%- endcase -%}

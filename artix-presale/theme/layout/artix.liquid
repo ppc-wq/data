@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page_title }}{% unless page_title contains shop.name %} · {{ shop.name }}{% endunless %}</title>
+    {%- if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="theme-color" content="#F4F4F1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&display=swap">
+    <link rel="stylesheet" href="{{ 'artix-presale.css' | asset_url }}">
+    <script src="{{ 'artix-presale.js' | asset_url }}" defer></script>
+    {{ content_for_header }}
+  </head>
+  <body class="artix">
+    {{ content_for_layout }}
+  </body>
+</html>

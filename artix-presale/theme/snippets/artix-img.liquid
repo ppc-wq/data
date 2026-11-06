@@ -1,0 +1,21 @@
+{%- comment -%}
+  Responsive product image.
+  Params: image (image object), alt (string), sizes (string), eager (bool), class (string)
+  Renders nothing if no image is set, so an empty setting never shows a broken box.
+{%- endcomment -%}
+{%- if image != blank -%}
+  {%- liquid
+    assign w = image.width | default: 1600
+    assign h = image.height | default: 1600
+  -%}
+  <img
+    class="{{ class }}"
+    src="{{ image | image_url: width: 1200 }}"
+    srcset="{{ image | image_url: width: 480 }} 480w, {{ image | image_url: width: 800 }} 800w, {{ image | image_url: width: 1200 }} 1200w, {{ image | image_url: width: 1600 }} 1600w"
+    sizes="{{ sizes | default: '100vw' }}"
+    width="{{ w }}"
+    height="{{ h }}"
+    alt="{{ alt | escape }}"
+    {% if eager %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+    decoding="async">
+{%- endif -%}

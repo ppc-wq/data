@@ -1,0 +1,10 @@
+{
+  "layout": "artix",
+  "sections": {
+    "main": {
+      "type": "artix-presale",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

@@ -1,0 +1,18 @@
+{%- comment -%}
+  Live inventory feed for the presale page.
+  Fetched by artix-presale.js through the Section Rendering API in product context:
+    /products/<handle>?section_id=artix-inventory&t=<timestamp>
+  Outputs the current inventory of the first three variants (one per tier) as JSON.
+{%- endcomment -%}
+{%- if product -%}
+<script type="application/json" data-artix-inventory>
+{"v":[{%- for v in product.variants limit: 3 -%}{"id":{{ v.id }},"q":{{ v.inventory_quantity | at_least: 0 }},"a":{{ v.available | json }}}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]}
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Artix inventory feed",
+  "settings": []
+}
+{% endschema %}
